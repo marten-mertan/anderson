@@ -1153,38 +1153,48 @@
 
 			</div>
 			<main>
-				<div
-					class="c-layout">
-					<!--'start_frame_cache_breadcrumb'-->
-					<nav class="c-breadcrumb v2" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-						<ul class="c-breadcrumb__list">
-							<li class="c-breadcrumb__item">
-								<div class="c-breadcrumb-word">
-									<a href="/msk/" itemprop="url" class="c-breadcrumb__home"></a>
-								</div>
-							</li>
-							<li class="c-breadcrumb__item">
-								<div class="c-breadcrumb-word">
-									<a href="/msk/menu/" class="" itemprop="url">
-										<span itemprop="title">Наше меню  в Москве</span>
-									</a>
-								</div>
-							</li>
-							<li class="c-breadcrumb__item">
-								<div class="c-breadcrumb-word">
-									<a href="/msk/menu/kupi-v-andersone/" class="" itemprop="url">
-										<span itemprop="title">Купи в АндерСоне (закажи до 17.00, привезем на следующий день)</span>
-									</a>
-								</div>
-							</li>
-							<li class="c-breadcrumb__item">
-								<div class="c-breadcrumb-word">Замороженные продукты</div>
-							</li>
-						</ul>
-					</nav>
-					<!--'end_frame_cache_breadcrumb'-->
+				<div class="c-layout">
 
-					 {% include "../components/qritems/qritems.twig" %}
+					 <div class="delivery-buttons">
+    <div class="delivery-buttons-item">
+        <div class="delivery-buttons-item-title">
+            <a class="delivery-buttons-item-title-button" href="#">
+                <div class="delivery-buttons-item-title-button-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+                        <image id="pizza-deliver" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADnUlEQVRYhcWXW4hWVRTHf99kFyINysymGmm0HCYKqYhG8qWih3qwwIGsKCOIKIaoKZFyoqjo8twFgi5PGQTVgw8hXbwMJphdnChKU4g0IgOzMsTLLzatA5vTOec7nyIdWJx9WWvt/1n/tfdep6OeA3SA3fwPTwLwPrAY+BHYCHwKbAK+AA4ebwB9wAfAL8DyeN8GTAL7gA3A88BNwNnHA0CKwCzgZ2ABMBXjpwBXAAuBq4ARYDawM6IzGe+twKFjBZDe64D1wESD7mCAKUAlwAeAzUFbQd+eowEwBtwPDBXjQD+wq8H2VODKiM5IgDoL2BbRKUB9DRyu9ZIAqP3qEfWS6D+kfhftXC5Ub1GHK+aSXKTeob6ifqkeVv9QP1SfVm9Qz8xtcuMN6pPR/kh9rOT8bvWQuiMcP1gDIpdn1M3qo+pqdY//Pt+qr6uLcuUxdSrab6vvZnPT1L3qPdFfoh5QZ3QB8Lk6Xhqbry5Tt6kv5hMFDUMhG9WTY256IL84003P+dFfrL6hdjJ/80Jnbg24XYnO8uCkOlFjsC5ALVXXqFuzBQfU/eq1mf5zQWuVr0uDxpnlifGMhrLMDmp2BD1zSvM/qLdH+7Tge2mNr6fUj8tJWHyJwVO3BMtlkfqnem70U9Jtj9wp6/apO4t8qnK2SV3RI4BpWURSpPY1fP2NAXZ6HYBEw5bSWCfOhpQD76kLGsC8o64vJWQua9WXin6VwkBF9qaI/KYuV9+KLTmrwjZtr7/iwKryfXWcJXOaAFTR8Jn6QBaNxOGtJZvLYycsq/HZCb8v5+N9NSd0qhFGs/5eYH600+15BvB7Nj8PWA28BrxZ4/NOYBh4ououKMvcoGEgy/K/1a+Cik+yDE/h/kldpZ7QsIWT3X3luabM3lI6Ri8IB0uyxROnv0ZenNQQ+jWRfP9JzCYAK4KzOqcPx33wbEPGJ1kZh9J5VfNNAMo0FDIc2yyF9OYG+ySj6kH1ujqdJuMyDYPqq+FwVfDaZHtNROjeJr1uAFJN8E2qnGP/psJiYRebJNfHlux6onZzNBQ0pC++rMXCxPmQvvyRNvptHE5VFBVVknbGC7H4XS3BtgIw0bAbChmMe2K3OtJ28bYAhqJS6q+YOzHuh/1RI8zsZfG2AAoaxrJ+X1TH26O0Gu114V4BPB7l1Yw4Db+PG3FlVD9HtXgvANL/QqIhhTrdhOkUPP1YFi6k+DNq84zHH/Na4Ehbo8YH+AdAssbwiNTO5QAAAABJRU5ErkJggg=="/>
+                    </svg>
+                </div>
+                <div class="delivery-buttons-item-title-button-text">
+                    Доставка полуфабрикатов
+                </div>
+            </a>
+        </div>
+        <div class="delivery-buttons-item-body">
+            <p class="delivery-buttons-item-body-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+    </div>
+    <div class="delivery-buttons-item mod-green">
+        <div class="delivery-buttons-item-title">
+            <a class="delivery-buttons-item-title-button" href="#">
+                <div class="delivery-buttons-item-title-button-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36 32">
+                        <image id="free-delivery" width="36" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAgCAYAAAB6kdqOAAAClklEQVRYhcXXS6hNURzH8Q+uR3ITo4uZGFDiipHHQMojRV4hEe7ATAYGXp12lAElJcRMIiHkUQZXyEwRymNAEolbBkh5Hi3973Wcey7nnnPPub86tffae/1/37P2Wv+1/n3y+bwq1A+bsSTuz2E/fpQbIMuyv+77VkODY9iF+/HbFW0Vq6GKvuOxDgtwJdou4TL24VElQasZoUn4gKsFbVejbVKlQasB+ol3KJyE+Wj7WWnQaj7ZGdzACDRG20fMQFs9gUZjJeagGUOKnn/CPVzDKTzvTvDufLKJuIBn2IQX2ILZAdYc11vi2aZ490L0LUvljNBA7AmDB1iGi/jWxfutOIL+WIjtuIsD2Iov/zL73wg14RZasBGTcfYfMIX6Fu9Ojr4tEaupUqBRuI1hmBoJr5K0no++UyPW7YjdLaDGSHZpeKfhaQUgxXoasb5E7MZSL3UFdDCGdl41S7iE2iJmU3iUBTQfa7AWL3sQpl0vI/aa8PpLxbt939iD0qpYVQOYQp2MCT8+y7KOzF48QosxBttqDCM8xoRnh4qB0tI8H4mt1noRXi1dAQ2PTHu8DjDtSl6zc7nc8FJAM2OXbq0jUGt4ziwFlPaih/hcR6DP4dlcCihNsCd1hGnXk/DuBDSsh5NguWoL705AX/G6F4Beh3cnoFTK7K03TZZlewvKqN+Zeih2Y0K9YYqUJveOhihZFuE0vvcSTEMc/Aaliyk4hFxvkLRXrrlc7g2Wpk92GMujwEs77fU6ZusVmJumTuz8ZxPQYOyME11K4eMwFq9qDDMyioDHeI87qRQvPn4MiOPHTWyoMdBRzIrjR8eyL6460oMdOIG3hfmhh5X++HqsLoQpBZSUVtv0Uqe5HlYqlZLXH+EXeEqiRCNHGFsAAAAASUVORK5CYII="/>
+                    </svg>
+                </div>
+                <div class="delivery-buttons-item-title-button-text">
+                    Доставка готовых блюд
+                </div>
+            </a>
+        </div>
+        <div class="delivery-buttons-item-body">
+            <p class="delivery-buttons-item-body-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <ul class="delivery-buttons-item-body-list">
+                <li>Фирменное меню для детей</li>
+                <li>Сказочные торты</li>
+            </ul>
+        </div>
+    </div>
+</div>
                     
 				</div>
 			</main>

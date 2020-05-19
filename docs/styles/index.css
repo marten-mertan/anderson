@@ -1,0 +1,410 @@
+@charset "UTF-8";
+.delivery-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 8rem 4rem; }
+  @media screen and (max-width: 1026px) {
+    .delivery-buttons {
+      flex-direction: column;
+      margin: 2.4rem 1.6rem; } }
+  .delivery-buttons-item {
+    background-color: #fff;
+    border: 3px dotted #c7368a;
+    border-radius: 0.7rem;
+    box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 3.3rem);
+    padding: 2.6rem 3.3rem 4rem 3.3rem;
+    margin-bottom: 4rem; }
+    @media screen and (max-width: 1026px) {
+      .delivery-buttons-item {
+        width: 100%;
+        padding: 1.8rem 1.4rem;
+        margin-bottom: 1.2rem; } }
+    .delivery-buttons-item:nth-child(2n+1) {
+      margin-right: 6.6rem; }
+      @media screen and (max-width: 1026px) {
+        .delivery-buttons-item:nth-child(2n+1) {
+          margin-right: 0; } }
+    .delivery-buttons-item.mod-green {
+      border-color: #7cbd41; }
+      .delivery-buttons-item.mod-green .delivery-buttons-item-title-button {
+        background: url(../assets/img/holidays-button-bg-green.png);
+        box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.33), inset 0 1px 0 0 #bfe69a, inset 0 2px 0 0 #afde83; }
+    .delivery-buttons-item-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3.6rem; }
+      @media screen and (max-width: 1026px) {
+        .delivery-buttons-item-title {
+          margin-bottom: 1.4rem; } }
+      .delivery-buttons-item-title-button {
+        display: flex;
+        flex-direction: row;
+        color: #ffffff;
+        box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.33), inset 0 1px 0 0 #f9b7dd, inset 0 2px 0 0 #f0a5d1;
+        border-color: transparent;
+        background: url(../assets/img/holidays-button-bg.png);
+        padding: 2.1rem 2.4rem 1.2rem 2.4rem;
+        border-radius: 1rem;
+        font-size: 3rem;
+        font-family: "BebasNeue";
+        font-weight: bold;
+        line-height: 1; }
+        @media screen and (max-width: 1440px) {
+          .delivery-buttons-item-title-button {
+            padding: 1.8rem 2rem 1.2rem 2rem;
+            font-size: 2.6rem; } }
+        @media screen and (max-width: 1026px) {
+          .delivery-buttons-item-title-button {
+            min-width: 25rem;
+            padding: 1.8rem 1.2rem 1.2rem;
+            font-size: 2.1rem; } }
+        .delivery-buttons-item-title-button:hover {
+          color: #ffffff; }
+        .delivery-buttons-item-title-button:after {
+          display: none;
+          border: none; }
+        .delivery-buttons-item-title-button-img {
+          flex: 0 0 auto;
+          width: 32px;
+          height: 32px;
+          margin-right: 1.3rem; }
+          @media screen and (max-width: 1026px) {
+            .delivery-buttons-item-title-button-img {
+              width: 22px;
+              height: 22px;
+              margin-right: 1rem; } }
+    .delivery-buttons-item-body-text {
+      font-size: 1.5rem;
+      line-height: 2;
+      font-family: "PT Serif Caption";
+      color: #555451;
+      margin-bottom: 2rem; }
+      @media screen and (max-width: 1026px) {
+        .delivery-buttons-item-body-text {
+          line-height: 1.7;
+          margin-bottom: 1.2rem; } }
+    .delivery-buttons-item-body-list {
+      font-size: 1.5rem;
+      line-height: 2;
+      font-family: "PT Serif Caption";
+      color: #555451;
+      font-style: italic; }
+      @media screen and (max-width: 1026px) {
+        .delivery-buttons-item-body-list {
+          line-height: 1.7; } }
+      .delivery-buttons-item-body-list li:before {
+        content: '• ';
+        display: inline; }
+
+.qritem {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem; }
+  .qritem-aside {
+    flex: 0 0 auto;
+    width: 250px;
+    margin-right: 1.5rem; }
+    .qritem-aside-list {
+      width: 100%; }
+      .qritem-aside-list__item {
+        margin-bottom: 0.7rem; }
+        .qritem-aside-list__item a {
+          display: block;
+          text-align: center;
+          padding: 1.2rem 2.4rem 1.4rem;
+          border: 1px dashed #736357;
+          border-radius: 9px;
+          font-size: 1.7rem;
+          font-family: "BebasNeue";
+          text-transform: uppercase;
+          outline: none;
+          color: #2e2e2e;
+          font-weight: 500;
+          transition: none; }
+          .qritem-aside-list__item a:after {
+            display: none;
+            border: none; }
+          .qritem-aside-list__item a:hover {
+            color: #ffffff;
+            box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.33), inset 0 1px 0 0 #f9b7dd, inset 0 2px 0 0 #f0a5d1;
+            border-color: transparent;
+            background: url(../assets/img/holidays-button-bg.png); }
+        .qritem-aside-list__item.active a {
+          color: #ffffff;
+          box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.33), inset 0 1px 0 0 #f9b7dd, inset 0 2px 0 0 #f0a5d1;
+          border-color: transparent;
+          background: url(../assets/img/holidays-button-bg.png); }
+  .qritem-body {
+    flex: 1 1 auto;
+    border: 3px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1); }
+    .qritem-body-top {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      min-height: 540px;
+      padding: 3rem 3rem 2.5rem; }
+      .qritem-body-top-slider {
+        flex: 0 0 auto;
+        width: 776px;
+        margin-right: 1.8rem; }
+        .qritem-body-top-slider-wrapper {
+          border: 1px solid #e6e1e1;
+          background-color: #f2f2f2;
+          height: 100%;
+          overflow: hidden; }
+        .qritem-body-top-slider__item {
+          height: 100%;
+          background-size: cover;
+          background-position: 50% 50%;
+          background-image: url(../assets/img/slide-1.png); }
+        .qritem-body-top-slider .slick-list {
+          height: 100%; }
+        .qritem-body-top-slider .slick-track {
+          height: 100%; }
+        .qritem-body-top-slider .slick-slide div {
+          height: 100%; }
+        .qritem-body-top-slider .slick-arrow {
+          display: inline-block !important; }
+        .qritem-body-top-slider .slick-prev {
+          left: 2rem;
+          width: 3.3rem;
+          height: 3.3rem;
+          background: url(../assets/img/icon-green-arrow-left.svg) 0 0 no-repeat; }
+        .qritem-body-top-slider .slick-next {
+          right: 2rem;
+          width: 3.3rem;
+          height: 3.3rem;
+          background: url(../assets/img/icon-green-arrow-right.svg) 0 0 no-repeat; }
+      .qritem-body-top-consist {
+        flex: 1 1 auto;
+        width: 100%;
+        background-color: #81c734;
+        padding: 2.7rem 2.7rem 3rem 3rem; }
+        .qritem-body-top-consist__title {
+          font-size: 5.4rem;
+          font-family: "SummerFont";
+          color: #0c0c0c;
+          text-transform: uppercase; }
+          .qritem-body-top-consist__title svg {
+            margin-right: 1rem; }
+        .qritem-body-top-consist__text {
+          color: #222; }
+        .qritem-body-top-consist__first {
+          color: #fff; }
+        .qritem-body-top-consist-youtube {
+          height: 212px;
+          margin-top: 50px; }
+    .qritem-body-recipe {
+      border: 2px solid #e6e1e1;
+      border-radius: 8px;
+      margin: 0 3rem 3.7rem;
+      padding: 2.6rem 3.7rem 4rem; }
+      .qritem-body-recipe__title {
+        font-size: 4.8rem;
+        font-family: "SummerFont";
+        color: #553023;
+        text-transform: uppercase;
+        margin-bottom: 1rem; }
+      .qritem-body-recipe-icons {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1.2rem; }
+        .qritem-body-recipe-icons-item {
+          display: flex;
+          flex-direction: row; }
+          .qritem-body-recipe-icons-item__icon {
+            margin-right: 2rem; }
+          .qritem-body-recipe-icons-item__description {
+            margin-right: 3.6rem; }
+          .qritem-body-recipe-icons-item__subtext {
+            font-family: "PT Serif Caption";
+            font-size: 1.3rem;
+            color: #bdbdbd; }
+          .qritem-body-recipe-icons-item__text {
+            font-family: "PT Serif Caption";
+            font-size: 2rem;
+            color: #000; }
+      .qritem-body-recipe-steps {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 2.5rem 0 1rem; }
+        .qritem-body-recipe-steps-item {
+          display: flex;
+          flex-direction: row;
+          width: 49.5%;
+          position: relative;
+          margin-bottom: 1%; }
+          .qritem-body-recipe-steps-item:nth-child(2n+1) {
+            margin-right: 1%; }
+          .qritem-body-recipe-steps-item-left {
+            display: flex;
+            flex-direction: row;
+            border: 2px solid #81c734; }
+            .qritem-body-recipe-steps-item-left-img {
+              flex: 0 0 auto;
+              width: 174px;
+              min-height: 150px;
+              background-size: cover;
+              background-position: 50% 50%;
+              background-image: url(../assets/img/recipe-1.png); }
+            .qritem-body-recipe-steps-item-left-arrow {
+              width: 20px;
+              background-color: #81c734;
+              background-position: 50% 50%;
+              background-image: url(../assets/img/recipe-arrow.svg);
+              background-repeat: no-repeat; }
+          .qritem-body-recipe-steps-item-right {
+            border: 1px dashed #e6e1e1;
+            border-left: none;
+            padding: 2.2rem;
+            font-family: "PT Serif Caption";
+            font-size: 1.5rem;
+            color: #555451;
+            line-height: 1.4; }
+          .qritem-body-recipe-steps-item__number {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            top: 0.7rem;
+            left: 0.7rem;
+            width: 3.7rem;
+            height: 3.7rem;
+            border-radius: 50%;
+            background-color: #81c734;
+            font-family: "PT Serif Caption";
+            font-size: 2rem;
+            color: #fff; }
+      .qritem-body-recipe p:last-child {
+        margin-bottom: 0; }
+    .qritem-body-comments {
+      margin-bottom: 2rem; }
+      .qritem-body-comments-top {
+        position: relative;
+        overflow: hidden;
+        height: 3rem;
+        background-color: #f5eee0; }
+        .qritem-body-comments-top-tail {
+          position: absolute;
+          width: 8rem;
+          height: 6rem;
+          bottom: -5rem;
+          left: calc(50%);
+          background-color: white;
+          transform: skew(60deg) rotate(-16deg); }
+      .qritem-body-comments-row:not(:last-child) {
+        border-bottom: 1px solid #f5eee0; }
+      .qritem-body-comments-form {
+        max-width: 720px;
+        margin: 2.8rem auto 2rem; }
+        .qritem-body-comments-form-body {
+          padding: 1rem 1rem 1rem 2.3rem;
+          display: flex;
+          flex-direction: row;
+          background-color: #f5eee0;
+          margin-bottom: 1.2rem; }
+          .qritem-body-comments-form-body-icon {
+            flex: 0 0 auto;
+            margin: 0.6rem 0;
+            height: 6.8rem;
+            width: 6.8rem;
+            border-radius: 50%;
+            background-color: #81c734;
+            background-position: 50% 50%;
+            background-image: url(../assets/img/comment.svg);
+            background-repeat: no-repeat;
+            margin-right: 2.5rem; }
+          .qritem-body-comments-form-body-input {
+            flex: 1 1 auto;
+            width: 100%;
+            position: relative; }
+            .qritem-body-comments-form-body-input textarea {
+              position: relative;
+              height: 8rem;
+              border-color: #e7dcc5; }
+              .qritem-body-comments-form-body-input textarea:focus + .qritem-body-comments-form-body-input-tail {
+                border-color: #9acc4e; }
+            .qritem-body-comments-form-body-input-tail {
+              content: ' ';
+              display: block;
+              position: absolute;
+              width: 1.4rem;
+              height: 1.4rem;
+              top: calc(50% - 0.7rem);
+              left: -0.7rem;
+              border: 1px solid #e7dcc5;
+              background-color: #fff;
+              transform: rotate(45deg);
+              border-top: none;
+              border-right: none;
+              transition: all .2s ease; }
+        .qritem-body-comments-form__title {
+          font-size: 1.7rem;
+          font-family: "PT Serif Caption";
+          color: #090909;
+          margin-bottom: 1.5rem; }
+        .qritem-body-comments-form-button {
+          width: 150px;
+          margin: 0 0 0 auto; }
+          .qritem-body-comments-form-button__btn {
+            display: block;
+            background-color: #7cbd41;
+            height: 3.8rem;
+            border-radius: 3px;
+            font-family: "PT Serif Caption";
+            font-size: 1.5rem;
+            color: #fff;
+            padding: 1rem;
+            line-height: 1;
+            text-align: center; }
+            .qritem-body-comments-form-button__btn:hover {
+              color: #fff; }
+            .qritem-body-comments-form-button__btn:after {
+              display: none;
+              border: none; }
+      .qritem-body-comments-item {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 2.8rem;
+        display: flex;
+        flex-direction: row; }
+        .qritem-body-comments-item-img {
+          flex: 0 0 auto;
+          width: 5.2rem;
+          height: 5.2rem;
+          border-radius: 50%;
+          background-color: #e6e1e1;
+          background-size: cover;
+          background-position: 50% 50%;
+          background-image: url(../assets/img/comment.svg);
+          background-repeat: no-repeat;
+          margin-right: 2.3rem; }
+        .qritem-body-comments-item-description {
+          flex: 1 1 auto; }
+          .qritem-body-comments-item-description-top {
+            display: block;
+            margin-bottom: 1rem; }
+          .qritem-body-comments-item-description-bottom {
+            font-size: 1.5rem;
+            line-height: 1.5;
+            font-family: "PT Serif Caption";
+            color: #555451; }
+          .qritem-body-comments-item-description__name {
+            display: inline-block;
+            font-size: 1.7rem;
+            font-family: "PT Serif Caption";
+            color: #000;
+            margin-right: 1rem; }
+          .qritem-body-comments-item-description__date {
+            display: inline-block;
+            font-size: 1.2rem;
+            font-family: "PT Serif Caption";
+            color: #878787; }

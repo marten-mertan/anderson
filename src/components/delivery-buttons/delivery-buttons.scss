@@ -1,0 +1,121 @@
+.delivery-buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 8rem 4rem;
+    @media screen and (max-width: 1026px){
+        flex-direction: column;
+        margin: 2.4rem 1.6rem;
+    }
+    &-item{
+        background-color: #fff;
+        border: 3px dotted #c7368a;
+        border-radius: 0.7rem;
+        box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+        width: calc(50% - 3.3rem);
+        padding: 2.6rem 3.3rem 4rem 3.3rem;
+        margin-bottom: 4rem;
+        @media screen and (max-width: 1026px){
+            width: 100%;
+            padding: 1.8rem 1.4rem;
+            margin-bottom: 1.2rem;
+        }
+        &:nth-child(2n+1){
+            margin-right: 6.6rem;
+            @media screen and (max-width: 1026px){
+                margin-right: 0;
+            }
+        }
+        &.mod-green{
+            border-color: #7cbd41;
+            .delivery-buttons-item-title-button{
+                background: url(../assets/img/holidays-button-bg-green.png);
+                box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.33), inset 0 1px 0 0 #bfe69a, inset 0 2px 0 0 #afde83;
+            }
+        }
+        &-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3.6rem;
+            @media screen and (max-width: 1026px){
+                margin-bottom: 1.4rem;
+            }
+            &-button{
+                display: flex;
+                flex-direction: row;
+                color: #ffffff;
+                box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.33), inset 0 1px 0 0 #f9b7dd, inset 0 2px 0 0 #f0a5d1;
+                border-color: transparent;
+                background: url(../assets/img/holidays-button-bg.png);
+                padding: 2.1rem 2.4rem 1.2rem 2.4rem;
+                border-radius: 1rem;
+                font-size: 3rem;
+                font-family: "BebasNeue";
+                font-weight: bold;
+                line-height: 1;
+                @media screen and (max-width: 1440px){
+                    padding: 1.8rem 2rem 1.2rem 2rem;
+                    font-size: 2.6rem;
+                }
+                @media screen and (max-width: 1026px){
+                    min-width: 25rem;
+                    padding: 1.8rem 1.2rem 1.2rem;
+                    font-size: 2.1rem;
+                }
+                &:hover{
+                    color: #ffffff;
+
+                }
+                &:after{
+                    display: none;
+                    border: none;
+                }
+                &-img{
+                    flex: 0 0 auto;
+                    width: 32px;
+                    height: 32px;
+                    margin-right: 1.3rem;
+                    @media screen and (max-width: 1026px){
+                        width: 22px;
+                        height: 22px;
+                        margin-right: 1rem;
+                    }
+                }
+                &-text{
+
+                }
+            }
+        }
+        &-body{
+            &-text{
+                font-size: 1.5rem;
+                line-height: 2;
+                font-family: "PT Serif Caption";
+                color: #555451;
+                margin-bottom: 2rem;
+                @media screen and (max-width: 1026px){
+                    line-height: 1.7;
+                    margin-bottom: 1.2rem;
+                }
+            }
+            &-list{
+                font-size: 1.5rem;
+                line-height: 2;
+                font-family: "PT Serif Caption";
+                color: #555451;
+                font-style: italic;
+                @media screen and (max-width: 1026px){
+                    line-height: 1.7;
+                }
+                li{
+                    &:before{
+                        content: '• ';
+                        display: inline;
+                    }
+                }
+
+            }
+        }
+    }
+}
