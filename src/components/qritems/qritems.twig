@@ -1,5 +1,8 @@
 <div class="qritem">
     <div class="qritem-aside">
+        <div class="qritem-aside-list-top js-qritem-dropdown">
+            Пельмени с говядиной (замороженные)
+        </div>
         <ul class="qritem-aside-list">
 
             {% set items = [
@@ -13,7 +16,7 @@
 
             {% for key, item in items %}
                 <li class="qritem-aside-list__item {% if key == 0 %}active{% endif %}">
-                    <a href="/">{{item}}</a>
+                    <a href="#">{{item}}</a>
                 </li>
             {% endfor %}
 
