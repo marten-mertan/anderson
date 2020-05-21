@@ -492,6 +492,16 @@
                     color: #090909;
                     margin-bottom: 1.5rem;
                 }
+                &-recaptcha{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    margin-bottom: 1.2rem;
+                    @media screen and (max-width: 1026px){
+                        justify-content: center;
+                    }
+
+                }
                 &-button{
                     width: 150px;
                     margin: 0 0 0 auto;

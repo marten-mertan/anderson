@@ -517,6 +517,14 @@
           font-family: "PT Serif Caption";
           color: #090909;
           margin-bottom: 1.5rem; }
+        .qritem-body-comments-form-recaptcha {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          margin-bottom: 1.2rem; }
+          @media screen and (max-width: 1026px) {
+            .qritem-body-comments-form-recaptcha {
+              justify-content: center; } }
         .qritem-body-comments-form-button {
           width: 150px;
           margin: 0 0 0 auto; }
