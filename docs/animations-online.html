@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Онлайн анимации</title>
+
+		<!-- styles needed by jScrollPane -->
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link href="//opt-1183421.ssl.1c-bitrix-cdn.ru/bitrix/js/main/core/css/core.css?15679110953963" type="text/css" rel="stylesheet"/>
+
+		<link href="//opt-1183421.ssl.1c-bitrix-cdn.ru/bitrix/cache/css/s2/anderson_new/kernel_main/kernel_main_v1.css?158946761310429" type="text/css" rel="stylesheet"/>
+		<link href="//opt-1183421.ssl.1c-bitrix-cdn.ru/bitrix/js/ui/fonts/opensans/ui.font.opensans.css?15679111002003" type="text/css" rel="stylesheet"/>
+		<link href="//opt-1183421.ssl.1c-bitrix-cdn.ru/bitrix/js/main/popup/dist/main.popup.bundle.css?158753994326339" type="text/css" rel="stylesheet"/>
+		<link href="//opt-1183421.ssl.1c-bitrix-cdn.ru/bitrix/css/main/themes/blue/style.css?1567911093386" type="text/css" rel="stylesheet"/>
+		<link href="//opt-1183421.ssl.1c-bitrix-cdn.ru/bitrix/js/socialservices/css/ss.css?15735769275079" type="text/css" rel="stylesheet"/>
+		<link href="//opt-1183421.ssl.1c-bitrix-cdn.ru/bitrix/cache/css/s2/anderson_new/page_dbd68c0f4c1c469115c769c0a5c21f88/page_dbd68c0f4c1c469115c769c0a5c21f88_v1.css?158946762830850" type="text/css" rel="stylesheet"/>
+		<link href="//opt-1183421.ssl.1c-bitrix-cdn.ru/bitrix/cache/css/s2/anderson_new/default_087a3f511dcd207dfe58c107feba125c/default_087a3f511dcd207dfe58c107feba125c_v1.css?1589467613791" type="text/css" rel="stylesheet"/>
+		<link href="//opt-1183421.ssl.1c-bitrix-cdn.ru/bitrix/cache/css/s2/anderson_new/default_124f9249daa5792340fa5303f6091348/default_124f9249daa5792340fa5303f6091348_v1.css?1589467613428" type="text/css" rel="stylesheet"/>
+		<link href="//opt-1183421.ssl.1c-bitrix-cdn.ru/bitrix/cache/css/s2/anderson_new/template_d2f1360a7370fec59d5ea374711432ed/template_d2f1360a7370fec59d5ea374711432ed_v1.css?15894676131842716" type="text/css" data-template-style="true" rel="stylesheet"/>
+
+		<link href="styles/index.css" type="text/css" rel="stylesheet"/>
+
+	</head>
+    <body>
+    <div class="wrapper">
+        <div class="animations-online-flying-nav hidden">
+    <div class="animations-online-flying-nav-wrap">
+        <div class="animations-online-flying-nav-logo">
+            <a href="/">
+                <img src="assets/img/animations-online/logo-mini.png" alt="logo-mini">
+            </a>
+            <a href="tel:+74951254907">+7 (495) 125-49-07</a>
+        </div>
+        <ul class="animations-online-flying-nav-list">
+            <li class="animations-online-flying-nav-list__item">
+                <a class="js-animations-link" href="#rules">Общие правила</a>
+            </li>
+            <li class="animations-online-flying-nav-list__item">
+                <a class="mod-blue js-animations-link" href="#pr-1">Кот По</a>
+            </li>
+            <li class="animations-online-flying-nav-list__item">
+                <a class="mod-brown js-animations-link" href="#pr-2">Путешествие зайки</a>
+            </li>
+            <li class="animations-online-flying-nav-list__item">
+                <a class="mod-pink js-animations-link" href="#pr-3">Fairy Tale</a>
+            </li>
+            <li class="animations-online-flying-nav-list__item">
+                <a class="mod-yellow js-animations-link" href="#pr-4">Monstro Lab</a>
+            </li>
+            <li class="animations-online-flying-nav-list__item">
+                <a class="mod-gray js-animations-link" href="#pr-5">Мафия</a>
+            </li>
+            <li class="animations-online-flying-nav-list__map">
+                <a class="js-animations-link" href="#map">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512 512" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035
+                                c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,469.729
+                                c-55.847-66.338-152.035-197.217-152.035-284.301c0-83.834,68.202-152.036,152.035-152.036s152.035,68.202,152.035,152.035
+                                C408.034,272.515,311.861,403.37,256,469.729z"/>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path d="M256,92.134c-51.442,0-93.292,41.851-93.292,93.293s41.851,93.293,93.292,93.293s93.291-41.851,93.291-93.293
+                                S307.441,92.134,256,92.134z M256,245.328c-33.03,0-59.9-26.871-59.9-59.901s26.871-59.901,59.9-59.901s59.9,26.871,59.9,59.901
+                                S289.029,245.328,256,245.328z"/>
+                        </g>
+                    </g>
+                    </svg>
+                    <span>Где мы</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+        <div class="animations-online-flying-cart js-show-cart hidden">
+    <div class="animations-online-flying-cart-text">
+        Ваша корзина
+    </div>
+    <div class="animations-online-flying-cart-number-out">
+        <div class="animations-online-flying-cart-number-in">
+            <span class="js-cart-counter">0</span>
+        </div>
+    </div>
+</div>
+
+        <header class="animations-online-header">
+    <div class="animations-online-header-wrap">
+        <div class="animations-online-header-top">
+            <div class="animations-online-header-top-left">
+                <a href="/">Cafe-Anderson.ru</a>
+            </div>
+            <div class="animations-online-header-top-right">
+                Единый номер телефона:
+                <a href="tel:+74951254907">+7 (495) 125-49-07</a>
+            </div>
+        </div>
+        <div class="animations-online-header-logo">
+            <a href="/">
+                <img src="assets/img/animations-online/logo.png" alt="logo">
+            </a>
+        </div>
+        <nav class="animations-online-header-menu">
+            <ul class="animations-online-header-menu-list">
+                <li class="animations-online-header-menu-list__item"><a class="js-animations-link" href="#rules">ОБЩИЕ ПРАВИЛА</a></li>
+                <li class="animations-online-header-menu-list__item">
+                    <a class="js-animations-link" href="#pr-1">Праздничные программы</a>
+                    <ul class="animations-online-header-menu-list-programs">
+                        <li class="animations-online-header-menu-list-programs__item"><a class="js-animations-link" href="#pr-1" style="color: #8dded9;">Кот По</a></li>
+                        <li class="animations-online-header-menu-list-programs__item"><a class="js-animations-link" href="#pr-2" style="color: #dac8a2;">Путешествие зайки</a></li>
+                        <li class="animations-online-header-menu-list-programs__item"><a class="js-animations-link" href="#pr-3" style="color: #de78a9;">Fairy tale</a></li>
+                        <li class="animations-online-header-menu-list-programs__item"><a class="js-animations-link" href="#pr-4" style="color: #cfcf67;">Monstro lab</a></li>
+                        <li class="animations-online-header-menu-list-programs__item"><a class="js-animations-link" href="#pr-5" style="color: #d6d6d6;">Мафия</a></li>
+                    </ul>
+                </li>
+                <li class="animations-online-header-menu-list__item"><a class="js-animations-link" href="#map">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="animations-online-header-triangle">
+
+        </div>
+    </div>
+</header>
+
+        <main>
+            <section class="animations-online">
+    <div id="rules" class="animations-online-rules">
+        <div class="animations-online-rules-content">
+            <div class="animations-online-rules-content-column">
+                <div class="animations-online-rules__title">
+                    Общие правила:
+                    <div class="animations-online-rules__decor1">
+                        <img src="assets/img/animations-online/branch.png" alt="decor-1">
+                    </div>
+                    <div class="animations-online-rules__decor2">
+                        <img src="assets/img/animations-online/branch.png" alt="decor-1">
+                    </div>
+                </div>
+                <ul class="animations-online-rules-list">
+                    <li class="animations-online-rules-list__item">
+                        <div class="animations-online-rules-list__number">
+                            1
+                        </div>
+                        <div class="animations-online-rules-list__text">
+                            Стоимость программы указана из расчета на 5 человек и не меняется при уменьшении количества участников.
+                        </div>
+                    </li>
+                    <li class="animations-online-rules-list__item">
+                        <div class="animations-online-rules-list__number">
+                            2
+                        </div>
+                        <div class="animations-online-rules-list__text">
+                            Каждый последующий участник оплачивается +1000 руб.
+                        </div>
+                    </li>
+                    <li class="animations-online-rules-list__item">
+                        <div class="animations-online-rules-list__number">
+                            3
+                        </div>
+                        <div class="animations-online-rules-list__text">
+                            Если у вас на празднике до 5 детей, с вами будет 1 ведущий, если детей будет 6 и более - 2 ведущих.
+                        </div>
+                    </li>
+                    <li class="animations-online-rules-list__item">
+                        <div class="animations-online-rules-list__number">
+                            4
+                        </div>
+                        <div class="animations-online-rules-list__text">
+                            Ведение программы англоговорящим ведущим +2500 руб.
+                        </div>
+                    </li>
+                    <li class="animations-online-rules-list__item">
+                        <div class="animations-online-rules-list__number">
+                            5
+                        </div>
+                        <div class="animations-online-rules-list__text">
+                            Онлайн анимация проводится на платформе Zoom. <br/>
+                            У всех должна быть скачана программа. <br/>
+                            Обязательно предупредите всех участников, <br/>
+                            что удобнее и интереснее заниматься с ПК.
+                        </div>
+                    </li>
+                </ul>
+                <div class="animations-online-rules-icons">
+                    <div class="animations-online-rules-icons__item">
+                        <img src="assets/img/animations-online/icon-time.png" alt="icon">
+                        <span>Продолжительность программы</span>
+                    </div>
+                    <div class="animations-online-rules-icons__item">
+                        <img src="assets/img/animations-online/icon-coffee.png" alt="icon">
+                        <span>Спокойная </br> программа</span>
+                    </div>
+                    <div class="animations-online-rules-icons__item">
+                        <img src="assets/img/animations-online/icon-celebration.png" alt="icon">
+                        <span>Активная </br> программа</span>
+                    </div>
+                    <div class="animations-online-rules-icons__item">
+                        <img src="assets/img/animations-online/icon-baby.png" alt="icon">
+                        <span>Рекомендуемый возраст</span>
+                    </div>
+                    <div class="animations-online-rules-icons__item">
+                        <img src="assets/img/animations-online/icon-girl.png" alt="icon">
+                        <span>Программа для девочек</span>
+                    </div>
+                    <div class="animations-online-rules-icons__item">
+                        <img src="assets/img/animations-online/icon-boy.png" alt="icon">
+                        <span>Программа для мальчиков</span>
+                    </div>
+                    <div class="animations-online-rules-icons__item">
+                        <img src="assets/img/animations-online/icon-children.png" alt="icon">
+                        <span>Программа для девочек и мальчиков</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="animations-online-programs">
+        <div id="pr-1" class="animations-online-programs-item">
+            <div class="animations-online-rules-content">
+                <div class="animations-online-rules-content-column">
+                    <div class="animations-online-programs-item-title">
+                        <div class="animations-online-programs-item-title__text">
+                            &laquo;Кот&nbsp;По&raquo;
+                        </div>
+                        <div class="animations-online-programs-item-title__price">
+                            <img src="assets/img/animations-online/price-back-red.png" alt="icon">
+                            <div class="mod-price">
+                                <span class="mod-bold">4 000</span>
+                                <span>руб.</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="animations-online-programs-item-description">
+                        Познакомятся с котиком По. Он немного моряк, 
+                        немного рыбак, немного выдумщик,
+                        но по большей части романтик и мечтатель.
+                        Самая большая мечта котика – поймать Золотую рыбку! 
+                        Ведь настоящая Золотая рыбка может исполнить любые желания, 
+                        а если ребята помогут котику поймать рыбку,
+                        то тоже смогут загадать заветные желания
+                    </div>
+                    <div class="animations-online-programs-item-row">
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-baby.png" alt="icon">
+                            <span>3-5 лет</span>
+                        </div>
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-time.png" alt="icon">
+                            <span class="mod-green">30-40 мин.</span>
+                        </div>
+                    </div>
+                    <div class="animations-online-programs-item-row">
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-children.png" alt="icon">
+                            <span>Программа для девочек и мальчиков</span>
+                        </div>
+                    </div>
+                    <div class="animations-online-programs-item-submit">
+                        <button class="animations-online-programs-item__btn js-animation-to-cart">
+                            Оформить
+                        </button>
+                        <div class="animations-online-programs-item__extra">
+                            Программа для групп <br/> от 1 до 5 детей
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="pr-2" class="animations-online-programs-item" style="background-image: url(assets/img/animations-online/program-2.jpg);">
+            <div class="animations-online-rules-content">
+                <div class="animations-online-rules-content-column">
+                    <div class="animations-online-programs-item-title">
+                        <div class="animations-online-programs-item-title__text mod-green">
+                            &laquo;ПУТЕШЕСТВИЕ ЗАЙКИ&raquo;
+                        </div>
+                        <div class="animations-online-programs-item-title__price">
+                            <img src="assets/img/animations-online/price-back-green.png" alt="icon">
+                            <div class="mod-price">
+                                <span class="mod-bold">4 000</span>
+                                <span>руб.</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="animations-online-programs-item-description">
+                        Познакомимся с новым другом –
+                        Плюшевым длинноухим Зайкой и его друзьями! 
+                        Отправятся с ним в самое настоящее путешествие 
+                        по всем временам года. Для перехода в другое время
+                        года нужно будет отгадать загадки, найти
+                        зайчика и выполнить много интересных заданий! 
+                    </div>
+                    <div class="animations-online-programs-item-row">
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-baby.png" alt="icon">
+                            <span>3-5 лет</span>
+                        </div>
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-time.png" alt="icon">
+                            <span class="mod-green">30-40 мин.</span>
+                        </div>
+                    </div>
+                    <div class="animations-online-programs-item-row">
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-children.png" alt="icon">
+                            <span>Программа для девочек и мальчиков</span>
+                        </div>
+                    </div>
+                    <div class="animations-online-programs-item-row">
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-celebration.png" alt="icon">
+                            <span>Активная программа</span>
+                        </div>
+                    </div>
+                    <div class="animations-online-programs-item-submit">
+                        <button class="animations-online-programs-item__btn js-animation-to-cart mod-green">
+                            Оформить
+                        </button>
+                        <div class="animations-online-programs-item__extra">
+                            Программа для групп <br/> от 1 до 5 детей
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="pr-3" class="animations-online-programs-item" style="background-image: url(assets/img/animations-online/program-3.jpg);">
+            <div class="animations-online-rules-content">
+                <div class="animations-online-rules-content-column">
+                    <div class="animations-online-programs-item-title">
+                        <div class="animations-online-programs-item-title__text">
+                            &laquo;FAIRY TAIL&raquo;
+                        </div>
+                        <div class="animations-online-programs-item-title__price">
+                            <img src="assets/img/animations-online/price-back-red.png" alt="icon">
+                            <div class="mod-price">
+                                <span class="mod-bold">4 000</span>
+                                <span>руб.</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="animations-online-programs-item-description">
+                        У настоящей принцессы бальное платье, идеальная прическа 
+                        и хорошие манеры. Вместе научимся королевским манерам,
+                        соберем принцессу, подберем музыку и устроим настоящий 
+                        современный бал!
+                    </div>
+                    <div class="animations-online-programs-item-row">
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-baby.png" alt="icon">
+                            <span>4-6 лет</span>
+                        </div>
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-time.png" alt="icon">
+                            <span class="mod-green">30-40 мин.</span>
+                        </div>
+                    </div>
+                    <div class="animations-online-programs-item-row">
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-girl.png" alt="icon">
+                            <span>Программа для девочек</span>
+                        </div>
+                    </div>
+                    <div class="animations-online-programs-item-row">
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-celebration.png" alt="icon">
+                            <span>Активная программа</span>
+                        </div>
+                    </div>
+                    <div class="animations-online-programs-item-submit">
+                        <button class="animations-online-programs-item__btn js-animation-to-cart">
+                            Оформить
+                        </button>
+                        <div class="animations-online-programs-item__extra">
+                            Программа для групп <br/> от 1 до 5 детей
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="pr-4" class="animations-online-programs-item" style="background-image: url(assets/img/animations-online/program-4.jpg);">
+            <div class="animations-online-rules-content">
+                <div class="animations-online-rules-content-column">
+                    <div class="animations-online-programs-item-title">
+                        <div class="animations-online-programs-item-title__text mod-green">
+                            &laquo;MONSTRO LAB&raquo;
+                        </div>
+                        <div class="animations-online-programs-item-title__price">
+                            <img src="assets/img/animations-online/price-back-green.png" alt="icon">
+                            <div class="mod-price">
+                                <span class="mod-bold">4 000</span>
+                                <span>руб.</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="animations-online-programs-item-description">
+                        Для настоящих каникул точно нужна подготовка! 
+                        Вместе с Монстриком МО будем изучать оценки, громко кричать 
+                        и радоваться пятеркам, а двойкам «покажем языки»! 
+                        Соберем лучшую монстрячую компанию для каникул 
+                        и наконец начнем отдыхать по-настоящему 
+                        – под веселую музыку, которую подберем сами!
+                    </div>
+                    <div class="animations-online-programs-item-row">
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-baby.png" alt="icon">
+                            <span>5-8 лет</span>
+                        </div>
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-time.png" alt="icon">
+                            <span class="mod-green">30-40 мин.</span>
+                        </div>
+                    </div>
+                    <div class="animations-online-programs-item-row">
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-children.png" alt="icon">
+                            <span>Программа для девочек и мальчиков</span>
+                        </div>
+                    </div>
+                    <div class="animations-online-programs-item-row">
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-celebration.png" alt="icon">
+                            <span>Активная программа</span>
+                        </div>
+                    </div>
+                    <div class="animations-online-programs-item-submit">
+                        <button class="animations-online-programs-item__btn js-animation-to-cart mod-green">
+                            Оформить
+                        </button>
+                        <div class="animations-online-programs-item__extra">
+                            Программа для групп <br/> от 1 до 5 детей
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="pr-5" class="animations-online-programs-item" style="background-image: url(assets/img/animations-online/program-5.jpg);">
+            <div class="animations-online-rules-content">
+                <div class="animations-online-rules-content-column">
+                    <div class="animations-online-programs-item-title">
+                        <div class="animations-online-programs-item-title__text">
+                            &laquo;МАФИЯ&raquo;
+                        </div>
+                        <div class="animations-online-programs-item-title__price">
+                            <img src="assets/img/animations-online/price-back-red.png" alt="icon">
+                            <div class="mod-price">
+                                <span class="mod-bold">4 000</span>
+                                <span>руб.</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="animations-online-programs-item-description">
+                        Загадка о пропаже кейса с миллионом долларов и
+                        нераскрытыми убийствами в формате вечеринки. 
+                        Интригующий сюжет, жесткий юмор и неожиданная разгадка. 
+                        Настоящая игра в «Мафию»! 
+                        Программа подходит, как для детей, так и для
+                        взрослых компаний!
+                    </div>
+                    <div class="animations-online-programs-item-row">
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-baby.png" alt="icon">
+                            <span>9+</span>
+                        </div>
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-time.png" alt="icon">
+                            <span class="mod-green">60 мин.</span>
+                        </div>
+                    </div>
+                    <div class="animations-online-programs-item-row">
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-children.png" alt="icon">
+                            <span>Программа для девочек и мальчиков</span>
+                        </div>
+                    </div>
+                    <div class="animations-online-programs-item-row">
+                        <div class="animations-online-programs-item-icon">
+                            <img src="assets/img/animations-online/icon-coffee.png" alt="icon">
+                            <span class="mod-green">Спокойная программа</span>
+                        </div>
+                    </div>
+                    <div class="animations-online-programs-item-submit">
+                        <button class="animations-online-programs-item__btn js-animation-to-cart">
+                            Оформить
+                        </button>
+                        <div class="animations-online-programs-item__extra">
+                            Для групп от 6 до 12 человек. <br/>
+                            Каждый последующий участник  <br/>
+                            оплачивается +1000 руб
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="animations-online-bottom">
+    <div id="map" class="animations-online-map">
+        <div class="decor-map-1">
+            <img src="assets/img/animations-online/decor-1.png" alt="decor map">
+        </div>
+        <div class="decor-map-2">
+            <img src="assets/img/animations-online/decor-2.png" alt="decor map">
+        </div>
+        <div class="decor-map-3">
+            <img src="assets/img/animations-online/decor-3.png" alt="decor map">
+        </div>
+        <div class="decor-map-4">
+            <img src="assets/img/animations-online/decor-4.png" alt="decor map">
+        </div>
+        <div class="decor-map-5">
+            <img src="assets/img/animations-online/decor-5.png" alt="decor map">
+        </div>
+        <div class="decor-map-6">
+            <img src="assets/img/animations-online/decor-6.png" alt="decor map">
+        </div>
+        <div class="animations-online-map__title">
+            ЗАКАЖИ ДОСТАВКУ ЕДЫ. </br>
+            ВКУСНО, КАК В АНДЕРСОН, ТОЛЬКО ДОМА
+        </div>
+        <div class="animations-online-map-point-1">
+            <img src="assets/img/animations-online/map-item-1.png" alt="Ул. Маршала Бирюзова д. 32 ТРЦ «Пятая авеню»">
+            <span>
+                Ул. Маршала Бирюзова д. 32 ТРЦ </br>
+                «Пятая авеню»
+            </span>
+        </div>
+        <div class="animations-online-map-point-2">
+            <img src="assets/img/animations-online/map-item-2.png" alt="Ул. Маршала Бирюзова д. 32 ТРЦ «Пятая авеню»">
+            <span>
+                ул. Стартовая, <br/>
+                9 к. 2
+            </span>
+        </div>
+        <div class="animations-online-map-point-3">
+            <img src="assets/img/animations-online/map-item-3.png" alt="Ул. Маршала Бирюзова д. 32 ТРЦ «Пятая авеню»">
+            <span>
+                Ул. Островитянова д. 5
+            </span>
+        </div>
+        <div class="animations-online-map-point-4">
+            <img src="assets/img/animations-online/map-item-4.png" alt="Ул. Маршала Бирюзова д. 32 ТРЦ «Пятая авеню»">
+            <span>
+                ул.Верхняя Красносельская д. 7/2
+            </span>
+        </div>
+
+    </div>
+    <div class="animations-online-form">
+        <div class="holiday-menu">
+            <div class="holiday-hall-sentence">
+                <div class="decor-form-1">
+                    <img src="assets/img/animations-online/decor-branch.png" alt="">
+                </div>
+                <div class="decor-form-2">
+                    <img src="assets/img/animations-online/decor-grass.png" alt="">
+                </div>
+                <div class="decor-form-3">
+                    <img src="assets/img/animations-online/decor-cake.png" alt="">
+                </div>
+                <div class="decor-form-4">
+                    <img src="assets/img/animations-online/decor-stars.png" alt="">
+                </div>
+                <div class="holiday-hall-sentence__body">
+                    <div class="holiday-hall-sentence__title">Поможем организовать любой праздник</div>
+                    <form action="" method="POST" id="celebration-order" class="holiday-hall-sentence__form">
+                        <div class="holiday-hall-sentence__grid">
+                            <div class="holiday-hall-sentence__col">
+                                <div class="popup-form__item">
+                                    <label class="c-label" for="holiday-hall-sentence__name">Представьтесь, пожалуйста</label>
+                                    <input class="c-input" type="text" placeholder="Ваше ФИО" name="holiday-hall-sentence__name" id="holiday-hall-sentence__name">
+                                </div>
+                            </div>
+                            <div class="holiday-hall-sentence__col">
+                                <label class="c-label" for="holiday-hall-sentence__phone">Телефон</label>
+                                <input class="c-input" type="text" placeholder="Телефон" name="holiday-hall-sentence__phone" id="holiday-hall-sentence__phone">
+                            </div>
+                            <div class="holiday-hall-sentence__col">
+                                <label class="c-label" for="holiday-hall-sentence__email">Email</label>
+                                <input class="c-input" type="text" placeholder="Email" name="holiday-hall-sentence__email" id="holiday-hall-sentence__email">
+                            </div>
+                        </div>
+                        <div class="c-personal-data">
+                            <div class="c-personal-data__item">
+                                <input type="checkbox" name="holiday-hall-regulations" id="holiday-hall-regulations" checked="">
+                                <label class="c-checkbox" for="holiday-hall-regulations">Я ознакомлен с
+                                    <a href="#">правилами обработки
+                                    </a> моих персональных данных.</label>
+                            </div>
+                        </div>
+                        <button class="holiday-hall-sentence__btn">Отправить</button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+            
+            <div class="animations-online-flying-form hidden">
+    <div class="holiday-menu">
+        <div class="holiday-hall-sentence">
+            <div class="holiday-hall-sentence__body">
+                <div class="decor-form-1">
+                    <img src="assets/img/animations-online/decor-branch.png" alt="">
+                </div>
+                <div class="decor-form-2">
+                    <img src="assets/img/animations-online/decor-grass.png" alt="">
+                </div>
+                <form action="" method="POST" id="fly-celebration-order" class="holiday-hall-sentence__form">
+                    <div class="holiday-hall-sentence__grid">
+                        <div class="holiday-hall-sentence__title">Поможем организовать любой праздник</div>
+                        <div class="holiday-hall-sentence__col">
+                            <div class="popup-form__item">
+                                <input class="c-input" type="text" placeholder="Ваше ФИО" name="fly-holiday-hall-sentence__name" id="fly-holiday-hall-sentence__name">
+                            </div>
+                        </div>
+                        <div class="holiday-hall-sentence__col">
+                            <input class="c-input" type="text" placeholder="Телефон" name="fly-holiday-hall-sentence__phone" id="fly-holiday-hall-sentence__phone">
+                        </div>
+                        <div class="holiday-hall-sentence__col">
+                            <input class="c-input" type="text" placeholder="Email" name="fly-holiday-hall-sentence__email" id="fly-holiday-hall-sentence__email">
+                        </div>
+                        <div class="holiday-hall-sentence__col">
+                            <button class="holiday-hall-sentence__btn">Отправить</button>
+                        </div>
+                    </div>
+                    <div class="c-personal-data">
+                        <div class="c-personal-data__item">
+                            <input type="checkbox" name="fly-holiday-hall-regulations" id="fly-holiday-hall-regulations" checked="">
+                            <label class="c-checkbox" for="fly-holiday-hall-regulations">Я ознакомлен с
+                                <a href="#">правилами обработки
+                                </a> моих персональных данных.</label>
+                        </div>
+                    </div>
+                    
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+        </main>
+    </div>
+    <footer class="footer">
+        <section class="c-layout">
+            <div class="footer-layout">
+                <div class="footer-col__left">
+                    <div class="footer-col__left-item">
+                        <div class="footer-social">
+                            <a class="footer-social__item" href="https://vk.com/cafeanderson" target="_blank">
+                                <svg class="c-symbol symbol-vk">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/include/sprites/all.svg#symbol-vk"></use>
+                                </svg>
+                            </a>
+                            <a class="footer-social__item" href="https://www.facebook.com/anderson.moscow/" target="_blank">
+                                <svg class="c-symbol symbol-fb">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/include/sprites/all.svg#symbol-fb"></use>
+                                </svg>
+                            </a>
+                            <a class="footer-social__item" href="https://www.instagram.com/cafe_anderson/" target="_blank">
+                                <svg class="c-symbol symbol-o">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/include/sprites/all.svg#symbol-o"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <a href="/sitemap/" class="footer-site-map">
+                            <svg class="c-icon icon-site-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.27 82.51">
+                                <path d="M83.09,58.48c.2-.3-1.22-.8-1.22-1.2-.2-6.3-.5-12.7-2.1-18.8a1.62,1.62,0,0,0-3.1.1c-4.9-.7-10-.5-14.9-.5l-13.5-.3c-.2-3.1-.4-6.1-.8-9.2a59.09,59.09,0,0,0,11.2-.9c4.3-.8,4-4.2,4-7.9,0-5.3.1-10.5.2-15.8.1-3.2-3.8-4-5.7-2.3a96.84,96.84,0,0,0-10.7-.2c-2.5,0-5,0-7.5.1-2,.1-4.3-.1-6.1.8-3.9,1.7-2.7,6.9-2.5,10.3.1,2.5.2,5.1.4,7.6.1,1.8-.1,4,1,5.6,2.2,3.2,7.5,2.6,10.9,2.7a12.1,12.1,0,0,1,1.9.1,55,55,0,0,0-.4,9.1c-10.1-.3-20.2-.9-30.3-1.7-2.3-.3-3.2,2-2.6,3.8a59.21,59.21,0,0,0,.2,6.2c0,3.9-.4,7.8-.5,11.7v.4c-4.5.8-10,4.5-10.7,9.7-1.2,6.1,1.4,15,11,15.1,5.9,1.4,11.4-3.6,12.5-9.2.5.1,2.2-.1,2.3-.7,1.8-6.7-2.8-12.6-9.1-14.6.1-.3-.9-.6-.9-.9-.1-4-.7-8.1-1.2-12.2-.1-1-.1-2.3-.3-3.6,9.7.7,19.4,1.2,29.2,1.2a119.75,119.75,0,0,0,.4,14.7c-5.5-.1-11.6,4-12.4,9.9-.9,6.3,2,14.76,11.2,15.3,5.9,1.4,11.4-3.6,12.5-9.2.5.1,2.2-.1,2.3-.7,1.6-6-1.8-11.3-7.1-13.8.1-.2-.9-.5-.9-.8,0-5.1-.9-10.3-1.4-15.4,4.4,0,8.8-.2,13.1-.4,4.9-.3,10.1-.4,14.9-1.5a125.13,125.13,0,0,1-.2,16.2V58c-4.7.6-10.2,4.5-10.9,9.8-.9,6.3,1.65,14.81,11.2,15.3,5.9,1.4,11.4-3.6,12.5-9.2.5.1,2.72-.1,2.82-.7C93.79,66.28,89.29,60.48,83.09,58.48ZM15.77,63c4,1.4,6.8,3.7,7.2,7.7a2,2,0,0,0-2.8,1.7c-.2,4.5-4.6,6.2-8.8,4.9C7,75.88,5.3,74.32,6,69.92,6.9,64.72,10.67,61.28,15.77,63Zm25.4-40.6a15.83,15.83,0,0,0-3.7-.3c-.2-.1-.4-.1-.6-.2v-.5c.5-2.4-.2-5.8-.3-8.2,0-1.2-.1-2.3-.1-3.5a9.15,9.15,0,0,0-.1-1.7c.1,0,.2-.1.4-.1,1.2.3,3.3-.4,4.6-.6s2.5-.3,3.7-.4c3.5-.3,7.4-.2,11.1-.6.1,2.7.1,5.4.2,8.1,0,1.6,0,3.2.1,4.9v2.8a48.65,48.65,0,0,1-6.5.5C47,22.58,44.07,22.58,41.17,22.38Zm13.5,48.4a2,2,0,0,0-2.8,1.7c-.2,4.5-4.6,6.2-8.8,4.9-4.4-1.4-6.4-4-5.7-8.4.9-5.2,5.62-7.84,10.72-6.14C52.19,64.13,54.27,66.68,54.67,70.78Zm30.9,1.7c-.2,4.5-4.6,6.2-8.8,4.9-4.4-1.4-6.4-4-5.7-8.4.9-5.2,4.9-7.6,10-5.9,4,1.4,6.8,3.7,7.2,7.7A1.92,1.92,0,0,0,85.57,72.48Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer-col__left-item">
+                        <div class="subscribe-form" id="subscribe-form">
+                            <form action="" class="subscribe-form" method="POST">
+                                <div class="footer-search">
+                                    <input class="footer-search__input" type="text" placeholder="Ваш email" name="EMAIL" value="">
+                                    <button class="footer-search__btn subscribe__btn" data-action="add" data-id="">Подписаться</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--    <div class="footer-info tooltip" data-tooltip-content=".tooltip_info">
+                                    <svg class="c-icon icon-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.97 13.81">
+                                        <path d="M12.89,1.09C11.89.17,7.75,0,5.38.13c-1.62.08-3.67.31-4.28,1-1.45,1.6-1.44,10.3,0,11.78.89.91,4.21,1,5.6,1H7c2.19,0,5-.29,5.89-1s1.06-3.42,1.1-5c.05-2-.1-6-1.08-6.86m.29,6.83c-.07,2.62-.47,4.11-.81,4.39s-2.49.77-5.39.8c-3.09,0-4.92-.38-5.31-.77-1-1.07-1.28-9.26,0-10.69C1.94,1.36,3.2,1,5.42.92c3-.14,6.35.22,6.94.76s.92,3,.83,6.25"/>
+                                        <path d="M8.35,10.84H5.7v-.52h.77V5.87H5.7V5.35H7.57v5h.77ZM6.25,3.66a.59.59,0,0,1,.21-.48A.83.83,0,0,1,7,3a.82.82,0,0,1,.56.18.61.61,0,0,1,.2.48.61.61,0,0,1-.2.48A.82.82,0,0,1,7,4.32a.83.83,0,0,1-.55-.18A.59.59,0,0,1,6.25,3.66Z"/>
+                                    </svg>
+                                    <div class="tooltip_templates">
+                                        <span class="tooltip_info">
+                                            <span>Подписка на </span>
+                                        </span>
+                                    </div>
+                                </div>-->
+                    </div>
+                </div>
+                <div class="footer-col__right">
+                    <div class="footer-col__right-item">
+                        <div class="footer-reviews">
+                            <a href="/about/reviews/" class="footer-reviews__text">
+                                <span>Книга отзывов</span>
+                            </a>
+                            <div style="display:none;background-image: url('local/templates/anderson_new/img/chat-bubbles-green.svg');"></div>
+                            <div class="footer-reviews__icons">
+                                <div class="footer-reviews__icon js-positive" title="Похвалить">
+                                    <svg class="c-symbol symbol-positive">
+                                        <use xlink:href="/include/sprites/all.svg#symbol-positive"></use>
+                                    </svg>
+                                </div>
+                                <div class="footer-reviews__icon js-negative" title="Пожаловаться">
+                                    <svg class="c-symbol symbol-negative">
+                                        <use xlink:href="/include/sprites/all.svg#symbol-negative"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-col__right-item">
+                        <div class="footer-partners">
+                            <div class="footer-partners__item logo-visa"></div>
+                            <div class="footer-partners__item logo-mir"></div>
+                            <a href="https://uniteller.ru/" target="_blank" rel="nofolow">
+                                <div class="footer-partners__item logo-uniteller"></div>
+                            </a></div><a href="https://uniteller.ru/" target="_blank" rel="nofolow">
+                            </a><div class="footer-lang"><a href="https://uniteller.ru/" target="_blank" rel="nofolow">
+                                </a><a class="footer-lang__item is-active" href="/msk/">
+                                    <svg class="c-icon icon-ru" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.5 13.35">
+                                        <path d="M12.69,1.29c-1-.88-5-1-7.26-.93-1.56.07-3.55.3-4.14,1C-.1,2.86-.1,11.26,1.3,12.69c.86.88,4.07,1,5.41,1H7c2.12,0,4.88-.28,5.69-.95s1-3.3,1.06-4.81c.05-1.91-.1-5.76-1-6.63M13,7.89c-.07,2.53-.46,4-.78,4.24s-2.41.75-5.21.77c-3,0-4.76-.36-5.13-.75-1-1-1.24-9,0-10.33.25-.28,1.46-.6,3.61-.7,2.94-.14,6.13.21,6.71.73s.89,2.94.8,6"></path>
+                                        <path d="M3.85,8.44H4.4v.35H2.57V8.44h.57V4.74H2.57V4.39h.64l.62,0,.66,0a2.81,2.81,0,0,1,.65.07,1.55,1.55,0,0,1,.53.22A1.11,1.11,0,0,1,6,5a1.16,1.16,0,0,1,.13.56,1.13,1.13,0,0,1-.28.77,1.52,1.52,0,0,1-.73.45L6.38,8.44h.39v.35h-1L4.49,6.89H3.85Zm.5-1.87a1,1,0,0,0,.76-.27,1,1,0,0,0,.27-.72.8.8,0,0,0-.29-.69,1.26,1.26,0,0,0-.77-.22H4l-.2,0V6.58Z"></path>
+                                        <path d="M10.86,8a1.26,1.26,0,0,1-.34.48,1.38,1.38,0,0,1-.53.29,2.35,2.35,0,0,1-.69.09A2.22,2.22,0,0,1,7.95,8.5a1.29,1.29,0,0,1-.47-1.1V4.74H6.91V4.39h1.8v.35H8.18V7.26a1.61,1.61,0,0,0,.08.55.87.87,0,0,0,.24.36,1,1,0,0,0,.38.2,2.08,2.08,0,0,0,.52.06,1.25,1.25,0,0,0,.87-.28,1.15,1.15,0,0,0,.31-.91V4.74h-.52V4.39h1.5v.35H11V7.29A1.83,1.83,0,0,1,10.86,8Z"></path>
+                                    </svg>
+                                </a>
+                                <a class="footer-lang__item " href="/eng/">
+                                    <svg class="c-icon icon-en" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.5 13.35">
+                                        <path d="M12.69,1.29c-1-.88-5-1-7.26-.93-1.56.07-3.55.3-4.14,1C-.1,2.86-.1,11.26,1.3,12.69c.86.88,4.07,1,5.41,1H7c2.12,0,4.88-.28,5.69-.95s1-3.3,1.06-4.81c.05-1.91-.1-5.76-1-6.63M13,7.89c-.07,2.53-.46,4-.78,4.24s-2.41.75-5.21.77c-3,0-4.76-.36-5.13-.75-1-1-1.24-9,0-10.33.25-.28,1.46-.6,3.61-.7,2.94-.14,6.13.21,6.71.73s.89,2.94.8,6"></path>
+                                        <path d="M5.92,4.39v1h-.4V4.88l-.13-.14H3.85V6.37H4.92L5,6.28V6h.4V7.09H5V6.82l-.09-.1H3.85V8.44H5.5l.13-.13V7.7H6v1.1H2.57V8.44h.57V4.74H2.57V4.39Z"></path>
+                                        <path d="M9.85,4.39H11.4v.35h-.57V8.87h-.41L7.85,5.41l-.28-.48h0l.06.49v3h.57v.35H6.63V8.44h.57V4.74H6.63V4.39H7.89l2.2,3,.33.54h0l0-.54V4.74H9.85Z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="developer">
+                    <a href="https://leeft.ru/" target="_blank">Разработка сайта Leeft</a>
+                </div>
+
+            </section>
+        </footer>
+
+        <div class="mfp-wrap popup-pie-one-click" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="mfp-content-bg"></div>
+            <div class="popup popup-cake-t2 popup-animations">
+                <div class="popup js-popup-mouseUp popup-cake-t2">
+                    <h3 class="popup-title">
+                        Оформить
+                        <span class="popup-close"></span>
+                    </h3>
+                    <form action="#" class="popup-form cake-order" id="pie-order-form">
+                        <div class="popup-body popup-cake-oneclick-body">
+                            <div class="popup-programs">
+                            
+                                <div class="popup-programs-item">
+                                    <div class="popup-programs-item-content">
+                                        <div class="popup-programs-item__title">
+                                            <span class="mod-name">&laquo;Кот&nbsp;По&raquo;</span>
+                                            <span class="mod-price">4 000 руб.</span>
+                                        </div>
+                                        <div class="popup-programs-item__description mod-blue">
+                                            3-5 лет, 30-40 мин., </br> Программа для девочек и мальчиков
+                                        </div>
+                                        <div class="popup-programs-item__extra">
+                                            Программа для групп от 1 до 5 детей. 
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="popup-programs-item__close">
+                                        <svg height="427pt" viewBox="-40 0 427 427.00131" width="427pt" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m232.398438 154.703125c-5.523438 0-10 4.476563-10 10v189c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-189c0-5.523437-4.476563-10-10-10zm0 0"/>
+                                            <path d="m114.398438 154.703125c-5.523438 0-10 4.476563-10 10v189c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-189c0-5.523437-4.476563-10-10-10zm0 0"/>
+                                            <path d="m28.398438 127.121094v246.378906c0 14.5625 5.339843 28.238281 14.667968 38.050781 9.285156 9.839844 22.207032 15.425781 35.730469 15.449219h189.203125c13.527344-.023438 26.449219-5.609375 35.730469-15.449219 9.328125-9.8125 14.667969-23.488281 14.667969-38.050781v-246.378906c18.542968-4.921875 30.558593-22.835938 28.078124-41.863282-2.484374-19.023437-18.691406-33.253906-37.878906-33.257812h-51.199218v-12.5c.058593-10.511719-4.097657-20.605469-11.539063-28.03125-7.441406-7.421875-17.550781-11.5546875-28.0625-11.46875h-88.796875c-10.511719-.0859375-20.621094 4.046875-28.0625 11.46875-7.441406 7.425781-11.597656 17.519531-11.539062 28.03125v12.5h-51.199219c-19.1875.003906-35.394531 14.234375-37.878907 33.257812-2.480468 19.027344 9.535157 36.941407 28.078126 41.863282zm239.601562 279.878906h-189.203125c-17.097656 0-30.398437-14.6875-30.398437-33.5v-245.5h250v245.5c0 18.8125-13.300782 33.5-30.398438 33.5zm-158.601562-367.5c-.066407-5.207031 1.980468-10.21875 5.675781-13.894531 3.691406-3.675781 8.714843-5.695313 13.925781-5.605469h88.796875c5.210937-.089844 10.234375 1.929688 13.925781 5.605469 3.695313 3.671875 5.742188 8.6875 5.675782 13.894531v12.5h-128zm-71.199219 32.5h270.398437c9.941406 0 18 8.058594 18 18s-8.058594 18-18 18h-270.398437c-9.941407 0-18-8.058594-18-18s8.058593-18 18-18zm0 0"/>
+                                            <path d="m173.398438 154.703125c-5.523438 0-10 4.476563-10 10v189c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-189c0-5.523437-4.476563-10-10-10zm0 0"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="popup-programs-item" style="background-image: url(assets/img/animations-online/popup-program-2.png);">
+                                    <div class="popup-programs-item-content">
+                                        <div class="popup-programs-item__title mod-green">
+                                            <span class="mod-name">&laquo;Путешествие зайки&raquo;</span>
+                                            <span class="mod-price">4 000 руб.</span>
+                                        </div>
+                                        <div class="popup-programs-item__description mod-brown">
+                                            3-5 лет, 30-40 мин., Программа для девочек и мальчиков, </br> Активная программа
+                                        </div>
+                                        <div class="popup-programs-item__extra">
+                                            Программа для групп от 1 до 5 детей. 
+                                        </div>
+                                    </div>
+                                    <div class="popup-programs-item__close">
+                                        <svg height="427pt" viewBox="-40 0 427 427.00131" width="427pt" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m232.398438 154.703125c-5.523438 0-10 4.476563-10 10v189c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-189c0-5.523437-4.476563-10-10-10zm0 0"/>
+                                            <path d="m114.398438 154.703125c-5.523438 0-10 4.476563-10 10v189c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-189c0-5.523437-4.476563-10-10-10zm0 0"/>
+                                            <path d="m28.398438 127.121094v246.378906c0 14.5625 5.339843 28.238281 14.667968 38.050781 9.285156 9.839844 22.207032 15.425781 35.730469 15.449219h189.203125c13.527344-.023438 26.449219-5.609375 35.730469-15.449219 9.328125-9.8125 14.667969-23.488281 14.667969-38.050781v-246.378906c18.542968-4.921875 30.558593-22.835938 28.078124-41.863282-2.484374-19.023437-18.691406-33.253906-37.878906-33.257812h-51.199218v-12.5c.058593-10.511719-4.097657-20.605469-11.539063-28.03125-7.441406-7.421875-17.550781-11.5546875-28.0625-11.46875h-88.796875c-10.511719-.0859375-20.621094 4.046875-28.0625 11.46875-7.441406 7.425781-11.597656 17.519531-11.539062 28.03125v12.5h-51.199219c-19.1875.003906-35.394531 14.234375-37.878907 33.257812-2.480468 19.027344 9.535157 36.941407 28.078126 41.863282zm239.601562 279.878906h-189.203125c-17.097656 0-30.398437-14.6875-30.398437-33.5v-245.5h250v245.5c0 18.8125-13.300782 33.5-30.398438 33.5zm-158.601562-367.5c-.066407-5.207031 1.980468-10.21875 5.675781-13.894531 3.691406-3.675781 8.714843-5.695313 13.925781-5.605469h88.796875c5.210937-.089844 10.234375 1.929688 13.925781 5.605469 3.695313 3.671875 5.742188 8.6875 5.675782 13.894531v12.5h-128zm-71.199219 32.5h270.398437c9.941406 0 18 8.058594 18 18s-8.058594 18-18 18h-270.398437c-9.941407 0-18-8.058594-18-18s8.058593-18 18-18zm0 0"/>
+                                            <path d="m173.398438 154.703125c-5.523438 0-10 4.476563-10 10v189c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-189c0-5.523437-4.476563-10-10-10zm0 0"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="popup-programs-item" style="background-image: url(assets/img/animations-online/popup-program-3.png);">
+                                    <div class="popup-programs-item-content">
+                                        <div class="popup-programs-item__title">
+                                            <span class="mod-name">&laquo;Fairy tail&raquo;</span>
+                                            <span class="mod-price">4 000 руб.</span>
+                                        </div>
+                                        <div class="popup-programs-item__description">
+                                            4-6 лет, 30-40 мин., Программа для девочек, </br> Активная программа
+                                        </div>
+                                        <div class="popup-programs-item__extra">
+                                            Программа для групп от 1 до 5 детей. 
+                                        </div>
+                                    </div>
+                                    <div class="popup-programs-item__close">
+                                        <svg height="427pt" viewBox="-40 0 427 427.00131" width="427pt" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m232.398438 154.703125c-5.523438 0-10 4.476563-10 10v189c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-189c0-5.523437-4.476563-10-10-10zm0 0"/>
+                                            <path d="m114.398438 154.703125c-5.523438 0-10 4.476563-10 10v189c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-189c0-5.523437-4.476563-10-10-10zm0 0"/>
+                                            <path d="m28.398438 127.121094v246.378906c0 14.5625 5.339843 28.238281 14.667968 38.050781 9.285156 9.839844 22.207032 15.425781 35.730469 15.449219h189.203125c13.527344-.023438 26.449219-5.609375 35.730469-15.449219 9.328125-9.8125 14.667969-23.488281 14.667969-38.050781v-246.378906c18.542968-4.921875 30.558593-22.835938 28.078124-41.863282-2.484374-19.023437-18.691406-33.253906-37.878906-33.257812h-51.199218v-12.5c.058593-10.511719-4.097657-20.605469-11.539063-28.03125-7.441406-7.421875-17.550781-11.5546875-28.0625-11.46875h-88.796875c-10.511719-.0859375-20.621094 4.046875-28.0625 11.46875-7.441406 7.425781-11.597656 17.519531-11.539062 28.03125v12.5h-51.199219c-19.1875.003906-35.394531 14.234375-37.878907 33.257812-2.480468 19.027344 9.535157 36.941407 28.078126 41.863282zm239.601562 279.878906h-189.203125c-17.097656 0-30.398437-14.6875-30.398437-33.5v-245.5h250v245.5c0 18.8125-13.300782 33.5-30.398438 33.5zm-158.601562-367.5c-.066407-5.207031 1.980468-10.21875 5.675781-13.894531 3.691406-3.675781 8.714843-5.695313 13.925781-5.605469h88.796875c5.210937-.089844 10.234375 1.929688 13.925781 5.605469 3.695313 3.671875 5.742188 8.6875 5.675782 13.894531v12.5h-128zm-71.199219 32.5h270.398437c9.941406 0 18 8.058594 18 18s-8.058594 18-18 18h-270.398437c-9.941407 0-18-8.058594-18-18s8.058593-18 18-18zm0 0"/>
+                                            <path d="m173.398438 154.703125c-5.523438 0-10 4.476563-10 10v189c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-189c0-5.523437-4.476563-10-10-10zm0 0"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="popup-programs-item" style="background-image: url(assets/img/animations-online/popup-program-4.png);">
+                                    <div class="popup-programs-item-content">
+                                        <div class="popup-programs-item__title mod-green">
+                                            <span class="mod-name">&laquo;Monstro Lab&raquo;</span>
+                                            <span class="mod-price">4 000 руб.</span>
+                                        </div>
+                                        <div class="popup-programs-item__description mod-brown">
+                                            5-8 лет, 30-40 мин., Программа для девочек и мальчиков, </br> Активная программа
+                                        </div>
+                                        <div class="popup-programs-item__extra">
+                                            Программа для групп от 1 до 5 детей. 
+                                        </div>
+                                    </div>
+                                    <div class="popup-programs-item__close">
+                                        <svg height="427pt" viewBox="-40 0 427 427.00131" width="427pt" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m232.398438 154.703125c-5.523438 0-10 4.476563-10 10v189c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-189c0-5.523437-4.476563-10-10-10zm0 0"/>
+                                            <path d="m114.398438 154.703125c-5.523438 0-10 4.476563-10 10v189c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-189c0-5.523437-4.476563-10-10-10zm0 0"/>
+                                            <path d="m28.398438 127.121094v246.378906c0 14.5625 5.339843 28.238281 14.667968 38.050781 9.285156 9.839844 22.207032 15.425781 35.730469 15.449219h189.203125c13.527344-.023438 26.449219-5.609375 35.730469-15.449219 9.328125-9.8125 14.667969-23.488281 14.667969-38.050781v-246.378906c18.542968-4.921875 30.558593-22.835938 28.078124-41.863282-2.484374-19.023437-18.691406-33.253906-37.878906-33.257812h-51.199218v-12.5c.058593-10.511719-4.097657-20.605469-11.539063-28.03125-7.441406-7.421875-17.550781-11.5546875-28.0625-11.46875h-88.796875c-10.511719-.0859375-20.621094 4.046875-28.0625 11.46875-7.441406 7.425781-11.597656 17.519531-11.539062 28.03125v12.5h-51.199219c-19.1875.003906-35.394531 14.234375-37.878907 33.257812-2.480468 19.027344 9.535157 36.941407 28.078126 41.863282zm239.601562 279.878906h-189.203125c-17.097656 0-30.398437-14.6875-30.398437-33.5v-245.5h250v245.5c0 18.8125-13.300782 33.5-30.398438 33.5zm-158.601562-367.5c-.066407-5.207031 1.980468-10.21875 5.675781-13.894531 3.691406-3.675781 8.714843-5.695313 13.925781-5.605469h88.796875c5.210937-.089844 10.234375 1.929688 13.925781 5.605469 3.695313 3.671875 5.742188 8.6875 5.675782 13.894531v12.5h-128zm-71.199219 32.5h270.398437c9.941406 0 18 8.058594 18 18s-8.058594 18-18 18h-270.398437c-9.941407 0-18-8.058594-18-18s8.058593-18 18-18zm0 0"/>
+                                            <path d="m173.398438 154.703125c-5.523438 0-10 4.476563-10 10v189c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-189c0-5.523437-4.476563-10-10-10zm0 0"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="popup-programs-item" style="background-image: url(assets/img/animations-online/popup-program-5.png);">
+                                    <div class="popup-programs-item-content">
+                                        <div class="popup-programs-item__title">
+                                            <span class="mod-name">&laquo;Мафия&raquo;</span>
+                                            <span class="mod-price">4 000 руб.</span>
+                                        </div>
+                                        <div class="popup-programs-item__description">
+                                            9+ лет, 60 мин., Программа для девочек и мальчиков, </br> Спокойная программа
+                                        </div>
+                                        <div class="popup-programs-item__extra">
+                                            Для групп от 6 до 12 человек. Каждый последующий участник оплачивается +1000 руб
+                                        </div>
+                                    </div>
+                                    <div class="popup-programs-item__close">
+                                        <svg height="427pt" viewBox="-40 0 427 427.00131" width="427pt" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="m232.398438 154.703125c-5.523438 0-10 4.476563-10 10v189c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-189c0-5.523437-4.476563-10-10-10zm0 0"/>
+                                            <path d="m114.398438 154.703125c-5.523438 0-10 4.476563-10 10v189c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-189c0-5.523437-4.476563-10-10-10zm0 0"/>
+                                            <path d="m28.398438 127.121094v246.378906c0 14.5625 5.339843 28.238281 14.667968 38.050781 9.285156 9.839844 22.207032 15.425781 35.730469 15.449219h189.203125c13.527344-.023438 26.449219-5.609375 35.730469-15.449219 9.328125-9.8125 14.667969-23.488281 14.667969-38.050781v-246.378906c18.542968-4.921875 30.558593-22.835938 28.078124-41.863282-2.484374-19.023437-18.691406-33.253906-37.878906-33.257812h-51.199218v-12.5c.058593-10.511719-4.097657-20.605469-11.539063-28.03125-7.441406-7.421875-17.550781-11.5546875-28.0625-11.46875h-88.796875c-10.511719-.0859375-20.621094 4.046875-28.0625 11.46875-7.441406 7.425781-11.597656 17.519531-11.539062 28.03125v12.5h-51.199219c-19.1875.003906-35.394531 14.234375-37.878907 33.257812-2.480468 19.027344 9.535157 36.941407 28.078126 41.863282zm239.601562 279.878906h-189.203125c-17.097656 0-30.398437-14.6875-30.398437-33.5v-245.5h250v245.5c0 18.8125-13.300782 33.5-30.398438 33.5zm-158.601562-367.5c-.066407-5.207031 1.980468-10.21875 5.675781-13.894531 3.691406-3.675781 8.714843-5.695313 13.925781-5.605469h88.796875c5.210937-.089844 10.234375 1.929688 13.925781 5.605469 3.695313 3.671875 5.742188 8.6875 5.675782 13.894531v12.5h-128zm-71.199219 32.5h270.398437c9.941406 0 18 8.058594 18 18s-8.058594 18-18 18h-270.398437c-9.941407 0-18-8.058594-18-18s8.058593-18 18-18zm0 0"/>
+                                            <path d="m173.398438 154.703125c-5.523438 0-10 4.476563-10 10v189c0 5.519531 4.476562 10 10 10 5.523437 0 10-4.480469 10-10v-189c0-5.523437-4.476563-10-10-10zm0 0"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="popup-programs-row">
+                                <div class="popup-form__item">
+                                    <label class="c-label" for="popup-programs-sentence__firstname">Имя:</label>
+                                    <input class="c-input" type="text" placeholder="Ваше имя" name="popup-programs-sentence__firstname" id="popup-programs-sentence__firstname">
+                                </div>
+                                <div class="popup-form__item">
+                                    <label class="c-label" for="popup-programs-sentence__secondname">Фамилия:</label>
+                                    <input class="c-input" type="text" placeholder="Ваша фамилия" name="popup-programs-sentence__secondname" id="popup-programs-sentence__secondname">
+                                </div>
+                            </div>
+                            <div class="popup-programs-row">
+                                <div class="popup-form__item">
+                                    <label class="c-label" for="popup-programs-sentence__phone">Телефон:</label>
+                                    <input class="c-input" type="text" placeholder="Телефон" name="popup-programs-sentence__phone" id="popup-programs-sentence__phone">
+                                </div>
+                                <div class="popup-form__item">
+                                    <label class="c-label" for="popup-programs-sentence__email">Email:</label>
+                                    <input class="c-input" type="text" placeholder="Email" name="popup-programs-sentence__email" id="popup-programs-sentence__email">
+                                </div>
+                            </div>
+                            <div class="popup-programs-row">
+                                <div class="popup-form__item">
+                                    <label class="c-label" for="popup-programs-sentence__comment">Комментарий:</label>
+                                    <textarea class="c-input" type="text" placeholder="Дополнить заказ" name="popup-programs-sentence__comment" id="popup-programs-sentence__comment"></textarea>
+                                </div>
+                            </div>
+                            <div class="popup-programs-row">
+                                <div class="popup-form__extra">
+                                    <input class="c-input" type="text" placeholder="" name="popup-programs-sentence__quentity" id="popup-programs-sentence__quentity">
+                                    <div class="popup-form__extra-info">
+                                        <p class="popup-form__extra-info-text">Только для программы "Мафия":</p>
+                                        <p class="popup-form__extra-info-subtext">Укажите количество участников, если их больше 12</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="popup-programs-footer">
+                            <div class="popup-programs-footer-price">
+                                Сумма к оплате: 26 000руб.
+                            </div>
+                            <a class="popup-programs-footer-button">
+                                Оплатить
+                            </a>
+                        </div>
+                    </form>
+                
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</div>
+        <div class="mfp-bg mfp-ready"></div>
+        
+        <script src="/local/templates/anderson_new/js/jquery.js"></script>
+        <script src="/local/templates/anderson_new/js/scripts/ion.rangeSlider.min.js?r=6efdbcf76d861277825880bb74fede59"></script>
+        <script src="/local/templates/anderson_new/js/scripts/slick.js?r=b5eb17de1358bee70307f0abfe3858d2"></script>
+        <script src="/local/templates/anderson_new/js/scripts/preloader.js?r=7e138ab412e0745b833f9fb2d239db82"></script>
+        <script src="/local/templates/anderson_new/js/scripts/mixitup.min.js?r=ef98cd2b457a249861506d41f9066d81"></script>
+        <script src="/local/templates/anderson_new/js/scripts/jquery.mask.js?r=157a4c16a41e311008658167da5971a4"></script>
+        <script src="/local/templates/anderson_new/js/scripts/jquery.mousewheel.js?r=456d5c5a28ee293605e1bd722edd2429"></script>
+        <script src="/local/templates/anderson_new/js/scripts/jquery.jscrollpane.min.js?r=d84a90c1f4e77f443b58a19366df88d8"></script>
+        <script src="/local/templates/anderson_new/js/scripts/tooltipster.bundle.js?r=47a6b580b11eccf2628046013e995142"></script>
+        <script src="/local/templates/anderson_new/js/scripts/simplebar.js?r=b004fc11169323f6816552e6b7eb0296"></script>
+        <script src="/local/templates/anderson_new/js/scripts/owl.carousel.js?r=909d47bd6bd2ebe46aef6c3efb7ee76a"></script>
+        <script src="/local/templates/anderson_new/js/scripts/datepicker.min.js?r=e4b6f43916f3e128d6abf539337a836c"></script>
+        <script src="/local/templates/anderson_new/js/scripts/jquery.sumoselect.js?r=f247f6afe42f112ead1114952073d7fa"></script>
+        <script src="/local/templates/anderson_new/js/scripts/fotorama.js?r=c0f742193173603907a54e05ccadd885"></script>
+        <script src="/local/templates/anderson_new/js/scripts/tooltip.js?r=777f9f77c9c4deba0f8ce4d67c390b71"></script>
+        <script src="/local/templates/anderson_new/js/scripts/datepicker-anderson.js?r=7b61d30af891356acb52318fcb941d48"></script>
+        <script src="/local/templates/anderson_new/js/scripts/main.js?r=4ac5645e7fe60d7231a110f84371e144"></script>
+        <script src="/local/templates/anderson_new/js/libs/jquery.lazy-master/jquery.lazy.min.js"></script>
+        <script src="/local/templates/anderson_new/js/cookie.js"></script>
+        <script src="/local/templates/anderson_new/js/functions.js?r=600dce05560a38ff8a332d774950f835"></script>
+        <script src="/local/templates/anderson_new/js/main_func.js?r=9a16910d0bfd7039738c395fa26551d5"></script>
+        <script src="/local/templates/anderson_new/js/scripts.js?r=692aeefaa0741b9f1661abd542c38d59"></script>
+        <script src="/local/templates/anderson_new/js/map.js?r=9ba5c93d9725e127c44515c2e8b458c7"></script>
+        <script src="/local/templates/anderson_new/js/libs/fancybox/jquery.fancybox.min.js"></script>
+        <script src="/local/templates/anderson_new/js/libs/jquery.fias.min.js"></script>
+        <script src="/local/templates/anderson_new/js/libs/jquery.inputmask.js"></script>
+		<script src="scripts/bundle.js"></script>
+    </body>

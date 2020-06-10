@@ -1,0 +1,63 @@
+.animations-online-flying-form{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+    transition: all 0.2s ease-in-out;
+    &.hidden{
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+    .holiday-menu{
+        max-width: 1563px;
+        margin: 0 auto;
+        .holiday-hall-sentence{
+            margin: 0;
+            padding-top: 1rem; 
+            padding-bottom: 1rem;
+        }
+        .holiday-hall-sentence__body{
+            max-width: 1180px;
+            margin: 0 auto;
+            position: relative;
+
+        }
+    }
+    .decor-form-1{
+        position: absolute;
+        top: 0;
+        left: -100px;
+    }
+    .decor-form-2{
+        position: absolute;
+        top: 20px;
+        right: -120px;
+    }
+    .holiday-hall-sentence__form{
+        padding: 0;
+    }
+    .holiday-hall-sentence__title{
+        flex: 0 0 auto;
+        font-size: 32px;
+        line-height: 1.2;
+        margin: 0 10px 0 0;
+    }
+    .holiday-hall-sentence__btn{
+        position: relative;
+        top: 0;
+        font-size: 2.6rem;
+        padding: 0.8rem 2.4rem;
+        letter-spacing: 0.2rem;
+        width: 100%;
+    }
+    .c-input{
+        padding: 1.1rem 1.3rem;
+    }
+    .c-personal-data{
+        text-align: right;
+    }
+    .holiday-hall-sentence__col{
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,392 @@
+.animations-online{
+    max-width: 1563px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 29px 0px rgba(0, 0, 0, 0.15);
+    &-rules{
+        margin: 0 auto;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-image: url(../assets/img/animations-online/rules.jpg);
+        background-repeat: no-repeat;
+        &-content{
+            max-width: 1180px;
+            margin: 0 auto;
+            &-column{
+                display: flex;
+                flex-direction: column;
+                width: 65%;
+                padding: 32px 0 40px;
+            }
+
+        }
+        &__title{
+            position: relative;
+            display: inline-block;
+            margin: 0 auto 30px;
+            font-size: 80px;
+            line-height: 1;
+            font-family: "SummerFont";
+            color: #4c4c4c;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+        }
+        &-list{
+            background-color: rgba(169, 203, 88, 0.8);
+            border: 2px dotted #fff;
+            padding: 24px 24px 30px;
+            &__item{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+            }
+            &__number{
+                flex: 0 0 auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                border: 2px dotted #4c4c4c;
+                border-radius: 50%;
+                font-family: "PT Serif Caption";
+                color: #4c4c4c;
+                font-size: 20px;
+                margin-right: 20px;
+                box-sizing: border-box;
+            }
+            &__text{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                font-family: "PT Serif Caption";
+                color: #4c4c4c;
+                font-size: 20px;
+                min-height: 50px;
+            }
+        }
+        &__decor1{
+            position: absolute;
+            top: 10px;
+            left: -90px;
+            
+        }
+        &__decor2{
+            position: absolute;
+            top: 10px;
+            right: -90px;
+            transform: scale(-1, 1)
+            
+        }
+        &-icons{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            &__item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+                width: 180px;
+                margin-top: 32px;
+                &:not(:first-child){
+                    margin-left: 10px;
+                    
+                }
+                img{
+                    display: block;
+                    margin-bottom: 20px;
+    
+                }
+                span{
+                    display: inline-block;
+                    text-align: center;
+                    font-size: 15px;
+                    font-family: "PT Serif Caption";
+                    color: #555451;
+                }
+            }
+        }
+    }
+    &-programs{
+        padding: 40px 112px 50px;
+        &-item{
+            background-size: cover;
+            background-position: 50% 50%;
+            background-image: url(../assets/img/animations-online/program-1.jpg);
+            background-repeat: no-repeat;
+            border: 2px solid #e4f3f0;
+            &:not(:last-child){
+                margin-bottom: 40px;
+            }
+            &-title{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 20px;
+                &__text{
+                    font-size: 80px;
+                    font-family: "SummerFont";
+                    color: #c75296;
+                    font-weight: bold;
+                    margin-right: 30px;
+                    &.mod-green{
+                        color: #8ec546;
+                    }
+                }
+                &__price{
+                    position: relative;
+                    font-size: 26px;
+                    font-family: "Calibri";
+                    color: #ffffff;
+                    .mod-price{
+                        position: absolute;
+                        width: 100%;
+                        left: 0;
+                        top: 28%;
+                        text-align: center;
+                    }
+                    .mod-bold{
+                        font-weight: bold;
+                        font-size: 30px;
+
+                    }
+                }
+            }
+            &-description{
+                font-size: 18px;
+                line-height: 1.5;
+                font-family: "PT Serif Caption";
+                color: #4c4c4c;
+                margin-bottom: 48px;
+                width: 80%;
+            }
+            &-row{
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px;
+
+            }
+            &-icon{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-right: 38px;
+
+                img{
+                    height: 30px;
+                    margin-right: 13px;
+                }
+                span{
+                    font-size: 20px;
+                    font-family: "Calibri";
+                    color: #c75396;
+                    font-weight: bold;
+                    &.mod-green{
+                        color: #8ec546;
+                    }
+
+                }
+            }
+            &-submit{
+                display: flex;
+                flex-direction: row;
+                margin-top: 40px;
+            }
+            &__btn{
+                border: 2px dotted #fff;
+                background-color: #8e0b66f0;
+                padding: 22px 30px 28px;
+                font-size: 30px;
+                font-family: "PT Serif Caption";
+                color: #fff;
+                font-weight: bold;
+                cursor: pointer;
+                &.mod-green{
+                    background-color: #69a13f;
+                }
+            }
+            &__extra{
+                font-size: 18px;
+                font-family: "PT Serif Caption";
+                line-height: 1.5;
+                color: #4c4c4c;
+                font-style: italic;
+                margin-left: 30px;
+                display: flex;
+                align-items: center;
+
+            }
+        }
+    }
+    &-bottom{
+        max-width: 1563px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        box-shadow: 0px 3px 29px 0px rgba(0, 0, 0, 0.15);
+    }
+    &-map{
+        position: relative;
+        height: 860px;
+        background-size: cover;
+        background-position: 50% 0%;
+        background-image: url(../assets/img/animations-online/map.png);
+        background-repeat: no-repeat;
+        &__title{
+            font-size: 55px;
+            line-height: 1.2;
+            font-family: "SummerFont";
+            color: #4c4c4c;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 36px 0;
+            text-align: center;
+        }
+        &-point-1{
+            position: absolute;
+            top: 24%;
+            left: 16%;
+            span{
+                position: absolute;
+                left: -136px;
+                top: -50px;
+                font-size: 18px;
+                font-family: "PT Serif Caption";
+                line-height: 1.5;
+                color: #8ec546;
+            }
+        }
+        &-point-2{
+            position: absolute;
+            top: 15%;
+            left: 68%;
+            span{
+                position: absolute;
+                right: -166px;
+                top: 150px;
+                font-size: 18px;
+                font-family: "PT Serif Caption";
+                line-height: 1.5;
+                color: #8ec546;
+            }
+        }
+        &-point-3{
+            position: absolute;
+            top: 67%;
+            left: 17%;
+            span{
+                position: absolute;
+                left: -152px;
+                top: -36px;
+                font-size: 18px;
+                font-family: "PT Serif Caption";
+                line-height: 1.5;
+                color: #8ec546;
+            }
+        }
+        &-point-4{
+            position: absolute;
+            top: 58%;
+            left: 71%;
+            span{
+                position: absolute;
+                width: 100%;
+                left: 100px;
+                top: 270px;
+                font-size: 18px;
+                font-family: "PT Serif Caption";
+                line-height: 1.5;
+                color: #8ec546;
+            }
+        }
+        .decor-map-1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+
+        }
+        .decor-map-2{
+            position: absolute;
+            top: 5%;
+            right: 3%;
+            z-index:2;
+
+        }
+        .decor-map-3{
+            position: absolute;
+            top: 27%;
+            left: 9%;
+            z-index:2;
+
+        }
+        .decor-map-4{
+            position: absolute;
+            top: 67%;
+            left: 7%;
+            z-index:2;
+
+        }
+        .decor-map-5{
+            position: absolute;
+            top: 91%;
+            left: 15%;
+            z-index:2;
+
+        }
+        .decor-map-6{
+            position: absolute;
+            top: 51%;
+            right: 3%;
+            z-index:2;
+
+        }
+    }
+    &-form{
+        position: relative;
+        overflow: hidden;
+        z-index: 3;
+        .holiday-menu{
+            margin-bottom: 0;
+        }
+        .holiday-menu .holiday-hall-sentence{
+            margin-bottom: 0;
+
+        }
+        .holiday-menu .holiday-hall-sentence__btn{
+            position: relative;
+            top: 0;
+            margin: 20px auto 0;
+        }
+        .holiday-menu .holiday-hall-sentence__body {
+            max-width: 94rem;
+        }
+        .decor-form-1{
+            position: absolute;
+            left: 28%;
+            top: 4%;
+        }
+        .decor-form-2{
+            position: absolute;
+            right: 20%;
+            top: 10%;
+        }
+        .decor-form-3{
+            position: absolute;
+            left: 5%;
+            bottom: -10%;
+        }
+        .decor-form-4{
+            position: absolute;
+            right: 5%;
+            bottom: 20%;
+        }
+    }
+}
