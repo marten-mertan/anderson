@@ -4,6 +4,10 @@
     bottom: 0;
     z-index: 2;
     transition: all 0.2s ease-in-out;
+    
+    @media screen and (max-width: 1026px){
+        display: none;
+    }
     &.hidden{
         opacity: 0;
         visibility: hidden;
@@ -60,4 +64,8 @@
     .holiday-hall-sentence__col{
         margin-bottom: 10px;
     }
+}
+
+.fixed-margin{
+    margin: 0 !important;
 }

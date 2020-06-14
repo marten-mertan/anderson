@@ -11,6 +11,16 @@
     cursor: pointer;
     z-index: 3;
     transition: all 0.2s ease-in-out;
+    @media screen and (max-width: 1026px){
+        width: 50px;
+        height: 44px;
+        border-bottom-left-radius: 6px;
+        border-top-left-radius: 6px;
+        top: 30%;
+        right: 0;
+        background-image: none;
+        background-color: #be298d;
+    }
     &.hidden{
         opacity: 0;
         visibility: hidden;
@@ -26,6 +36,13 @@
         font-family: "PT Serif Caption";
         color: #4d4d4d;
         padding: 10px 16px 10px 14px;
+        @media screen and (max-width: 1026px){
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: none;
+        }
     }
     &-number-out{
         position: absolute;
@@ -39,6 +56,16 @@
         background-color: #fff;
         bottom: 12px;
         left: 26px;
+        @media screen and (max-width: 1026px){
+            width: 100%;
+            height: 100%;
+            border: none;
+            background-color: transparent;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
     }
     &-number-in{
         width: 41px;
@@ -49,10 +76,19 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        @media screen and (max-width: 1026px){
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
         span{
             font-family: "PT Serif Caption";
             font-size: 27px;
             color: #609b34;
+            @media screen and (max-width: 1026px){
+                font-size: 15px;
+                color: #fff;
+            }
         }
     }
 }

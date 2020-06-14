@@ -28,7 +28,7 @@ $(window).on('load', function(){
     function scrollToAnchor (elem) {
         $(document).on("click", elem, function (event) {
             var id  = $(this).attr('href'),
-                menuHeight = 0,
+                menuHeight = 70,
                 top = $(id).offset().top,
                 topIndent = top - menuHeight;
             $('html').animate({scrollTop: topIndent}, 500);
@@ -116,4 +116,13 @@ $(window).on('load', function(){
     });
 
     showPopup(".js-show-cart", '.popup-pie-one-click');
+
+    $('.js-menu-burger').on('click', function(event) {
+        $('.js-mobile-menu').removeClass('hidden');
+    });
+
+    $('.js-menu-close').on('click', function(event) {
+        $('.js-mobile-menu').addClass('hidden');
+    });
+
 });

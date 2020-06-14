@@ -1,5 +1,10 @@
 .popup-programs{
     margin-bottom: 20px;
+    padding: 9px 16px;
+    @media screen and (max-width: 1026px){
+        padding: 0;
+        margin: 0;
+    }
     &-item{
         position: relative;
         background-size: cover;
@@ -9,14 +14,24 @@
         border: 2px solid #e7e7e7;
         padding: 20px 20px 26px;
         margin-bottom: 10px;
+        @media screen and (max-width: 1026px){
+            padding: 11px 20px;
+        }
         &-content{
             width: 60%;
+            @media screen and (max-width: 1026px){
+                width: 100%;
+            }
         }
         &__title{
             display: flex;
             flex-direction: row;
             align-items: center;
             margin-bottom: 12px;
+            @media screen and (max-width: 1026px){
+                flex-direction: column;
+                align-items: flex-start;
+            }
             .mod-name{
                 font-family: "SummerFont";
                 font-size: 40px;
@@ -31,6 +46,9 @@
                 color: #b41f7e;
                 font-weight: bold;
                 margin-left: 17px;
+                @media screen and (max-width: 1026px){
+                    margin-left: 0;
+                }
             }
             &.mod-green{
                 .mod-name{
@@ -73,6 +91,9 @@
             top: 12px;
             right: 12px;
             cursor: pointer;
+            @media screen and (max-width: 1026px){
+                right: 20px;
+            }
 
             svg{
                 width: 14px;
@@ -83,22 +104,42 @@
     &-row{
         display: flex;
         flex-direction: row;
+        @media screen and (max-width: 1026px){
+            flex-direction: column;
+        }
         .popup-form__item{
             width: 100%;
             margin-bottom: 16px;
             &:not(:first-child){
                 margin-left: 16px;
+                @media screen and (max-width: 1026px){
+                    margin-left: 0;
+                }
             }
         }
         .popup-form__extra{
             display: flex;
             flex-direction: row;
+            position: relative;
+            @media screen and (max-width: 1026px){
+                flex-direction: column;
+            }
             .c-input{
                 width: 60px;
+                @media screen and (max-width: 1026px){
+                    position: absolute;
+                    left: 0;
+                    top: 28px;
+                }
+
             }
             &-info{
                 flex: 1 1 auto;
                 margin-left: 20px;
+                @media screen and (max-width: 1026px){
+                    min-height: 80px;
+                    margin: 0;
+                }
                 &-text{
                     font-size: 16px;
                     font-family: "PT Serif Caption";
@@ -113,6 +154,10 @@
                     color: #4c4c4c;
                     font-style: italic;
                     margin: 0;
+                    @media screen and (max-width: 1026px){
+                        margin-left: 78px;
+                        margin-top: 6px;
+                    }
 
                 }
             }
@@ -124,11 +169,25 @@
         justify-content: space-between;
         padding: 20px 48px;
         background-color: #67a62d;
+        @media screen and (max-width: 1026px){
+            flex-direction: column;
+            align-items: center;
+        }
         &-price{
             font-size: 16px;
             font-family: "PT Serif Caption";
             color: #fff;
             text-transform: uppercase;
+            @media screen and (max-width: 1026px){
+                text-transform: none;
+                margin-bottom: 20px;
+            }
+            .desktop-only{
+                @media screen and (max-width: 1026px){
+                    display: none;
+                }
+
+            }
         }
         &-button{
             font-size: 16px;
@@ -143,14 +202,94 @@
             &:hover{
                 color: #fff;
             }
+            @media screen and (max-width: 1026px){
+                font-size: 21px;
+                line-height: 1;
+                padding: 15px 28px 16px;
+                border: 1px solid #fff;
+                border-radius: 28px;
+                display: block;
+                &:hover{
+                    border: 1px solid #fff;
+                    color: #fff;
+                }
+            }
 
         }
+        &-mobile{
+            display: none;
+            padding: 20px;
+            @media screen and (max-width: 1026px){
+                display: block;
+            }
+            &-logo{
+                margin-bottom: 10px;
+                img{
+                    display: block;
+                    margin: 0 auto;
+                    width: 100%;
+                    max-width: 400px;
+                }
+                a{
+                    &:after{
+                        display: none;
+                    }
+                }
+            }
+            &-phone{
+                text-align: center;
+                a{
+                    font-size: 17px;
+                    font-family: "Montserrat";
+                    text-transform: uppercase;
+                    color: #9acc4f;
+                    border: none;
+                    &:hover{
+                        color: #9acc4f;
+                        border: none;
+                    }
+                    &:after{
+                        display: none;
+                    }
+                }
+            }
+        }
     }
-    
 }
 
 .popup-animations{
     .popup-title{
         text-align: center;
+        @media screen and (max-width: 1026px){
+            display: none;
+        }
+    }
+    .popup-title-mobile{
+        display: none;
+        font-family: "SummerFont";
+        color: #4c4c4c;
+        text-transform: uppercase;
+        font-size: 44px;
+        padding: 15px 20px 13px;
+        background-color: #fdf7e8;
+        @media screen and (max-width: 1026px){
+            display: flex;;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .popup-close{
+            display: block;
+            position: relative;
+            right: 0;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            margin: 0;
+            padding: 0;
+            background: none;
+        }
+
+    }
+    .popup-cake-oneclick-body{
     }
 }
