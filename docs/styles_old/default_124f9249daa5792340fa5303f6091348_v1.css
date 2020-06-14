@@ -1,0 +1,15 @@
+
+
+/* Start:/local/templates/anderson_new/components/bitrix/advertising.banner/popup/style.css?1567911105204*/
+.banner-image .popup{
+    max-width: 100% !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    height: 100% !important;
+}
+
+.popup-banner-close.js-popup-close {
+    z-index: 10000;
+}
+/* End */
+/* /local/templates/anderson_new/components/bitrix/advertising.banner/popup/style.css?1567911105204 */
