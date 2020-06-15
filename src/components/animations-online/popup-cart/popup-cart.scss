@@ -168,7 +168,7 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 20px 48px;
-        background: #69a82f url(/local/templates/anderson_new/css/../img/bg-header.png) repeat;
+        background: #69a82f url(../assets/img/bg-header.png) repeat;
         @media screen and (max-width: 1026px){
             flex-direction: column;
             align-items: center;
@@ -271,7 +271,7 @@
         text-transform: uppercase;
         font-size: 44px;
         padding: 15px 20px 13px;
-        background: #fdf7e8 url(/local/templates/anderson_new/css/../img/bg-header.png) repeat;
+        background: #fdf7e8 url(../assets/img/bg-header.png) repeat;
         @media screen and (max-width: 1026px){
             display: flex;;
             flex-direction: row;
