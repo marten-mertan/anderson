@@ -42,7 +42,7 @@ $(window).on('load', function(){
         var $sections = $('.js-section');
         $(window).scroll(function() {
             $sections.each(function(i,el){
-                var top  = $(el).offset().top-70;
+                var top  = $(el).offset().top-100;
                 var bottom = top +$(el).height();
                 var scroll = $(window).scrollTop();
                 var id = $(el).attr('id');

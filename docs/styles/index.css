@@ -826,14 +826,15 @@
   .animations-online-flying-nav-list {
     display: flex;
     flex-direction: row;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap; }
     @media screen and (max-width: 1026px) {
       .animations-online-flying-nav-list {
         display: none; } }
     .animations-online-flying-nav-list__item {
       display: block;
-      margin-left: 10px;
-      overflow: hidden; }
+      overflow: hidden;
+      margin: 3px 5px; }
       .animations-online-flying-nav-list__item a {
         display: block;
         width: 100%;
