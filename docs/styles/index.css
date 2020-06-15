@@ -1052,7 +1052,8 @@
   @media screen and (max-width: 1026px) {
     .animations-online-header {
       background-image: url(../assets/img/animations-online/header-mobile.jpg);
-      min-height: calc(var(--vh, 1vh) * 100); } }
+      min-height: calc(var(--vh, 1vh) * 100);
+      transition: min-height .6s ease; } }
   .animations-online-header-wrap {
     display: flex;
     flex-direction: column;
@@ -1063,7 +1064,8 @@
     @media screen and (max-width: 1026px) {
       .animations-online-header-wrap {
         padding: 22px;
-        min-height: calc(var(--vh, 1vh) * 100); } }
+        min-height: calc(var(--vh, 1vh) * 100);
+        transition: min-height .6s ease; } }
   .animations-online-header-top {
     display: flex;
     flex-direction: row;
