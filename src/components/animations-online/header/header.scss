@@ -8,7 +8,7 @@
     @media screen and (max-width: 1026px){
         background-image: url(../assets/img/animations-online/header-mobile.jpg);
         min-height: calc(var(--vh, 1vh) * 100);
-        transition: min-height .6s ease;
+        transition: min-height .3s ease;
     }
     &-wrap{
         display: flex;
@@ -20,7 +20,7 @@
         @media screen and (max-width: 1026px){
             padding: 22px;
             min-height: calc(var(--vh, 1vh) * 100);
-            transition: min-height .6s ease;
+            transition: min-height .3s ease;
         }
     }
     &-top{
