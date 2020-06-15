@@ -1062,7 +1062,8 @@
     margin: 0 auto; }
     @media screen and (max-width: 1026px) {
       .animations-online-header-wrap {
-        padding: 22px; } }
+        padding: 22px;
+        min-height: calc(var(--vh, 1vh) * 100); } }
   .animations-online-header-top {
     display: flex;
     flex-direction: row;
