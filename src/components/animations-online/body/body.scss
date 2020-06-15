@@ -45,6 +45,7 @@
             @media screen and (max-width: 1026px){
                 font-size: 44px;
                 margin-bottom: 18px;
+                color: #2f2f2f;
             }
         }
         &-list{
@@ -151,6 +152,9 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
+            @media screen and (max-width: 1026px){
+                justify-content: space-around;
+            }
             &__item{
                 display: flex;
                 flex-direction: column;
@@ -163,7 +167,9 @@
                 }
                 &:not(:first-child){
                     margin-left: 10px;
-                    
+                    @media screen and (max-width: 1026px){
+                        margin-left: 0;
+                    }
                 }
                 img{
                     display: block;

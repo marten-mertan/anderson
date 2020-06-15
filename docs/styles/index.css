@@ -43,7 +43,8 @@
       @media screen and (max-width: 1026px) {
         .animations-online-rules__title {
           font-size: 44px;
-          margin-bottom: 18px; } }
+          margin-bottom: 18px;
+          color: #2f2f2f; } }
     .animations-online-rules-list {
       background-color: rgba(169, 203, 88, 0.8);
       border: 2px dotted #fff;
@@ -134,6 +135,9 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center; }
+      @media screen and (max-width: 1026px) {
+        .animations-online-rules-icons {
+          justify-content: space-around; } }
       .animations-online-rules-icons__item {
         display: flex;
         flex-direction: column;
@@ -146,6 +150,9 @@
             width: 120px; } }
         .animations-online-rules-icons__item:not(:first-child) {
           margin-left: 10px; }
+          @media screen and (max-width: 1026px) {
+            .animations-online-rules-icons__item:not(:first-child) {
+              margin-left: 0; } }
         .animations-online-rules-icons__item img {
           display: block;
           margin-bottom: 20px; }
@@ -1043,7 +1050,8 @@
   background-repeat: no-repeat; }
   @media screen and (max-width: 1026px) {
     .animations-online-header {
-      background-image: url(../assets/img/animations-online/header-mobile.jpg); } }
+      background-image: url(../assets/img/animations-online/header-mobile.jpg);
+      min-height: calc(var(--vh, 1vh) * 100); } }
   .animations-online-header-wrap {
     display: flex;
     flex-direction: column;
@@ -1062,7 +1070,7 @@
     @media screen and (max-width: 1026px) {
       .animations-online-header-top {
         padding: 0;
-        margin-bottom: 50px; } }
+        margin-bottom: 20px; } }
     .animations-online-header-top-left {
       color: #9acc4f; }
       @media screen and (max-width: 1026px) {
@@ -1125,7 +1133,8 @@
         font-size: 17px;
         font-family: "Montserrat";
         color: #ffffff;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        text-decoration: none; }
         @media screen and (max-width: 1026px) {
           .animations-online-header-menu-list__item a {
             font-size: 14px; } }
@@ -1133,9 +1142,11 @@
           opacity: 0;
           border-bottom: 1px solid;
           transition: all .2s ease; }
-        .animations-online-header-menu-list__item a:hover:after {
-          opacity: 1;
-          border-bottom: 1px solid; }
+        .animations-online-header-menu-list__item a:hover {
+          text-decoration: none; }
+          .animations-online-header-menu-list__item a:hover:after {
+            opacity: 1;
+            border-bottom: 1px solid; }
       .animations-online-header-menu-list-programs {
         padding: 32px 0 12px; }
         @media screen and (max-width: 1026px) {
@@ -1303,7 +1314,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 20px 48px;
-    background-color: #67a62d; }
+    background: #69a82f url(/local/templates/anderson_new/css/../img/bg-header.png) repeat; }
     @media screen and (max-width: 1026px) {
       .popup-programs-footer {
         flex-direction: column;
@@ -1384,7 +1395,7 @@
   text-transform: uppercase;
   font-size: 44px;
   padding: 15px 20px 13px;
-  background-color: #fdf7e8; }
+  background: #fdf7e8 url(/local/templates/anderson_new/css/../img/bg-header.png) repeat; }
   @media screen and (max-width: 1026px) {
     .popup-animations .popup-title-mobile {
       display: flex;

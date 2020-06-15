@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     @media screen and (max-width: 1026px){
         background-image: url(../assets/img/animations-online/header-mobile.jpg);
+        min-height: calc(var(--vh, 1vh) * 100);
     }
     &-wrap{
         display: flex;
@@ -26,7 +27,7 @@
         padding: 32px 20px;
         @media screen and (max-width: 1026px){
             padding: 0;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
         }
         &-left{
             color: #9acc4f;
@@ -105,6 +106,7 @@
                     font-family: "Montserrat";
                     color: #ffffff;
                     text-transform: uppercase;
+                    text-decoration: none;
                     @media screen and (max-width: 1026px){
                         font-size: 14px;
                     }
@@ -114,6 +116,7 @@
                         transition: all .2s ease;
                     }
                     &:hover{
+                        text-decoration: none;
                         &:after{
                             opacity: 1;
                             border-bottom: 1px solid;
