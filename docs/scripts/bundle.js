@@ -145,19 +145,19 @@ $(window).on('load', function(){
                 if (i == 0){
                     if( scroll > top){
                         $('.animations-online-flying-nav').removeClass('hidden');
+                        $('.animations-online-flying-form').removeClass('hidden');
                     } else{
                         $('.animations-online-flying-nav').addClass('hidden');
+                        $('.animations-online-flying-form').addClass('hidden');
                     }
                 }
                 //показать корзину и нижнюю форму
                 if (i == 1){
                     if (scroll > top){
                         $('.animations-online-flying-cart').removeClass('hidden');
-                        $('.animations-online-flying-form').removeClass('hidden');
     
                     } else {
                         $('.animations-online-flying-cart').addClass('hidden');
-                        $('.animations-online-flying-form').addClass('hidden');
                     }
                 }
             });

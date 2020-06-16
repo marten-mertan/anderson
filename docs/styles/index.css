@@ -333,7 +333,17 @@
         font-family: "PT Serif Caption";
         color: #fff;
         font-weight: bold;
+        transition: all .3s ease;
         cursor: pointer; }
+        .animations-online-programs-item__btn:hover {
+          background-color: #9e2d7c;
+          transition: all .1s ease; }
+        @media screen and (min-width: 1027px) {
+          .animations-online-programs-item__btn:active {
+            transform: scale(0.9);
+            background-color: #8a276c;
+            box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+            transition: all .1s ease; } }
         @media screen and (max-width: 1026px) {
           .animations-online-programs-item__btn {
             border-bottom: none;
@@ -345,6 +355,14 @@
             width: 100%; } }
         .animations-online-programs-item__btn.mod-green {
           background-color: #69a13f; }
+          .animations-online-programs-item__btn.mod-green:hover {
+            background-color: #7eaf59; }
+          @media screen and (min-width: 1027px) {
+            .animations-online-programs-item__btn.mod-green:active {
+              transform: scale(0.9);
+              background-color: #71a14e;
+              box-shadow: 0 2px 25px rgba(0, 255, 42, 0.2);
+              transition: all .1s ease; } }
       .animations-online-programs-item__extra {
         font-size: 18px;
         font-family: "PT Serif Caption";

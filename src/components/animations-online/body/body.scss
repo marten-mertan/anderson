@@ -387,7 +387,21 @@
                 font-family: "PT Serif Caption";
                 color: #fff;
                 font-weight: bold;
+                transition: all .3s ease;
                 cursor: pointer;
+                &:hover{    
+                    background-color: #9e2d7c;
+                    transition: all .1s ease;
+                  
+                }
+                &:active{
+                    @media screen and (min-width: 1027px){
+                        transform: scale(0.9);
+                        background-color: darken(#9e2d7c, 5%);
+                        box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+                        transition: all .1s ease;
+                    }
+                }
                 @media screen and (max-width: 1026px){
                     border-bottom: none;
                     border-left: none;
@@ -399,6 +413,17 @@
                 }
                 &.mod-green{
                     background-color: #69a13f;
+                    &:hover{
+                        background-color: #7eaf59;
+                    }
+                    &:active{
+                        @media screen and (min-width: 1027px){
+                            transform: scale(0.9);
+                            background-color: darken(#7eaf59, 5%);
+                            box-shadow: 0 2px 25px rgba(0, 255, 42, 0.2);
+                            transition: all .1s ease;
+                        }
+                    }
                 }
             }
             &__extra{
