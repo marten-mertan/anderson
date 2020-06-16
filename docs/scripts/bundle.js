@@ -111,7 +111,27 @@ $(window).on('load', function(){
 
     $('.js-animation-to-cart').on('click', function(event) {
         var counter = Number($('.js-cart-counter').text()) + 1;
-        $('.js-cart-counter').text(counter);
+
+        var butWrap = $(this).parents('.animations-online-programs-item');
+        console.log(butWrap);
+        butWrap.append('<div class="animtocart"></div>');
+        var cart = $('.js-show-cart');
+        $('.animtocart').css({
+            'position' : 'absolute',
+            'background' : butWrap.css('background'),
+            'width' :  butWrap.width(),
+            'height' : butWrap.height(),
+            'border' : '2px solid #e4f3f0;',
+            'z-index' : '9999999999',
+            'opacity' : '0.4',
+            'left' : butWrap.offset().left,
+            'top' : butWrap.offset().top,
+          });
+        $('.animtocart').animate({ top: cart.offset().top + (cart.height() / 2) + 'px', left: cart.offset().left+ (cart.width() / 2) + 'px', width: 0, height: 0 }, 400, function(){
+            $(this).remove();
+
+            $('.js-cart-counter').text(counter);
+        });
     });
 
     //плавный скролл

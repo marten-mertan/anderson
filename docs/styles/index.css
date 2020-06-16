@@ -749,6 +749,10 @@
           font-size: 15px;
           color: #fff; } }
 
+.animtocart {
+  position: absolute;
+  z-index: 9999999; }
+
 .animations-online-flying-form {
   position: fixed;
   width: 100%;
