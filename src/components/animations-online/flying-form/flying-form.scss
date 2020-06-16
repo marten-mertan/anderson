@@ -9,13 +9,16 @@
         display: none;
     }
     &.hidden{
-        opacity: 0;
-        visibility: hidden;
+        opacity: 1;
         transition: all 0.5s ease-in-out;
+        .holiday-menu{
+            max-width: 100vw;
+        }
     }
     .holiday-menu{
         max-width: 1563px;
         margin: 0 auto;
+        transition: all .3s ease;
         .holiday-hall-sentence{
             margin: 0;
             padding-top: 1rem; 

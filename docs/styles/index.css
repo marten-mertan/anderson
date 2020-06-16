@@ -763,12 +763,14 @@
     .animations-online-flying-form {
       display: none; } }
   .animations-online-flying-form.hidden {
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
     transition: all 0.5s ease-in-out; }
+    .animations-online-flying-form.hidden .holiday-menu {
+      max-width: 100vw; }
   .animations-online-flying-form .holiday-menu {
     max-width: 1563px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    transition: all .3s ease; }
     .animations-online-flying-form .holiday-menu .holiday-hall-sentence {
       margin: 0;
       padding-top: 1rem;

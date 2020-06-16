@@ -76,7 +76,7 @@ $(window).on('load', function(){
                 if (i == 0){
                     var headerHeight = $('header').height();
                     var windowHeight = window.innerHeight;
-                    if( scroll > (headerHeight-windowHeight+153)){
+                    if( scroll > (headerHeight-windowHeight+150)){
                         $('.animations-online-flying-form').removeClass('hidden');
                     } else{
                         $('.animations-online-flying-form').addClass('hidden');
