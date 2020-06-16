@@ -141,17 +141,27 @@ $(window).on('load', function(){
                     $('a[href="#'+id+'"]').addClass('active');
         
                 }
+
+                //показать нижнюю форму
+                if (i == 0){
+                    var headerHeight = $('header').height();
+                    var windowHeight = window.innerHeight;
+                    if( scroll > (headerHeight-windowHeight+153)){
+                        $('.animations-online-flying-form').removeClass('hidden');
+                    } else{
+                        $('.animations-online-flying-form').addClass('hidden');
+                    }
+                }
+
                 //показать навигацию
                 if (i == 0){
                     if( scroll > top){
                         $('.animations-online-flying-nav').removeClass('hidden');
-                        $('.animations-online-flying-form').removeClass('hidden');
                     } else{
                         $('.animations-online-flying-nav').addClass('hidden');
-                        $('.animations-online-flying-form').addClass('hidden');
                     }
                 }
-                //показать корзину и нижнюю форму
+                //показать корзину
                 if (i == 1){
                     if (scroll > top){
                         $('.animations-online-flying-cart').removeClass('hidden');
