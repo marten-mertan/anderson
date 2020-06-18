@@ -1,0 +1,296 @@
+@font-face {
+  font-family: "PT Serif";
+  src: url("../../fonts/PTSerif.eot");
+  src: url("../../fonts/PTSerif.eot?#iefix") format("embedded-opentype"), url("../../fonts/PTSerif.woff") format("woff"), url("../../fonts/PTSerif.ttf") format("truetype"), url("../../fonts/PTSerif.svg#PT Serif") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "PT Serif Caption";
+  src: url("../../fonts/PTSerifCaption.eot");
+  src: url("../../fonts/PTSerifCaption.eot?#iefix") format("embedded-opentype"), url("../../fonts/PTSerifCaption.woff") format("woff"), url("../../fonts/PTSerifCaption.ttf") format("truetype"), url("../../fonts/PTSerifCaption.svg#PT Serif Caption") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "PT Serif Caption";
+  src: url("../../fonts/PTSerifCaptionItalic.eot");
+  src: url("../../fonts/PTSerifCaptionItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/PTSerifCaptionItalic.woff") format("woff"), url("../../fonts/PTSerifCaptionItalic.ttf") format("truetype"), url("../../fonts/PTSerifCaptionItalic.svg#PT Serif Caption") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: "PT Serif Caption";
+  src: url("../../fonts/PTSerifBold.eot");
+  src: url("../../fonts/PTSerifBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/PTSerifBold.woff") format("woff"), url("../../fonts/PTSerifBold.ttf") format("truetype"), url("../../fonts/PTSerifBold.svg#PT Serif Caption") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "PT Serif Caption";
+  src: url("../../fonts/PTSerifBoldItalic.eot");
+  src: url("../../fonts/PTSerifBoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/PTSerifBoldItalic.woff") format("woff"), url("../../fonts/PTSerifBoldItalic.ttf") format("truetype"), url("../../fonts/PTSerifBoldItalic.svg#PT Serif Caption") format("svg");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: "SummerFont";
+  src: url("../../fonts/SummerFont-Light.eot");
+  src: url("../../fonts/SummerFont-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/SummerFont-Light.woff") format("woff"), url("../../fonts/SummerFont-Light.ttf") format("truetype"), url("../../fonts/SummerFont-Light.svg#SummerFont") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+
+.top {
+  display: flex;
+  position: relative;
+  width: 100%;
+  min-height: 2130px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: #6a6763;
+  background-image: url(../../assets/img/keks/background.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden; }
+  .top-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto; }
+  .top-features {
+    margin-top: 365px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-bottom: 34px; }
+    .top-features-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 25%; }
+      .top-features-item:not(:first-child) {
+        margin-left: 40px; }
+      .top-features-item__img {
+        margin-bottom: 20px; }
+      .top-features-item__text {
+        font-family: "PT Serif Caption";
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff; }
+
+.header-new {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  padding: 28px 0 23px;
+  z-index: 4; }
+
+.basket {
+  width: 55px;
+  height: 55px;
+  top: 35px;
+  right: calc((100vw - 1180px)/2 - 8px);
+  background: #9acc4f;
+  margin-right: 0; }
+  .basket-ic {
+    width: 28px; }
+
+.bask-num {
+  top: -4px;
+  right: -8px;
+  background: #ffffff;
+  border: 1px solid #9acc4f;
+  box-sizing: border-box; }
+  .bask-num-txt {
+    color: #9acc4f; }
+
+.logo {
+  width: 276px; }
+
+.call {
+  color: #9dd746; }
+
+.h-tel {
+  font-family: "PT Serif Caption";
+  font-size: 23px;
+  color: #9dd746; }
+
+.f-scr-blk {
+  width: 440px;
+  position: relative;
+  z-index: 5; }
+
+.f-scr-title-txt {
+  color: #fff; }
+
+.f-scr-desc {
+  font-family: "PT Serif Caption";
+  font-size: 16px;
+  line-height: 23px;
+  text-align: right;
+  margin-top: -36px; }
+  .f-scr-desc-txt {
+    color: #fff; }
+  .f-scr-desc .mod-rose {
+    color: #ff2e82; }
+  .f-scr-desc .mod-green {
+    color: #aee55b; }
+
+.f-scr-price {
+  margin-top: 0; }
+
+.f-scr-pr-txt {
+  color: #9acc4f;
+  text-shadow: 0px 3px 13px rgba(0, 0, 0, 0.4); }
+
+.btn-basket {
+  position: relative;
+  background: #9acc4f;
+  border: 1px solid #9acc4f;
+  border-radius: 8px;
+  width: 254px;
+  padding: 6px 8px 6px 100px;
+  height: auto; }
+  .btn-basket:hover {
+    background: #9acc4f; }
+  .btn-basket:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    border-radius: 8px;
+    top: -4px;
+    left: -4px;
+    border: 1px solid #9acc4f;
+    z-index: 1; }
+  .btn-basket-txt {
+    font-family: 'SummerFont';
+    text-transform: uppercase;
+    font-size: 46px;
+    line-height: 1;
+    color: #69483e; }
+  .btn-basket img {
+    position: absolute;
+    top: -16px;
+    left: 16px;
+    z-index: 2; }
+
+.f-scr-pistachio {
+  position: absolute;
+  left: calc((100vw - 1180px)/2 - 217px);
+  top: 332px;
+  z-index: 2; }
+
+.f-scr-keks {
+  position: absolute;
+  right: calc((100vw - 1180px)/2 - 80px);
+  top: 115px;
+  z-index: 1; }
+
+.f-scr-leaf-1 {
+  position: absolute;
+  right: calc((100vw - 1180px)/2 - 720px);
+  top: 1185px;
+  z-index: 1; }
+
+.f-scr-leaf-2 {
+  position: absolute;
+  right: calc((100vw - 1180px)/2 - 580px);
+  top: 490px;
+  z-index: 1; }
+
+.f-scr-leaf-3 {
+  position: absolute;
+  left: calc((100vw - 1180px)/2 - 400px);
+  top: 590px;
+  z-index: 1; }
+
+.f-scr-berry-1 {
+  position: absolute;
+  left: calc((100vw - 1180px)/2 - 340px);
+  top: 1185px;
+  z-index: 1; }
+
+.f-scr-berry-2 {
+  position: absolute;
+  left: calc((100vw - 1180px)/2 - 200px);
+  top: 115px;
+  z-index: 1; }
+
+.f-scr-berry-3 {
+  position: absolute;
+  left: calc((100vw - 1180px)/2 + 340px);
+  top: -300px;
+  z-index: 1; }
+
+.f-scr-leaf-berry {
+  position: absolute;
+  right: calc((100vw - 1180px)/2 - 450px);
+  top: 25px;
+  z-index: 1; }
+
+.f-scr-plate-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1; }
+
+.f-scr-person {
+  position: absolute;
+  left: calc((100vw - 1180px)/2 - 380px);
+  bottom: -6px;
+  z-index: 1; }
+
+.bg-dots {
+  width: calc(100% + 60px);
+  height: 25px;
+  margin-left: -30px;
+  background-size: auto;
+  background-position: 0% 0%;
+  background-image: url(../../assets/img/keks/bg-dots.png);
+  background-repeat: repeat; }
+
+.top-review {
+  position: relative;
+  width: 660px;
+  margin: 124px 0 130px auto;
+  z-index: 5; }
+  .top-review-text {
+    position: relative;
+    font-family: "PT Serif";
+    font-size: 19px;
+    line-height: 25px;
+    color: #fff; }
+    .top-review-text:before {
+      content: '"';
+      display: block;
+      position: absolute;
+      top: -10px;
+      left: -50px;
+      font-family: "PT Serif";
+      font-size: 68px;
+      color: #9acc4f;
+      font-style: italic; }
+    .top-review-text:after {
+      content: '"';
+      display: block;
+      position: absolute;
+      left: 120px;
+      bottom: -40px;
+      font-family: "PT Serif";
+      font-size: 68px;
+      color: #9acc4f;
+      font-style: italic; }
+  .top-review-autor {
+    font-family: "PT Serif";
+    font-size: 16px;
+    line-height: 26px;
+    color: #9acc4f;
+    text-align: right;
+    margin-top: 26px;
+    width: 570px;
+    margin-left: auto; }

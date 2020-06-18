@@ -32,13 +32,23 @@ function buildPages() {
   }
 
 function buildStyles() {
-    return src(['src/styles/**/*.scss', 'src/styles/**/*.css'])
+    return src(['src/styles/**/*.scss', 'src/styles/**/*.css', '!src/styles/keks/**/*.scss'])
       .pipe(sassGlob())
       .pipe(sass())
       .pipe(postcss([
         autoprefixer()
       ]))
       .pipe(dest('docs/styles/'));
+}
+
+function buildStylesKeks() {
+  return src('src/styles/keks/**/*.scss')
+    .pipe(sassGlob())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(dest('docs/styles/keks/'));
 }
 
 function buildVendorScripts() {
@@ -81,9 +91,12 @@ function buildAssets(cb) {
     src(['src/assets/**/*.*', '!src/assets/img/**/*.*'])
       .pipe(dest('docs/'));
   
-    src('src/assets/img/**/*.*')
+    src(['src/assets/img/**/*.*', '!src/assets/img/keks/**/*.*'])
       .pipe(imagemin())
-      .pipe(dest('docs/assets/img'));
+      .pipe(dest('docs/assets/img/'));
+
+    src('src/assets/img/keks/**/*.*')
+      .pipe(dest('docs/assets/img/keks/'));
   
     // Раньше функция что-то возвращала, теперь добавляем вместо этого искусственый колбэк
     // Это нужно, чтобы Галп понимал, когда функция отработала и мог запустить следующие задачи
@@ -94,6 +107,7 @@ function buildAssets(cb) {
 function watchFiles() {
     watch(['src/pages/*.twig', 'src/pages/*.html', 'src/components/**/*.twig'], buildPages);
     watch(['src/styles/*.css','src/styles/*.scss', 'src/components/**/*.scss'], buildStyles);
+    watch('src/styles/keks/*.scss', buildStylesKeks);
     watch('src/scripts/**/*.js', buildScripts);
     watch('src/assets/**/*.*', buildAssets);
 
@@ -110,7 +124,7 @@ exports.default =
     parallel(
       devServer,
       series(
-        parallel(buildPages, buildStyles, buildScripts, buildVendorScripts, copyOldStyles, copyOldScripts, copyBitrix, copyAPI, buildAssets),
+        parallel(buildPages, buildStyles, buildStylesKeks, buildScripts, buildVendorScripts, copyOldStyles, copyOldScripts, copyBitrix, copyAPI, buildAssets),
         watchFiles
       )
     )
