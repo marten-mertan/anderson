@@ -109,6 +109,7 @@ function watchFiles() {
     watch(['src/styles/*.css','src/styles/*.scss', 'src/components/**/*.scss'], buildStyles);
     watch('src/styles/keks/*.scss', buildStylesKeks);
     watch('src/scripts/**/*.js', buildScripts);
+    watch('src/scripts/**/*.js', buildVendorScripts);
     watch('src/assets/**/*.*', buildAssets);
 
   }

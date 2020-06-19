@@ -34,6 +34,41 @@
   font-style: italic; }
 
 @font-face {
+  font-family: "BebasNeue";
+  src: url("../../fonts/BebasNeue-Bold.eot");
+  src: url("../../fonts/BebasNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/BebasNeue-Bold.woff") format("woff"), url("../../fonts/BebasNeue-Bold.ttf") format("truetype"), url("../../fonts/BebasNeue-Bold.svg#BebasNeue") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../../fonts/BebasNeue-Regular.eot");
+  src: url("../../fonts/BebasNeue-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/BebasNeue-Regular.woff") format("woff"), url("../../fonts/BebasNeue-Regular.ttf") format("truetype"), url("../../fonts/BebasNeue-Regular.svg#BebasNeue") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../../fonts/BebasNeue-Book.eot");
+  src: url("../../fonts/BebasNeue-Book.eot?#iefix") format("embedded-opentype"), url("../../fonts/BebasNeue-Book.woff") format("woff"), url("../../fonts/BebasNeue-Book.ttf") format("truetype"), url("../../fonts/BebasNeue-Book.svg#BebasNeue") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../../fonts/BebasNeue-Light.eot");
+  src: url("../../fonts/BebasNeue-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/BebasNeue-Light.woff") format("woff"), url("../../fonts/BebasNeue-Light.ttf") format("truetype"), url("../../fonts/BebasNeue-Light.svg#BebasNeue") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../../fonts/BebasNeue-Thin.eot");
+  src: url("../../fonts/BebasNeue-Thin.eot?#iefix") format("embedded-opentype"), url("../../fonts/BebasNeue-Thin.woff") format("woff"), url("../../fonts/BebasNeue-Thin.ttf") format("truetype"), url("../../fonts/BebasNeue-Thin.svg#BebasNeue") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
   font-family: "SummerFont";
   src: url("../../fonts/SummerFont-Light.eot");
   src: url("../../fonts/SummerFont-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/SummerFont-Light.woff") format("woff"), url("../../fonts/SummerFont-Light.ttf") format("truetype"), url("../../fonts/SummerFont-Light.svg#SummerFont") format("svg");
@@ -86,7 +121,7 @@
   width: 100%;
   justify-content: space-between;
   padding: 28px 0 23px;
-  z-index: 4; }
+  z-index: 6; }
 
 .basket {
   width: 55px;
@@ -153,9 +188,14 @@
   border-radius: 8px;
   width: 254px;
   padding: 6px 8px 6px 100px;
-  height: auto; }
+  height: auto;
+  transition: all .15s ease; }
   .btn-basket:hover {
-    background: #9acc4f; }
+    background: #9acc4f;
+    box-shadow: 0px 20px 44px rgba(0, 0, 0, 0.2); }
+  .btn-basket:active {
+    transform: scale(0.9);
+    box-shadow: 0px 20px 44px rgba(0, 0, 0, 0.2); }
   .btn-basket:after {
     content: "";
     display: block;
@@ -195,43 +235,49 @@
   position: absolute;
   right: calc((100vw - 1180px)/2 - 720px);
   top: 1185px;
-  z-index: 1; }
+  z-index: 2;
+  transition: all .15s ease; }
 
 .f-scr-leaf-2 {
   position: absolute;
   right: calc((100vw - 1180px)/2 - 580px);
   top: 490px;
-  z-index: 1; }
+  z-index: 1;
+  transition: all .15s ease; }
 
 .f-scr-leaf-3 {
   position: absolute;
   left: calc((100vw - 1180px)/2 - 400px);
   top: 590px;
-  z-index: 1; }
+  z-index: 2;
+  transition: all .15s ease; }
 
 .f-scr-berry-1 {
   position: absolute;
   left: calc((100vw - 1180px)/2 - 340px);
   top: 1185px;
-  z-index: 1; }
+  z-index: 2;
+  transition: all .15s ease; }
 
 .f-scr-berry-2 {
   position: absolute;
   left: calc((100vw - 1180px)/2 - 200px);
   top: 115px;
-  z-index: 1; }
+  z-index: 2; }
 
 .f-scr-berry-3 {
   position: absolute;
   left: calc((100vw - 1180px)/2 + 340px);
   top: -300px;
-  z-index: 1; }
+  z-index: 2;
+  transition: all .15s ease; }
 
 .f-scr-leaf-berry {
   position: absolute;
   right: calc((100vw - 1180px)/2 - 450px);
   top: 25px;
-  z-index: 1; }
+  z-index: 2;
+  transition: all .15s ease; }
 
 .f-scr-plate-1 {
   position: absolute;
@@ -294,3 +340,330 @@
     margin-top: 26px;
     width: 570px;
     margin-left: auto; }
+
+.middle {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: #fafafa;
+  overflow: hidden;
+  background-image: url(../../assets/img/keks/bg-cakes.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 100%; }
+  .middle-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1180px;
+    margin: 50px auto 160px; }
+  .middle-text {
+    font-family: "PT Serif";
+    font-size: 24px;
+    line-height: 36px;
+    color: #2e1a13;
+    margin-bottom: 43px; }
+  .middle-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; }
+  .middle-desc {
+    margin-left: 44px; }
+    .middle-desc-text {
+      font-family: "BebasNeue";
+      font-size: 40px;
+      line-height: 50px;
+      color: #c7368a;
+      font-weight: bold;
+      margin-bottom: 12px; }
+      .middle-desc-text .mod-green {
+        color: #9acc4f; }
+    .middle-desc-subtext {
+      font-family: "PT Serif";
+      font-size: 24px;
+      line-height: 31px;
+      color: #303030;
+      margin-bottom: 26px; }
+    .middle-desc-img {
+      width: 330px;
+      margin: 0 auto; }
+      .middle-desc-img img {
+        width: 100%; }
+
+.reviews {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: #F5EDE4;
+  background-image: url(../../assets/img/keks/bg-f-scr.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 100%; }
+  .reviews-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1180px;
+    margin: 150px auto 60px; }
+  .reviews-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px; }
+  .reviews-book {
+    position: relative; }
+    .reviews-book-baloon {
+      position: absolute;
+      top: -280px;
+      left: 0px; }
+      .reviews-book-baloon-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 90px 85px 85px 120px;
+        font-family: "PT Serif";
+        font-size: 19px;
+        line-height: 25px;
+        color: #000; }
+        .reviews-book-baloon-text:before {
+          content: '"';
+          display: block;
+          position: absolute;
+          top: 80px;
+          left: 60px;
+          font-family: "PT Serif";
+          font-size: 68px;
+          color: #000;
+          font-style: italic; }
+        .reviews-book-baloon-text:after {
+          content: '"';
+          display: block;
+          position: absolute;
+          left: 476px;
+          bottom: 40px;
+          font-family: "PT Serif";
+          font-size: 68px;
+          color: #000;
+          font-style: italic; }
+  .reviews-desc {
+    margin-left: 34px; }
+    .reviews-desc-text {
+      font-family: "PT Serif";
+      font-size: 24px;
+      line-height: 31px;
+      color: #2e1a13;
+      margin-left: 24px;
+      margin-bottom: 30px; }
+      .reviews-desc-text .mod-sub {
+        font-size: 16px;
+        line-height: 21px; }
+    .reviews-desc-btn {
+      display: flex;
+      flex-direction: row;
+      width: 350px;
+      cursor: pointer;
+      transition: all .15s ease; }
+      .reviews-desc-btn:active {
+        transform: scale(0.9); }
+      .reviews-desc-btn-img {
+        flex: 0 0 auto;
+        width: 88px; }
+        .reviews-desc-btn-img img {
+          width: 100%; }
+      .reviews-desc-btn .btn-basket-txt {
+        margin: 22px 20px 0px;
+        margin-left: 20px; }
+  .reviews-slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .reviews-slider-item-head {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 14px; }
+    .reviews-slider-item-img {
+      flex: 0 0 auto;
+      width: 45px;
+      height: 45px;
+      background-color: #dedede;
+      border-radius: 50%;
+      background-image: url(../../assets/img/keks/vk.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+    .reviews-slider-item-info {
+      margin-left: 16px; }
+      .reviews-slider-item-info-name {
+        font-family: "PT Serif Caption";
+        font-size: 20px;
+        line-height: 21px;
+        color: #9acc4f;
+        font-style: italic;
+        margin-bottom: 4px; }
+      .reviews-slider-item-info-date {
+        font-family: "PT Serif Caption";
+        font-size: 16px;
+        line-height: 21px;
+        color: #979797;
+        font-style: italic; }
+    .reviews-slider-item-text {
+      font-family: "PT Serif Caption";
+      font-size: 16px;
+      line-height: 26px;
+      color: #69483e;
+      margin-bottom: 14px; }
+    .reviews-slider-link {
+      display: inline-block;
+      margin: 0 56.45px; }
+      .reviews-slider-link a {
+        font-family: "PT Serif Caption";
+        font-size: 14px;
+        line-height: 14px;
+        color: #2e1a13;
+        border-bottom: 1px solid #2e1a13; }
+        .reviews-slider-link a:hover {
+          border-bottom: 1px solid transparent; }
+
+.slick-arrow {
+  padding: 20px;
+  cursor: pointer; }
+
+.slick-dots {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  bottom: -56px;
+  left: 0;
+  width: 100%; }
+  .slick-dots li {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #9acc4f;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s ease; }
+    .slick-dots li button {
+      display: none; }
+    .slick-dots li.slick-active {
+      background: #c7368a; }
+
+.slick-slide {
+  outline: none; }
+
+.b-title {
+  margin: 0 72px; }
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  background-color: #F5EDE4;
+  background-image: url(../../assets/img/keks/bg-bottom.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-top: 60px;
+  min-height: 740px;
+  overflow: hidden; }
+  .bottom-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1180px;
+    margin: 40px auto 0px; }
+  .bottom-dots {
+    width: 100%;
+    height: 9px;
+    background-size: auto;
+    background-position: 0% 0%;
+    background-image: url(../../assets/img/keks/bottom-dots.png);
+    background-repeat: repeat;
+    margin-top: 16px; }
+  .bottom-info {
+    width: 700px; }
+  .bottom-title {
+    font-family: "SummerFont";
+    font-size: 100px;
+    line-height: 75px;
+    color: #9acc4f;
+    margin-bottom: 40px; }
+  .bottom-subtitle {
+    width: 450px;
+    font-family: "SummerFont";
+    font-size: 46px;
+    line-height: 51px;
+    color: #363636;
+    text-align: right;
+    margin-bottom: 40px; }
+  .bottom-attention {
+    width: 450px;
+    font-family: "PT Serif";
+    font-size: 21px;
+    line-height: 27px;
+    color: #cf0a46;
+    text-align: right; }
+    .bottom-attention-img {
+      display: inline-block;
+      margin-right: 6px; }
+      .bottom-attention-img img {
+        display: block; }
+  .bottom-btn {
+    position: relative;
+    background: #9acc4f;
+    border: 1px solid #9acc4f;
+    border-radius: 8px;
+    width: 160px;
+    padding: 4px 8px;
+    height: auto;
+    cursor: pointer;
+    text-align: center;
+    transition: all .15s ease; }
+    .bottom-btn:hover {
+      background: #9acc4f;
+      box-shadow: 0px 20px 44px rgba(0, 0, 0, 0.2); }
+    .bottom-btn:active {
+      transform: scale(0.9);
+      box-shadow: 0px 20px 44px rgba(0, 0, 0, 0.2); }
+    .bottom-btn:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: calc(100% + 8px);
+      height: calc(100% + 8px);
+      border-radius: 8px;
+      top: -4px;
+      left: -4px;
+      border: 1px solid #9acc4f;
+      z-index: 1; }
+    .bottom-btn-txt {
+      font-family: 'SummerFont';
+      text-transform: uppercase;
+      font-size: 46px;
+      line-height: 1;
+      color: #69483e; }
+  .bottom-cake {
+    position: absolute;
+    right: -155px;
+    top: -40px; }
+
+.footer-new {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  border-top: 1px solid #000;
+  z-index: 5; }
+  .footer-new-right {
+    margin-left: auto;
+    padding: 16px 0; }
+    .footer-new-right-txt {
+      font-family: "PT Serif";
+      font-size: 18px;
+      line-height: 27px;
+      color: #69483e; }

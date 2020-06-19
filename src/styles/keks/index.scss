@@ -15,6 +15,12 @@
 @include font_face(PTSerifBold, 'PT Serif Caption', '../../fonts/', 700);
 @include font_face(PTSerifBoldItalic, 'PT Serif Caption', '../../fonts/', 700, italic);
 
+@include font_face(BebasNeue-Bold, BebasNeue,'../../fonts/', 700);
+@include font_face(BebasNeue-Regular, BebasNeue,'../../fonts/', 500);
+@include font_face(BebasNeue-Book, BebasNeue,'../../fonts/', 400);
+@include font_face(BebasNeue-Light, BebasNeue,'../../fonts/', 300);
+@include font_face(BebasNeue-Thin, BebasNeue,'../../fonts/', 100);
+
 @include font_face(SummerFont-Light, SummerFont,'../../fonts/', 100);
 
 .top{
@@ -70,7 +76,7 @@
     width: 100%;
     justify-content: space-between;
     padding: 28px 0 23px;
-    z-index: 4;
+    z-index: 6;
 }
 
 .basket{
@@ -159,9 +165,15 @@
     width: 254px;
     padding: 6px 8px 6px 100px;
     height: auto;
+    transition: all .15s ease;
     &:hover{
         background: #9acc4f;
+        box-shadow: 0px 20px 44px rgba(0, 0, 0, 0.2);
 
+    }
+    &:active{
+        transform: scale(0.9);
+        box-shadow: 0px 20px 44px rgba(0, 0, 0, 0.2);
     }
     &:after{
         content: "";
@@ -207,43 +219,49 @@
     position: absolute;
     right: calc((100vw - 1180px)/2 - 720px);
     top: 1185px;
-    z-index: 1;
+    z-index: 2;
+    transition: all .15s ease;;
 }
 .f-scr-leaf-2{
     position: absolute;
     right: calc((100vw - 1180px)/2 - 580px);
     top: 490px;
     z-index: 1;
+    transition: all .15s ease;;
 }
 .f-scr-leaf-3{
     position: absolute;
     left: calc((100vw - 1180px)/2 - 400px);
     top: 590px;
-    z-index: 1;
+    z-index: 2;
+    transition: all .15s ease;;
 }
 .f-scr-berry-1{
     position: absolute;
     left: calc((100vw - 1180px)/2 - 340px);
     top: 1185px;
-    z-index: 1;
+    z-index: 2;
+    transition: all .15s ease;;
 }
 .f-scr-berry-2{
     position: absolute;
     left: calc((100vw - 1180px)/2 - 200px);
     top: 115px;
-    z-index: 1;
+    z-index: 2;
 }
 .f-scr-berry-3{
     position: absolute;
     left: calc((100vw - 1180px)/2 + 340px);
     top: -300px;
-    z-index: 1;
+    z-index: 2;
+    transition: all .15s ease;;
 }
 .f-scr-leaf-berry{
     position: absolute;
     right: calc((100vw - 1180px)/2 - 450px);
     top: 25px;
-    z-index: 1;
+    z-index: 2;
+    transition: all .15s ease;;
 }
 .f-scr-plate-1{
     position: absolute;
@@ -312,5 +330,407 @@
         margin-top: 26px;
         width: 570px;
         margin-left: auto;
+    }
+}
+
+.middle{
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: #fafafa;
+    overflow: hidden;
+    background-image: url(../../assets/img/keks/bg-cakes.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    &-content{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1180px;
+        margin: 50px auto 160px;
+    }
+    &-text{
+        font-family: "PT Serif";
+        font-size: 24px;
+        line-height: 36px;
+        color: #2e1a13;
+        margin-bottom: 43px;
+    }
+    &-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    &-video{
+
+    }
+    &-desc{
+        margin-left: 44px;
+        &-text{
+            font-family: "BebasNeue";
+            font-size: 40px;
+            line-height: 50px;
+            color: #c7368a;
+            font-weight: bold;
+            margin-bottom: 12px;
+            .mod-green{
+                color: #9acc4f;
+            }
+        }
+        &-subtext{
+            font-family: "PT Serif";
+            font-size: 24px;
+            line-height: 31px;
+            color: #303030;
+            margin-bottom: 26px;
+
+        }
+        &-img{
+            width: 330px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.reviews{
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: #F5EDE4;
+    background-image: url(../../assets/img/keks/bg-f-scr.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    &-content{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1180px;
+        margin: 150px auto 60px;
+    }
+    &-row{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+    &-book{
+        position: relative;
+        &-baloon{
+            position: absolute;
+            top: -280px;
+            left: 0px;
+            &-text{
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 90px 85px 85px 120px;
+                font-family: "PT Serif";
+                font-size: 19px;
+                line-height: 25px;
+                color: #000;
+                &:before{
+                    content: '"';
+                    display: block;
+                    position: absolute;
+                    top: 80px;
+                    left: 60px;
+                    font-family: "PT Serif";
+                    font-size: 68px;
+                    color: #000;
+                    font-style: italic;
+                }
+                &:after{
+                    content: '"';
+                    display: block;
+                    position: absolute;
+                    left: 476px;
+                    bottom: 40px;
+                    font-family: "PT Serif";
+                    font-size: 68px;
+                    color: #000;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+    &-desc{
+        margin-left: 34px;
+        &-text{
+            font-family: "PT Serif";
+            font-size: 24px;
+            line-height: 31px;
+            color: #2e1a13;
+            margin-left: 24px;
+            margin-bottom: 30px;
+            .mod-sub{
+                font-size: 16px;
+                line-height: 21px;
+
+            }
+        }
+        &-btn{
+            display: flex;
+            flex-direction: row;
+            width: 350px;
+            cursor: pointer;
+            transition: all .15s ease;
+            &:active{
+                transform: scale(0.9);
+            }
+            &-img{
+                flex: 0 0 auto;
+                width: 88px;
+                img{
+                    width: 100%;
+                }
+            }
+            .btn-basket-txt{
+                margin: 22px 20px 0px;
+                margin-left: 20px;
+            }
+        }
+    }
+    &-slider{        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &-item{
+            &-head{
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 14px;
+            }
+            &-img{
+                flex: 0 0 auto;
+                width: 45px;
+                height: 45px;
+                background-color: #dedede;
+                border-radius: 50%;
+                background-image: url(../../assets/img/keks/vk.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+
+
+            }
+            &-info{
+                margin-left: 16px;
+                &-name{
+                    font-family: "PT Serif Caption";
+                    font-size: 20px;
+                    line-height: 21px;
+                    color: #9acc4f;
+                    font-style: italic;
+                    margin-bottom: 4px;
+                }
+                &-date{
+                    font-family: "PT Serif Caption";
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #979797;
+                    font-style: italic;
+                }
+            }
+            &-text{
+                font-family: "PT Serif Caption";
+                font-size: 16px;
+                line-height: 26px;
+                color: #69483e;
+                margin-bottom: 14px;
+
+            }
+        }
+        &-link{
+            display: inline-block;
+            margin: 0 56.45px;
+            a{
+                font-family: "PT Serif Caption";
+                font-size: 14px;
+                line-height: 14px;
+                color: #2e1a13;
+                border-bottom: 1px solid #2e1a13;
+                &:hover{
+                    border-bottom: 1px solid transparent;
+    
+                }
+            }
+            
+        }
+    }
+}
+
+.slick-arrow{
+    padding: 20px;
+    cursor: pointer;
+}
+
+.slick-dots{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: -56px;
+    left: 0;
+    width: 100%;
+    li{
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        background: #9acc4f;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        button{
+            display: none;
+        }
+        &.slick-active{
+            background: #c7368a;
+        }
+    }
+}
+
+.slick-slide{
+    outline: none;
+
+}
+
+.b-title{
+    margin: 0 72px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    background-color: #F5EDE4;
+    background-image: url(../../assets/img/keks/bg-bottom.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-top: 60px;
+    min-height: 740px;
+    overflow: hidden;
+    &-content{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1180px;
+        margin: 40px auto 0px;
+    }
+    &-dots{
+        width: 100%;
+        height: 9px;
+        background-size: auto;
+        background-position: 0% 0%;
+        background-image: url(../../assets/img/keks/bottom-dots.png);
+        background-repeat: repeat;
+        margin-top: 16px;
+    }
+    &-info{
+        width: 700px;
+    }
+    &-title{
+        font-family: "SummerFont";
+        font-size: 100px;
+        line-height: 75px;
+        color: #9acc4f;
+        margin-bottom: 40px;
+    }
+    &-subtitle{
+        width: 450px;
+        font-family: "SummerFont";
+        font-size: 46px;
+        line-height: 51px;
+        color: #363636;
+        text-align: right;
+        margin-bottom: 40px;
+    }
+    &-attention{
+        width: 450px;
+        font-family: "PT Serif";
+        font-size: 21px;
+        line-height: 27px;
+        color: #cf0a46;
+        text-align: right;
+        &-img{
+            display: inline-block;
+            margin-right: 6px;
+            img{
+                display: block;
+            }
+        }
+    }
+    &-btn{
+        position: relative;
+        background: #9acc4f;
+        border: 1px solid #9acc4f;
+        border-radius: 8px;
+        width: 160px;
+        padding: 4px 8px;
+        height: auto;
+        cursor: pointer;
+        text-align: center;
+        transition: all .15s ease;
+        &:hover{
+            background: #9acc4f;
+            box-shadow: 0px 20px 44px rgba(0, 0, 0, 0.2);
+        }
+        &:active{
+            transform: scale(0.9);
+            box-shadow: 0px 20px 44px rgba(0, 0, 0, 0.2);
+        }
+        &:after{
+            content: "";
+            display: block;
+            position: absolute;
+            width: calc(100% + 8px);
+            height: calc(100% + 8px);
+            border-radius: 8px;
+            top: -4px;
+            left: -4px;
+            border: 1px solid #9acc4f;
+            z-index: 1;
+        }
+        &-txt{
+            font-family: 'SummerFont';
+            text-transform: uppercase;
+            font-size: 46px;
+            line-height: 1;
+            color: #69483e;
+        }
+    }
+    &-cake{
+        position: absolute;
+        right: -155px;
+        top: -40px;
+    }
+}
+
+.footer-new{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    border-top: 1px solid #000;
+    z-index: 5;
+    &-right{
+        margin-left: auto;
+        padding: 16px 0;
+        &-txt{
+            font-family: "PT Serif";
+            font-size: 18px;
+            line-height: 27px;
+            color: #69483e;
+
+        }
     }
 }
