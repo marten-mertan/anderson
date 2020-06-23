@@ -277,7 +277,8 @@
       display: flex;
       flex-direction: row;
       order: 2;
-      align-items: center; } }
+      align-items: center;
+      height: 44px; } }
 
 .f-scr-pr-txt {
   color: #9acc4f;
