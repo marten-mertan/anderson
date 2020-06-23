@@ -28,6 +28,9 @@
 <body>
 <style>.bask-num {opacity: 1}</style>
 <div class="top">
+	<div class="mobile-back-decor">
+
+	</div>
 	<div class="top-content">
 		<header class="header-new">
 			<a href='/' class="logo">
@@ -64,15 +67,19 @@
 					лимонная кислота
 				</span>
 			</div>
-			<div class="f-scr-price">
-				<div class="f-scr-pr">
-					<span class="f-scr-pr-txt">1 680₽</span>
-				</div>
-			</div>
+			
 			<div class="f-scr-price-blk">
+				<div class="f-scr-price">
+					<div class="f-scr-pr">
+						<span class="f-scr-pr-txt">1 680₽</span>
+					</div>
+				</div>
 				<div class="btn-basket">
 					<img src="assets/img/keks/cart.png" alt="cart">
 					<span class="btn-basket-txt" onclick="ga ('send', 'event', 'submit', 'keks'); yaCounter24015385.reachGoal('keks'); return true;"> В корзину</span>
+				</div>
+				<div class="btn-basket-mobile js-open-mobile-order">
+					<span class="btn-basket-txt"> В корзину</span>
 				</div>
 			</div>
 		</div>
@@ -133,9 +140,18 @@
 				<p>Ребята! Вы должны это попробовать – фисташковый рулет в АндерСоне... Все. Придите - попробуйте.</p>
 				<p>Я проверю</p>
 			</div>
+			<div class="top-review-text-mobile">
+				<p>Ребята! Вы должны это попробовать – фисташковый рулет в АндерСоне... Все.</p>
+				<p>Придите - попробуйте.</p>
+				<p>Я проверю</p>
+			</div>
 			<div class="top-review-autor">
-				<p>Дмитрий Левицкий.</p>
-				<p>Предприниматель, основатель HURMA Group of Companies и нескольких ресторанов в Москве и Сочи, вдохновитель и организатор Gastreet — International Restaurant Show.</p>
+				<p class="mod-autor-mobile">Дмитрий Левицкий</p>
+				<span class="mod-line-mobile"></span>
+				<p class="mod-info-mobile">Предприниматель, основатель HURMA Group of Companies и нескольких ресторанов в Москве и Сочи, вдохновитель и организатор Gastreet — International Restaurant Show.</p>
+			</div>
+			<div class="top-review-button-mobile js-open-mobile-review">
+				<span class="btn-basket-txt">Читать отзыв полностью</span>
 			</div>
 		</div>
 	</div>
@@ -172,6 +188,9 @@
 	</div>
 	<div class="f-scr-plate-1">
 		<img src="assets/img/keks/plate-1.png" alt="фисташки">
+	</div>
+	<div class="f-scr-leaf-mobile">
+		<img src="assets/img/keks/leaf-1.png" alt="листочек">
 	</div>
 </div>
 <div class="middle">
@@ -415,6 +434,9 @@
 				Свадьба, день рождения, выпускной
 				-&nbsp;идеален по&nbsp;любому поводу
 			</div>
+			<div class="bottom-cake">
+				<img src="assets/img/keks/cake-bottom.png" alt="cart">
+			</div>
 			<div class="bottom-attention">
 				<div class="bottom-attention-img">
 					<img src="assets/img/keks/attention.png" alt="attention">
@@ -426,9 +448,6 @@
 			</div>
 
 		</div>
-		<div class="bottom-cake">
-			<img src="assets/img/keks/cake-bottom.png" alt="cart">
-		</div>
 		<footer>
 			<div class="footer-new">
 				<div class="footer-new-right">
@@ -437,6 +456,59 @@
 			</div>
 		</footer>
 	</div>
+</div>
+<div class="full-review js-mobile-popup hidden">
+	<div class="mobile-close js-mobile-popup-close">
+		<img src="assets/img/keks/close-mobile.svg" alt="close">
+	</div>
+	<div class="full-review-person">
+		<img src="assets/img/keks/person.png" alt="фотография">
+	</div>
+	<div class="full-review-content">
+		<div class="full-review-text">
+				<p>
+				Мне кажется, что все должны его попробовать. Даже если вы совсем несемейный, как я, например. Вы все равно можете прийти в семейное кафе АндерСон просто для того, чтобы попробовать фисташковый рулет.  В любом блюде успех – это баланс. В десерте, c одной стороны - это баланс кислого и сладкого. Здесь с одной стороны очень много сладких ингредиентов. С другой стороны малина, которая кислит. И у тебя получается такое во рту и сладкое, и кисленькое. 
+				</p>
+				<p>
+				С другой стороны - это фактурность. У тебя есть и мягкий крем. И это, вот, безе вокруг – «хрустяшечка» - и орешки, которые покусываешь. И это многообразие вкусов и форм создает такую полноту. Это правда.
+				</p>
+				<p>
+				Когда ты просто ешь что-то сладкое и однородное, это не будет такого впечатления производить. А вот именно комплексность ощущений…. Это так кажется, что ты можешь остановиться. А потом... Потом ты уже служишь рулету, а не он тебе. Он тебя порабощает...
+				</p>
+				<br/>
+				<p>Ребята! Вы должны это попробовать – фисташковый рулет в АндерСоне... Все. Придите - попробуйте.</p>
+				<p>Я проверю</p>
+			</div>
+			<div class="full-review-autor">
+				<p class="mod-autor-name">Дмитрий <br/> Левицкий</p>
+				<p>Предприниматель, основатель HURMA Group of Companies и нескольких ресторанов в Москве и Сочи, вдохновитель и организатор Gastreet — International Restaurant Show.</p>
+			</div>
+	</div>
+</div>
+<div class="full-order js-mobile-popup hidden">
+	<div class="mobile-close js-mobile-popup-close">
+		<img src="assets/img/keks/close-mobile.svg" alt="close">
+	</div>
+	<div class="full-order-content">
+		<div class="full-order-title">
+			Легендарный фисташковый рулет
+		</div>
+		<div class="full-order-price">
+			1 680₽
+		</div>
+		<div class="full-order-row">
+			<span class="full-order-btn">-</span>
+			<input class="full-order-counter" type="tel" value="1" data-max="12" readonly="">
+			<span class="full-order-btn">+</span>
+		</div>
+		<div class="full-order-text">
+			к оформлению 4 200руб.
+		</div>
+		<a class="full-order-submit">
+			<span class="btn-basket-txt">Оформить заказ</span>
+		</a>
+	</div>
+	
 </div>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts_old/app.js"></script>

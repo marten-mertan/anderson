@@ -6,9 +6,7 @@ $(window).on('load', function () {
     slidesToScroll: 1,
     arrows: true,
     dots: true,
-    autoplay: true,
     adaptiveHeight: true,
-    autoplaySpeed: 5000,
     prevArrow: '<a class="arrows back"><img src="assets/img/keks/arrow-left.svg" alt="arrow-left"></img></a>',
     nextArrow: '<a class="arrows next"><img src="assets/img/keks/arrow-right.svg" alt="arrow-right"></img></a>'
   });
@@ -16,6 +14,14 @@ $(window).on('load', function () {
     var scroll = $(window).scrollTop();
     $('.js-parallax').css('transform', 'translateY(' + scroll * 0.4 + 'px)');
     $('.js-parallax-deep').css('transform', 'translateY(' + scroll * 0.2 + 'px)');
-    console.log(scroll);
+  });
+  $('.js-open-mobile-review').on('click', function (event) {
+    $('.full-review').removeClass('hidden');
+  });
+  $('.js-open-mobile-order').on('click', function (event) {
+    $('.full-order').removeClass('hidden');
+  });
+  $('.js-mobile-popup-close').on('click', function (event) {
+    $('.js-mobile-popup').addClass('hidden');
   });
 });

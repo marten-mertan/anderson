@@ -34,13 +34,21 @@
     background-image: url(../../assets/img/keks/background.jpg);
     background-repeat: no-repeat;
     overflow: hidden;
+    @media screen and (max-width: 1020px){
+        min-height: 1160px;
+    }
     &-content{
         display: flex;
         position: relative;
         flex-direction: column;
         width: 100%;
-        max-width: 1180px;
+        max-width: 1228px;
         margin: 0 auto;
+        padding: 0 24px;
+        box-sizing: border-box;
+        @media screen and (max-width: 1020px){
+            padding: 0 20px;
+        }
     }
     &-features{
         margin-top: 365px;
@@ -49,22 +57,54 @@
         justify-content: space-between;
         flex-wrap: nowrap;
         margin-bottom: 34px;
+        @media screen and (max-width: 1366px){
+            margin-top: 480px;
+        }
+        @media screen and (max-width: 1020px){
+            margin-top: 20px;
+            order: 1;
+            flex-direction: column;
+            position: relative;
+            z-index: 3;
+        }
         &-item{
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 25%;
+            @media screen and (max-width: 1020px){
+                flex-direction: row;
+                width: 100%;
+            }
             &:not(:first-child){
                 margin-left: 40px;
+                @media screen and (max-width: 1020px){
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
             }
             &__img{
                 margin-bottom: 20px;
+                @media screen and (max-width: 1020px){
+                    margin-bottom: 0;
+                    width: 44px;
+                    flex: 0 0 auto;
+                }
+                img{
+                    display: block;
+                    width: 100%;
+                }
             }
             &__text{
                 font-family: "PT Serif Caption";
                 font-size: 16px;
                 line-height: 20px;
                 color: #fff;
+                @media screen and (max-width: 1020px){
+                    margin-left: 12px;
+                    font-size: 13px;
+                    line-height: 17px;
+                }
             }
         }
     }
@@ -77,6 +117,11 @@
     justify-content: space-between;
     padding: 28px 0 23px;
     z-index: 6;
+    @media screen and (max-width: 1020px){
+        flex-wrap: wrap;
+        padding-top: 18px;
+        padding-bottom: 0;
+    }
 }
 
 .basket{
@@ -86,6 +131,14 @@
     right: calc((100vw - 1180px)/2 - 8px);
     background: #9acc4f;
     margin-right: 0;
+    @media only screen and (max-width: 1280px){
+        right: 40px;
+    }
+    @media screen and (max-width: 1020px){
+        top: auto;
+        bottom: 20px;
+        right: 12px;
+    }
     &-ic{
         width: 28px;
     }
@@ -104,12 +157,22 @@
 
 .logo{
     width: 276px;
+    @media screen and (max-width: 1020px){
+        width: 280px;
+        margin-bottom: 15px;
+    }
 }
 
 .call{
-
     color: #9dd746;
+    @media screen and (max-width: 1020px){
+        margin-right: 0;
+        margin-left: auto;
+    }
     &-ic{
+        @media screen and (max-width: 1020px){
+            width: 33px;
+        }
 
     }
 }
@@ -118,16 +181,38 @@
     font-family: "PT Serif Caption";
     font-size: 23px;
     color: #9dd746;
+    @media screen and (max-width: 1020px){
+        display: inline;
+        font-size: 18px;
+    }
 
 }
 .f-scr-blk{
     width: 440px;
     position: relative;
     z-index: 5;
+    @media screen and (max-width: 1020px){
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 .f-scr-title{
+    @media screen and (max-width: 1020px){
+        order: 1;
+        margin-bottom: 160px;
+    }
     &-txt{
         color: #fff;
+        @media only screen and (max-width: 1366px){
+            font-size: 93px;
+            line-height: 69px;
+        }
+        @media screen and (max-width: 1020px){
+            font-size: 75px;
+            line-height: 55px;
+        }
     }
 }
 .f-scr-desc{
@@ -136,6 +221,15 @@
     line-height: 23px;
     text-align: right;
     margin-top: -36px;
+    @media screen and (max-width: 1366px){
+        margin-top: 24px;
+    }
+    @media screen and (max-width: 1020px){
+        order: 4;
+        text-align: left;
+        font-size: 15px;
+        line-height: 20px;
+    }
     &-txt{
         color: #fff;
     }
@@ -149,11 +243,23 @@
 
 .f-scr-price{
     margin-top: 0;
+    &-blk{
+        @media screen and (max-width: 1020px){
+            display: flex;
+            flex-direction: row;
+            order: 2;
+            align-items: center;
+        }
+    }
 }
 
 .f-scr-pr-txt{
     color: #9acc4f;
     text-shadow: 0px 3px 13px rgba(0, 0, 0, 0.4);
+    @media screen and (max-width: 1020px){
+        font-size: 55px;
+        text-shadow: 0px 3px 13px rgba(0, 0, 0, 0.4);
+    }
 
 }
 
@@ -166,6 +272,12 @@
     padding: 6px 8px 6px 100px;
     height: auto;
     transition: all .15s ease;
+    @media screen and (max-width: 1020px){
+        display: none;
+        width: 120px;
+        padding: 6px 8px;
+        margin: 14px 0 0 23px;
+    }
     &:hover{
         background: #9acc4f;
         box-shadow: 0px 20px 44px rgba(0, 0, 0, 0.2);
@@ -186,6 +298,9 @@
         left: -4px;
         border: 1px solid #9acc4f;
         z-index: 1;
+        @media screen and (max-width: 1020px){
+            display: none;
+        }
     }
     &-txt{
         font-family: 'SummerFont';
@@ -193,12 +308,36 @@
         font-size: 46px;
         line-height: 1;
         color: #69483e;
+        @media screen and (max-width: 1020px){
+            font-size: 36px;
+        }
     }
     img{
         position: absolute;
         top: -16px;
         left: 16px;
         z-index: 2;
+        @media screen and (max-width: 1020px){
+            display: none;
+        }
+    }
+    &-mobile{
+        cursor: pointer;
+        display: none;
+        position: relative;
+        background: #9acc4f;
+        border: 1px solid #9acc4f;
+        border-radius: 8px;
+        width: 120px;
+        padding: 6px 8px;
+        margin: 14px 0 0 23px;
+        height: auto;
+        transition: all .15s ease;
+        @media screen and (max-width: 1020px){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 
@@ -207,6 +346,9 @@
     left: calc((100vw - 1180px)/2 - 217px);
     top: 332px;
     z-index: 2;
+    @media screen and (max-width: 1020px){
+        display: none;
+    }
 }
 
 .f-scr-keks{
@@ -214,69 +356,136 @@
     right: calc((100vw - 1180px)/2 - 80px);
     top: 115px;
     z-index: 1;
+    img{
+        width: 100%;
+    }
+    @media screen and (max-width: 1020px){
+        right: -148px;
+        top: 30px;
+        width: 560px;
+        z-index: 2;
+    }
 }
 .f-scr-leaf-1{
     position: absolute;
     right: calc((100vw - 1180px)/2 - 720px);
     top: 1185px;
     z-index: 2;
-    transition: all .15s ease;;
+    transition: all .15s ease;
+    @media screen and (max-width: 1020px){
+        display: none;
+    }
 }
 .f-scr-leaf-2{
     position: absolute;
     right: calc((100vw - 1180px)/2 - 580px);
     top: 490px;
     z-index: 1;
-    transition: all .15s ease;;
+    transition: all .15s ease;
+    @media screen and (max-width: 1020px){
+        display: none;
+    }
 }
 .f-scr-leaf-3{
     position: absolute;
     left: calc((100vw - 1180px)/2 - 400px);
     top: 590px;
     z-index: 2;
-    transition: all .15s ease;;
+    transition: all .15s ease;
+    @media screen and (max-width: 1020px){
+        display: none;
+    }
 }
 .f-scr-berry-1{
     position: absolute;
     left: calc((100vw - 1180px)/2 - 340px);
     top: 1185px;
     z-index: 2;
-    transition: all .15s ease;;
+    transition: all .15s ease;
+    @media screen and (max-width: 1020px){
+        display: none;
+    }
 }
 .f-scr-berry-2{
     position: absolute;
     left: calc((100vw - 1180px)/2 - 200px);
     top: 115px;
     z-index: 2;
+    @media screen and (max-width: 1020px){
+        display: none;
+    }
 }
 .f-scr-berry-3{
     position: absolute;
     left: calc((100vw - 1180px)/2 + 340px);
     top: -300px;
     z-index: 2;
-    transition: all .15s ease;;
+    transition: all .15s ease;
+    @media screen and (max-width: 1020px){
+        display: none;
+    }
 }
 .f-scr-leaf-berry{
     position: absolute;
     right: calc((100vw - 1180px)/2 - 450px);
     top: 25px;
     z-index: 2;
-    transition: all .15s ease;;
+    transition: all .15s ease;
+    @media screen and (max-width: 1020px){
+        display: none;
+    }
+}
+.f-scr-leaf-mobile{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    transition: all .15s ease;
+    @media screen and (max-width: 1020px){
+        display: block;
+        right: -268px;
+        top: 250px;
+        transform: rotate(200deg);
+        z-index: 1;
+    }
+
 }
 .f-scr-plate-1{
     position: absolute;
     left: 0;
     top: 0;
     z-index: 1;
+    @media screen and (max-width: 1020px){
+        display: none;
+    }   
 }
 .f-scr-person{
     position: absolute;
     left: calc((100vw - 1180px)/2 - 380px);
     bottom: -6px;
     z-index: 1;
+    @media screen and (max-width: 1020px){
+        z-index: 3;
+        width: 589px;
+        left: -4px;
+        bottom: 268px;
+    }   
+    @media screen and (max-width: 640px){
+        z-index: 3;
+        width: 589px;
+        left: -204px;
+        bottom: 268px;
+    }   
+    img{
+        display: block;
+        width: 100%;
+    }
+
+    
+    
 }
 
 .bg-dots{
+    position: relative;
     width: calc(100% + 60px);
     height: 25px;
     margin-left: -30px;
@@ -284,6 +493,11 @@
     background-position: 0% 0%;
     background-image: url(../../assets/img/keks/bg-dots.png);
     background-repeat: repeat;
+    @media screen and (max-width: 1020px){
+        width: 100%;
+        margin: 0;
+        z-index:2;
+    }   
 }
 
 .top-review{
@@ -291,12 +505,20 @@
     width: 660px;
     margin: 124px 0 130px auto;
     z-index: 5;
+    @media screen and (max-width: 1020px){
+        order: 2;
+        margin: 0;
+        width: 100%;
+    }   
     &-text{
         position: relative;
         font-family: "PT Serif";
         font-size: 19px;
         line-height: 25px;
         color: #fff;
+        @media screen and (max-width: 1020px){
+            display: none;
+        }
         &:before{
             content: '"';
             display: block;
@@ -319,6 +541,42 @@
             color: #9acc4f;
             font-style: italic;
         }
+        &-mobile{
+            display: none;
+            position: relative;
+            font-family: "PT Serif";
+            font-size: 19px;
+            line-height: 25px;
+            color: #fff;
+            margin-top: 44px;
+            max-width: 356px;
+            margin-left: auto;
+            &:before{
+                content: '"';
+                display: block;
+                position: absolute;
+                top: -20px;
+                left: -16px;
+                font-family: "PT Serif";
+                font-size: 68px;
+                color: #9acc4f;
+                font-style: italic;
+            }
+            &:after{
+                content: '"';
+                display: block;
+                position: absolute;
+                left: 96px;
+                bottom: -40px;
+                font-family: "PT Serif";
+                font-size: 68px;
+                color: #9acc4f;
+                font-style: italic;
+            }
+            @media screen and (max-width: 1020px){
+                display: block;
+            }
+        }
 
     }
     &-autor{
@@ -330,6 +588,30 @@
         margin-top: 26px;
         width: 570px;
         margin-left: auto;
+        @media screen and (max-width: 1020px){
+            width: 100%;
+            margin-top: 150px;
+        }
+        
+    }
+    &-button-mobile{
+        display: none;
+        position: relative;
+        background: #9acc4f;
+        border: 1px solid #9acc4f;
+        border-radius: 8px;
+        width: 280px;
+        padding: 6px 8px;
+        margin: 24px auto 20px;
+        height: auto;
+        transition: all .15s ease;
+        cursor: pointer;
+        @media screen and (max-width: 1020px){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
     }
 }
 
@@ -343,13 +625,22 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% 100%;
+    @media screen and (max-width: 1020px){
+        background-image: none;
+    }
     &-content{
         display: flex;
         position: relative;
         flex-direction: column;
         width: 100%;
-        max-width: 1180px;
+        max-width: 1228px;
         margin: 50px auto 160px;
+        padding: 0 24px;
+        box-sizing: border-box;
+        @media screen and (max-width: 1020px){
+            margin: 20px auto;
+            padding: 0 20px;
+        }
     }
     &-text{
         font-family: "PT Serif";
@@ -357,6 +648,11 @@
         line-height: 36px;
         color: #2e1a13;
         margin-bottom: 43px;
+        @media screen and (max-width: 1020px){
+            font-size: 16px;
+            line-height: 18px;
+            margin-bottom: 16px;
+        }
     }
     &-row{
         display: flex;
@@ -364,10 +660,25 @@
         justify-content: flex-start;
     }
     &-video{
+        @media screen and (max-width: 1020px){
+            width: 272px;
+            margin: 0 auto;
+        }
+        iframe{
+            width: 613px;
+            height: 344px;
+            @media screen and (max-width: 1020px){
+                width: 272px;
+                height: 156px;
+            }
+        }
 
     }
     &-desc{
         margin-left: 44px;
+        @media screen and (max-width: 1020px){
+            display: none;
+        }
         &-text{
             font-family: "BebasNeue";
             font-size: 40px;
@@ -406,13 +717,18 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% 100%;
+    @media screen and (max-width: 1020px){
+        display: none;
+    }
     &-content{
         display: flex;
         position: relative;
         flex-direction: column;
         width: 100%;
-        max-width: 1180px;
+        max-width: 1228px;
         margin: 150px auto 60px;
+        padding: 0 24px;
+        box-sizing: border-box;
     }
     &-row{
         display: flex;
@@ -421,10 +737,16 @@
     }
     &-book{
         position: relative;
+        @media screen and (max-width: 1200px){
+            
+        }
         &-baloon{
             position: absolute;
             top: -280px;
             left: 0px;
+            @media screen and (max-width: 1200px){
+                top: -240px;
+            }
             &-text{
                 position: absolute;
                 top: 0;
@@ -434,6 +756,9 @@
                 font-size: 19px;
                 line-height: 25px;
                 color: #000;
+                @media screen and (max-width: 1200px){
+                    padding-top: 70px;
+                }
                 &:before{
                     content: '"';
                     display: block;
@@ -455,6 +780,18 @@
                     font-size: 68px;
                     color: #000;
                     font-style: italic;
+                }
+            }
+            &-back{
+                @media screen and (max-width: 1200px){
+                    width: 1000px;
+                }
+                img{
+                    @media screen and (max-width: 1200px){
+                        display: block;
+                        width: 100%;
+                    }
+
                 }
             }
         }
@@ -605,6 +942,11 @@
     margin: 0 72px;
 }
 
+.cont{
+    @media screen and (max-width: 1020px){
+        display: none;
+    }
+}
 .bottom{
     display: flex;
     flex-direction: column;
@@ -618,13 +960,21 @@
     margin-top: 60px;
     min-height: 740px;
     overflow: hidden;
+    @media screen and (max-width: 1020px){
+        margin-top: 0;
+    }
     &-content{
         display: flex;
         position: relative;
         flex-direction: column;
         width: 100%;
-        max-width: 1180px;
+        max-width: 1228px;
         margin: 40px auto 0px;
+        padding: 0 24px;
+        box-sizing: border-box;
+        @media screen and (max-width: 1020px){
+            padding: 0 20px;
+        }
     }
     &-dots{
         width: 100%;
@@ -637,15 +987,27 @@
     }
     &-info{
         width: 700px;
+        @media screen and (max-width: 1020px){
+            position: relative;
+            width: 100%;
+        }
     }
     &-title{
+        position: relative;
         font-family: "SummerFont";
         font-size: 100px;
         line-height: 75px;
         color: #9acc4f;
         margin-bottom: 40px;
+        z-index: 2;
+        @media screen and (max-width: 1020px){
+            font-size: 45px;
+            line-height: 35px;
+            margin-bottom: 12px;
+        }
     }
     &-subtitle{
+        position: relative;
         width: 450px;
         font-family: "SummerFont";
         font-size: 46px;
@@ -653,17 +1015,40 @@
         color: #363636;
         text-align: right;
         margin-bottom: 40px;
+        z-index: 2;
+        @media screen and (max-width: 1020px){
+            width: 100%;
+            font-size: 35px;
+            line-height: 31px;
+            margin-bottom: 316px;
+        }
     }
     &-attention{
+        position: relative;
         width: 450px;
         font-family: "PT Serif";
         font-size: 21px;
         line-height: 27px;
         color: #cf0a46;
         text-align: right;
+        z-index: 2;
+        @media screen and (max-width: 1020px){
+            position: relative;
+            z-index: 4;
+            width: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-left: auto;
+            margin-bottom: 14px;
+        }
         &-img{
             display: inline-block;
             margin-right: 6px;
+            @media screen and (max-width: 1020px){
+                margin-right: 0;
+                margin-bottom: 6px;
+            }
             img{
                 display: block;
             }
@@ -680,6 +1065,11 @@
         cursor: pointer;
         text-align: center;
         transition: all .15s ease;
+        @media screen and (max-width: 1020px){
+            width: 280px;
+            padding: 6px 8px;
+            margin: 0 auto;
+        }
         &:hover{
             background: #9acc4f;
             box-shadow: 0px 20px 44px rgba(0, 0, 0, 0.2);
@@ -699,6 +1089,9 @@
             left: -4px;
             border: 1px solid #9acc4f;
             z-index: 1;
+            @media screen and (max-width: 1020px){
+                display: none;
+            }
         }
         &-txt{
             font-family: 'SummerFont';
@@ -706,12 +1099,26 @@
             font-size: 46px;
             line-height: 1;
             color: #69483e;
+            @media screen and (max-width: 1020px){
+                font-size: 36px;
+            }
         }
     }
     &-cake{
         position: absolute;
         right: -155px;
         top: -40px;
+        z-index: 1;
+        @media screen and (max-width: 1020px){
+            width: 429px;
+            top: auto;
+            bottom: 120px;
+            left: calc(50% - 216px);
+        }
+        img{
+            display: block;
+            width: 100%;
+        }
     }
 }
 
@@ -722,6 +1129,9 @@
     margin-top: 80px;
     border-top: 1px solid #000;
     z-index: 5;
+    @media screen and (max-width: 1020px){
+        margin-top: 20px;
+    }
     &-right{
         margin-left: auto;
         padding: 16px 0;
@@ -733,4 +1143,280 @@
 
         }
     }
+}
+
+.mobile-back-decor{
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(../../assets/img/keks/back-decor-mobile.png);
+    @media screen and (max-width: 1020px){
+        display: block;
+        z-index: 3;
+    }
+}
+
+.mod-autor-mobile{
+    @media screen and (max-width: 1020px){
+        font-size: 25px;
+        line-height: 32px;
+        width: 50%;
+        margin-left: auto;
+    }
+
+}
+
+.mod-line-mobile{
+    display: none;
+    @media screen and (max-width: 1020px){
+        display: flex;
+        width: 1px;
+        height: 115px;
+        background: #9acc4f;
+        margin: 16px 40px 22px auto;
+    }
+
+}
+
+.mod-info-mobile{
+    @media screen and (max-width: 1020px){
+        margin: 0 0 0 auto;
+        height: 156px;
+    }
+
+}
+
+.full-review{
+    display: none;
+    @media screen and (max-width: 1020px){
+        display: block;
+        position: fixed;
+        width: 100%;
+        min-height: 100vh;
+        height: 100vh;
+        overflow: auto;
+        background-size: cover;
+        background-position: 50% 0%;
+        background-color: #6a6763;
+        background-image: url(../../assets/img/keks/background.jpg);
+        background-repeat: no-repeat;
+        z-index: 50;
+        transition: all .2 ease;
+    }
+    &.hidden{
+        display: none;
+    }
+    &:after{
+        content: "";
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: #000;
+        opacity: 0.4;
+        z-index: 3;
+    }
+    &-person{
+        position: fixed;
+        width: 589px;
+        bottom: 0;
+        left: -212px;
+        z-index: 2;
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+    &-content{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 59px 18px 40px;
+        z-index: 4;
+
+    }
+    &-text{
+        position: relative;
+        font-family: "PT Serif";
+        font-size: 16px;
+        line-height: 25px;
+        color: #fff;
+        margin-bottom: 30px;
+        &:before{
+            content: '"';
+            display: block;
+            position: absolute;
+            top: -10px;
+            left: -13px;
+            font-family: "PT Serif";
+            font-size: 68px;
+            color: #9acc4f;
+            font-style: italic;
+        }
+        &:after{
+            content: '"';
+            display: block;
+            position: absolute;
+            left: 90px;
+            bottom: -40px;
+            font-family: "PT Serif";
+            font-size: 68px;
+            color: #9acc4f;
+            font-style: italic;
+        }
+
+    }
+    &-autor{
+        font-family: "PT Serif";
+        font-size: 16px;
+        line-height: 26px;
+        color: #9acc4f;
+        text-align: right;
+    }
+
+}
+
+.full-order{
+    display: none;
+    @media screen and (max-width: 1020px){
+        display: block;
+        position: fixed;
+        width: 100%;
+        min-height: 100vh;
+        height: 100vh;
+        overflow: auto;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-color: #6a6763;
+        background-image: url(../../assets/img/keks/order-mobile-back.jpg);
+        background-repeat: no-repeat;
+        
+        z-index: 50;
+        transition: all .2 ease;
+    }
+    &.hidden{
+        display: none;
+    }
+    &-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 42px 16px 52px;
+
+    }
+    &-title{
+        font-family: "SummerFont";
+        font-size: 62px;
+        line-height: 55px;
+        color: #9acc4f;
+        text-align: center;
+        margin-bottom: 30px;
+
+    }
+    &-price{
+        font-size: 55px;
+        line-height: 55px;
+        font-family: 'LeOsler_Rough-Regular';
+        color: #9acc4f;
+        letter-spacing: -0.02em;
+        text-shadow: 0px 3px 13px rgba(0, 0, 0, 0.4);
+        margin-bottom: 20px;
+    }
+    &-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &-btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        box-sizing: border-box;
+        color: #69483e;
+        background-color: white;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        font-family: "SummerFont";
+        font-size: 42px;
+        line-height: 36px;
+        user-select: none;
+        cursor: pointer;
+        transition: all .2s ease;
+        &:active{
+            transform: scale(0.9);
+            box-shadow: 0px 20px 44px rgba(0, 0, 0, 0.2);
+        }
+    }
+    &-counter{
+        font-family: "SummerFont";
+        font-size: 62px;
+        line-height: 55px;
+        color: #fff;
+        font-weight: bold;
+        width: 40px;
+        text-align: center;
+        border: none;
+        outline: none;
+        font-weight: normal;
+        vertical-align: middle;
+        margin: 0 30px;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: transparent;
+        -webkit-text-size-adjust: none;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: transparent;
+    }
+    &-text{
+        font-family: "PT Serif Caption";
+        font-size: 12px;
+        line-height: 14px;
+        color: #fff;
+        margin-bottom: 44px;
+
+    }
+    &-submit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background: #9acc4f;
+        border: 1px solid #9acc4f;
+        border-radius: 8px;
+        width: 214px;
+        padding: 6px 8px;
+        height: auto;
+        transition: all .15s ease;
+        cursor: pointer;
+    }
+
+}
+
+.mobile-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+}
+
+.mod-autor-name{
+    font-family: "PT Serif";
+    font-size: 25px;
+    line-height: 32px;
+    color: #9acc4f;
+    text-align: right;
+    margin-bottom: 12px;
+
 }

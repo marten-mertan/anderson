@@ -86,13 +86,21 @@
   background-image: url(../../assets/img/keks/background.jpg);
   background-repeat: no-repeat;
   overflow: hidden; }
+  @media screen and (max-width: 1020px) {
+    .top {
+      min-height: 1160px; } }
   .top-content {
     display: flex;
     position: relative;
     flex-direction: column;
     width: 100%;
-    max-width: 1180px;
-    margin: 0 auto; }
+    max-width: 1228px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box; }
+    @media screen and (max-width: 1020px) {
+      .top-content {
+        padding: 0 20px; } }
   .top-features {
     margin-top: 365px;
     display: flex;
@@ -100,20 +108,51 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     margin-bottom: 34px; }
+    @media screen and (max-width: 1366px) {
+      .top-features {
+        margin-top: 480px; } }
+    @media screen and (max-width: 1020px) {
+      .top-features {
+        margin-top: 20px;
+        order: 1;
+        flex-direction: column;
+        position: relative;
+        z-index: 3; } }
     .top-features-item {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 25%; }
+      @media screen and (max-width: 1020px) {
+        .top-features-item {
+          flex-direction: row;
+          width: 100%; } }
       .top-features-item:not(:first-child) {
         margin-left: 40px; }
+        @media screen and (max-width: 1020px) {
+          .top-features-item:not(:first-child) {
+            margin-left: 0;
+            margin-top: 20px; } }
       .top-features-item__img {
         margin-bottom: 20px; }
+        @media screen and (max-width: 1020px) {
+          .top-features-item__img {
+            margin-bottom: 0;
+            width: 44px;
+            flex: 0 0 auto; } }
+        .top-features-item__img img {
+          display: block;
+          width: 100%; }
       .top-features-item__text {
         font-family: "PT Serif Caption";
         font-size: 16px;
         line-height: 20px;
         color: #fff; }
+        @media screen and (max-width: 1020px) {
+          .top-features-item__text {
+            margin-left: 12px;
+            font-size: 13px;
+            line-height: 17px; } }
 
 .header-new {
   display: flex;
@@ -122,6 +161,11 @@
   justify-content: space-between;
   padding: 28px 0 23px;
   z-index: 6; }
+  @media screen and (max-width: 1020px) {
+    .header-new {
+      flex-wrap: wrap;
+      padding-top: 18px;
+      padding-bottom: 0; } }
 
 .basket {
   width: 55px;
@@ -130,6 +174,14 @@
   right: calc((100vw - 1180px)/2 - 8px);
   background: #9acc4f;
   margin-right: 0; }
+  @media only screen and (max-width: 1280px) {
+    .basket {
+      right: 40px; } }
+  @media screen and (max-width: 1020px) {
+    .basket {
+      top: auto;
+      bottom: 20px;
+      right: 12px; } }
   .basket-ic {
     width: 28px; }
 
@@ -144,22 +196,56 @@
 
 .logo {
   width: 276px; }
+  @media screen and (max-width: 1020px) {
+    .logo {
+      width: 280px;
+      margin-bottom: 15px; } }
 
 .call {
   color: #9dd746; }
+  @media screen and (max-width: 1020px) {
+    .call {
+      margin-right: 0;
+      margin-left: auto; } }
+  @media screen and (max-width: 1020px) {
+    .call-ic {
+      width: 33px; } }
 
 .h-tel {
   font-family: "PT Serif Caption";
   font-size: 23px;
   color: #9dd746; }
+  @media screen and (max-width: 1020px) {
+    .h-tel {
+      display: inline;
+      font-size: 18px; } }
 
 .f-scr-blk {
   width: 440px;
   position: relative;
   z-index: 5; }
+  @media screen and (max-width: 1020px) {
+    .f-scr-blk {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 20px; } }
+
+@media screen and (max-width: 1020px) {
+  .f-scr-title {
+    order: 1;
+    margin-bottom: 160px; } }
 
 .f-scr-title-txt {
   color: #fff; }
+  @media only screen and (max-width: 1366px) {
+    .f-scr-title-txt {
+      font-size: 93px;
+      line-height: 69px; } }
+  @media screen and (max-width: 1020px) {
+    .f-scr-title-txt {
+      font-size: 75px;
+      line-height: 55px; } }
 
 .f-scr-desc {
   font-family: "PT Serif Caption";
@@ -167,6 +253,15 @@
   line-height: 23px;
   text-align: right;
   margin-top: -36px; }
+  @media screen and (max-width: 1366px) {
+    .f-scr-desc {
+      margin-top: 24px; } }
+  @media screen and (max-width: 1020px) {
+    .f-scr-desc {
+      order: 4;
+      text-align: left;
+      font-size: 15px;
+      line-height: 20px; } }
   .f-scr-desc-txt {
     color: #fff; }
   .f-scr-desc .mod-rose {
@@ -176,10 +271,20 @@
 
 .f-scr-price {
   margin-top: 0; }
+  @media screen and (max-width: 1020px) {
+    .f-scr-price-blk {
+      display: flex;
+      flex-direction: row;
+      order: 2;
+      align-items: center; } }
 
 .f-scr-pr-txt {
   color: #9acc4f;
   text-shadow: 0px 3px 13px rgba(0, 0, 0, 0.4); }
+  @media screen and (max-width: 1020px) {
+    .f-scr-pr-txt {
+      font-size: 55px;
+      text-shadow: 0px 3px 13px rgba(0, 0, 0, 0.4); } }
 
 .btn-basket {
   position: relative;
@@ -190,6 +295,12 @@
   padding: 6px 8px 6px 100px;
   height: auto;
   transition: all .15s ease; }
+  @media screen and (max-width: 1020px) {
+    .btn-basket {
+      display: none;
+      width: 120px;
+      padding: 6px 8px;
+      margin: 14px 0 0 23px; } }
   .btn-basket:hover {
     background: #9acc4f;
     box-shadow: 0px 20px 44px rgba(0, 0, 0, 0.2); }
@@ -207,29 +318,66 @@
     left: -4px;
     border: 1px solid #9acc4f;
     z-index: 1; }
+    @media screen and (max-width: 1020px) {
+      .btn-basket:after {
+        display: none; } }
   .btn-basket-txt {
     font-family: 'SummerFont';
     text-transform: uppercase;
     font-size: 46px;
     line-height: 1;
     color: #69483e; }
+    @media screen and (max-width: 1020px) {
+      .btn-basket-txt {
+        font-size: 36px; } }
   .btn-basket img {
     position: absolute;
     top: -16px;
     left: 16px;
     z-index: 2; }
+    @media screen and (max-width: 1020px) {
+      .btn-basket img {
+        display: none; } }
+  .btn-basket-mobile {
+    cursor: pointer;
+    display: none;
+    position: relative;
+    background: #9acc4f;
+    border: 1px solid #9acc4f;
+    border-radius: 8px;
+    width: 120px;
+    padding: 6px 8px;
+    margin: 14px 0 0 23px;
+    height: auto;
+    transition: all .15s ease; }
+    @media screen and (max-width: 1020px) {
+      .btn-basket-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center; } }
 
 .f-scr-pistachio {
   position: absolute;
   left: calc((100vw - 1180px)/2 - 217px);
   top: 332px;
   z-index: 2; }
+  @media screen and (max-width: 1020px) {
+    .f-scr-pistachio {
+      display: none; } }
 
 .f-scr-keks {
   position: absolute;
   right: calc((100vw - 1180px)/2 - 80px);
   top: 115px;
   z-index: 1; }
+  .f-scr-keks img {
+    width: 100%; }
+  @media screen and (max-width: 1020px) {
+    .f-scr-keks {
+      right: -148px;
+      top: 30px;
+      width: 560px;
+      z-index: 2; } }
 
 .f-scr-leaf-1 {
   position: absolute;
@@ -237,6 +385,9 @@
   top: 1185px;
   z-index: 2;
   transition: all .15s ease; }
+  @media screen and (max-width: 1020px) {
+    .f-scr-leaf-1 {
+      display: none; } }
 
 .f-scr-leaf-2 {
   position: absolute;
@@ -244,6 +395,9 @@
   top: 490px;
   z-index: 1;
   transition: all .15s ease; }
+  @media screen and (max-width: 1020px) {
+    .f-scr-leaf-2 {
+      display: none; } }
 
 .f-scr-leaf-3 {
   position: absolute;
@@ -251,6 +405,9 @@
   top: 590px;
   z-index: 2;
   transition: all .15s ease; }
+  @media screen and (max-width: 1020px) {
+    .f-scr-leaf-3 {
+      display: none; } }
 
 .f-scr-berry-1 {
   position: absolute;
@@ -258,12 +415,18 @@
   top: 1185px;
   z-index: 2;
   transition: all .15s ease; }
+  @media screen and (max-width: 1020px) {
+    .f-scr-berry-1 {
+      display: none; } }
 
 .f-scr-berry-2 {
   position: absolute;
   left: calc((100vw - 1180px)/2 - 200px);
   top: 115px;
   z-index: 2; }
+  @media screen and (max-width: 1020px) {
+    .f-scr-berry-2 {
+      display: none; } }
 
 .f-scr-berry-3 {
   position: absolute;
@@ -271,6 +434,9 @@
   top: -300px;
   z-index: 2;
   transition: all .15s ease; }
+  @media screen and (max-width: 1020px) {
+    .f-scr-berry-3 {
+      display: none; } }
 
 .f-scr-leaf-berry {
   position: absolute;
@@ -278,20 +444,55 @@
   top: 25px;
   z-index: 2;
   transition: all .15s ease; }
+  @media screen and (max-width: 1020px) {
+    .f-scr-leaf-berry {
+      display: none; } }
+
+.f-scr-leaf-mobile {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  transition: all .15s ease; }
+  @media screen and (max-width: 1020px) {
+    .f-scr-leaf-mobile {
+      display: block;
+      right: -268px;
+      top: 250px;
+      transform: rotate(200deg);
+      z-index: 1; } }
 
 .f-scr-plate-1 {
   position: absolute;
   left: 0;
   top: 0;
   z-index: 1; }
+  @media screen and (max-width: 1020px) {
+    .f-scr-plate-1 {
+      display: none; } }
 
 .f-scr-person {
   position: absolute;
   left: calc((100vw - 1180px)/2 - 380px);
   bottom: -6px;
   z-index: 1; }
+  @media screen and (max-width: 1020px) {
+    .f-scr-person {
+      z-index: 3;
+      width: 589px;
+      left: -4px;
+      bottom: 268px; } }
+  @media screen and (max-width: 640px) {
+    .f-scr-person {
+      z-index: 3;
+      width: 589px;
+      left: -204px;
+      bottom: 268px; } }
+  .f-scr-person img {
+    display: block;
+    width: 100%; }
 
 .bg-dots {
+  position: relative;
   width: calc(100% + 60px);
   height: 25px;
   margin-left: -30px;
@@ -299,18 +500,31 @@
   background-position: 0% 0%;
   background-image: url(../../assets/img/keks/bg-dots.png);
   background-repeat: repeat; }
+  @media screen and (max-width: 1020px) {
+    .bg-dots {
+      width: 100%;
+      margin: 0;
+      z-index: 2; } }
 
 .top-review {
   position: relative;
   width: 660px;
   margin: 124px 0 130px auto;
   z-index: 5; }
+  @media screen and (max-width: 1020px) {
+    .top-review {
+      order: 2;
+      margin: 0;
+      width: 100%; } }
   .top-review-text {
     position: relative;
     font-family: "PT Serif";
     font-size: 19px;
     line-height: 25px;
     color: #fff; }
+    @media screen and (max-width: 1020px) {
+      .top-review-text {
+        display: none; } }
     .top-review-text:before {
       content: '"';
       display: block;
@@ -331,6 +545,39 @@
       font-size: 68px;
       color: #9acc4f;
       font-style: italic; }
+    .top-review-text-mobile {
+      display: none;
+      position: relative;
+      font-family: "PT Serif";
+      font-size: 19px;
+      line-height: 25px;
+      color: #fff;
+      margin-top: 44px;
+      max-width: 356px;
+      margin-left: auto; }
+      .top-review-text-mobile:before {
+        content: '"';
+        display: block;
+        position: absolute;
+        top: -20px;
+        left: -16px;
+        font-family: "PT Serif";
+        font-size: 68px;
+        color: #9acc4f;
+        font-style: italic; }
+      .top-review-text-mobile:after {
+        content: '"';
+        display: block;
+        position: absolute;
+        left: 96px;
+        bottom: -40px;
+        font-family: "PT Serif";
+        font-size: 68px;
+        color: #9acc4f;
+        font-style: italic; }
+      @media screen and (max-width: 1020px) {
+        .top-review-text-mobile {
+          display: block; } }
   .top-review-autor {
     font-family: "PT Serif";
     font-size: 16px;
@@ -340,6 +587,27 @@
     margin-top: 26px;
     width: 570px;
     margin-left: auto; }
+    @media screen and (max-width: 1020px) {
+      .top-review-autor {
+        width: 100%;
+        margin-top: 150px; } }
+  .top-review-button-mobile {
+    display: none;
+    position: relative;
+    background: #9acc4f;
+    border: 1px solid #9acc4f;
+    border-radius: 8px;
+    width: 280px;
+    padding: 6px 8px;
+    margin: 24px auto 20px;
+    height: auto;
+    transition: all .15s ease;
+    cursor: pointer; }
+    @media screen and (max-width: 1020px) {
+      .top-review-button-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center; } }
 
 .middle {
   display: flex;
@@ -351,25 +619,53 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 100%; }
+  @media screen and (max-width: 1020px) {
+    .middle {
+      background-image: none; } }
   .middle-content {
     display: flex;
     position: relative;
     flex-direction: column;
     width: 100%;
-    max-width: 1180px;
-    margin: 50px auto 160px; }
+    max-width: 1228px;
+    margin: 50px auto 160px;
+    padding: 0 24px;
+    box-sizing: border-box; }
+    @media screen and (max-width: 1020px) {
+      .middle-content {
+        margin: 20px auto;
+        padding: 0 20px; } }
   .middle-text {
     font-family: "PT Serif";
     font-size: 24px;
     line-height: 36px;
     color: #2e1a13;
     margin-bottom: 43px; }
+    @media screen and (max-width: 1020px) {
+      .middle-text {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 16px; } }
   .middle-row {
     display: flex;
     flex-direction: row;
     justify-content: flex-start; }
+  @media screen and (max-width: 1020px) {
+    .middle-video {
+      width: 272px;
+      margin: 0 auto; } }
+  .middle-video iframe {
+    width: 613px;
+    height: 344px; }
+    @media screen and (max-width: 1020px) {
+      .middle-video iframe {
+        width: 272px;
+        height: 156px; } }
   .middle-desc {
     margin-left: 44px; }
+    @media screen and (max-width: 1020px) {
+      .middle-desc {
+        display: none; } }
     .middle-desc-text {
       font-family: "BebasNeue";
       font-size: 40px;
@@ -400,13 +696,18 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 100%; }
+  @media screen and (max-width: 1020px) {
+    .reviews {
+      display: none; } }
   .reviews-content {
     display: flex;
     position: relative;
     flex-direction: column;
     width: 100%;
-    max-width: 1180px;
-    margin: 150px auto 60px; }
+    max-width: 1228px;
+    margin: 150px auto 60px;
+    padding: 0 24px;
+    box-sizing: border-box; }
   .reviews-row {
     display: flex;
     flex-direction: row;
@@ -417,6 +718,9 @@
       position: absolute;
       top: -280px;
       left: 0px; }
+      @media screen and (max-width: 1200px) {
+        .reviews-book-baloon {
+          top: -240px; } }
       .reviews-book-baloon-text {
         position: absolute;
         top: 0;
@@ -426,6 +730,9 @@
         font-size: 19px;
         line-height: 25px;
         color: #000; }
+        @media screen and (max-width: 1200px) {
+          .reviews-book-baloon-text {
+            padding-top: 70px; } }
         .reviews-book-baloon-text:before {
           content: '"';
           display: block;
@@ -446,6 +753,13 @@
           font-size: 68px;
           color: #000;
           font-style: italic; }
+      @media screen and (max-width: 1200px) {
+        .reviews-book-baloon-back {
+          width: 1000px; } }
+      @media screen and (max-width: 1200px) {
+        .reviews-book-baloon-back img {
+          display: block;
+          width: 100%; } }
   .reviews-desc {
     margin-left: 34px; }
     .reviews-desc-text {
@@ -557,6 +871,10 @@
 .b-title {
   margin: 0 72px; }
 
+@media screen and (max-width: 1020px) {
+  .cont {
+    display: none; } }
+
 .bottom {
   display: flex;
   flex-direction: column;
@@ -570,13 +888,21 @@
   margin-top: 60px;
   min-height: 740px;
   overflow: hidden; }
+  @media screen and (max-width: 1020px) {
+    .bottom {
+      margin-top: 0; } }
   .bottom-content {
     display: flex;
     position: relative;
     flex-direction: column;
     width: 100%;
-    max-width: 1180px;
-    margin: 40px auto 0px; }
+    max-width: 1228px;
+    margin: 40px auto 0px;
+    padding: 0 24px;
+    box-sizing: border-box; }
+    @media screen and (max-width: 1020px) {
+      .bottom-content {
+        padding: 0 20px; } }
   .bottom-dots {
     width: 100%;
     height: 9px;
@@ -587,30 +913,65 @@
     margin-top: 16px; }
   .bottom-info {
     width: 700px; }
+    @media screen and (max-width: 1020px) {
+      .bottom-info {
+        position: relative;
+        width: 100%; } }
   .bottom-title {
+    position: relative;
     font-family: "SummerFont";
     font-size: 100px;
     line-height: 75px;
     color: #9acc4f;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    z-index: 2; }
+    @media screen and (max-width: 1020px) {
+      .bottom-title {
+        font-size: 45px;
+        line-height: 35px;
+        margin-bottom: 12px; } }
   .bottom-subtitle {
+    position: relative;
     width: 450px;
     font-family: "SummerFont";
     font-size: 46px;
     line-height: 51px;
     color: #363636;
     text-align: right;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    z-index: 2; }
+    @media screen and (max-width: 1020px) {
+      .bottom-subtitle {
+        width: 100%;
+        font-size: 35px;
+        line-height: 31px;
+        margin-bottom: 316px; } }
   .bottom-attention {
+    position: relative;
     width: 450px;
     font-family: "PT Serif";
     font-size: 21px;
     line-height: 27px;
     color: #cf0a46;
-    text-align: right; }
+    text-align: right;
+    z-index: 2; }
+    @media screen and (max-width: 1020px) {
+      .bottom-attention {
+        position: relative;
+        z-index: 4;
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-left: auto;
+        margin-bottom: 14px; } }
     .bottom-attention-img {
       display: inline-block;
       margin-right: 6px; }
+      @media screen and (max-width: 1020px) {
+        .bottom-attention-img {
+          margin-right: 0;
+          margin-bottom: 6px; } }
       .bottom-attention-img img {
         display: block; }
   .bottom-btn {
@@ -624,6 +985,11 @@
     cursor: pointer;
     text-align: center;
     transition: all .15s ease; }
+    @media screen and (max-width: 1020px) {
+      .bottom-btn {
+        width: 280px;
+        padding: 6px 8px;
+        margin: 0 auto; } }
     .bottom-btn:hover {
       background: #9acc4f;
       box-shadow: 0px 20px 44px rgba(0, 0, 0, 0.2); }
@@ -641,16 +1007,32 @@
       left: -4px;
       border: 1px solid #9acc4f;
       z-index: 1; }
+      @media screen and (max-width: 1020px) {
+        .bottom-btn:after {
+          display: none; } }
     .bottom-btn-txt {
       font-family: 'SummerFont';
       text-transform: uppercase;
       font-size: 46px;
       line-height: 1;
       color: #69483e; }
+      @media screen and (max-width: 1020px) {
+        .bottom-btn-txt {
+          font-size: 36px; } }
   .bottom-cake {
     position: absolute;
     right: -155px;
-    top: -40px; }
+    top: -40px;
+    z-index: 1; }
+    @media screen and (max-width: 1020px) {
+      .bottom-cake {
+        width: 429px;
+        top: auto;
+        bottom: 120px;
+        left: calc(50% - 216px); } }
+    .bottom-cake img {
+      display: block;
+      width: 100%; }
 
 .footer-new {
   position: relative;
@@ -659,6 +1041,9 @@
   margin-top: 80px;
   border-top: 1px solid #000;
   z-index: 5; }
+  @media screen and (max-width: 1020px) {
+    .footer-new {
+      margin-top: 20px; } }
   .footer-new-right {
     margin-left: auto;
     padding: 16px 0; }
@@ -667,3 +1052,241 @@
       font-size: 18px;
       line-height: 27px;
       color: #69483e; }
+
+.mobile-back-decor {
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(../../assets/img/keks/back-decor-mobile.png); }
+  @media screen and (max-width: 1020px) {
+    .mobile-back-decor {
+      display: block;
+      z-index: 3; } }
+
+@media screen and (max-width: 1020px) {
+  .mod-autor-mobile {
+    font-size: 25px;
+    line-height: 32px;
+    width: 50%;
+    margin-left: auto; } }
+
+.mod-line-mobile {
+  display: none; }
+  @media screen and (max-width: 1020px) {
+    .mod-line-mobile {
+      display: flex;
+      width: 1px;
+      height: 115px;
+      background: #9acc4f;
+      margin: 16px 40px 22px auto; } }
+
+@media screen and (max-width: 1020px) {
+  .mod-info-mobile {
+    margin: 0 0 0 auto;
+    height: 156px; } }
+
+.full-review {
+  display: none; }
+  @media screen and (max-width: 1020px) {
+    .full-review {
+      display: block;
+      position: fixed;
+      width: 100%;
+      min-height: 100vh;
+      height: 100vh;
+      overflow: auto;
+      background-size: cover;
+      background-position: 50% 0%;
+      background-color: #6a6763;
+      background-image: url(../../assets/img/keks/background.jpg);
+      background-repeat: no-repeat;
+      z-index: 50;
+      transition: all .2 ease; } }
+  .full-review.hidden {
+    display: none; }
+  .full-review:after {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 3; }
+  .full-review-person {
+    position: fixed;
+    width: 589px;
+    bottom: 0;
+    left: -212px;
+    z-index: 2; }
+    .full-review-person img {
+      display: block;
+      width: 100%; }
+  .full-review-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 59px 18px 40px;
+    z-index: 4; }
+  .full-review-text {
+    position: relative;
+    font-family: "PT Serif";
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+    margin-bottom: 30px; }
+    .full-review-text:before {
+      content: '"';
+      display: block;
+      position: absolute;
+      top: -10px;
+      left: -13px;
+      font-family: "PT Serif";
+      font-size: 68px;
+      color: #9acc4f;
+      font-style: italic; }
+    .full-review-text:after {
+      content: '"';
+      display: block;
+      position: absolute;
+      left: 90px;
+      bottom: -40px;
+      font-family: "PT Serif";
+      font-size: 68px;
+      color: #9acc4f;
+      font-style: italic; }
+  .full-review-autor {
+    font-family: "PT Serif";
+    font-size: 16px;
+    line-height: 26px;
+    color: #9acc4f;
+    text-align: right; }
+
+.full-order {
+  display: none; }
+  @media screen and (max-width: 1020px) {
+    .full-order {
+      display: block;
+      position: fixed;
+      width: 100%;
+      min-height: 100vh;
+      height: 100vh;
+      overflow: auto;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-color: #6a6763;
+      background-image: url(../../assets/img/keks/order-mobile-back.jpg);
+      background-repeat: no-repeat;
+      z-index: 50;
+      transition: all .2 ease; } }
+  .full-order.hidden {
+    display: none; }
+  .full-order-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 42px 16px 52px; }
+  .full-order-title {
+    font-family: "SummerFont";
+    font-size: 62px;
+    line-height: 55px;
+    color: #9acc4f;
+    text-align: center;
+    margin-bottom: 30px; }
+  .full-order-price {
+    font-size: 55px;
+    line-height: 55px;
+    font-family: 'LeOsler_Rough-Regular';
+    color: #9acc4f;
+    letter-spacing: -0.02em;
+    text-shadow: 0px 3px 13px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px; }
+  .full-order-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; }
+  .full-order-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    color: #69483e;
+    background-color: white;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    font-family: "SummerFont";
+    font-size: 42px;
+    line-height: 36px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: pointer;
+    transition: all .2s ease; }
+    .full-order-btn:active {
+      transform: scale(0.9);
+      box-shadow: 0px 20px 44px rgba(0, 0, 0, 0.2); }
+  .full-order-counter {
+    font-family: "SummerFont";
+    font-size: 62px;
+    line-height: 55px;
+    color: #fff;
+    font-weight: bold;
+    width: 40px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-weight: normal;
+    vertical-align: middle;
+    margin: 0 30px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent; }
+  .full-order-text {
+    font-family: "PT Serif Caption";
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    margin-bottom: 44px; }
+  .full-order-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #9acc4f;
+    border: 1px solid #9acc4f;
+    border-radius: 8px;
+    width: 214px;
+    padding: 6px 8px;
+    height: auto;
+    transition: all .15s ease;
+    cursor: pointer; }
+
+.mobile-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 5; }
+
+.mod-autor-name {
+  font-family: "PT Serif";
+  font-size: 25px;
+  line-height: 32px;
+  color: #9acc4f;
+  text-align: right;
+  margin-bottom: 12px; }
