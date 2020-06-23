@@ -286,7 +286,8 @@
     .f-scr-pr-txt {
       display: block;
       font-size: 55px;
-      line-height: 65px;
+      line-height: 67px;
+      height: 67px;
       text-shadow: 0px 3px 13px rgba(0, 0, 0, 0.4); } }
 
 .btn-basket {
