@@ -158,7 +158,8 @@
 .logo{
     width: 276px;
     @media screen and (max-width: 1020px){
-        width: 280px;
+        width: 100%;
+        max-width: 340px;
         margin-bottom: 15px;
     }
 }
@@ -258,6 +259,7 @@
     text-shadow: 0px 3px 13px rgba(0, 0, 0, 0.4);
     @media screen and (max-width: 1020px){
         font-size: 55px;
+        line-height: 24px;
         text-shadow: 0px 3px 13px rgba(0, 0, 0, 0.4);
     }
 
@@ -330,7 +332,7 @@
         border-radius: 8px;
         width: 120px;
         padding: 6px 8px;
-        margin: 14px 0 0 23px;
+        margin: 0 0 0 23px;
         height: auto;
         transition: all .15s ease;
         @media screen and (max-width: 1020px){
@@ -600,7 +602,7 @@
         background: #9acc4f;
         border: 1px solid #9acc4f;
         border-radius: 8px;
-        width: 280px;
+        width: 100%;
         padding: 6px 8px;
         margin: 24px auto 20px;
         height: auto;
@@ -1066,9 +1068,7 @@
         text-align: center;
         transition: all .15s ease;
         @media screen and (max-width: 1020px){
-            width: 280px;
-            padding: 6px 8px;
-            margin: 0 auto;
+            display: none;
         }
         &:hover{
             background: #9acc4f;
@@ -1099,9 +1099,28 @@
             font-size: 46px;
             line-height: 1;
             color: #69483e;
+            text-align: center;
             @media screen and (max-width: 1020px){
                 font-size: 36px;
             }
+        }
+    }
+    
+    &-btn-mobile{
+        display: none;
+        position: relative;
+        background: #9acc4f;
+        border: 1px solid #9acc4f;
+        border-radius: 8px;
+        width: 100%;
+        padding: 6px 8px;
+        margin: 0 auto;
+        height: auto;
+        cursor: pointer;
+        text-align: center;
+        transition: all .15s ease;
+        @media screen and (max-width: 1020px){
+            display: block;
         }
     }
     &-cake{
@@ -1220,7 +1239,7 @@
         left: 0;
         top: 0;
         background-color: #000;
-        opacity: 0.4;
+        opacity: 0.7;
         z-index: 3;
     }
     &-person{
@@ -1309,7 +1328,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: flex-start;
         padding: 42px 16px 52px;
+        height: 100%;
 
     }
     &-title{
@@ -1398,8 +1419,13 @@
         width: 214px;
         padding: 6px 8px;
         height: auto;
+        margin: auto;
         transition: all .15s ease;
         cursor: pointer;
+        &:active{
+            transform: scale(0.9);
+            box-shadow: 0px 20px 44px rgba(0, 0, 0, 0.2);
+        }
     }
 
 }
