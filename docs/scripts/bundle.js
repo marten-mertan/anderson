@@ -89,6 +89,81 @@
 /***/ (function(module, exports) {
 
 $(window).on('load', function(){
+
+    /*функция показа модального окна*/
+    function showPopup(icon, popup) {
+        $(document).on('click', icon, function (e) {
+            var $html = $('html');
+            e.preventDefault();
+            $(popup).addClass('is-visible');
+            $('.mfp-bg').addClass('is-visible');
+
+
+            $html.addClass('lock-html');
+            $('body').addClass('fixed-input');
+            if (windowWidth > documentWidth) {
+                $html.css({
+                    'margin-right': '17px'
+                });
+                $('.mfp-wrap').css({
+                    'overflow-y': 'scroll'
+                });
+                // console.log('Есть полоса прокрутки');
+            } else {
+                // console.log('Нет полосы прокрутки');
+            }
+
+            if (windowWidth > documentWidth) {
+
+            } else {
+
+            }
+
+            var popupHolidayImg = $('.popup-holiday-menu__img img');
+            var popupHolidayImgWidth = popupHolidayImg.width();
+            var popupHolidayImgHeight = popupHolidayImg.height();
+            var addpopupHolidayImgSize = function () {
+                $('.popup-holiday-menu .popup-holiday-menu__img').css({
+                    width: popupHolidayImgWidth,
+                    height: popupHolidayImgHeight
+                });
+            }
+
+            if (popup === '.popup-holiday-menu' && windowWidth >= 730) {
+                addpopupHolidayImgSize();
+            }
+
+            $(window).resize(function () {
+                if (windowWidth >= 730) {
+                    addpopupHolidayImgSize();
+                } else {
+                    $('.popup-holiday-menu .popup-holiday-menu__img').css({
+                        width: auto,
+                        height: auto
+                    });
+                }
+            });
+
+
+        });
+    }
+
+    $('.js-home-slider').slick({
+        centerMode: true,
+        slidesToShow: 1,
+        arrows: true,
+        centerPadding: '0px',
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+    
     $('.js-qritems-slider').slick({
         centerMode: true,
         slidesToShow: 1,
@@ -212,7 +287,7 @@ $(window).on('load', function(){
         let vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
-
+    
 });
 
 
