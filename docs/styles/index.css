@@ -1689,8 +1689,11 @@
       position: relative;
       margin-bottom: 2rem; } }
   .home-banner-item {
+    display: block;
     width: 100%;
     min-height: 74px; }
+    .home-banner-item:after {
+      border: 0; }
     .home-banner-item__img {
       width: 100%;
       min-height: 74px;

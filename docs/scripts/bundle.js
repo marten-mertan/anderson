@@ -152,6 +152,8 @@ $(window).on('load', function(){
         centerMode: true,
         slidesToShow: 1,
         arrows: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
         centerPadding: '0px',
         responsive: [
             {

@@ -160,9 +160,16 @@
         position: relative;
         margin-bottom: 2rem;
     }
+    a{
+        
+    }
     &-item{
+        display: block;
         width: 100%;
         min-height: 74px;
+        &:after{
+            border: 0;
+        }
         &__img{
             width: 100%;
             min-height: 74px;
