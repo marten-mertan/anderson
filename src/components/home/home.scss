@@ -156,9 +156,12 @@
     &.slick-initialized{
         max-height: none;
     }
+    .slick-slide > div{
+        display: flex;
+    }
     @media (max-width: 1026px){
         position: relative;
-        margin-bottom: 2rem;
+        //margin-bottom: 2rem;
     }
     a{
         
@@ -168,7 +171,7 @@
         width: 100%;
         min-height: 74px;
         &:after{
-            border: 0;
+            display: none;
         }
         &__img{
             width: 100%;
@@ -242,11 +245,6 @@
         }
     }
 }
-.home-page.has-banner{
-    @media (max-width: 1026px){
-        padding-top: 0 !important;
-    }
-}
 .has-banner{
     .home-celebration {
         @media (min-width: 1027px){
@@ -272,8 +270,10 @@
             top: 3%;
         }
     }
-    &.v2 .mobile-item:nth-child(3){
-        height: 12rem;
-    }
 
+}
+
+.header-wrap-v2{
+    position: relative;
+    z-index: 10;
 }

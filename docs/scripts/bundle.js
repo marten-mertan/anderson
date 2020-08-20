@@ -149,21 +149,12 @@ $(window).on('load', function(){
     }
 
     $('.js-home-slider').slick({
-        centerMode: true,
         slidesToShow: 1,
         arrows: true,
-        autoplay: true,
+        //autoplay: true,
         autoplaySpeed: 5000,
-        centerPadding: '0px',
-        responsive: [
-            {
-                breakpoint: 480,
-                settings: {
-                    centerMode: true,
-                    slidesToShow: 1
-                }
-            }
-        ]
+        adaptiveHeight: true,
+        useTransform: false
     });
     
     $('.js-qritems-slider').slick({

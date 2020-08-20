@@ -1684,16 +1684,17 @@
   max-height: 0; }
   .home-banner.slick-initialized {
     max-height: none; }
+  .home-banner .slick-slide > div {
+    display: flex; }
   @media (max-width: 1026px) {
     .home-banner {
-      position: relative;
-      margin-bottom: 2rem; } }
+      position: relative; } }
   .home-banner-item {
     display: block;
     width: 100%;
     min-height: 74px; }
     .home-banner-item:after {
-      border: 0; }
+      display: none; }
     .home-banner-item__img {
       width: 100%;
       min-height: 74px;
@@ -1758,10 +1759,6 @@
       .home-banner .slick-prev {
         left: 2rem; } }
 
-@media (max-width: 1026px) {
-  .home-page.has-banner {
-    padding-top: 0 !important; } }
-
 @media (min-width: 1027px) {
   .has-banner .home-celebration {
     left: 28%;
@@ -1779,8 +1776,9 @@
   .has-banner .home-shipping {
     top: 3%; } }
 
-.has-banner.v2 .mobile-item:nth-child(3) {
-  height: 12rem; }
+.header-wrap-v2 {
+  position: relative;
+  z-index: 10; }
 
 .qritem {
   display: flex;
