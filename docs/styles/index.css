@@ -1676,19 +1676,15 @@
   width: 15%; }
 
 .home-banner {
+  position: relative;
   width: 100%;
   overflow: hidden;
-  position: absolute;
-  z-index: 10;
-  left: 0;
-  max-height: 0; }
+  max-height: 0;
+  z-index: 10; }
   .home-banner.slick-initialized {
     max-height: none; }
   .home-banner .slick-slide > div {
     display: flex; }
-  @media (max-width: 1026px) {
-    .home-banner {
-      position: relative; } }
   .home-banner-item {
     display: block;
     width: 100%;

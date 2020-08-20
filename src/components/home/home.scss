@@ -147,24 +147,16 @@
 }
 
 .home-banner{
+    position: relative;
     width: 100%;
     overflow: hidden;
-    position: absolute;
-    z-index: 10;
-    left: 0;
     max-height: 0;
+    z-index: 10;
     &.slick-initialized{
         max-height: none;
     }
     .slick-slide > div{
         display: flex;
-    }
-    @media (max-width: 1026px){
-        position: relative;
-        //margin-bottom: 2rem;
-    }
-    a{
-        
     }
     &-item{
         display: block;

@@ -61,10 +61,8 @@ $(window).on('load', function(){
     $('.js-home-slider').slick({
         slidesToShow: 1,
         arrows: true,
-        //autoplay: true,
+        autoplay: true,
         autoplaySpeed: 5000,
-        adaptiveHeight: true,
-        useTransform: false
     });
     
     $('.js-qritems-slider').slick({
