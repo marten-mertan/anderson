@@ -1723,7 +1723,7 @@
     height: calc(100vh - 100% - 10rem); }
     @media (max-width: 1026px) {
       .home-banner-big {
-        height: calc(100vh - 100%); } }
+        height: calc(var(--vh, 1vh) * 100 - 100%); } }
     .home-banner-big.slick-initialized {
       max-height: none; }
     .home-banner-big .slick-slide > div {
