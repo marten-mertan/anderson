@@ -199,11 +199,15 @@
         z-index: 10;
         max-height: 0;
         height: calc(100vh - 100% - 10rem);
+        transition: all .4s ease;
         @media (max-width: 1026px){
             height: calc(var(--vh, 1vh) * 100 - 100%);
         }
         &.slick-initialized{
             max-height: none;
+            @media (max-width: 1026px){
+                max-height: calc(var(--vh, 1vh) * 100 - 100%);
+            }
         }
         .slick-slide > div{
             display: flex;
