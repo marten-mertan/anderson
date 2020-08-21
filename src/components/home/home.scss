@@ -297,6 +297,7 @@
                     display: none;
                     @media (max-width: 1026px){
                         display: block;
+                        background-size: cover;
                     }
                 }
                 &.mod-desktop{
@@ -381,7 +382,10 @@
     }
     &.mod-banner-big{
         @media (max-width: 1026px){
-            padding-top: 20rem !important;
+            padding-top: 100vh !important;
+            .mobile-item{
+                display: none;
+            }
         }
     }
 
@@ -403,10 +407,16 @@
     }
 }
 
-.header-wrap.sticky{
-    .home-banner-big{
+.header-wrap{
+    &.with-banner{
         @media (max-width: 1026px){
-            max-height: 0;
+            position: fixed;
+            transform: none;
+            transition: none;
+            width: 100%;
+            left: 0;
+            top: 0;
+            animation: none;
         }
     }
 }

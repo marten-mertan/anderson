@@ -1809,7 +1809,8 @@
           display: none; }
           @media (max-width: 1026px) {
             .home-banner-big-item__img.mod-mobile {
-              display: block; } }
+              display: block;
+              background-size: cover; } }
         .home-banner-big-item__img.mod-desktop {
           display: block; }
           @media (max-width: 1026px) {
@@ -1876,7 +1877,9 @@
 
 @media (max-width: 1026px) {
   .has-banner.mod-banner-big {
-    padding-top: 20rem !important; } }
+    padding-top: 100vh !important; }
+    .has-banner.mod-banner-big .mobile-item {
+      display: none; } }
 
 .header-wrap-v2 {
   position: relative;
@@ -1892,8 +1895,15 @@
       margin-top: -10rem !important; } }
 
 @media (max-width: 1026px) {
-  .header-wrap.sticky .home-banner-big {
-    max-height: 0; } }
+  .header-wrap.with-banner {
+    position: fixed;
+    transform: none;
+    transition: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    -webkit-animation: none;
+            animation: none; } }
 
 .qritem {
   display: flex;
