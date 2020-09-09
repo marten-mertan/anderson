@@ -1883,7 +1883,7 @@
 
 .header-wrap-v2 {
   position: relative;
-  z-index: 10; }
+  z-index: 100; }
 
 .footer-main {
   margin-top: -10rem !important; }
@@ -2073,13 +2073,14 @@
             .qritem-body-top-slider .slick-next {
               right: 1.6rem; } }
       .qritem-body-top-consist {
+        width: 1px;
         flex: 1 1 auto;
-        width: 100%;
         background-color: #81c734;
         padding: 2.7rem 2.7rem 3rem 3rem; }
         @media screen and (max-width: 1026px) {
           .qritem-body-top-consist {
-            padding: 1rem 1.6rem 2.3rem; } }
+            padding: 1rem 1.6rem 2.3rem;
+            width: 100%; } }
         .qritem-body-top-consist__title {
           font-size: 5.4rem;
           font-family: "SummerFont";
@@ -2104,6 +2105,37 @@
           @media screen and (max-width: 640px) {
             .qritem-body-top-consist-youtube {
               height: 162px; } }
+          .qritem-body-top-consist-youtube-slider {
+            height: 100%;
+            max-height: 0; }
+            .qritem-body-top-consist-youtube-slider.slick-initialized {
+              max-height: none; }
+            .qritem-body-top-consist-youtube-slider__item {
+              height: 100%; }
+            .qritem-body-top-consist-youtube-slider .slick-list {
+              height: 100%; }
+            .qritem-body-top-consist-youtube-slider .slick-track {
+              height: 100%; }
+            .qritem-body-top-consist-youtube-slider .slick-slide div {
+              height: 100%; }
+            .qritem-body-top-consist-youtube-slider .slick-arrow {
+              display: inline-block !important; }
+            .qritem-body-top-consist-youtube-slider .slick-prev {
+              left: 2rem;
+              width: 3.3rem;
+              height: 3.3rem;
+              background: url(../assets/img/icon-green-arrow-left.svg) 0 0 no-repeat; }
+              @media screen and (max-width: 1026px) {
+                .qritem-body-top-consist-youtube-slider .slick-prev {
+                  left: 1.6rem; } }
+            .qritem-body-top-consist-youtube-slider .slick-next {
+              right: 2rem;
+              width: 3.3rem;
+              height: 3.3rem;
+              background: url(../assets/img/icon-green-arrow-right.svg) 0 0 no-repeat; }
+              @media screen and (max-width: 1026px) {
+                .qritem-body-top-consist-youtube-slider .slick-next {
+                  right: 1.6rem; } }
     .qritem-body-recipe {
       border: 2px solid #e6e1e1;
       border-radius: 8px;
