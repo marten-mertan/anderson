@@ -295,6 +295,65 @@ $(window).on('load', function(){
         document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
     
+    
+    $('.js-main-slider').slick({
+        centerMode: true,
+        slidesToShow: 1,
+        arrows: true,
+        dots: true,
+        centerPadding: '0px',
+    });
+
+    $('.js-table-slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        arrows: true,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 1600,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                }
+            },
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 1140,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 820,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
+    $('.js-open-mobile-menu').on('click', function(event) {
+        $('.js-mobile-menu').addClass('open');
+    });
+
+    $('.js-close-mobile-menu').on('click', function(event) {
+        $('.js-mobile-menu').removeClass('open');
+    });
 });
 
 
