@@ -58,6 +58,18 @@
             display: flex;
             align-items: center;
             margin-left: auto;
+            .symbol-basket-2{
+                font-size: 3.4rem;
+            }
+            .symbol-basket-bubble{
+                font-size: 3.2rem;
+            }
+            .header-basket__count{
+                width: 38px;
+            }
+            .header-basket-v2 {
+                top: -0.2rem;
+            }
         }
 
     }
@@ -432,6 +444,26 @@
         @media screen and (max-width: 1026px){
             padding-top: 116px !important;
         }
+
+    }
+}
+
+.popup-basket{
+    left: -190px;
+    .header-basket-v2{
+        top: 12px;
+    }
+    .symbol-basket-2{
+        font-size: 2.4rem;
+    }
+    .symbol-basket-bubble{
+        font-size: 2.9rem;
+    }
+}
+
+.header-basket-v2 {
+    @media screen and (max-width: 1026px){
+        top: 5px!important;
 
     }
 }

@@ -96,7 +96,7 @@
         .slick-next{
             right: calc(50vw - 780px);
             @media screen and (max-width: 1600px){
-                right: 120px;
+                right: calc(50vw - 630px);
             }
             @media screen and (max-width: 1300px){
                 right: 40px;
@@ -112,7 +112,7 @@
         .slick-prev{
             left: calc(50vw - 780px);
             @media screen and (max-width: 1600px){
-                left: 120px;
+                left: calc(50vw - 630px);
             }
             @media screen and (max-width: 1300px){
                 left: 40px;

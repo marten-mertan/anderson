@@ -1591,6 +1591,14 @@
     display: flex;
     align-items: center;
     margin-left: auto; }
+    .header-2020-bottom-right .symbol-basket-2 {
+      font-size: 3.4rem; }
+    .header-2020-bottom-right .symbol-basket-bubble {
+      font-size: 3.2rem; }
+    .header-2020-bottom-right .header-basket__count {
+      width: 38px; }
+    .header-2020-bottom-right .header-basket-v2 {
+      top: -0.2rem; }
 
 .header-2020-nav {
   background: #f6f6f6; }
@@ -1871,6 +1879,19 @@
 @media screen and (max-width: 1026px) {
   .home-page.v3.has-banner {
     padding-top: 116px !important; } }
+
+.popup-basket {
+  left: -190px; }
+  .popup-basket .header-basket-v2 {
+    top: 12px; }
+  .popup-basket .symbol-basket-2 {
+    font-size: 2.4rem; }
+  .popup-basket .symbol-basket-bubble {
+    font-size: 2.9rem; }
+
+@media screen and (max-width: 1026px) {
+  .header-basket-v2 {
+    top: 5px !important; } }
 
 .home-shipping {
   display: flex;
@@ -2321,7 +2342,7 @@
   right: calc(50vw - 780px); }
   @media screen and (max-width: 1600px) {
     .main-slider .slick-next {
-      right: 120px; } }
+      right: calc(50vw - 630px); } }
   @media screen and (max-width: 1300px) {
     .main-slider .slick-next {
       right: 40px; } }
@@ -2335,7 +2356,7 @@
   left: calc(50vw - 780px); }
   @media screen and (max-width: 1600px) {
     .main-slider .slick-prev {
-      left: 120px; } }
+      left: calc(50vw - 630px); } }
   @media screen and (max-width: 1300px) {
     .main-slider .slick-prev {
       left: 40px; } }
