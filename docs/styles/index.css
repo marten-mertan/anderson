@@ -1547,7 +1547,7 @@
     .header-2020 {
       box-shadow: none; } }
   .header-2020-top {
-    background: #fdf7e8 url(/local/templates/anderson_new/css/../img/bg-header.png) repeat;
+    background: #fdf7e8 url(../local/templates/anderson_new/css/../img/bg-header.png) repeat;
     border-bottom: 1px solid #d6cfb4; }
     @media screen and (max-width: 1026px) {
       .header-2020-top {
@@ -1571,7 +1571,7 @@
       align-items: center;
       margin-left: auto; }
   .header-2020-bottom {
-    background: #fdf7e8 url(/local/templates/anderson_new/css/../img/bg-header.png) repeat; }
+    background: #fdf7e8 url(../local/templates/anderson_new/css/../img/bg-header.png) repeat; }
     @media screen and (max-width: 1026px) {
       .header-2020-bottom {
         display: none; } }

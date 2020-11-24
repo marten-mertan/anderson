@@ -5,7 +5,7 @@
     }
 
     &-top{
-        background: #fdf7e8 url(/local/templates/anderson_new/css/../img/bg-header.png) repeat;
+        background: #fdf7e8 url(../local/templates/anderson_new/css/../img/bg-header.png) repeat;
         border-bottom: 1px solid #d6cfb4;
         @media screen and (max-width: 1026px){
             display: none;
@@ -36,7 +36,7 @@
 
     }
     &-bottom{
-        background: #fdf7e8 url(/local/templates/anderson_new/css/../img/bg-header.png) repeat;
+        background: #fdf7e8 url(../local/templates/anderson_new/css/../img/bg-header.png) repeat;
         @media screen and (max-width: 1026px){
             display: none;
         }
