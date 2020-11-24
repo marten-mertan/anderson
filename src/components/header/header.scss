@@ -1,5 +1,9 @@
 .header-2020{
-    box-shadow: none;
+    box-shadow: 0px 1px 1.96px 0.04px rgba(96, 96, 96, 0.35);
+    @media screen and (max-width: 1026px){
+        box-shadow: none;
+    }
+
     &-top{
         background: #fdf7e8 url(/local/templates/anderson_new/css/../img/bg-header.png) repeat;
         border-bottom: 1px solid #d6cfb4;
@@ -304,6 +308,9 @@
         display: block;
         margin-left: auto;
         padding-top: 23px;
+        &:after{
+            display: none;
+        }
         svg{
             width: 18px;
             height: 22px;
@@ -314,6 +321,9 @@
         margin-left: 20px;
         padding-top: 17px;
         margin-right: 44px;
+        &:after{
+            display: none;
+        }
         .symbol-basket-2{
             font-size: 2.2rem;
         }
