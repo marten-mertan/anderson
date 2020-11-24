@@ -2339,10 +2339,10 @@
       background: url(../assets/img/main-slider-arrow-white.png) 0 0 no-repeat; }
 
 .main-slider .slick-next {
-  right: calc(50vw - 780px); }
+  right: calc(50% - 780px); }
   @media screen and (max-width: 1600px) {
     .main-slider .slick-next {
-      right: calc(50vw - 630px); } }
+      right: calc(50% - 630px); } }
   @media screen and (max-width: 1300px) {
     .main-slider .slick-next {
       right: 40px; } }
@@ -2353,10 +2353,10 @@
     transform: translate(-50%, -50%) scale(-1, 1); }
 
 .main-slider .slick-prev {
-  left: calc(50vw - 780px); }
+  left: calc(50% - 780px); }
   @media screen and (max-width: 1600px) {
     .main-slider .slick-prev {
-      left: calc(50vw - 630px); } }
+      left: calc(50% - 630px); } }
   @media screen and (max-width: 1300px) {
     .main-slider .slick-prev {
       left: 40px; } }
