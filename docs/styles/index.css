@@ -1441,6 +1441,283 @@
     padding: 0;
     background: none; }
 
+@media screen and (max-width: 730px) {
+  .catalog-2020 .catalog-nav {
+    margin-bottom: 1rem; } }
+
+@media screen and (max-width: 768px) {
+  .catalog-2020 .catalog-body {
+    margin: 0 1.5rem 2.8rem; } }
+
+@media screen and (max-width: 768px) {
+  .catalog-2020 .filter-mix {
+    margin: 0 1.5rem; } }
+
+.catalog-2020 .filter-mix__item {
+  font-size: 1.4rem;
+  font-weight: normal;
+  padding: 1.3rem 2.2rem;
+  background-color: transparent;
+  border-radius: .3rem; }
+  .catalog-2020 .filter-mix__item > span {
+    font-size: 1.4rem !important;
+    color: #9b806f;
+    transition: all .2s ease; }
+  .catalog-2020 .filter-mix__item:before {
+    display: none; }
+  .catalog-2020 .filter-mix__item:hover > span {
+    color: #7cbd41; }
+  .catalog-2020 .filter-mix__item.active {
+    background-color: #7cbd41; }
+    .catalog-2020 .filter-mix__item.active:before {
+      display: block;
+      content: '';
+      position: absolute;
+      border: 1px dashed #7cbd41;
+      top: -3px;
+      left: -3px;
+      right: -3px;
+      bottom: -3px; }
+    .catalog-2020 .filter-mix__item.active > span {
+      color: #fff; }
+
+.catalog-2020 .filter-mix-purple__item {
+  padding: .8rem 2.2rem 1rem; }
+  @media screen and (max-width: 730px) {
+    .catalog-2020 .filter-mix-purple__item {
+      padding: 1.5rem 2.2rem;
+      background-color: #e9e8e6 !important;
+      justify-content: center;
+      margin: 0;
+      margin-bottom: 1rem !important; } }
+  .catalog-2020 .filter-mix-purple__item > span {
+    color: #fff; }
+    @media screen and (max-width: 730px) {
+      .catalog-2020 .filter-mix-purple__item > span {
+        color: #929292; } }
+  @media screen and (max-width: 730px) {
+    .catalog-2020 .filter-mix-purple__item > svg {
+      display: none; } }
+  @media screen and (max-width: 730px) {
+    .catalog-2020 .filter-mix-purple__item:hover {
+      background-color: #c7368a !important; } }
+  .catalog-2020 .filter-mix-purple__item:hover:before {
+    display: block;
+    content: '';
+    position: absolute;
+    border: 1px dashed #c7368a;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px; }
+  .catalog-2020 .filter-mix-purple__item:hover > span {
+    color: #fff; }
+
+@media screen and (max-width: 730px) {
+  .catalog-2020 .filter-hold {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0; } }
+
+@media screen and (max-width: 730px) {
+  .catalog-2020 .filter-hold__item {
+    width: calc(50% - 5px);
+    margin-bottom: 10px; } }
+
+@media screen and (max-width: 730px) {
+  .catalog-2020 .filter-hold__item:nth-child(2n) {
+    margin-left: 10px; } }
+
+@media screen and (max-width: 730px) {
+  .catalog-2020 .filter-hold__item.active .filter-hold__link {
+    color: #fff;
+    background-color: #7cbd41; } }
+
+@media screen and (max-width: 730px) {
+  .catalog-2020 .filter-hold__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: .3rem;
+    box-shadow: 0px 3px 8.28px 0.72px rgba(0, 0, 0, 0.2);
+    min-height: 80px;
+    padding: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #191919; } }
+
+.catalog-2020 .filter-hold__close {
+  margin-bottom: 20px; }
+  @media screen and (max-width: 730px) {
+    .catalog-2020 .filter-hold__close {
+      width: 2.4rem;
+      height: 2.4rem;
+      padding: 0;
+      right: 2rem;
+      bottom: 1rem;
+      margin-bottom: 0;
+      border-radius: 50%;
+      background: #7cbd41 url(../assets/img/filter-close.png) no-repeat 50% 50%; } }
+
+@media screen and (max-width: 730px) {
+  .catalog-2020 .filter-hold-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; } }
+
+.catalog-2020 .filter-hold-mobile-btn {
+  padding: 1.6rem 2.2rem;
+  text-align: center;
+  border-radius: .3rem;
+  margin-bottom: 1.5rem; }
+  .catalog-2020 .filter-hold-mobile-btn .icon-dropdown {
+    right: 2rem; }
+
+.catalog-2020 .cafe-list__city {
+  margin-top: 0; }
+
+@media (max-width: 415px) {
+  .catalog-2020 .catalog-list__item:nth-child(1n) {
+    padding: 0 .5rem 0 1.5rem; } }
+
+@media (max-width: 415px) {
+  .catalog-2020 .catalog-list__item:nth-child(2n) {
+    padding: 0 1.5rem 0 .5rem; } }
+
+@media (max-width: 700px) {
+  .catalog-2020 .catalog-col-4 .catalog-list__item {
+    margin-bottom: 1rem; } }
+
+@media (max-width: 415px) {
+  .catalog-2020 .catalog-col-4 .catalog-list__item {
+    width: 50%; } }
+
+.catalog-2020 .catalog-product .cafe-list__city .c-grid {
+  margin-left: 0;
+  margin-right: 0; }
+
+.catalog-2020 .c-city-list__title {
+  color: #9b806f;
+  padding: 0 .5rem;
+  margin-bottom: 2rem; }
+  @media (max-width: 730px) {
+    .catalog-2020 .c-city-list__title {
+      text-align: center; } }
+
+@media (max-width: 720px) {
+  .catalog-2020 div.c-card-catalog-2__body {
+    padding: 1.4rem 1rem 0; } }
+
+@media (max-width: 730px) {
+  .catalog-2020 div.c-card-catalog-2__img {
+    height: 20rem; } }
+
+@media (max-width: 415px) {
+  .catalog-2020 div.c-card-catalog-2__img {
+    height: 13rem; } }
+
+@media (max-width: 730px) {
+  .catalog-2020 div.c-card-catalog-2__title {
+    display: block;
+    display: -webkit-box;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    height: 5.4rem;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    margin-bottom: 1.3rem; } }
+
+@media (max-width: 730px) {
+  .catalog-2020 div.c-card-catalog-2__weight {
+    font-size: 1.2rem; } }
+
+.catalog-2020 div.c-card-catalog-2__footer {
+  padding: 0 1.5rem 2rem; }
+  @media (max-width: 720px) {
+    .catalog-2020 div.c-card-catalog-2__footer {
+      padding: 0 1rem 1.5rem; } }
+  @media (min-width: 721px) {
+    .catalog-2020 div.c-card-catalog-2__footer .c-card-catalog__price {
+      padding-left: 0; } }
+  @media (max-width: 720px) {
+    .catalog-2020 div.c-card-catalog-2__footer .c-card-catalog__price {
+      padding: .8rem 0 1.2rem;
+      font-family: "BebasNeue";
+      font-size: 2.3rem;
+      width: 100%;
+      order: 1; } }
+
+@media (max-width: 720px) {
+  .catalog-2020 .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__basket {
+    width: auto;
+    order: 3;
+    padding: .4rem .6rem;
+    margin-left: auto; } }
+
+@media (max-width: 720px) {
+  .catalog-2020 .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__basket .icon-shopping-cart {
+    width: 1.7rem;
+    height: 1.8rem; } }
+
+@media screen and (max-width: 720px) {
+  .catalog-2020 .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__count {
+    width: auto;
+    order: 2;
+    margin: 0;
+    border-radius: .3rem; } }
+
+@media screen and (max-width: 720px) {
+  .catalog-2020 .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__count .c-counter {
+    padding: .2rem; } }
+
+@media screen and (max-width: 720px) {
+  .catalog-2020 .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__count .c-counter__btn {
+    height: 2rem;
+    width: 2rem;
+    background-size: 60%; } }
+
+@media screen and (max-width: 720px) {
+  .catalog-2020 .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__count .c-counter input[type="text"] {
+    font-size: 1.8rem;
+    line-height: 1;
+    width: 3rem !important;
+    padding: 0; } }
+
+@media screen and (max-width: 1026px) {
+  main.main {
+    padding-top: 62px !important; } }
+
+@media screen and (max-width: 730px) {
+  main.main .c-breadcrumb {
+    margin: 2rem 0; } }
+
+@media screen and (max-width: 730px) {
+  .c-pagination {
+    display: none; } }
+
+.c-pagination-mobile__btn {
+  display: none;
+  width: 100%;
+  text-align: center;
+  border-radius: .3rem;
+  background-color: #7cbd41;
+  font-family: "PT Serif Caption";
+  font-size: 14px;
+  line-height: 1;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  margin: .5rem 0 0; }
+  @media screen and (max-width: 730px) {
+    .c-pagination-mobile__btn {
+      display: block; } }
+  .c-pagination-mobile__btn:after {
+    display: none; }
+
 .delivery-buttons {
   display: flex;
   flex-direction: row;

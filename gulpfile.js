@@ -81,6 +81,11 @@ function copyBitrix() {
     .pipe(dest('docs/local/'));
 }
 
+function copySprites() {
+  return src('src/include/**/*.*')
+    .pipe(dest('docs/include/'));
+}
+
 function copyAPI() {
   return src('src/scripts/api.js')
     .pipe(dest('docs/scripts/'));
@@ -125,7 +130,7 @@ exports.default =
     parallel(
       devServer,
       series(
-        parallel(buildPages, buildStyles, buildStylesKeks, buildScripts, buildVendorScripts, copyOldStyles, copyOldScripts, copyBitrix, copyAPI, buildAssets),
+        parallel(buildPages, buildStyles, buildStylesKeks, buildScripts, buildVendorScripts, copyOldStyles, copyOldScripts, copyBitrix, copySprites, copyAPI, buildAssets),
         watchFiles
       )
     )
