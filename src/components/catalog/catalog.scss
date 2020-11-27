@@ -12,6 +12,15 @@
 
     }
     .filter-mix{
+        &.mod-background{
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 2.2rem 1.3rem .4rem;
+            box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+
+        }
         @media screen and (max-width: 768px){
             margin: 0 1.5rem;
         }
@@ -22,6 +31,7 @@
         padding: 1.3rem 2.2rem;
         background-color: transparent;
         border-radius: .3rem;
+        margin-bottom: 2rem;
         & > span{
             font-size: 1.4rem !important;
             color: #9b806f;
@@ -55,6 +65,7 @@
     }
     .filter-mix-purple__item{
         padding: .8rem 2.2rem 1rem;
+        margin-left: .2rem;
         @media screen and (max-width: 730px){
             padding: 1.5rem 2.2rem;
             background-color: #e9e8e6 !important;
@@ -65,7 +76,7 @@
         & > span{
             color: #fff;
             @media screen and (max-width: 730px){
-                color: #929292;
+                color: #191919;
             }
         }
         & > svg{
