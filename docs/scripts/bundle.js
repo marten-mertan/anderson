@@ -354,6 +354,12 @@ $(window).on('load', function(){
     $('.js-close-mobile-menu').on('click', function(event) {
         $('.js-mobile-menu').removeClass('open');
     });
+    
+    $(document).on('click','.js-mobile-filter-close', function(e){
+        e.stopPropagation();
+        $('.js-filter-mobile-dropdown').toggleClass('dropdown-show');
+        $('.js-filter-mobile-dropdown').siblings('.filter-hold').slideToggle(200);
+    });
 });
 
 

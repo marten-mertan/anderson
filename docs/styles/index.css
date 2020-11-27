@@ -1496,7 +1496,7 @@
   @media screen and (max-width: 730px) {
     .catalog-2020 .filter-mix-purple__item {
       padding: 1.5rem 2.2rem;
-      background-color: #e9e8e6 !important;
+      background-color: #c7368a !important;
       justify-content: center;
       margin: 0;
       margin-bottom: 1rem !important; } }
@@ -1504,7 +1504,7 @@
     color: #fff; }
     @media screen and (max-width: 730px) {
       .catalog-2020 .filter-mix-purple__item > span {
-        color: #191919; } }
+        color: #fff; } }
   @media screen and (max-width: 730px) {
     .catalog-2020 .filter-mix-purple__item > svg {
       display: none; } }
@@ -1562,6 +1562,18 @@
   margin-bottom: 20px; }
   @media screen and (max-width: 730px) {
     .catalog-2020 .filter-hold__close {
+      display: none; } }
+
+.catalog-2020 .filter-hold-mobile__close {
+  display: none; }
+  @media screen and (max-width: 730px) {
+    .catalog-2020 .filter-hold-mobile__close {
+      position: absolute;
+      font-size: 1.6rem;
+      color: #555451;
+      padding-left: 2.5rem;
+      font-family: "PT Serif Caption";
+      display: block;
       width: 2.4rem;
       height: 2.4rem;
       padding: 0;
@@ -1569,7 +1581,8 @@
       bottom: 1rem;
       margin-bottom: 0;
       border-radius: 50%;
-      background: #7cbd41 url(../assets/img/filter-close.png) no-repeat 50% 50%; } }
+      background: #7cbd41 url(../assets/img/filter-close.png) no-repeat 50% 50%;
+      cursor: pointer; } }
 
 @media screen and (max-width: 730px) {
   .catalog-2020 .filter-hold-wrap {
