@@ -1496,7 +1496,7 @@
   @media screen and (max-width: 730px) {
     .catalog-2020 .filter-mix-purple__item {
       padding: 1.5rem 2.2rem;
-      background-color: #c7368a !important;
+      background-color: #e9e8e6 !important;
       justify-content: center;
       margin: 0;
       margin-bottom: 1rem !important; } }
@@ -1504,7 +1504,7 @@
     color: #fff; }
     @media screen and (max-width: 730px) {
       .catalog-2020 .filter-mix-purple__item > span {
-        color: #fff; } }
+        color: #191919; } }
   @media screen and (max-width: 730px) {
     .catalog-2020 .filter-mix-purple__item > svg {
       display: none; } }
@@ -1740,6 +1740,10 @@
       display: block; } }
   .c-pagination-mobile__btn:after {
     display: none; }
+
+@media screen and (max-width: 730px) {
+  body.mobile-white {
+    background-position: 52% 50%; } }
 
 .delivery-buttons {
   display: flex;

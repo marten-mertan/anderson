@@ -68,7 +68,7 @@
         margin-left: .2rem;
         @media screen and (max-width: 730px){
             padding: 1.5rem 2.2rem;
-            background-color: #c7368a !important;
+            background-color: #e9e8e6 !important;
             justify-content: center;
             margin: 0;
             margin-bottom: 1rem !important;
@@ -76,7 +76,7 @@
         & > span{
             color: #fff;
             @media screen and (max-width: 730px){
-                color: #fff;
+                color: #191919;
             }
         }
         & > svg{
@@ -365,5 +365,11 @@ main.main{
         &:after{
             display: none;
         }
+    }
+}
+
+body.mobile-white{
+    @media screen and (max-width: 730px){
+        background-position: 52% 50%;
     }
 }
