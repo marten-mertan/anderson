@@ -327,6 +327,33 @@
             }
         }
     }
+    .c-pagination{
+        @media screen and (max-width: 730px){
+            display: none;
+        }
+
+    }
+    .c-pagination-mobile{
+        &__btn{
+            display: none;
+            width: 100%;
+            text-align: center;
+            border-radius: .3rem;
+            background-color: #7cbd41;
+            font-family: "PT Serif Caption";
+            font-size: 14px;
+            line-height: 1;
+            color: #fff;
+            padding: 1.5rem 2rem;
+            margin: .5rem 0 0;
+            @media screen and (max-width: 730px){
+                display: block;
+            }
+            &:after{
+                display: none;
+            }
+        }
+    }
 }
 
 main.main{
@@ -338,33 +365,6 @@ main.main{
             margin: 2rem 0;
         }
 
-    }
-}
-.c-pagination{
-    @media screen and (max-width: 730px){
-        display: none;
-    }
-
-}
-.c-pagination-mobile{
-    &__btn{
-        display: none;
-        width: 100%;
-        text-align: center;
-        border-radius: .3rem;
-        background-color: #7cbd41;
-        font-family: "PT Serif Caption";
-        font-size: 14px;
-        line-height: 1;
-        color: #fff;
-        padding: 1.5rem 2rem;
-        margin: .5rem 0 0;
-        @media screen and (max-width: 730px){
-            display: block;
-        }
-        &:after{
-            display: none;
-        }
     }
 }
 

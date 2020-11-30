@@ -1711,19 +1711,11 @@
     width: 3rem !important;
     padding: 0; } }
 
-@media screen and (max-width: 1026px) {
-  main.main {
-    padding-top: 62px !important; } }
-
 @media screen and (max-width: 730px) {
-  main.main .c-breadcrumb {
-    margin: 2rem 0; } }
-
-@media screen and (max-width: 730px) {
-  .c-pagination {
+  .catalog-2020 .c-pagination {
     display: none; } }
 
-.c-pagination-mobile__btn {
+.catalog-2020 .c-pagination-mobile__btn {
   display: none;
   width: 100%;
   text-align: center;
@@ -1736,10 +1728,18 @@
   padding: 1.5rem 2rem;
   margin: .5rem 0 0; }
   @media screen and (max-width: 730px) {
-    .c-pagination-mobile__btn {
+    .catalog-2020 .c-pagination-mobile__btn {
       display: block; } }
-  .c-pagination-mobile__btn:after {
+  .catalog-2020 .c-pagination-mobile__btn:after {
     display: none; }
+
+@media screen and (max-width: 1026px) {
+  main.main {
+    padding-top: 62px !important; } }
+
+@media screen and (max-width: 730px) {
+  main.main .c-breadcrumb {
+    margin: 2rem 0; } }
 
 @media screen and (max-width: 730px) {
   body.mobile-white {
@@ -2043,137 +2043,147 @@
     @media screen and (max-width: 1240px) {
       .header-2020-basket {
         margin-left: 20px; } }
-
-.header-mobile {
-  display: none; }
-  @media screen and (max-width: 1026px) {
-    .header-mobile {
-      display: flex; } }
-  .header-mobile-burger {
-    position: relative;
-    flex: 0 0 auto;
-    padding: 22px 22px 15px;
-    background-color: #9acc4e;
-    width: 62px;
-    height: 62px;
-    z-index: 2; }
-    .header-mobile-burger svg {
-      width: 18px;
-      height: 20px;
-      fill: #fff;
-      stroke: #fff;
-      stroke-miterlimit: 10;
-      stroke-width: 9.92px; }
-  .header-mobile-logo {
-    width: 150px;
-    padding-top: 18px;
-    margin-left: -6px; }
-    .header-mobile-logo svg {
-      width: 150px; }
-  .header-mobile-phone {
-    display: block;
-    margin-left: auto;
-    padding-top: 23px; }
-    .header-mobile-phone:after {
-      display: none; }
-    .header-mobile-phone svg {
-      width: 18px;
-      height: 22px; }
-  .header-mobile-cart {
-    display: block;
-    margin-left: 20px;
-    padding-top: 17px;
-    margin-right: 44px; }
-    .header-mobile-cart:after {
-      display: none; }
-    .header-mobile-cart .symbol-basket-2 {
-      font-size: 2.2rem; }
-  .header-mobile-menu {
-    position: absolute;
-    width: 300px;
-    background-color: white;
-    box-shadow: 0px 0px 3.96px 0.04px rgba(0, 0, 0, 0.35);
-    z-index: 100;
-    padding: 20px 16px;
-    top: 0;
-    left: -330px;
-    overflow-y: scroll;
-    max-height: 100vh;
-    transition: all .3s ease; }
-    .header-mobile-menu.open {
-      left: 0; }
-    .header-mobile-menu-close {
+  .header-2020 .popup-basket {
+    left: -190px; }
+    .header-2020 .popup-basket .header-basket-v2 {
+      top: 12px; }
+    .header-2020 .popup-basket .symbol-basket-2 {
+      font-size: 2.4rem; }
+    .header-2020 .popup-basket .symbol-basket-bubble {
+      font-size: 2.9rem; }
+  .header-2020 .header-mobile {
+    display: none; }
+    @media screen and (max-width: 1026px) {
+      .header-2020 .header-mobile {
+        display: flex; } }
+    .header-2020 .header-mobile-burger {
       position: relative;
-      border-radius: 50%;
-      background-color: #7cbd41;
-      width: 30px;
-      height: 30px;
-      margin-bottom: 20px; }
-      .header-mobile-menu-close:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: url(../assets/img/close-menu.png) 50% 50% no-repeat;
-        width: 30px;
-        height: 30px; }
-    .header-mobile-menu-list__item {
-      margin-bottom: 16px; }
-      .header-mobile-menu-list__item.active .header-mobile-menu-list__link {
-        color: #9acc4d; }
-      .header-mobile-menu-list__item:hover .header-mobile-menu-list__link {
-        color: #9acc4d; }
-    .header-mobile-menu-list__link {
-      font-size: 14px;
-      font-family: "PT Serif Caption";
-      color: #9b806f; }
-      .header-mobile-menu-list__link:after {
-        display: none; }
-    .header-mobile-menu .header-2020-phone {
-      margin: 0 0 20px 0; }
-    .header-mobile-menu .header-2020-mail {
-      margin: 0 0 20px 0; }
-    .header-mobile-menu .header-2020-mail__link {
-      font-size: 14px; }
-    .header-mobile-menu-btn {
+      flex: 0 0 auto;
+      padding: 22px 22px 15px;
+      background-color: #9acc4e;
+      width: 62px;
+      height: 62px;
+      z-index: 2; }
+      .header-2020 .header-mobile-burger svg {
+        width: 18px;
+        height: 20px;
+        fill: #fff;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 9.92px; }
+    .header-2020 .header-mobile-logo {
+      width: 150px;
+      padding-top: 18px;
+      margin-left: -6px; }
+      .header-2020 .header-mobile-logo svg {
+        width: 150px; }
+    .header-2020 .header-mobile-phone {
       display: block;
-      width: 100%;
-      padding: 15px 20px;
-      text-align: center;
-      border-radius: 3px;
-      background-color: #7cbd41;
-      font-size: 14px;
-      line-height: 1;
-      color: #fff; }
-      .header-mobile-menu-btn:after {
+      margin-left: auto;
+      padding-top: 23px; }
+      .header-2020 .header-mobile-phone:after {
         display: none; }
-    .header-mobile-menu-search {
-      margin-bottom: 20px; }
-      .header-mobile-menu-search__form {
+      .header-2020 .header-mobile-phone svg {
+        width: 18px;
+        height: 22px; }
+    .header-2020 .header-mobile-cart {
+      display: block;
+      margin-left: 20px;
+      padding-top: 17px;
+      margin-right: 44px; }
+      .header-2020 .header-mobile-cart:after {
+        display: none; }
+      .header-2020 .header-mobile-cart .symbol-basket-2 {
+        font-size: 2.2rem; }
+    .header-2020 .header-mobile-menu {
+      position: absolute;
+      width: 300px;
+      background-color: white;
+      box-shadow: 0px 0px 3.96px 0.04px rgba(0, 0, 0, 0.35);
+      z-index: 100;
+      padding: 20px 16px;
+      top: 0;
+      left: -330px;
+      overflow-y: scroll;
+      max-height: 100vh;
+      transition: all .3s ease; }
+      .header-2020 .header-mobile-menu.open {
+        left: 0; }
+      .header-2020 .header-mobile-menu-close {
         position: relative;
-        width: 100%; }
-        .header-mobile-menu-search__form input[type="text"] {
-          padding: 14px 20px;
-          border-radius: 5px;
-          background-color: #fff;
-          border: none;
-          font-size: 13px;
-          font-family: "PT Serif Caption";
-          color: #9b9696;
-          box-shadow: 0px 3px 8.28px 0.72px rgba(0, 0, 0, 0.2); }
-          @media (max-width: 730px) {
-            .header-mobile-menu-search__form input[type="text"] {
-              font-size: 13px; } }
-        .header-mobile-menu-search__form button {
+        border-radius: 50%;
+        background-color: #7cbd41;
+        width: 30px;
+        height: 30px;
+        margin-bottom: 20px; }
+        .header-2020 .header-mobile-menu-close:after {
+          content: '';
           position: absolute;
-          top: 50%;
-          right: 1rem;
-          transform: translateY(-50%);
-          width: 2rem;
-          height: 2rem;
-          background: url(../local/templates/anderson_new/css/../img/icons/icon-search.svg) 0 0 no-repeat;
-          cursor: pointer;
-          text-indent: -99999rem; }
+          top: 0;
+          left: 0;
+          background: url(../assets/img/close-menu.png) 50% 50% no-repeat;
+          width: 30px;
+          height: 30px; }
+      .header-2020 .header-mobile-menu-list__item {
+        margin-bottom: 16px; }
+        .header-2020 .header-mobile-menu-list__item.active .header-mobile-menu-list__link {
+          color: #9acc4d; }
+        .header-2020 .header-mobile-menu-list__item:hover .header-mobile-menu-list__link {
+          color: #9acc4d; }
+      .header-2020 .header-mobile-menu-list__link {
+        font-size: 14px;
+        font-family: "PT Serif Caption";
+        color: #9b806f; }
+        .header-2020 .header-mobile-menu-list__link:after {
+          display: none; }
+      .header-2020 .header-mobile-menu .header-2020-phone {
+        margin: 0 0 20px 0; }
+      .header-2020 .header-mobile-menu .header-2020-mail {
+        margin: 0 0 20px 0; }
+      .header-2020 .header-mobile-menu .header-2020-mail__link {
+        font-size: 14px; }
+      .header-2020 .header-mobile-menu-btn {
+        display: block;
+        width: 100%;
+        padding: 15px 20px;
+        text-align: center;
+        border-radius: 3px;
+        background-color: #7cbd41;
+        font-size: 14px;
+        line-height: 1;
+        color: #fff; }
+        .header-2020 .header-mobile-menu-btn:after {
+          display: none; }
+      .header-2020 .header-mobile-menu-search {
+        margin-bottom: 20px; }
+        .header-2020 .header-mobile-menu-search__form {
+          position: relative;
+          width: 100%; }
+          .header-2020 .header-mobile-menu-search__form input[type="text"] {
+            padding: 14px 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            border: none;
+            font-size: 13px;
+            font-family: "PT Serif Caption";
+            color: #9b9696;
+            box-shadow: 0px 3px 8.28px 0.72px rgba(0, 0, 0, 0.2); }
+            @media (max-width: 730px) {
+              .header-2020 .header-mobile-menu-search__form input[type="text"] {
+                font-size: 13px; } }
+          .header-2020 .header-mobile-menu-search__form button {
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-50%);
+            width: 2rem;
+            height: 2rem;
+            background: url(../local/templates/anderson_new/css/../img/icons/icon-search.svg) 0 0 no-repeat;
+            cursor: pointer;
+            text-indent: -99999rem; }
+  @media screen and (max-width: 1026px) {
+    .header-2020 .header-basket-v2 {
+      top: 5px !important; } }
 
 @media screen and (max-width: 1026px) {
   .home-page.v3 {
@@ -2182,19 +2192,6 @@
 @media screen and (max-width: 1026px) {
   .home-page.v3.has-banner {
     padding-top: 116px !important; } }
-
-.popup-basket {
-  left: -190px; }
-  .popup-basket .header-basket-v2 {
-    top: 12px; }
-  .popup-basket .symbol-basket-2 {
-    font-size: 2.4rem; }
-  .popup-basket .symbol-basket-bubble {
-    font-size: 2.9rem; }
-
-@media screen and (max-width: 1026px) {
-  .header-basket-v2 {
-    top: 5px !important; } }
 
 .home-shipping {
   display: flex;
