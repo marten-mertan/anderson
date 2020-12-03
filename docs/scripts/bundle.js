@@ -306,7 +306,7 @@ $(window).on('load', function(){
 
     $('.js-table-slider').slick({
         slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToScroll: 1,
         arrows: true,
         infinite: true,
         responsive: [
@@ -314,28 +314,28 @@ $(window).on('load', function(){
                 breakpoint: 1600,
                 settings: {
                     slidesToShow: 4,
-                    slidesToScroll: 4,
+                    slidesToScroll: 1,
                 }
             },
             {
                 breakpoint: 1300,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToScroll: 1,
                 }
             },
             {
                 breakpoint: 1140,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
                 }
             },
             {
                 breakpoint: 820,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
                 }
             },
             {
@@ -359,6 +359,29 @@ $(window).on('load', function(){
         e.stopPropagation();
         $('.js-filter-mobile-dropdown').toggleClass('dropdown-show');
         $('.js-filter-mobile-dropdown').siblings('.filter-hold').slideToggle(200);
+    });
+    
+    $('.js-main-table-input').bind('input', function() {
+        var $this = $(this);
+        var delay = 300;
+        clearTimeout($this.data('timer'));
+        $this.data('timer', setTimeout(function(){
+            var value = $this.val().toLowerCase();
+            if (value.length >= 3){
+                $('.js-main-table-input-slide').each(function( index ) {
+                    var text = $(this).children('.js-main-table-input-text').text().toLowerCase();
+                    var number = $(this).data('slide');
+                    if ((text).indexOf(value) !== -1){
+                        console.log(text);
+                        console.log(number);
+                        $('.js-table-slider').slick('slickGoTo', number - 1);
+                        return;
+                    }
+                });
+            } else{
+                
+            }
+        }, delay));
     });
 });
 

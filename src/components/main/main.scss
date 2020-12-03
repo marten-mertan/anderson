@@ -218,6 +218,9 @@
                     }
                     
                 }
+                &:after{
+                    display: none;
+                }
                 &__icon{
                     width: 80px;
                     height: 80px;
@@ -686,8 +689,12 @@
                 padding: 0;
             }
             &-item{
+                display: block;
                 width: 292px;
                 padding: 5px;
+                &:after{
+                    display: none;
+                }
                 @media screen and (max-width: 1026px){
                     width: 235px;
                     margin-right: 10px;

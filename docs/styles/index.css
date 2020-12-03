@@ -2744,6 +2744,8 @@
         fill: #9acc4d; }
       .main-celebration-icons-item:hover .main-celebration-icons-item__text {
         color: #9acc4d; }
+      .main-celebration-icons-item:after {
+        display: none; }
       .main-celebration-icons-item__icon {
         width: 80px;
         height: 80px;
@@ -3145,8 +3147,11 @@
       .main-table-slider {
         padding: 0; } }
     .main-table-slider-item {
+      display: block;
       width: 292px;
       padding: 5px; }
+      .main-table-slider-item:after {
+        display: none; }
       @media screen and (max-width: 1026px) {
         .main-table-slider-item {
           width: 235px;
