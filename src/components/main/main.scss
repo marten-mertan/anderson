@@ -5,6 +5,8 @@
             box-shadow: none;
         }
         &-item{
+            flex: 0 0 auto;
+            width: 100%;
             display: block;
             background: none 62% 50% no-repeat;
             background-size: cover;

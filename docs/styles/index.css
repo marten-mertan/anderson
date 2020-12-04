@@ -1733,13 +1733,19 @@
   .catalog-2020 .c-pagination-mobile__btn:after {
     display: none; }
 
-@media screen and (max-width: 1026px) {
-  main.main {
-    padding-top: 62px !important; } }
-
-@media screen and (max-width: 730px) {
-  main.main .c-breadcrumb {
-    margin: 2rem 0; } }
+main.main {
+  padding-top: 0 !important; }
+  @media screen and (max-width: 1026px) {
+    main.main {
+      padding-top: 62px !important; } }
+  main.main.has-banner {
+    padding-top: 0 !important; }
+    @media screen and (max-width: 1026px) {
+      main.main.has-banner {
+        padding-top: 116px !important; } }
+  @media screen and (max-width: 730px) {
+    main.main .c-breadcrumb {
+      margin: 2rem 0; } }
 
 @media screen and (max-width: 730px) {
   body.mobile-white {
@@ -2185,13 +2191,22 @@
     .header-2020 .header-basket-v2 {
       top: 5px !important; } }
 
-@media screen and (max-width: 1026px) {
-  .home-page.v3 {
-    padding-top: 62px !important; } }
+.header-wrap.header-wrap-v2.sticky.no-compress {
+  position: relative !important; }
+  @media screen and (max-width: 1026px) {
+    .header-wrap.header-wrap-v2.sticky.no-compress {
+      position: fixed !important; } }
 
-@media screen and (max-width: 1026px) {
-  .home-page.v3.has-banner {
-    padding-top: 116px !important; } }
+main.v3 {
+  padding-top: 0 !important; }
+  @media screen and (max-width: 1026px) {
+    main.v3 {
+      padding-top: 62px !important; } }
+  main.v3.has-banner {
+    padding-top: 0 !important; }
+    @media screen and (max-width: 1026px) {
+      main.v3.has-banner {
+        padding-top: 116px !important; } }
 
 .home-shipping {
   display: flex;
@@ -2563,6 +2578,8 @@
     .main-slider {
       box-shadow: none; } }
   .main-slider-item {
+    flex: 0 0 auto;
+    width: 100%;
     display: block;
     background: none 62% 50% no-repeat;
     background-size: cover; }

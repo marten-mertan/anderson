@@ -357,8 +357,16 @@
 }
 
 main.main{
+    padding-top: 0 !important;
     @media screen and (max-width: 1026px){
         padding-top: 62px !important;
+    }
+    &.has-banner{
+        padding-top: 0 !important;;
+        @media screen and (max-width: 1026px){
+            padding-top: 116px !important;
+        }
+
     }
     .c-breadcrumb{
         @media screen and (max-width: 730px){

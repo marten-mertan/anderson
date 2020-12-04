@@ -462,13 +462,21 @@
 
         }
     }
-}
 
-.home-page.v3{
+}
+.header-wrap.header-wrap-v2.sticky.no-compress{
+    position: relative !important;
+    @media screen and (max-width: 1026px){
+        position: fixed !important;
+    }
+}
+main.v3{
+    padding-top: 0 !important;
     @media screen and (max-width: 1026px){
         padding-top: 62px !important;
     }
     &.has-banner{
+        padding-top: 0 !important;;
         @media screen and (max-width: 1026px){
             padding-top: 116px !important;
         }
