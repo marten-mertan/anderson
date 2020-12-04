@@ -2571,10 +2571,11 @@
     .main-slider-item-wrap {
       display: flex;
       flex-direction: column;
-      max-width: 1560px;
       margin: 0 auto;
       padding: 92px 52px 96px;
-      height: 510px; }
+      height: 510px;
+      background: none 50% 50% no-repeat;
+      background-size: cover; }
       @media screen and (max-width: 1026px) {
         .main-slider-item-wrap {
           display: none;
