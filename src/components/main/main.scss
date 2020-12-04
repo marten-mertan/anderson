@@ -19,8 +19,19 @@
                 padding: 92px 52px 96px;
                 height: 510px;
                 @media screen and (max-width: 1026px){
+                    display: none;
                     height: 363px;
                     padding: 73px 15px 99px;
+                }
+                &-mobile{
+                    display: none;
+                    height: 0;
+                    padding-top: 100%;
+                    @media screen and (max-width: 1026px){
+                        display: flex;
+                        background: none 50% 50% no-repeat;
+                        background-size: cover;
+                    }
                 }
             }
             &__title{

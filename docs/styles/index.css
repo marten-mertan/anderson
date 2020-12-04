@@ -2577,8 +2577,18 @@
       height: 510px; }
       @media screen and (max-width: 1026px) {
         .main-slider-item-wrap {
+          display: none;
           height: 363px;
           padding: 73px 15px 99px; } }
+      .main-slider-item-wrap-mobile {
+        display: none;
+        height: 0;
+        padding-top: 100%; }
+        @media screen and (max-width: 1026px) {
+          .main-slider-item-wrap-mobile {
+            display: flex;
+            background: none 50% 50% no-repeat;
+            background-size: cover; } }
     .main-slider-item__title {
       font-size: 94px;
       line-height: 1;
