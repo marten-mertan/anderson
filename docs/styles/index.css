@@ -3099,10 +3099,16 @@ main.v3 {
         border: 1px solid #fff;
         background-color: #fff;
         border-radius: .5rem; }
+        .main-signup-form .datepicker-layout input::-webkit-input-placeholder {
+          opacity: 1;
+          color: #555451; }
         .main-signup-form .datepicker-layout input::-moz-placeholder {
           opacity: 1;
           color: #555451; }
         .main-signup-form .datepicker-layout input:-ms-input-placeholder {
+          opacity: 1;
+          color: #555451; }
+        .main-signup-form .datepicker-layout input::-ms-input-placeholder {
           opacity: 1;
           color: #555451; }
         .main-signup-form .datepicker-layout input::placeholder {
@@ -3687,11 +3693,10 @@ main.v3 {
     flex-direction: row;
     align-items: flex-start;
     width: 100%;
-    overflow-x: scroll; }
+    overflow-x: auto; }
     @media screen and (max-width: 1020px) {
       .packages-wrap {
-        flex-direction: column;
-        overflow-x: auto; } }
+        flex-direction: column; } }
     .packages-wrap-column {
       flex: 1 1 0;
       min-width: calc(25% - 21px);

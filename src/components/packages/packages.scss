@@ -156,10 +156,9 @@
         flex-direction: row;
         align-items: flex-start;
         width: 100%;
-        overflow-x: scroll;
+        overflow-x: auto;
         @media screen and (max-width: 1020px){
             flex-direction: column;
-            overflow-x: auto;
         }
         &-column{
             flex: 1 1 0;
