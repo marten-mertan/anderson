@@ -3369,10 +3369,25 @@ main.v3 {
   .packages-wrap {
     display: flex;
     flex-direction: row;
-    align-items: flex-start; }
+    align-items: flex-start;
+    width: 100%;
+    overflow-x: scroll; }
     @media screen and (max-width: 1020px) {
       .packages-wrap {
-        flex-direction: column; } }
+        flex-direction: column;
+        overflow-x: auto; } }
+    .packages-wrap-column {
+      flex: 1 1 0;
+      min-width: calc(25% - 21px);
+      max-width: calc(50% - 14px);
+      margin-bottom: 30px; }
+      @media screen and (max-width: 1020px) {
+        .packages-wrap-column {
+          max-width: none;
+          width: 100%;
+          margin-bottom: 10px; } }
+      .packages-wrap-column:not(:last-child) {
+        margin-right: 28px; }
     .packages-wrap-extra {
       display: flex;
       flex-direction: row; }
@@ -3400,8 +3415,6 @@ main.v3 {
   .packages-offer {
     flex: 0 1 auto;
     width: 100%;
-    max-width: calc(50% - 14px);
-    margin-bottom: 30px;
     cursor: pointer;
     transition: all .2s ease;
     z-index: 2; }
@@ -3410,6 +3423,8 @@ main.v3 {
         max-width: none;
         width: 100%;
         margin-bottom: 10px; } }
+    .packages-offer:not(:first-child) {
+      margin-top: 10px; }
     .packages-offer:hover {
       box-shadow: 0 8px 33px 0 rgba(0, 0, 0, 0.3);
       z-index: 3; }
@@ -3417,8 +3432,6 @@ main.v3 {
         .packages-offer:hover {
           transform: none;
           box-shadow: none; } }
-    .packages-offer:not(:last-child) {
-      margin-right: 28px; }
     .packages-offer.in-cart .packages-offer-head-controls__text {
       display: inline-block; }
     .packages-offer.in-cart .packages-offer-head-controls__add {
@@ -3439,7 +3452,8 @@ main.v3 {
       font-weight: bold;
       color: #ffc7e8;
       text-align: center;
-      background: #c44890; }
+      background: #c44890;
+      min-height: 66px; }
       @media screen and (max-width: 1600px) {
         .packages-offer-head {
           text-align: left;
@@ -3448,7 +3462,8 @@ main.v3 {
       @media screen and (max-width: 1020px) {
         .packages-offer-head {
           padding: 9px 8px 5px;
-          text-align: left; } }
+          text-align: left;
+          min-height: 44px; } }
       .packages-offer-head__title .icon-arrow-down-new {
         display: none;
         position: relative;

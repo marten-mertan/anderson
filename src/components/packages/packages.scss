@@ -155,8 +155,25 @@
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        width: 100%;
+        overflow-x: scroll;
         @media screen and (max-width: 1020px){
             flex-direction: column;
+            overflow-x: auto;
+        }
+        &-column{
+            flex: 1 1 0;
+            min-width: calc(25% - 21px);
+            max-width: calc(50% - 14px); 
+            margin-bottom: 30px;
+            @media screen and (max-width: 1020px){
+                max-width: none;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            &:not(:last-child){
+                margin-right: 28px;
+            }
         }
         &-extra{
             display: flex;
@@ -199,8 +216,6 @@
     &-offer{
         flex: 0 1 auto;
         width: 100%;
-        max-width: calc(50% - 14px); 
-        margin-bottom: 30px;
         cursor: pointer;
         transition: all .2s ease;
         z-index: 2;
@@ -208,6 +223,9 @@
             max-width: none;
             width: 100%;
             margin-bottom: 10px;
+        }
+        &:not(:first-child){
+            margin-top: 10px;
         }
         &:hover{
             //transform: scale(1.1, 1.1);
@@ -217,9 +235,6 @@
                 transform: none;
                 box-shadow: none;
             }
-        }
-        &:not(:last-child){
-            margin-right: 28px;
         }
         &.in-cart{
             .packages-offer-head-controls{
@@ -254,6 +269,7 @@
             color: #ffc7e8;
             text-align: center;
             background: #c44890;
+            min-height: 66px;
             @media screen and (max-width: 1600px){
                 text-align: left;
                 border-top-left-radius: 6px;
@@ -262,6 +278,7 @@
             @media screen and (max-width: 1020px){
                 padding: 9px 8px 5px;
                 text-align: left;
+                min-height: 44px;
             }
             &__title{
                 .icon-arrow-down-new{
