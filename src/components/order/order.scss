@@ -1,0 +1,462 @@
+.ordering {
+  font-family: "PT Serif Caption", serif;
+  color: #231300;
+  margin-bottom: 60px;
+
+  @media screen and (max-width: 1000px) {
+    margin-bottom: 24px;
+  }
+
+  &-nav {
+    margin-bottom: 14px;
+
+    @media screen and (max-width: 600px) {
+      text-align: center;
+    }
+
+    &__item {
+      font-size: 1.6rem;
+      display: inline-block;
+      padding: 1.1rem 1.4rem;
+      margin-right: 1rem;
+      border-radius: .4rem;
+      color: #fff;
+
+      span {
+        color: #9b806f;
+      }
+
+      &::after {
+        content: '';
+        display: none;
+      }
+
+      &.active {
+        color: #fff;
+        background-color: #7cbd41;
+
+        svg {
+          fill: #fff;
+        }
+        span {
+          color: #fff;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+
+  &-table {
+    @media screen and (max-width: 1000px) {
+      width: 1100px;
+    }
+
+    @media screen and (max-width: 800px) {
+      width: 750px;
+    }
+
+    &-layout {
+      margin-bottom: 30px;
+      @media screen and (max-width: 1000px) {
+        overflow-x: scroll;
+      }
+    }
+
+    &__head {
+      padding: 22px 25px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: stretch;
+      border: 1px solid #d4d4d4;
+      background-color: #fff;
+      box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+
+      @media screen and (max-width: 1000px) {
+        padding: 16px;
+      }
+    }
+
+    &__title {
+      font-size: 14px;
+      line-height: 22px;
+      color: #231300;
+      text-transform: uppercase;
+      text-align: center;
+
+      span {
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
+      }
+
+    }
+
+    &__col {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      //background-color: #ccc;
+
+      &:nth-child(1) {
+        width: 50%;
+
+        @media screen and (max-width: 1000px) {
+          justify-content: flex-start;
+        }
+      }
+      &:nth-child(2) {
+        width: 14%;
+      }
+      &:nth-child(3) {
+        width: 14%;
+      }
+      &:nth-child(4) {
+        width: 15%;
+      }
+      &:nth-child(5) {
+        width: 6%;
+        justify-content: flex-end;
+      }
+
+
+      &.align-left {
+        justify-content: flex-start;
+
+        .ordering-table__title {
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    &__footer {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: center;
+      border: 1px solid #d4d4d4;
+      background-color: #fff;
+      box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+      padding: 8px 25px;
+
+      @media screen and (max-width: 1300px) {
+        justify-content: space-between;
+      }
+
+      @media screen and (max-width: 800px) {
+        padding: 8px 16px;
+      }
+    }
+
+    &__code {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      margin-right: 14%;
+      margin-left: 50%;
+
+      @media screen and (max-width: 1600px){
+        margin-right: 8%;
+      }
+
+      @media screen and (max-width: 1300px){
+        margin: 0;
+
+      }
+
+      @media screen and (max-width: 1300px) {
+        justify-content: space-between;
+      }
+
+
+
+      .c-input {
+
+        max-width: 200px;
+      }
+
+      .c-button {
+        text-transform: capitalize;
+        margin-left: -5px;
+        font-size: 14px;
+        line-height: 26px;
+      }
+    }
+
+    &__total {
+      color: #cd4c87;
+      font-family: "BebasNeue";
+      font-weight: 500;
+      font-size: 26px;
+    }
+  }
+
+  &-card {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 15px 25px;
+    border: 1px solid #d4d4d4;
+    background-color: #fff;
+    box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    @media screen and (max-width: 800px) {
+      padding: 10px 16px;
+    }
+
+    &__price {
+      font-family: "BebasNeue", sans-serif;
+      font-weight: 500;
+      font-size: 26px;
+    }
+
+    &-product {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+
+      &__img {
+        width: 260px;
+        flex: 1 0 260px;
+        height: 190px;
+        margin-right: 30px;
+
+        @media screen and (max-width: 1200px) {
+          width: 130px;
+          flex: 1 0 130px;
+          height: 85px;
+        }
+        @media screen and (max-width: 1000px) {
+          margin-right: 10px;
+        }
+
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &__text {
+        color: #191919;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: left;
+        width: 100%;
+        padding-right: 40px;
+
+        @media screen and (max-width: 1200px) {
+          font-size: 14px;
+          line-height: 20px;
+          padding-left: 10px;
+        }
+      }
+    }
+
+    .c-card-catalog__count {
+      display: inline-block;
+      margin: 0;
+    }
+
+    .c-button {
+      padding: 11px 13px;
+      width: 40px;
+    }
+  }
+
+  &-form {
+    position: relative;
+    padding: 30px 24px;
+    border: 1px solid #d4d4d4;
+    background-color: #fff;
+    box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+    @media screen and (max-width: 800px) {
+      padding: 30px 16px;
+    }
+
+    &__grid {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      margin-left: -15px;
+      margin-right: -15px;
+
+      @media screen and (max-width: 1000px) {
+        display: block;
+      }
+    }
+
+    &__title {
+      font-size: 23px;
+      line-height: 23px;
+      color: #191919;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 1000px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    &__col {
+      width: 33.33%;
+      padding: 0 15px;
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+      }
+    }
+
+    &__item {
+      margin-bottom: 15px;
+    }
+
+    &-grid {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: stretch;
+
+      &__item {
+        flex: 0 0 33.333%;
+        padding-right: 15px;
+
+        &:last-child {
+          padding: 0;
+        }
+      }
+    }
+
+    &-total {
+      color: #191919;
+      font-size: 14px;
+      margin-bottom: 15px;
+      @media screen and (max-width: 1000px) {
+        text-align: right;
+      }
+
+      &__num {
+        color: #cd4c87;
+        font-family: "BebasNeue";
+        font-weight: 500;
+        font-size: 26px;
+      }
+    }
+
+    &-check {
+      margin-bottom: 30px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: center;
+
+      &__item {
+        margin-right: 40px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .order-radio {
+      color: #191919;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .order-radio::before {
+      background-color: transparent;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    input[type="radio"]:checked + .order-radio::before {
+      content: '';
+      background-color: #7cbd41;
+    }
+
+
+    .datepicker-layout {
+      &::after {
+        content: '';
+        display: none;
+      }
+
+      .c-symbol {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+      }
+    }
+
+
+    &__decor-1 {
+      position: absolute;
+      bottom: 70px;
+      left: 54px;
+      width: 200px;
+      height: 167px;
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+
+    &__decor-2 {
+      position: absolute;
+      bottom: 40px;
+      left: 311px;
+      width: 141px;
+      height: 130px;
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+
+  }
+
+  &-btn {
+    text-decoration: none;
+    padding: 14px 40px;
+    border-radius: 4px;
+    background-color: #7cbd41;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 22px;
+    display: inline-block;
+
+    &:hover {
+      background-color: #72b240;
+      color: #ffffff;
+    }
+
+    &:after {
+      content: '';
+      border: none;
+    }
+
+    &__layout {
+      text-align: left;
+      @media screen and (max-width: 1000px) {
+        text-align: right;
+      }
+    }
+  }
+}
+
+.c-title__h1 {
+  padding: 0 16px;
+  @media screen and (max-width: 800px) {
+    text-align: center;
+  }
+}
