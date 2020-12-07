@@ -293,4 +293,19 @@ $(window).on('load', function(){
             }
         }, delay));
     });
+
+    $(document).on('click','.js-add-package', function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        $(this).parents('.js-package').addClass('in-cart');
+    });
+    $(document).on('click','.js-delete-package', function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        $(this).parents('.js-package').removeClass('in-cart');
+    });
+    $(document).on('click','.js-package-head', function(e){
+        e.preventDefault();
+        $(this).parents('.js-package').toggleClass('closed');
+    });
 });
