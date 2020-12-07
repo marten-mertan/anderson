@@ -82,7 +82,7 @@
             background: #7cbd41;
             transition: all .2s ease;
             @media screen and (max-width: 1020px){
-                padding: 4px 9px;
+                padding: 6px 9px 4px;
             }
             &:hover{
                 background: #c44890;
@@ -260,7 +260,7 @@
                 border-top-right-radius: 6px;
             }
             @media screen and (max-width: 1020px){
-                padding: 7px 8px 5px;
+                padding: 9px 8px 5px;
                 text-align: left;
             }
             &__title{
@@ -451,7 +451,7 @@
             text-align: left;
             background: #c44890;
             @media screen and (max-width: 1020px){
-                padding: 7px 8px 5px;
+                padding: 9px 8px 5px;
                 border-top-left-radius: 3px;
                 border-top-right-radius: 3px;
             }

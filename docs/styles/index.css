@@ -3311,7 +3311,7 @@ main.v3 {
       transition: all .2s ease; }
       @media screen and (max-width: 1020px) {
         .packages-filter__link {
-          padding: 4px 9px; } }
+          padding: 6px 9px 4px; } }
       .packages-filter__link:hover {
         background: #c44890;
         color: #fff; }
@@ -3447,7 +3447,7 @@ main.v3 {
           border-top-right-radius: 6px; } }
       @media screen and (max-width: 1020px) {
         .packages-offer-head {
-          padding: 7px 8px 5px;
+          padding: 9px 8px 5px;
           text-align: left; } }
       .packages-offer-head__title .icon-arrow-down-new {
         display: none;
@@ -3604,7 +3604,7 @@ main.v3 {
       background: #c44890; }
       @media screen and (max-width: 1020px) {
         .packages-extra-head {
-          padding: 7px 8px 5px;
+          padding: 9px 8px 5px;
           border-top-left-radius: 3px;
           border-top-right-radius: 3px; } }
       .packages-extra-head__title.mod-center {
