@@ -5565,30 +5565,446 @@ return rv;
 <div class="wrapper">
     <div class="header-wrap header-wrap-v2 no-compress with-banner">
 
-        {% include "../components/header/header.twig" %}
-
-        {# <section class="header-navigation-sale">
-            <div class="c-layout">
-                <a href="/menu/sertifikaty/">Купите абонемент и получите скидку до 10 000 рублей!</a>
+        
+        <header class="header header-2020">
+            <div class="header-2020-top">
+                <div class="header-2020-top-wrap">
+                    <div class="header-2020-top-left">
+                        <div class="header-city">Вы в <a href="#">Александровск-Сахалинске</a></div>
+                        <div class="header-2020-search">
+                            <form action="" method="get" class="header-2020-search__form">
+                                <input type="text" class="header-2020-search__input" placeholder="Поиск по сайту" autocomplete="off">
+                                <button type="submit" value="Найти">Поиск</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header-2020-top-right">
+                        <div class="header-2020-cabinet js-header-cabinet">
+                            <svg class="c-symbol symbol-cabinet"><use xlink:href="#symbol-cabinet"></use></svg>
+                            <a href="" class="header-2020-cabinet__text">Войти</a>
+                        </div>
+                    </div>
+                
+                </div>
+            
             </div>
-        </section> #}
-        {# <div class="home-banner js-home-slider">
-            <a href="/" class="home-banner-item">
-                <div class="home-banner-item__img mod-desktop">
+            <div class="header-2020-bottom">
+                <div class="header-2020-bottom-wrap">
+                    <div class="header-2020-bottom-left">
+                        <a class="symbol-logo-wrap" href="">
+                            <svg class="c-symbol symbol-logo"><use xlink:href="#symbol-logo"></use></svg>
+                            <!-- <span class="header-logo__beta"><i class="icon-beta"></i><span>-версия</span></span> -->
+                        </a>
+                    </div>
+                    <div class="header-2020-bottom-right">
+                        <a href="mailto:cafe_avenu@cafe-anderson.ru" class="header-2020-mail">
+                            <div class="header-2020-mail__icon">
+                                <svg class="c-symbol symbol-email"><use xlink:href="#symbol-email"></use></svg>
+                            </div>
+                            <div class="header-2020-mail-info">
+                                <div class="header-2020-mail__link">
+                                    cafe_avenu@cafe-anderson.ru
+                                </div>
+                                <div class="header-2020-mail__text">
+                                    Напишите нам
+                                </div>
+
+                            </div>
+
+                        </a>
+                        <a href="tel:+74951254907" class="header-2020-phone">
+                            <div class="header-2020-phone__icon">
+                                <svg class="c-symbol symbol-phone"><use xlink:href="#symbol-phone"></use></svg>
+                            </div>
+                            <div class="header-2020-phone-info">
+                                <div class="header-2020-phone__link">
+                                    +7 (495) 125 4907
+                                </div>
+                                <div class="header-2020-phone__text">
+                                    Единый Call-центр с 9:00 до 21:00
+                                </div>
+                            </div>
+                        </a>
+                        <div class="header-2020-basket header-basket header-basket-v2">
+                            <svg class="c-symbol symbol-basket-2">
+                                <use xlink:href="#symbol-basket-2"></use>
+                            </svg>
+                            <div class="header-basket__count">
+                                <span>99</span>
+                                <svg class="c-symbol symbol-basket-bubble">
+                                    <use xlink:href="#symbol-basket-bubble"></use>
+                                </svg>
+                            </div>
+                            <section class="popup-basket">
+                                <h3 class="popup-basket__title">Моя корзина<span class="popup-basket__close"></span>
+                                </h3>
+
+                                <div class="header-basket header-basket-v2">
+                                    <svg class="c-symbol symbol-basket-2">
+                                        <use xlink:href="#symbol-basket-2"></use>
+                                    </svg>
+                                    <div class="header-basket__count">
+                                        <span>99</span>
+                                        <svg class="c-symbol symbol-basket-bubble">
+                                            <use xlink:href="#symbol-basket-bubble"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="popup-basket__top">
+                                    <span class="popup-basket__all-count">14</span>товаров на сумму:
+                                    <span class="popup-basket__all-sum">18 500.-</span>
+                                </div>
+                                <div class="popup-basket__body">
+                                    <form action="#" class="popup-basket__form">
+                                        <div class="l-button l-button__center">
+                                            <button class="c-button c-button__default">Оформить заказ</button>
+                                        </div>
+                                        <div class="popup-basket__scroll">
+                                            <div class="popup-basket__type">
+                                                <h3 class="popup-basket__title">Наше меню</h3>
+                                                <div class="popup-basket__list">
+                                                    <div class="popup-basket__item">
+                                                        <div class="popup-basket-card">
+                                                            <div class="popup-basket-card__close"></div>
+                                                            <div class="popup-basket-card__grid">
+                                                                <div class="popup-basket-card__img">
+                                                                    <div class="popup-basket-card__img-layout"><img src="img/basket-product-1.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="popup-basket-card__body">
+                                                                    <div class="popup-basket-card__title">Омлет оченьдлинноеслововнесколькострок с вялеными томатами и
+                                                                        крем-чизом
+                                                                    </div>
+                                                                    <ul class="popup-basket-card__list">
+                                                                        <li class="popup-basket-card__item">Бекон</li>
+                                                                        <li class="popup-basket-card__item">Томаты вяленые</li>
+                                                                        <li class="popup-basket-card__item">Пармезан</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="popup-basket-card__footer">
+                                                                <div class="popup-basket-card__price">620<span>.-</span>
+                                                                </div>
+                                                                <div class="c-counter">
+                                                                    <button type="button" class="but c-counter__btn dec">-</button>
+                                                                    <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                                    <button type="button" class="but c-counter__btn inc">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="popup-basket__item">
+                                                        <div class="popup-basket-card">
+                                                            <div class="popup-basket-card__close"></div>
+                                                            <div class="popup-basket-card__grid">
+                                                                <div class="popup-basket-card__img">
+                                                                    <div class="popup-basket-card__img-layout"><img src="img/basket-product-1.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="popup-basket-card__body">
+                                                                    <div class="popup-basket-card__title">Томленая утиная ножка с
+                                                                        запеченным картофелем, вешенками и тыквенными семечками
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="popup-basket-card__footer">
+                                                                <div class="popup-basket-card__price">620<span>.-</span>
+                                                                </div>
+                                                                <div class="c-counter">
+                                                                    <button type="button" class="but c-counter__btn dec">-</button>
+                                                                    <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                                    <button type="button" class="but c-counter__btn inc">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="popup-basket__type">
+                                                <h3 class="popup-basket__title">Тортики на заказ</h3>
+                                                <div class="popup-basket__list">
+                                                    <div class="popup-basket__item">
+                                                        <div class="popup-basket-card">
+                                                            <div class="popup-basket-card__close"></div>
+                                                            <div class="popup-basket-card__grid">
+                                                                <div class="popup-basket-card__body">
+                                                                    <img src="./img/icons/icon-cake.png" alt="" style="display: inline-block; margin-right: 4px;">
+                                                                    <div class="popup-basket-card__title" style="display: inline-block;     width: 88%;">
+                                                                        Черничный крем с шоколадным бисквитом
+                                                                    </div>
+                                                                    <div class="popup-basket-card__attribute">Форма:
+                                                                        <span class="popup-basket-card__attribute-value">прямоугольник</span>
+                                                                    </div>
+                                                                    <ul class="popup-basket-card__list">
+                                                                        <li class="popup-basket-card__item">Глазурь шоколадная</li>
+                                                                        <li class="popup-basket-card__item">Обтяжка мастика</li>
+                                                                        <li class="popup-basket-card__item">Грецкий орех</li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="popup-basket-card__footer">
+                                                                <div class="popup-basket-card__price">620<span>.-</span>
+                                                                </div>
+                                                                <div class="c-counter">
+                                                                    <button type="button" class="but c-counter__btn dec">-</button>
+                                                                    <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                                    <button type="button" class="but c-counter__btn inc">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="popup-basket__type">
+                                                <h3 class="popup-basket__title">Тортики на заказ</h3>
+                                                <div class="popup-basket__list">
+                                                    <div class="popup-basket__item">
+                                                        <div class="popup-basket-card">
+                                                            <div class="popup-basket-card__close"></div>
+                                                            <div class="popup-basket-card__grid">
+                                                                <div class="popup-basket-card__body">
+                                                                    <img src="./img/icons/icon-cake.png" alt="" style="display: inline-block; margin-right: 4px;">
+                                                                    <div class="popup-basket-card__title" style="display: inline-block;     width: 88%;">
+                                                                        Черничный крем с шоколадным бисквитом
+                                                                    </div>
+                                                                    <div class="popup-basket-card__attribute">Форма:
+                                                                        <span class="popup-basket-card__attribute-value">прямоугольник</span>
+                                                                    </div>
+                                                                    <ul class="popup-basket-card__list">
+                                                                        <li class="popup-basket-card__item">Глазурь шоколадная</li>
+                                                                        <li class="popup-basket-card__item">Обтяжка мастика</li>
+                                                                        <li class="popup-basket-card__item">Грецкий орех</li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="popup-basket-card__footer">
+                                                                <div class="popup-basket-card__price">620<span>.-</span>
+                                                                </div>
+                                                                <div class="c-counter">
+                                                                    <button type="button" class="but c-counter__btn dec">-</button>
+                                                                    <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                                    <button type="button" class="but c-counter__btn inc">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="popup-basket__type">
+                                                <h3 class="popup-basket__title">Тортики на заказ</h3>
+                                                <div class="popup-basket__list">
+                                                    <div class="popup-basket__item">
+                                                        <div class="popup-basket-card">
+                                                            <div class="popup-basket-card__close"></div>
+                                                            <div class="popup-basket-card__grid">
+                                                                <div class="popup-basket-card__body">
+                                                                    <img src="./img/icons/icon-cake.png" alt="" style="display: inline-block; margin-right: 4px;">
+                                                                    <div class="popup-basket-card__title" style="display: inline-block;     width: 88%;">
+                                                                        Черничный крем с шоколадным бисквитом
+                                                                    </div>
+                                                                    <div class="popup-basket-card__attribute">Форма:
+                                                                        <span class="popup-basket-card__attribute-value">прямоугольник</span>
+                                                                    </div>
+                                                                    <ul class="popup-basket-card__list">
+                                                                        <li class="popup-basket-card__item">Глазурь шоколадная</li>
+                                                                        <li class="popup-basket-card__item">Обтяжка мастика</li>
+                                                                        <li class="popup-basket-card__item">Грецкий орех</li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="popup-basket-card__footer">
+                                                                <div class="popup-basket-card__price">620<span>.-</span>
+                                                                </div>
+                                                                <div class="c-counter">
+                                                                    <button type="button" class="but c-counter__btn dec">-</button>
+                                                                    <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                                    <button type="button" class="but c-counter__btn inc">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <div class="popup-basket__footer">
+                                    <a href="#">перейти в корзину</a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
 
                 </div>
-                <div class="home-banner-item__img mod-mobile" style="background-image: url(assets/img/index/banner-mobile.png);">
-
+            
+            </div>
+            <nav class="header-2020-nav">
+                <div class="header-2020-nav-wrap">
+                    <ul class="header-2020-nav-list">
+                        <li class="header-2020-nav-list__item active">
+                            <a href="" class="header-2020-nav-list__link">Доставка готовых блюд из кафе</a>
+                        </li>
+                        <li class="header-2020-nav-list__item">
+                            <a href="" class="header-2020-nav-list__link">Торты</a>
+                        </li>
+                        <li class="header-2020-nav-list__item">
+                            <a href="" class="header-2020-nav-list__link">Праздники</a>
+                        </li>
+                        <li class="header-2020-nav-list__item">
+                            <a href="" class="header-2020-nav-list__link">Акции</a>
+                        </li>
+                        <li class="header-2020-nav-list__item">
+                            <a href="" class="header-2020-nav-list__link">Афиша</a>
+                        </li>
+                        <li class="header-2020-nav-list__item">
+                            <a href="" class="header-2020-nav-list__link">Новости</a>
+                        </li>
+                        <li class="header-2020-nav-list__item">
+                            <a href="" class="header-2020-nav-list__link">Наши кафе</a>
+                        </li>
+                        <li class="header-2020-nav-list__item">
+                            <a href="" class="header-2020-nav-list__link">О нас</a>
+                        </li>
+                        <li class="header-2020-nav-list__item">
+                            <a href="" class="header-2020-nav-list__link">Сертификаты</a>
+                        </li>
+                        <li class="header-2020-nav-list__item">
+                            <a href="" class="header-2020-nav-list__link">Франшиза</a>
+                        </li>
+                    </ul>
+                
                 </div>
-
-            </a>
-            <a href="/" class="home-banner-item">
-                <div class="home-banner-item__img">
-
+            </nav>
+            <div class="header-mobile">
+                <div class="header-mobile-burger js-open-mobile-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.81 432.95">
+                        <path d="M39.73,57.68C174,36.69,310,59.57,444.85,46.16,479,42.76,499,.73,452.92,5.31,318,18.72,182.32-4.2,47.81,16.83,14.39,22.05-6.13,64.85,39.73,57.68Z"/><path class="a" d="M30.81,236.62c87.79,5.59,174.82-8,262.56-5.84,53.65,1.29,102.41,9.77,164.74-1.91,13.2-3.32,29.53-10.13,29.72-25.77,0-.63,0-1.27,0-1.9.18-15.13-27.95-15.86-48-7.11-48.15,8.77-101.84-3.48-150-3.09-77.44.63-154.55,11.38-232,6.45C31.21,195.76-14.34,233.74,30.81,236.62Z"/><path class="a" d="M433.83,372.37c-72,8.8-118.3,11.19-176.57,8.65-69.68-3-139.08,2.09-208-7.68-32.61-4.62-68,34.4-23.22,40.74,82.5,11.7,166.68,13.1,250.36,13.82,63.46.56,135.34-1.13,186.67-18.62C495.11,395.74,484.44,364.13,433.83,372.37Z"/>
+                    </svg>
                 </div>
+                <div class="header-mobile-logo">
+                    <a class="symbol-logo-wrap" href="">
+                        <svg class="c-symbol symbol-logo"><use xlink:href="#symbol-logo"></use></svg>
+                    </a>
+                </div>
+                <a href="tel:+74951254907" class="header-mobile-phone">
+                    <svg class="c-symbol symbol-phone"><use xlink:href="#symbol-phone"></use></svg>
+                </a>
+                <a href="/" class="header-mobile-cart">
+                    <div class="header-basket header-basket-v2">
+                        <svg class="c-symbol symbol-basket-2">
+                            <use xlink:href="#symbol-basket-2"></use>
+                        </svg>
+                        <div class="header-basket__count">
+                            <span>99</span>
+                            <svg class="c-symbol symbol-basket-bubble">
+                                <use xlink:href="#symbol-basket-bubble"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <div class="header-mobile-menu js-mobile-menu">
+                    <div class="header-mobile-menu-close js-close-mobile-menu">
+                    
+                    </div>
+                    <div class="header-mobile-menu-search">
+                        <form action="" method="get" class="header-mobile-menu-search__form">
+                            <input type="text" class="header-mobile-menu-search__input" placeholder="Поиск по сайту" autocomplete="off">
+                            <button type="submit" value="Найти">Поиск</button>
+                        </form>
+                    </div>
+                    <ul class="header-mobile-menu-list">
+                        <li class="header-mobile-menu-list__item active">
+                            <a class="header-mobile-menu-list__link ">
+                                Доставка готовых блюд из кафе
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link active">
+                                Торты
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link active">
+                                Праздники
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link active">
+                                Акции
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link active">
+                                Афиша
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link active">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link active">
+                                Наши кафе
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link active">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link active">
+                                Сертификаты
+                            </a>
+                        </li>
+                        <li class="header-mobile-menu-list__item">
+                            <a class="header-mobile-menu-list__link active">
+                                Франшиза
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="tel:+74951254907" class="header-2020-phone">
+                        <div class="header-2020-phone__icon">
+                            <svg class="c-symbol symbol-phone"><use xlink:href="#symbol-phone"></use></svg>
+                        </div>
+                        <div class="header-2020-phone-info">
+                            <div class="header-2020-phone__link">
+                                +7 (495) 125 4907
+                            </div>
+                            <div class="header-2020-phone__text">
+                                Единый Call-центр с 9:00 до 21:00
+                            </div>
+                        </div>
+                    </a>
+                    <a href="mailto:cafe_avenu@cafe-anderson.ru" class="header-2020-mail">
+                        <div class="header-2020-mail__icon">
+                            <svg class="c-symbol symbol-email"><use xlink:href="#symbol-email"></use></svg>
+                        </div>
+                        <div class="header-2020-mail-info">
+                            <div class="header-2020-mail__link">
+                                cafe_avenu@cafe-anderson.ru
+                            </div>
+                            <div class="header-2020-mail__text">
+                                Напишите нам
+                            </div>
 
-            </a>
-        </div> #}
+                        </div>
+
+                    </a>
+                    <a href="/" class="header-mobile-menu-btn">Заказать звонок</a>
+                </div>
+            </div>
+        </header>
+
+        
+        
     </div>
     <main class="main">
         <div class="c-layout">
@@ -5610,8 +6026,639 @@ return rv;
                 </ul>
             </nav>
             <div id="bxdynamic_breadcrumb_end" style="display:none"></div>
-            <h1 class="c-title__h1">Оформление заказа </h1>
-            {% include "../components/cabinet/order.twig" %}
+            <h1 class="c-title__h1">Личный кабинет </h1>
+            
+<div class="cabinet">
+    <nav class="cabinet-nav">
+        <a class="cabinet-nav__item" href="#">
+            <span>Мой профиль</span>
+        </a>
+        <a class="cabinet-nav__item active" href="#">
+            <span>История заказов</span>
+        </a>
+        <a class="cabinet-nav__item " href="#">
+            <svg class="icon-list-inline" fill="#817F7E" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+                <path d="M3.3,3.2C3,3,2.6,3,2.3,3.2C2,3.5,2,3.8,2.3,4.1l1.6,1.5c0.1,0.1,0.3,0.2,0.5,0.2l0,0c0.2,0,0.4-0.1,0.5-0.2
+		l5-4.5c0.3-0.2,0.3-0.6,0-0.9c-0.3-0.2-0.7-0.2-1,0L7.4,1.6C6.6,0.8,5.5,0.4,4.3,0.4C1.9,0.4,0,2.1,0,4.3s1.9,3.9,4.3,3.9
+		c1.9,0,3.6-1.1,4.1-2.8C8.6,5.1,8.4,4.7,8,4.6C7.6,4.5,7.3,4.7,7.1,5.1C6.8,6.2,5.6,7,4.3,7C2.7,7,1.4,5.8,1.4,4.3
+		s1.3-2.7,2.9-2.7c0.8,0,1.6,0.3,2.1,0.8l-2,1.8L3.3,3.2z"></path>
+                <path d="M4.3,8.7C1.9,8.7,0,10.5,0,12.7s1.9,3.9,4.3,3.9s4.3-1.8,4.3-3.9S6.7,8.7,4.3,8.7z M4.3,15.4
+		c-1.6,0-2.9-1.2-2.9-2.7S2.7,10,4.3,10s2.9,1.2,2.9,2.7S6,15.4,4.3,15.4z"></path>
+                <path d="M8.7,21.1c0-2.2-1.9-3.9-4.3-3.9S0,18.9,0,21.1S1.9,25,4.3,25S8.7,23.2,8.7,21.1z M4.3,23.7
+		c-1.6,0-2.9-1.2-2.9-2.7s1.3-2.7,2.9-2.7s2.9,1.2,2.9,2.7S6,23.7,4.3,23.7z"></path>
+                <path d="M24.3,12H10.9c-0.4,0-0.7,0.3-0.7,0.6s0.3,0.6,0.7,0.6h13.4c0.4,0,0.7-0.3,0.7-0.6S24.7,12,24.3,12z"></path>
+                <path d="M24.3,3.7H10.9c-0.4,0-0.7,0.3-0.7,0.6s0.3,0.6,0.7,0.6h13.4c0.4,0,0.7-0.3,0.7-0.6S24.7,3.7,24.3,3.7z"></path>
+                <path d="M24.3,20.4H10.9c-0.4,0-0.7,0.3-0.7,0.6s0.3,0.6,0.7,0.6h13.4c0.4,0,0.7-0.3,0.7-0.6
+		C25,20.7,24.7,20.4,24.3,20.4z"></path>
+            </svg>
+            <span>Оформление заказа</span></a>
+    </nav>
+    <div class="lk">
+
+        <section class="lk-history">
+            <div class="lk-history__grid">
+                <div class="lk-history__hold">
+                    <ul class="tabs-menu" id="tabs-cafe-list">
+                        <li class="tabs-menu__item current"><a href="#lk-history-menu">Меню</a></li>
+                        <li class="tabs-menu__item"><a href="#lk-history-celebration">Праздники</a></li>
+                        <li class="tabs-menu__item"><a href="#lk-history-events">Мерорприятия</a></li>
+                        <li class="tabs-menu__item"><a href="#lk-history-cake">Торты</a></li>
+                    </ul>
+                </div>
+                <div class="tab">
+                    <div id="lk-history-menu" class="tab-content">
+                        <ul class="lk-history__list">
+                            <li class="lk-history-item">
+                                <div class="lk-history-item__header">
+                                    <div class="lk-history-item__grid">
+                                        <div class="lk-history-item__col">
+                                            <i class="c-icon icon-cutlery"></i>
+                                        </div>
+                                        <div class="lk-history-item__col">
+                                            <div class="lk-history-item__text">
+                                                <span>№ 25-69-789</span>
+                                                <span>от 07.12.17г.</span>
+                                                <span class="order-active">Активный...</span>
+                                                <svg class="icon-dropdown__down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.54 68.83">
+                                                    <path d="M46.65,23.71c-2.19-2-4.42-3.89-6.71-5.76C31,10.61,18.61-.11,6.22,2.69c-4.43,1-7.1,6.07-6,10.37,3,11,13.81,17.08,22.07,24.06C33.06,46.17,42.88,56,52.87,65.85c3.61,3.54,10.81,4,14.8.86,7.56-6,20.49-14.33,27.53-21,15.48-12.05,29.38-26,29.33-35,.33-7-4.2-10.14-7.33-10.67-8.32-1.41-27,17.75-35.67,25.67C77.38,28.58,69.22,35.58,65,38.28"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="lk-history-item__text">Доставка по адресу: г.Москва, ул. Верхняя Красная, д.7/2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lk-history-item__body">
+                                    <div class="lk-history-item__list">
+                                        <div class="lk-history-item__product">
+                                            <div class="c-card-product-line">
+                                                <div class="c-card-product-line__left">
+                                                    <div class="c-card-product-line__img"><img src="./assets/img/order/product-1.png" alt=""></div>
+                                                    <div class="c-card-product-line__body">
+                                                        <h4 class="c-card-product-line__title">Салат из свежих овощей с сыром чечил и тыквенными семечками</h4>
+
+                                                    </div>
+                                                </div>
+                                                <div class="c-card-product-line__right">
+                                                    <div class="c-card-product-line__quantity">15 шт.  </div>
+                                                    <div class="c-card-product-line__price">11 860 <span class="c-currency-symbol">&#8381;</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lk-history-item__product">
+                                            <div class="c-card-product-line">
+                                                <div class="c-card-product-line__left">
+                                                    <div class="c-card-product-line__img"><img src="./assets/img/order/product-1.png" alt=""></div>
+                                                    <div class="c-card-product-line__body">
+                                                        <h4 class="c-card-product-line__title">Салат из свежих овощей с сыром чечил и тыквенными семечками</h4>
+
+                                                    </div>
+                                                </div>
+                                                <div class="c-card-product-line__right">
+                                                    <div class="c-card-product-line__quantity">1 шт.  </div>
+                                                    <div class="c-card-product-line__price">50 <span class="c-currency-symbol">&#8381;</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="lk-history-item__footer">
+                                        <div class="lk-history-item__footer-col">
+                                            <div class="c-button-layout">
+                                                <span class="c-button c-button__medium disabled tooltip" data-tooltip-content=".tooltip_content">
+                                                    <i class="icon-delete-basket"></i>
+                                                </span>
+                                                <span>Удалить заказ</span>
+                                            </div>
+
+                                            <div class="tooltip_templates">
+                                                <span class="tooltip_content">
+                                                    <span>Для отмены текущего заказа позвоните по номеру</span>
+                                                    <div style="color:#8fc342; font-size: 1.3rem; font-style: italic;">+7 (495) 125- 49- 07</div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="lk-history-item__footer-col">
+                                            <a href="#" class="c-button c-button__medium"> Повторить</a>
+                                            <div class="lk-history-item__price">11800 <span class="c-currency-symbol">&#8381;</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><!--END lk-history-item-->
+                            <li class="lk-history-item">
+                                <div class="lk-history-item__header">
+                                    <div class="lk-history-item__grid">
+                                        <div class="lk-history-item__col">
+                                            <i class="c-icon icon-cutlery"></i>
+                                        </div>
+                                        <div class="lk-history-item__col">
+                                            <div class="lk-history-item__text">
+                                                <span>№ 25-69-789</span>
+                                                <span>от 07.12.17г.</span>
+                                                <span class="order-wait">В ожидании...</span>
+                                                <svg class="icon-dropdown__down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.54 68.83">
+                                                    <path d="M46.65,23.71c-2.19-2-4.42-3.89-6.71-5.76C31,10.61,18.61-.11,6.22,2.69c-4.43,1-7.1,6.07-6,10.37,3,11,13.81,17.08,22.07,24.06C33.06,46.17,42.88,56,52.87,65.85c3.61,3.54,10.81,4,14.8.86,7.56-6,20.49-14.33,27.53-21,15.48-12.05,29.38-26,29.33-35,.33-7-4.2-10.14-7.33-10.67-8.32-1.41-27,17.75-35.67,25.67C77.38,28.58,69.22,35.58,65,38.28"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="lk-history-item__text">Доставка по адресу: г.Москва, ул. Верхняя Красная, д.7/2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lk-history-item__body">
+                                    <div class="lk-history-item__list">
+                                        <div class="lk-history-item__product">
+                                            <div class="c-card-product-line">
+                                                <div class="c-card-product-line__left">
+                                                    <div class="c-card-product-line__img"><img src="./assets/img/order/product-1.png" alt=""></div>
+                                                    <div class="c-card-product-line__body">
+                                                        <h4 class="c-card-product-line__title">Салат из свежих овощей с сыром чечил и тыквенными семечками</h4>
+
+                                                    </div>
+                                                </div>
+                                                <div class="c-card-product-line__right">
+                                                    <div class="c-card-product-line__quantity">15 шт.  </div>
+                                                    <div class="c-card-product-line__price">11 860 <span class="c-currency-symbol">&#8381;</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lk-history-item__product">
+                                            <div class="c-card-product-line">
+                                                <div class="c-card-product-line__left">
+                                                    <div class="c-card-product-line__img"><img src="./assets/img/order/product-1.png" alt=""></div>
+                                                    <div class="c-card-product-line__body">
+                                                        <h4 class="c-card-product-line__title">Салат из свежих овощей с сыром чечил и тыквенными семечками</h4>
+
+                                                    </div>
+                                                </div>
+                                                <div class="c-card-product-line__right">
+                                                    <div class="c-card-product-line__quantity">1 шт.  </div>
+                                                    <div class="c-card-product-line__price">50 <span class="c-currency-symbol">&#8381;</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="lk-history-item__footer">
+                                        <div class="lk-history-item__footer-col">
+                                            <div class="c-button-layout">
+                                                <a href="#" class="c-button c-button__medium tooltip" data-tooltip-content=".tooltip_content-order">
+                                                    <i class="icon-delete-basket"></i>
+
+                                                </a>
+                                                <span>Удалить заказ</span>
+                                            </div>
+
+                                            <div class="tooltip_templates">
+                                                        <span class="tooltip_content-order">
+                                                            <span>Вы можете отменить заказ</span>
+                                                        </span>
+                                            </div>
+                                        </div>
+                                        <div class="lk-history-item__footer-col">
+                                            <a href="#" class="c-button c-button__medium"> Повторить</a>
+                                            <div class="lk-history-item__price">11800.-</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><!--END lk-history-item-->
+                            <li class="lk-history-item">
+                                <div class="lk-history-item__header">
+                                    <div class="lk-history-item__grid">
+                                        <div class="lk-history-item__col">
+                                            <i class="c-icon icon-cutlery"></i>
+                                        </div>
+                                        <div class="lk-history-item__col">
+                                            <div class="lk-history-item__text">
+                                                <span>№ 25-69-789</span>
+                                                <span>от 07.12.17г.</span>
+                                                <span class="order-end">Завершен...</span>
+                                                <svg class="icon-dropdown__down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.54 68.83">
+                                                    <path d="M46.65,23.71c-2.19-2-4.42-3.89-6.71-5.76C31,10.61,18.61-.11,6.22,2.69c-4.43,1-7.1,6.07-6,10.37,3,11,13.81,17.08,22.07,24.06C33.06,46.17,42.88,56,52.87,65.85c3.61,3.54,10.81,4,14.8.86,7.56-6,20.49-14.33,27.53-21,15.48-12.05,29.38-26,29.33-35,.33-7-4.2-10.14-7.33-10.67-8.32-1.41-27,17.75-35.67,25.67C77.38,28.58,69.22,35.58,65,38.28"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="lk-history-item__text">Доставка по адресу: г.Москва, ул. Верхняя Красная, д.7/2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lk-history-item__body">
+                                    <div class="lk-history-item__list">
+                                        <div class="lk-history-item__product">
+                                            <div class="c-card-product-line">
+                                                <div class="c-card-product-line__left">
+                                                    <div class="c-card-product-line__img"><img src="./assets/img/order/product-1.png" alt=""></div>
+                                                    <div class="c-card-product-line__body">
+                                                        <h4 class="c-card-product-line__title">Салат из свежих овощей с сыром чечил и тыквенными семечками</h4>
+
+                                                    </div>
+                                                </div>
+                                                <div class="c-card-product-line__right">
+                                                    <div class="c-card-product-line__quantity">15 шт.  </div>
+                                                    <div class="c-card-product-line__price">11 860 <span class="c-currency-symbol">&#8381;</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lk-history-item__product">
+                                            <div class="c-card-product-line">
+                                                <div class="c-card-product-line__left">
+                                                    <div class="c-card-product-line__img"><img src="./assets/img/order/product-1.png" alt=""></div>
+                                                    <div class="c-card-product-line__body">
+                                                        <h4 class="c-card-product-line__title">Салат из свежих овощей с сыром чечил и тыквенными семечками</h4>
+
+                                                    </div>
+                                                </div>
+                                                <div class="c-card-product-line__right">
+                                                    <div class="c-card-product-line__quantity">1 шт.  </div>
+                                                    <div class="c-card-product-line__price">50 <span class="c-currency-symbol">&#8381;</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><!--END lk-history-item-->
+                        </ul><!--END lk-history__list-->
+                    </div>  <!--END lk-history-menu-->
+                    <div id="lk-history-celebration" class="tab-content">
+                        <ul class="lk-history__list">
+                            <li class="lk-history-item">
+                                <div class="lk-history-item__header">
+                                    <div class="lk-history-item__grid">
+                                        <div class="lk-history-item__col">
+                                            <i class="c-icon icon-balloon"></i>
+                                        </div>
+                                        <div class="lk-history-item__col">
+                                            <div class="lk-history-item__text">
+                                                <span>№ 25-69-789</span>
+                                                <span>от 07.12.17г.</span>
+                                                <span class="order-active">Активный...</span>
+                                                <svg class="icon-dropdown__down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.54 68.83">
+                                                    <path d="M46.65,23.71c-2.19-2-4.42-3.89-6.71-5.76C31,10.61,18.61-.11,6.22,2.69c-4.43,1-7.1,6.07-6,10.37,3,11,13.81,17.08,22.07,24.06C33.06,46.17,42.88,56,52.87,65.85c3.61,3.54,10.81,4,14.8.86,7.56-6,20.49-14.33,27.53-21,15.48-12.05,29.38-26,29.33-35,.33-7-4.2-10.14-7.33-10.67-8.32-1.41-27,17.75-35.67,25.67C77.38,28.58,69.22,35.58,65,38.28"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lk-history-item__body">
+                                    <div class="lk-history-item__list">
+                                        <div class="lk-history-item__product">
+                                            <div class="c-card-event">
+                                                <div class="c-card-event__grid">
+                                                    <div class="c-card-event__img">
+                                                        <img src="./assets/img/order/product-1.png" alt="">
+                                                    </div>
+                                                    <div class="c-card-event__wrapper">
+                                                        <div class="c-card-event__header">
+                                                            <div class="c-card-event__title">
+                                                                Зайчики в трамвайчике
+                                                            </div>
+                                                        </div>
+                                                        <div class="c-card-event__body">
+                                                            <div class="c-card-event__info">
+                                                                <div class="c-card-event__item"><i class="icon-mark"></i>ул. Верхняя Красносельская, д. 7/2</div>
+                                                                <div class="c-card-event__item"><img src="img/icons/icon-metro-1.png" alt="">Молодежная</div>
+                                                                <div class="c-card-event__item"><i class="icon-phoneNumber"></i>+7 (495) 125-49-07</div>
+                                                                <div class="c-card-event__item"><i class="icon-calendar-3"></i>Дата проведения: 09.12.17г.</div>
+                                                                <div class="c-card-event__item"><i class="advantages-guests"></i>Доступное количество мест: 30</div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="c-card-event__footer">
+                                                    <div class="c-card-event__footer-title">Описание праздника:</div>
+                                                    <div class="c-card-event__text">
+                                                        Все ребятки перевоплотятся в зайчат и найдут нового друга - Плюшевого длинноухого Зайку и отправятся с ним в самое настоящее путешествие по всем временам года.
+                                                        Оказывается, в одно из времен года родился зайка-именинник! На каждой остановке зайчат ждут веселые игры: пострелять кочанами капусты, собрать грибочки на зиму,
+                                                        посадить морковку в большую грядку и вместе собрать ее, а так же мы будем вытягивать заячьи ушки, застрявшие в норке! Во время путешествия ребята будут
+                                                        передвигаться по временам года на трамвайчике в виде морковки.
+                                                    </div>
+                                                    <a href="#" class="c-button c-button__medium">Подробнее</a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="lk-history-item__footer">
+                                        <div class="lk-history-item__footer-col">
+                                            <div class="c-button-layout">
+                                                <span class="c-button c-button__medium disabled tooltip" data-tooltip-content=".tooltip_content">
+                                                <i class="icon-delete-basket"></i>
+                                            </span>
+                                                <span>Удалить заказ</span>
+                                            </div>
+
+                                            <div class="tooltip_templates">
+                                                <span class="tooltip_content">
+                                                    <span>Для отмены текущего заказа позвоните по номеру</span>
+                                                    <div style="color:#8fc342; font-size: 1.3rem; font-style: italic;">+7 (495) 125- 49- 07</div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="lk-history-item__footer-col">
+                                            <a href="#" class="c-button c-button__medium"> Повторить</a>
+                                            <div class="lk-history-item__price">11800.-</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul><!--END lk-history__list-->
+                    </div> <!--END lk-history-celebration-->
+                    <div id="lk-history-events" class="tab-content">
+                        <ul class="lk-history__list">
+                            <li class="lk-history-item">
+                                <div class="lk-history-item__header">
+                                    <div class="lk-history-item__grid">
+                                        <div class="lk-history-item__col">
+                                            <i class="c-icon icon-calendar-2"></i>
+                                        </div>
+                                        <div class="lk-history-item__col">
+                                            <div class="lk-history-item__text">
+                                                <span>№ 25-69-789</span>
+                                                <span>от 07.12.17г.</span>
+                                                <span class="order-active">Активный...</span>
+                                                <svg class="icon-dropdown__down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.54 68.83">
+                                                    <path d="M46.65,23.71c-2.19-2-4.42-3.89-6.71-5.76C31,10.61,18.61-.11,6.22,2.69c-4.43,1-7.1,6.07-6,10.37,3,11,13.81,17.08,22.07,24.06C33.06,46.17,42.88,56,52.87,65.85c3.61,3.54,10.81,4,14.8.86,7.56-6,20.49-14.33,27.53-21,15.48-12.05,29.38-26,29.33-35,.33-7-4.2-10.14-7.33-10.67-8.32-1.41-27,17.75-35.67,25.67C77.38,28.58,69.22,35.58,65,38.28"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lk-history-item__body">
+                                    <div class="lk-history-item__list">
+                                        <div class="lk-history-item__product">
+                                            <div class="c-card-event">
+                                                <div class="c-card-event__grid">
+                                                    <div class="c-card-event__img">
+                                                        <img src="./assets/img/order/product-1.png" alt="">
+                                                    </div>
+                                                    <div class="c-card-event__wrapper">
+                                                        <div class="c-card-event__header">
+                                                            <div class="c-card-event__title">
+                                                                Зайчики в трамвайчике
+                                                            </div>
+                                                        </div>
+                                                        <div class="c-card-event__body">
+                                                            <div class="c-card-event__info">
+                                                                <div class="c-card-event__item"><i class="icon-mark"></i>ул. Верхняя Красносельская, д. 7/2</div>
+                                                                <div class="c-card-event__item"><img src="img/icons/icon-metro-1.png" alt="">Молодежная</div>
+                                                                <div class="c-card-event__item"><i class="icon-phoneNumber"></i>+7 (495) 125-49-07</div>
+                                                                <div class="c-card-event__item"><i class="icon-calendar-3"></i>Дата проведения: 09.12.17г.</div>
+                                                                <div class="c-card-event__item"><i class="advantages-guests"></i>Доступное количество мест: 30</div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="c-card-event__footer">
+                                                    <div class="c-card-event__footer-title">Описание праздника:</div>
+                                                    <div class="c-card-event__text">
+                                                        Все ребятки перевоплотятся в зайчат и найдут нового друга - Плюшевого длинноухого Зайку и отправятся с ним в самое настоящее путешествие по всем временам года.
+                                                        Оказывается, в одно из времен года родился зайка-именинник! На каждой остановке зайчат ждут веселые игры: пострелять кочанами капусты, собрать грибочки на зиму,
+                                                        посадить морковку в большую грядку и вместе собрать ее, а так же мы будем вытягивать заячьи ушки, застрявшие в норке! Во время путешествия ребята будут
+                                                        передвигаться по временам года на трамвайчике в виде морковки.
+                                                    </div>
+                                                    <a href="#" class="c-button c-button__medium">Подробнее</a>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="lk-history-item__footer">
+                                        <div class="lk-history-item__footer-col">
+                                            <div class="c-button-layout">
+                                                <span class="c-button c-button__medium disabled tooltip" data-tooltip-content=".tooltip_content">
+                                                <i class="icon-delete-basket"></i>
+                                            </span>
+                                                <span>Удалить заказ</span>
+                                            </div>
+
+                                            <div class="tooltip_templates">
+                                                <span class="tooltip_content">
+                                                    <span>Для отмены текущего заказа позвоните по номеру</span>
+                                                    <div style="color:#8fc342; font-size: 1.3rem; font-style: italic;">+7 (495) 125- 49- 07</div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="lk-history-item__footer-col">
+                                            <a href="#" class="c-button c-button__medium"> Повторить</a>
+                                            <div class="lk-history-item__price">11800.-</div>
+                                        </div>
+                                    </div>ы
+                                </div>
+                            </li>
+                        </ul><!--END lk-history__list-->
+                    </div>  <!--END lk-history-events-->
+                    <div id="lk-history-cake" class="tab-content">
+                        <ul class="lk-history__list">
+                            <li class="lk-history-item">
+                                <div class="lk-history-item__header">
+                                    <div class="lk-history-item__grid">
+                                        <div class="lk-history-item__col">
+                                            <i class="c-icon icon-birthday-cake"></i>
+                                        </div>
+                                        <div class="lk-history-item__col">
+                                            <div class="lk-history-item__text">
+                                                <span>№ 25-69-789</span>
+                                                <span>от 07.12.17г.</span>
+                                                <span class="order-active">Активный...</span>
+                                                <svg class="icon-dropdown__down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.54 68.83">
+                                                    <path d="M46.65,23.71c-2.19-2-4.42-3.89-6.71-5.76C31,10.61,18.61-.11,6.22,2.69c-4.43,1-7.1,6.07-6,10.37,3,11,13.81,17.08,22.07,24.06C33.06,46.17,42.88,56,52.87,65.85c3.61,3.54,10.81,4,14.8.86,7.56-6,20.49-14.33,27.53-21,15.48-12.05,29.38-26,29.33-35,.33-7-4.2-10.14-7.33-10.67-8.32-1.41-27,17.75-35.67,25.67C77.38,28.58,69.22,35.58,65,38.28"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="lk-history-item__text">Доставка по адресу: г.Москва, ул. Верхняя Красная, д.7/2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lk-history-item__body">
+                                    <div class="lk-history-item__list">
+                                        <div class="lk-history-item__product">
+                                            <div class="c-card-product-line">
+                                                <div class="c-card-product-line__left">
+                                                    <div class="c-card-product-line__img"><img src="./assets/img/order/product-1.png" alt=""></div>
+                                                    <div class="c-card-product-line__body">
+                                                        <h4 class="c-card-product-line__title">Тортик из магазина</h4>
+
+                                                    </div>
+                                                </div>
+                                                <div class="c-card-product-line__right">
+                                                    <div class="c-card-product-line__quantity">15 шт.  </div>
+                                                    <div class="c-card-product-line__price">11 860 <span class="c-currency-symbol">&#8381;</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lk-history-item__product">
+                                            <div class="c-card-product-line">
+                                                <div class="c-card-product-line__left">
+                                                    <div class="c-card-product-line__img"><img src="./assets/img/order/product-1.png" alt=""></div>
+                                                    <div class="c-card-product-line__body">
+                                                        <h4 class="c-card-product-line__title">Тортик из конструктора</h4>
+
+                                                    </div>
+                                                </div>
+                                                <div class="c-card-product-line__right">
+                                                    <div class="c-card-product-line__quantity">1 шт.  </div>
+                                                    <div class="c-card-product-line__price">50 <span class="c-currency-symbol">&#8381;</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="lk-history-item__footer">
+                                        <div class="lk-history-item__footer-col">
+                                            <span class="c-button c-button__medium disabled tooltip" data-tooltip-content=".tooltip_content"><i class="icon-delete-basket"></i>Удалить заказ</span>
+                                            <div class="tooltip_templates">
+                                                        <span class="tooltip_content">
+                                                            <span>Для отмены текущего заказа позвоните по номеру</span>
+                                                            <div style="color:#8fc342; font-size: 1.3rem; font-style: italic;">+7 (495) 125- 49- 07</div>
+                                                        </span>
+                                            </div>
+                                        </div>
+                                        <div class="lk-history-item__footer-col">
+                                            <a href="#" class="c-button c-button__medium"> Повторить</a>
+                                            <div class="lk-history-item__price">11800.-</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><!--END lk-history-item-->
+                            <li class="lk-history-item">
+                                <div class="lk-history-item__header">
+                                    <div class="lk-history-item__grid">
+                                        <div class="lk-history-item__col">
+                                            <i class="c-icon icon-birthday-cake"></i>
+                                        </div>
+                                        <div class="lk-history-item__col">
+                                            <div class="lk-history-item__text">
+                                                <span>№ 25-69-789</span>
+                                                <span>от 07.12.17г.</span>
+                                                <span class="order-wait">В ожидании...</span>
+                                                <svg class="icon-dropdown__down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.54 68.83">
+                                                    <path d="M46.65,23.71c-2.19-2-4.42-3.89-6.71-5.76C31,10.61,18.61-.11,6.22,2.69c-4.43,1-7.1,6.07-6,10.37,3,11,13.81,17.08,22.07,24.06C33.06,46.17,42.88,56,52.87,65.85c3.61,3.54,10.81,4,14.8.86,7.56-6,20.49-14.33,27.53-21,15.48-12.05,29.38-26,29.33-35,.33-7-4.2-10.14-7.33-10.67-8.32-1.41-27,17.75-35.67,25.67C77.38,28.58,69.22,35.58,65,38.28"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="lk-history-item__text">Доставка по адресу: г.Москва, ул. Верхняя Красная, д.7/2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lk-history-item__body">
+                                    <div class="lk-history-item__list">
+                                        <div class="lk-history-item__product">
+                                            <div class="c-card-product-line">
+                                                <div class="c-card-product-line__left">
+                                                    <div class="c-card-product-line__img"><img src="./assets/img/order/product-1.png" alt=""></div>
+                                                    <div class="c-card-product-line__body">
+                                                        <h4 class="c-card-product-line__title">Салат из свежих овощей с сыром чечил и тыквенными семечками</h4>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="c-card-product-line__right">
+                                                    <div class="c-card-product-line__quantity">15 шт.  </div>
+                                                    <div class="c-card-product-line__price">11 860 <span class="c-currency-symbol">&#8381;</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lk-history-item__product">
+                                            <div class="c-card-product-line">
+                                                <div class="c-card-product-line__left">
+                                                    <div class="c-card-product-line__img"><img src="./assets/img/order/product-1.png" alt=""></div>
+                                                    <div class="c-card-product-line__body">
+                                                        <h4 class="c-card-product-line__title">Салат из свежих овощей с сыром чечил и тыквенными семечками</h4>
+
+                                                    </div>
+                                                </div>
+                                                <div class="c-card-product-line__right">
+                                                    <div class="c-card-product-line__quantity">1 шт.  </div>
+                                                    <div class="c-card-product-line__price">50 <span class="c-currency-symbol">&#8381;</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="lk-history-item__footer">
+                                        <div class="lk-history-item__footer-col">
+                                            <a href="#" class="c-button c-button__medium tooltip" data-tooltip-content=".tooltip_content-order"><i class="icon-delete-basket"></i>Удалить заказ</a>
+                                            <div class="tooltip_templates">
+                                                        <span class="tooltip_content-order">
+                                                            <span>Вы можете отменить заказ</span>
+                                                        </span>
+                                            </div>
+                                        </div>
+                                        <div class="lk-history-item__footer-col">
+                                            <a href="#" class="c-button c-button__medium"> Повторить</a>
+                                            <div class="lk-history-item__price">11800.-</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><!--END lk-history-item-->
+                            <li class="lk-history-item">
+                                <div class="lk-history-item__header">
+                                    <div class="lk-history-item__grid">
+                                        <div class="lk-history-item__col">
+                                            <i class="c-icon icon-birthday-cake"></i>
+                                        </div>
+                                        <div class="lk-history-item__col">
+                                            <div class="lk-history-item__text">
+                                                <span>№ 25-69-789</span>
+                                                <span>от 07.12.17г.</span>
+                                                <span class="order-end">Завершен...</span>
+                                                <svg class="icon-dropdown__down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.54 68.83">
+                                                    <path d="M46.65,23.71c-2.19-2-4.42-3.89-6.71-5.76C31,10.61,18.61-.11,6.22,2.69c-4.43,1-7.1,6.07-6,10.37,3,11,13.81,17.08,22.07,24.06C33.06,46.17,42.88,56,52.87,65.85c3.61,3.54,10.81,4,14.8.86,7.56-6,20.49-14.33,27.53-21,15.48-12.05,29.38-26,29.33-35,.33-7-4.2-10.14-7.33-10.67-8.32-1.41-27,17.75-35.67,25.67C77.38,28.58,69.22,35.58,65,38.28"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="lk-history-item__text">Доставка по адресу: г.Москва, ул. Верхняя Красная, д.7/2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lk-history-item__body">
+                                    <div class="lk-history-item__list">
+                                        <div class="lk-history-item__product">
+                                            <div class="c-card-product-line">
+                                                <div class="c-card-product-line__left">
+                                                    <div class="c-card-product-line__img"><img src="./assets/img/order/product-1.png" alt=""></div>
+                                                    <div class="c-card-product-line__body">
+                                                        <h4 class="c-card-product-line__title">Салат из свежих овощей с сыром чечил и тыквенными семечками</h4>
+
+                                                    </div>
+                                                </div>
+                                                <div class="c-card-product-line__right">
+                                                    <div class="c-card-product-line__quantity">15 шт.  </div>
+                                                    <div class="c-card-product-line__price">11 860 <span class="c-currency-symbol">&#8381;</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lk-history-item__product">
+                                            <div class="c-card-product-line">
+                                                <div class="c-card-product-line__left">
+                                                    <div class="c-card-product-line__img"><img src="./assets/img/order/product-1.png" alt=""></div>
+                                                    <div class="c-card-product-line__body">
+                                                        <h4 class="c-card-product-line__title">Салат из свежих овощей с сыром чечил и тыквенными семечками</h4>
+
+                                                    </div>
+                                                </div>
+                                                <div class="c-card-product-line__right">
+                                                    <div class="c-card-product-line__quantity">1 шт.  </div>
+                                                    <div class="c-card-product-line__price">50 <span class="c-currency-symbol">&#8381;</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><!--END lk-history-item-->
+                        </ul><!--END lk-history__list-->
+                    </div>
+                    <!--END lk-history-cake"-->
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
         </div>
     </main>
 
