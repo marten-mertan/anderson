@@ -9,9 +9,8 @@
         }
         &-item{
             width: 100%;
-            display: block;
-            background: none 62% 50% no-repeat;
-            background-size: cover;
+            display: inline-block;
+            vertical-align:top;
             &:after{
                 display: none;
             }
@@ -24,17 +23,15 @@
                 background-size: cover;
                 @media screen and (max-width: 1026px){
                     display: none;
-                    height: 363px;
-                    padding: 73px 15px 99px;
                 }
                 &-mobile{
                     display: none;
                     height: 0;
                     padding-top: 100%;
+                    background: none 50% 50% no-repeat;
+                    background-size: cover;
                     @media screen and (max-width: 1026px){
                         display: block;
-                        background: none 50% 50% no-repeat;
-                        background-size: cover;
                     }
                 }
             }

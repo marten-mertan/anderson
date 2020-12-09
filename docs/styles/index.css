@@ -2201,12 +2201,12 @@ main.v3 {
   padding-top: 0 !important; }
   @media screen and (max-width: 1026px) {
     main.v3 {
-      padding-top: 62px !important; } }
+      padding-top: 77px !important; } }
   main.v3.has-banner {
     padding-top: 0 !important; }
     @media screen and (max-width: 1026px) {
       main.v3.has-banner {
-        padding-top: 62px !important; } }
+        padding-top: 77px !important; } }
 
 .home-shipping {
   display: flex;
@@ -2581,9 +2581,8 @@ main.v3 {
       box-shadow: none; } }
   .main-slider-item {
     width: 100%;
-    display: block;
-    background: none 62% 50% no-repeat;
-    background-size: cover; }
+    display: inline-block;
+    vertical-align: top; }
     .main-slider-item:after {
       display: none; }
     .main-slider-item-wrap {
@@ -2595,18 +2594,16 @@ main.v3 {
       background-size: cover; }
       @media screen and (max-width: 1026px) {
         .main-slider-item-wrap {
-          display: none;
-          height: 363px;
-          padding: 73px 15px 99px; } }
+          display: none; } }
       .main-slider-item-wrap-mobile {
         display: none;
         height: 0;
-        padding-top: 100%; }
+        padding-top: 100%;
+        background: none 50% 50% no-repeat;
+        background-size: cover; }
         @media screen and (max-width: 1026px) {
           .main-slider-item-wrap-mobile {
-            display: block;
-            background: none 50% 50% no-repeat;
-            background-size: cover; } }
+            display: block; } }
     .main-slider-item__title {
       font-size: 94px;
       line-height: 1;
