@@ -1,11 +1,13 @@
 .main{
     &-slider{
         box-shadow: 0px 1px 1.96px 0.04px rgba(96, 96, 96, 0.35);
+        &.slick-slider{
+            margin-bottom: 15px;
+        }
         @media screen and (max-width: 1026px){
             box-shadow: none;
         }
         &-item{
-            flex: 0 0 auto;
             width: 100%;
             display: block;
             background: none 62% 50% no-repeat;
@@ -14,11 +16,10 @@
                 display: none;
             }
             &-wrap{
-                display: flex;
-                flex-direction: column;
-                margin: 0 auto;
-                padding: 92px 52px 96px;
-                height: 510px;
+                display: block;
+                width: 100%;
+                padding-top: 26.56%;
+                height: 0;
                 background: none 50% 50% no-repeat;
                 background-size: cover;
                 @media screen and (max-width: 1026px){
@@ -31,7 +32,7 @@
                     height: 0;
                     padding-top: 100%;
                     @media screen and (max-width: 1026px){
-                        display: flex;
+                        display: block;
                         background: none 50% 50% no-repeat;
                         background-size: cover;
                     }
@@ -175,7 +176,7 @@
         background-color: #fff;
         border: 1px solid rgba(0, 0, 0, 0.15);
         box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         overflow: hidden;
         &-wrap{
             width: 1600px;
@@ -481,7 +482,7 @@
         box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
         background: #9acc4d url(../assets/img/form-green-back.png) 50% 50% no-repeat;
         background-size: cover;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         @media screen and (max-width: 1026px){
             background: #9acc4d url(../assets/img/form-green-back-mobile.png) 50% 50% no-repeat;
             background-size: cover;
