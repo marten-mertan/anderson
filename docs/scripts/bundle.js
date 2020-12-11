@@ -398,6 +398,38 @@ $(window).on('load', function(){
         e.preventDefault();
         $(this).parents('.js-package').toggleClass('closed');
     });
+
+    showPopup(".js-show-product-card", '.popup-product-card');
+
+    $('.js-cake-slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        arrows: true,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 1040,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 840,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 460,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
+    });
 });
 
 

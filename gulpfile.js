@@ -103,6 +103,10 @@ function buildAssets(cb) {
     src('src/assets/img/keks/**/*.*')
       .pipe(dest('docs/assets/img/keks/'));
   
+    src('src/asset/img/**/*.*')
+    .pipe(imagemin())
+    .pipe(dest('docs/asset/img/'));
+
     // Раньше функция что-то возвращала, теперь добавляем вместо этого искусственый колбэк
     // Это нужно, чтобы Галп понимал, когда функция отработала и мог запустить следующие задачи
     cb();
