@@ -14,7 +14,11 @@
     .popup-body{
         padding: 5rem;
     }
-
+    &-content{
+        @media screen and (max-width: 1040px){
+            padding-bottom: 2rem;
+        }
+    }
     &-item{
         &-top{
             padding-bottom: 20px;
