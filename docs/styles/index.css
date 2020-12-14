@@ -5847,3 +5847,7 @@ main.v3 {
             font-size: 1.2rem;
             font-family: "PT Serif Caption";
             color: #878787; }
+
+@media screen and (max-width: 1040px) {
+  .popup-child-holidays__footer {
+    padding-bottom: 4rem; } }

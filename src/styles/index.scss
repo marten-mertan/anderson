@@ -1,1 +1,8 @@
 @import '../components/**/*.scss';
+
+// фикс нижнего паддинга у попапов в events-calendar 
+.popup-child-holidays__footer{
+    @media screen and (max-width: 1040px){
+        padding-bottom: 4rem;
+    }
+}
