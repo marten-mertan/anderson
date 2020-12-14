@@ -400,6 +400,7 @@ $(window).on('load', function(){
     });
 
     showPopup(".js-show-product-card", '.popup-product-card');
+    showPopup(".js-show-product-card-cake", '.popup-product-card-cake');
 
     $('.js-cake-slider').slick({
         slidesToShow: 5,
