@@ -3606,7 +3606,7 @@ main.v3 {
 
 .header-wrap-v2 {
   position: relative;
-  z-index: 100; }
+  z-index: 1000; }
 
 .footer-main {
   margin-top: -10rem !important; }
