@@ -1,0 +1,685 @@
+<div class="cabinet">
+    <nav class="cabinet-nav">
+        <a class="cabinet-nav__item" href="#">
+            <span>Мой профиль</span>
+        </a>
+        <a class="cabinet-nav__item " href="#">
+            <span>История заказов</span>
+        </a>
+        <a class="cabinet-nav__item active" href="#">
+            <svg class="icon-list-inline" fill="#817F7E" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+                <path d="M3.3,3.2C3,3,2.6,3,2.3,3.2C2,3.5,2,3.8,2.3,4.1l1.6,1.5c0.1,0.1,0.3,0.2,0.5,0.2l0,0c0.2,0,0.4-0.1,0.5-0.2
+		l5-4.5c0.3-0.2,0.3-0.6,0-0.9c-0.3-0.2-0.7-0.2-1,0L7.4,1.6C6.6,0.8,5.5,0.4,4.3,0.4C1.9,0.4,0,2.1,0,4.3s1.9,3.9,4.3,3.9
+		c1.9,0,3.6-1.1,4.1-2.8C8.6,5.1,8.4,4.7,8,4.6C7.6,4.5,7.3,4.7,7.1,5.1C6.8,6.2,5.6,7,4.3,7C2.7,7,1.4,5.8,1.4,4.3
+		s1.3-2.7,2.9-2.7c0.8,0,1.6,0.3,2.1,0.8l-2,1.8L3.3,3.2z"></path>
+                <path d="M4.3,8.7C1.9,8.7,0,10.5,0,12.7s1.9,3.9,4.3,3.9s4.3-1.8,4.3-3.9S6.7,8.7,4.3,8.7z M4.3,15.4
+		c-1.6,0-2.9-1.2-2.9-2.7S2.7,10,4.3,10s2.9,1.2,2.9,2.7S6,15.4,4.3,15.4z"></path>
+                <path d="M8.7,21.1c0-2.2-1.9-3.9-4.3-3.9S0,18.9,0,21.1S1.9,25,4.3,25S8.7,23.2,8.7,21.1z M4.3,23.7
+		c-1.6,0-2.9-1.2-2.9-2.7s1.3-2.7,2.9-2.7s2.9,1.2,2.9,2.7S6,23.7,4.3,23.7z"></path>
+                <path d="M24.3,12H10.9c-0.4,0-0.7,0.3-0.7,0.6s0.3,0.6,0.7,0.6h13.4c0.4,0,0.7-0.3,0.7-0.6S24.7,12,24.3,12z"></path>
+                <path d="M24.3,3.7H10.9c-0.4,0-0.7,0.3-0.7,0.6s0.3,0.6,0.7,0.6h13.4c0.4,0,0.7-0.3,0.7-0.6S24.7,3.7,24.3,3.7z"></path>
+                <path d="M24.3,20.4H10.9c-0.4,0-0.7,0.3-0.7,0.6s0.3,0.6,0.7,0.6h13.4c0.4,0,0.7-0.3,0.7-0.6
+		C25,20.7,24.7,20.4,24.3,20.4z"></path>
+            </svg>
+            <span>Оформление заказа</span></a>
+    </nav>
+
+    <div class="ordering">
+
+
+        <div class="ordering-table-layout">
+            <div class="ordering-table">
+                <div class="ordering-table__head">
+                    <div class="ordering-table__col">
+                        <div class="ordering-table__title">Товар </div>
+                    </div>
+                    <div class="ordering-table__col align-left">
+                        <div class="ordering-table__title ">Количество</div>
+                    </div>
+                    <div class="ordering-table__col">
+                        <div class="ordering-table__title">Цена <span>за 1 шт.</span></div>
+                    </div>
+                    <div class="ordering-table__col">
+                        <div class="ordering-table__title">Итого</div>
+                    </div>
+                    <div class="ordering-table__col">
+                        <div class="ordering-table__title"></div>
+                    </div>
+                </div>
+                <div class="ordering-table__body">
+                    {# START ordering-card#}
+                    <div class="ordering-card">
+                        <div class="ordering-table__col">
+                            <div class="ordering-card-product">
+                                <div class="ordering-card-product__img">
+                                    <img src="./assets/img/img-106.png" alt="">
+                                </div>
+                                <div class="ordering-card-product__text">
+                                    Рыбные котлеты из судака с пюре из цветной
+                                    капусты и печеными томатами <span class="c-currency-symbol rub">руб</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="ordering-table__col align-left">
+                            <div class="c-card-catalog__count not-flex-margin">
+                                <div class="c-counter">
+                                    <button type="button" class="but c-counter__btn dec product-item-amount-field-btn-disabled" id="bx_3966226736_158017_e7e5a53fd4b76e4dce4f311b34c340d4_quant_down">-
+                                    </button>
+                                    <input type="text" class="c-counter__field fieldCount fieldCount__catalog" value="0" id="bx_3966226736_158017_e7e5a53fd4b76e4dce4f311b34c340d4_quantity" data-item-id="158017">
+                                    <button type="button" class="but c-counter__btn inc" id="bx_3966226736_158017_e7e5a53fd4b76e4dce4f311b34c340d4_quant_up">+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ordering-table__col">
+                            <div class="ordering-card__price">
+                                460 <span class="c-currency-symbol rub">руб</span>
+                            </div>
+                        </div>
+                        <div class="ordering-table__col">
+                            <div class="ordering-card__price">
+                                460 <span class="c-currency-symbol rub">руб</span>
+                            </div>
+                        </div>
+                        <div class="ordering-table__col">
+                            <a href="#" class="c-button c-button__medium"><i class="icon-delete-basket"></i></a>
+                        </div>
+                    </div>
+                    {# END ordering-card#}
+                    {# START ordering-card#}
+                    <div class="ordering-card">
+                        <div class="ordering-table__col">
+                            <div class="ordering-card-product">
+                                <div class="ordering-card-product__img">
+                                    <img src="./assets/img/img-106.png" alt="">
+                                </div>
+                                <div class="ordering-card-product__text">
+                                    Щечки телячьи в соусе, Су-вид
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="ordering-table__col align-left">
+                            <div class="c-card-catalog__count not-flex-margin">
+                                <div class="c-counter">
+                                    <button type="button" class="but c-counter__btn dec product-item-amount-field-btn-disabled" id="bx_3966226736_158017_e7e5a53fd4b76e4dce4f311b34c340d4_quant_down">-
+                                    </button>
+                                    <input type="text" class="c-counter__field fieldCount fieldCount__catalog" value="0" id="bx_3966226736_158017_e7e5a53fd4b76e4dce4f311b34c340d4_quantity" data-item-id="158017">
+                                    <button type="button" class="but c-counter__btn inc" id="bx_3966226736_158017_e7e5a53fd4b76e4dce4f311b34c340d4_quant_up">+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ordering-table__col">
+                            <div class="ordering-card__price">
+                                460 <span class="c-currency-symbol rub">руб</span>
+                            </div>
+                        </div>
+                        <div class="ordering-table__col">
+                            <div class="ordering-card__price">
+                                460 <span class="c-currency-symbol rub">руб</span>
+                            </div>
+                        </div>
+                        <div class="ordering-table__col">
+                            <a href="#" class="c-button c-button__medium"><i class="icon-delete-basket"></i></a>
+                        </div>
+                    </div>
+                    {# END ordering-card#}
+                    {# START ordering-card#}
+                    <div class="ordering-card">
+                        <div class="ordering-table__col">
+                            <div class="ordering-card-product">
+                                <div class="ordering-card-product__img">
+                                    <img src="./assets/img/img-106.png" alt="">
+                                </div>
+                                <div class="ordering-card-product__text">
+                                    Бургер с растительной котлетой, соусом барбекю,
+                                    свежими томатами, шпинатом, красным луком,
+                                    перцем халапеньо и ореховым соусом барбекю
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="ordering-table__col align-left">
+                            <div class="c-card-catalog__count not-flex-margin">
+                                <div class="c-counter">
+                                    <button type="button" class="but c-counter__btn dec product-item-amount-field-btn-disabled" id="bx_3966226736_158017_e7e5a53fd4b76e4dce4f311b34c340d4_quant_down">-
+                                    </button>
+                                    <input type="text" class="c-counter__field fieldCount fieldCount__catalog" value="0" id="bx_3966226736_158017_e7e5a53fd4b76e4dce4f311b34c340d4_quantity" data-item-id="158017">
+                                    <button type="button" class="but c-counter__btn inc" id="bx_3966226736_158017_e7e5a53fd4b76e4dce4f311b34c340d4_quant_up">+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ordering-table__col">
+                            <div class="ordering-card__price">
+                                460 <span class="c-currency-symbol rub">руб</span>
+                            </div>
+                        </div>
+                        <div class="ordering-table__col">
+                            <div class="ordering-card__price">
+                                460 <span class="c-currency-symbol rub">руб</span>
+                            </div>
+                        </div>
+                        <div class="ordering-table__col">
+                            <a href="#" class="c-button c-button__medium"><i class="icon-delete-basket"></i></a>
+                        </div>
+                    </div>
+                    {# END ordering-card#}
+                </div>
+                <div class="ordering-table__footer">
+                    <div class="ordering-table-delivery">
+                        <div class="ordering-table-delivery__item">
+                            Доставка: <span class="ordering-table-delivery__sum">300 <span class="c-currency-symbol rub">руб</span></span>
+                        </div>
+                        <div class="ordering-table-delivery__item">
+                        <span class="ordering-table-delivery__text">
+                        Доставка будет бесплатна при добавлении к заказу: 150 <span class="c-currency-symbol rub">руб</span>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="ordering-table__code">
+                        <input type="text" name="ordering-table__code" class="c-input" placeholder="Введите промокод:">
+                        <button class="c-button c-button__medium">Ввести</button>
+                    </div>
+                    <div class="ordering-table__total">
+                        1938 <span class="c-currency-symbol rub">руб</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ordering-recommendation">
+            <h3 class="ordering-recommendation__title">Рекомендуем к вашему заказу</h3>
+            <ul class="ordering-recommendation__list">
+                <li class="ordering-recommendation__item">
+                    <!--START ordering-recommendation__item-->
+                    <div class="c-card-options">
+                        <div class="c-card-options__img">
+                            <img class="" src="./assets/img/recommendation-1.jpg" alt="">
+                        </div>
+                        <div class="c-card-options__body">
+                            <div class="c-card-options__title">Торт № 45</div>
+
+                            <div class="c-card-options__footer">
+                                <div class="c-card-options__operation">
+                                    <div class="c-card-options__price">
+                                        1590 <span class="c-currency-symbol rub">руб</span>
+                                    </div>
+
+                                    <div class="c-card-options__count">
+                                        <div class="c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-card-options-property">
+                                    <div class="c-card-options-property__col">
+                                        <select name="catalog-3-property-1" class="c-select " placeholder="Вес">
+                                            <option disabled selected value="Вес" >Вес</option>
+                                            <option value="">1 кг</option>
+                                            <option value="">2 кг</option>
+                                            <option value="">3 кг</option>
+                                            <option value="">4 кг</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="c-card-options-property__col">
+                                        <select name="catalog-3-property-2" class="c-select " placeholder="Начинка">
+                                            <option disabled selected value="Начинка" >Начинка</option>
+                                            <option value="">Чернично-шоколадная</option>
+                                            <option value="">Чернично-шоколадная в нескоьлко строк</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--END ordering-recommendation__item-->
+                </li>
+                <li class="ordering-recommendation__item">
+                    <!--START ordering-recommendation__item-->
+                    <div class="c-card-options">
+                        <div class="c-card-options__img">
+                            <img class="" src="./assets/img/recommendation-1.jpg" alt="">
+                        </div>
+                        <div class="c-card-options__body">
+                            <div class="c-card-options__title">Торт № 45 в несколько строк</div>
+
+                            <div class="c-card-options__footer">
+                                <div class="c-card-options__operation">
+                                    <div class="c-card-options__price">
+                                        1590 <span class="c-currency-symbol rub">руб</span>
+                                    </div>
+
+                                    <div class="c-card-options__count">
+                                        <div class="c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-card-options-property">
+                                    <div class="c-card-options-property__col">
+                                        <select name="catalog-3-property-1" class="c-select " placeholder="Вес">
+                                            <option disabled selected value="Вес" >Вес</option>
+                                            <option value="">1 кг</option>
+                                            <option value="">2 кг</option>
+                                            <option value="">3 кг</option>
+                                            <option value="">4 кг</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="c-card-options-property__col">
+                                        <select name="catalog-3-property-2" class="c-select " placeholder="Начинка">
+                                            <option disabled selected value="Начинка" >Начинка</option>
+                                            <option value="">Чернично-шоколадная</option>
+                                            <option value="">Чернично-шоколадная в нескоьлко строк</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--END ordering-recommendation__item-->
+                </li>
+                <li class="ordering-recommendation__item">
+                    <!--START ordering-recommendation__item-->
+                    <div class="c-card-options">
+                        <div class="c-card-options__img">
+                            <img class="" src="./assets/img/recommendation-1.jpg" alt="">
+                        </div>
+                        <div class="c-card-options__body">
+                            <div class="c-card-options__title">Торт № 45 в несколько строк</div>
+
+                            <div class="c-card-options__footer">
+                                <div class="c-card-options__operation">
+                                    <div class="c-card-options__price">
+                                        1590 <span class="c-currency-symbol rub">руб</span>
+                                    </div>
+
+                                    <div class="c-card-options__count">
+                                        <div class="c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-card-options-property">
+                                    <div class="c-card-options-property__col">
+                                        <select name="catalog-3-property-1" class="c-select " placeholder="Вес">
+                                            <option disabled selected value="Вес" >Вес</option>
+                                            <option value="">1 кг</option>
+                                            <option value="">2 кг</option>
+                                            <option value="">3 кг</option>
+                                            <option value="">4 кг</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="c-card-options-property__col">
+                                        <select name="catalog-3-property-2" class="c-select " placeholder="Начинка">
+                                            <option disabled selected value="Начинка" >Начинка</option>
+                                            <option value="">Чернично-шоколадная</option>
+                                            <option value="">Чернично-шоколадная в нескоьлко строк</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--END ordering-recommendation__item-->
+                </li>
+                <li class="ordering-recommendation__item">
+                    <!--START ordering-recommendation__item-->
+                    <div class="c-card-options">
+                        <div class="c-card-options__img">
+                            <img class="" src="./assets/img/recommendation-1.jpg" alt="">
+                        </div>
+                        <div class="c-card-options__body">
+                            <div class="c-card-options__title">Торт № 45 в несколько строк</div>
+
+                            <div class="c-card-options__footer">
+                                <div class="c-card-options__operation">
+                                    <div class="c-card-options__price">
+                                        1590 <span class="c-currency-symbol rub">руб</span>
+                                    </div>
+
+                                    <div class="c-card-options__count">
+                                        <div class="c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-card-options-property">
+                                    <div class="c-card-options-property__col">
+                                        <select name="catalog-3-property-1" class="c-select " placeholder="Вес">
+                                            <option disabled selected value="Вес" >Вес</option>
+                                            <option value="">1 кг</option>
+                                            <option value="">2 кг</option>
+                                            <option value="">3 кг</option>
+                                            <option value="">4 кг</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="c-card-options-property__col">
+                                        <select name="catalog-3-property-2" class="c-select " placeholder="Начинка">
+                                            <option disabled selected value="Начинка" >Начинка</option>
+                                            <option value="">Чернично-шоколадная</option>
+                                            <option value="">Чернично-шоколадная в нескоьлко строк</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--END ordering-recommendation__item-->
+                </li>
+                <li class="ordering-recommendation__item">
+                    <!--START ordering-recommendation__item-->
+                    <div class="c-card-options">
+                        <div class="c-card-options__img">
+                            <img class="" src="./assets/img/recommendation-1.jpg" alt="">
+                        </div>
+                        <div class="c-card-options__body">
+                            <div class="c-card-options__title">Торт № 45 в несколько строк</div>
+
+                            <div class="c-card-options__footer">
+                                <div class="c-card-options__operation">
+                                    <div class="c-card-options__price">
+                                        1590 <span class="c-currency-symbol rub">руб</span>
+                                    </div>
+
+                                    <div class="c-card-options__count">
+                                        <div class="c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-card-options-property">
+                                    <div class="c-card-options-property__col">
+                                        <select name="catalog-3-property-1" class="c-select " placeholder="Вес">
+                                            <option disabled selected value="Вес" >Вес</option>
+                                            <option value="">1 кг</option>
+                                            <option value="">2 кг</option>
+                                            <option value="">3 кг</option>
+                                            <option value="">4 кг</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="c-card-options-property__col">
+                                        <select name="catalog-3-property-2" class="c-select " placeholder="Начинка">
+                                            <option disabled selected value="Начинка" >Начинка</option>
+                                            <option value="">Чернично-шоколадная</option>
+                                            <option value="">Чернично-шоколадная в нескоьлко строк</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--END ordering-recommendation__item-->
+                </li>
+                <li class="ordering-recommendation__item">
+                    <!--START ordering-recommendation__item-->
+                    <div class="c-card-options">
+                        <div class="c-card-options__img">
+                            <img class="" src="./assets/img/recommendation-1.jpg" alt="">
+                        </div>
+                        <div class="c-card-options__body">
+                            <div class="c-card-options__title">Торт № 45 в несколько строк</div>
+
+                            <div class="c-card-options__footer">
+                                <div class="c-card-options__operation">
+                                    <div class="c-card-options__price">
+                                        1590 <span class="c-currency-symbol rub">руб</span>
+                                    </div>
+
+                                    <div class="c-card-options__count">
+                                        <div class="c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-card-options-property">
+                                    <div class="c-card-options-property__col">
+                                        <select name="catalog-3-property-1" class="c-select " placeholder="Вес">
+                                            <option disabled selected value="Вес" >Вес</option>
+                                            <option value="">1 кг</option>
+                                            <option value="">2 кг</option>
+                                            <option value="">3 кг</option>
+                                            <option value="">4 кг</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="c-card-options-property__col">
+                                        <select name="catalog-3-property-2" class="c-select " placeholder="Начинка">
+                                            <option disabled selected value="Начинка" >Начинка</option>
+                                            <option value="">Чернично-шоколадная</option>
+                                            <option value="">Чернично-шоколадная в нескоьлко строк</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--END ordering-recommendation__item-->
+                </li>
+                <li class="ordering-recommendation__item">
+                    <!--START ordering-recommendation__item-->
+                    <div class="c-card-options">
+                        <div class="c-card-options__img">
+                            <img class="" src="./assets/img/recommendation-1.jpg" alt="">
+                        </div>
+                        <div class="c-card-options__body">
+                            <div class="c-card-options__title">Торт № 45 в несколько строк</div>
+
+                            <div class="c-card-options__footer">
+                                <div class="c-card-options__operation">
+                                    <div class="c-card-options__price">
+                                        1590 <span class="c-currency-symbol rub">руб</span>
+                                    </div>
+
+                                    <div class="c-card-options__count">
+                                        <div class="c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-card-options-property">
+                                    <div class="c-card-options-property__col">
+                                        <select name="catalog-3-property-1" class="c-select " placeholder="Вес">
+                                            <option disabled selected value="Вес" >Вес</option>
+                                            <option value="">1 кг</option>
+                                            <option value="">2 кг</option>
+                                            <option value="">3 кг</option>
+                                            <option value="">4 кг</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="c-card-options-property__col">
+                                        <select name="catalog-3-property-2" class="c-select " placeholder="Начинка">
+                                            <option disabled selected value="Начинка" >Начинка</option>
+                                            <option value="">Чернично-шоколадная</option>
+                                            <option value="">Чернично-шоколадная в нескоьлко строк</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--END ordering-recommendation__item-->
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="ordering-auth">
+            <div class="order-auth">
+                <div class="order-auth__grid">
+                    <div class="order-auth__col">
+                        <div class="order-auth-new">
+                            <div class="order-auth__header">
+                                <div class="order-auth__title"><span>Я новый пользователь</span></div>
+                            </div>
+                            <div class="order-auth__body">
+                                <form action="#" class="popup-form" id="order-auth-new">
+                                    <div class="popup-form__item">
+{#                                        <label class="c-label" for="order-auth-new__email">Email или телефон<span class="c-obligatory-field">*</span></label>#}
+                                        <input class="c-input" type="text" placeholder="Ваш email или телефон" name="order-auth-new__email"
+                                               id="order-auth-new__email" required>
+                                    </div>
+                                    <div class="popup-form__item">
+                                        <div class="c-personal-data">
+                                            <div class="c-personal-data__item">
+                                                <input type="checkbox" name="order-auth-new__regulations" id="order-auth-new__regulations" checked>
+                                                <label class="c-checkbox" for="order-auth-new__regulations">Я ознакомлен с <a href="#">правилами
+                                                        обработки</a> моих персональных данных.</label>
+                                            </div>
+                                            <div class="c-personal-data__item">
+                                                <input type="checkbox" name="reg__dispatch" id="order-auth-new__dispatch">
+                                                <label class="c-checkbox" for="order-auth-new__dispatch">Я согласен получать рассылку с сайта на
+                                                    электронную почту</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popup-form__item">
+                                        <div class="l-button l-button__left">
+                                            <button class="c-button c-button__default">Продолжить оформление заказа</button>
+                                        </div>
+                                    </div>
+                                    <div class="popup-form__item">
+
+                                        <div class="footer-social">
+                                            <p class="footer-social__title">Войдите, используя аккаунт соцсети: </p>
+                                            <a class="footer-social__item" href="https://vk.com/cafeanderson">
+                                                <svg class="c-icon icon-vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.16 13.76">
+                                                    <path d="M13.41,1C12-.3,3-.06,1.66,1c-2.17,1.73-1,10.2-.09,11.75.47.8,2.59,1.1,4.91,1.1,2.83,0,6-.44,6.87-1,.56-.32.93-1.29,1.11-3,.33-2.89,0-7.91-1-8.91m.26,8.82c-.17,1.54-.5,2.24-.72,2.37-1.58.91-10,1.26-10.7.14A16.84,16.84,0,0,1,1.24,7c-.15-2.75.19-4.73.91-5.31,1.19-.95,9.7-1,10.72,0,.64.6,1.16,5,.79,8.24"
+                                                          transform="translate(-0.42 -0.12)"/>
+                                                    <path d="M9.47,7.25a11.85,11.85,0,0,0,1.36-1.4.79.79,0,1,0-1.23-1A9.83,9.83,0,0,1,8.15,6.28C8.08,5.42,8,4.45,7.84,3.36a.79.79,0,0,0-1.57.2,36.34,36.34,0,0,1,.37,6.16A6.7,6.7,0,0,1,4.57,5.87.79.79,0,1,0,3,6c.22,2.43,2.47,5.53,4,5.53a1,1,0,0,0,.76-.35,4.72,4.72,0,0,0,.49-2.71,3.11,3.11,0,0,1,2.21,2.12.79.79,0,0,0,.75.55.77.77,0,0,0,.24,0,.79.79,0,0,0,.51-1,4.52,4.52,0,0,0-2.5-2.86"/>
+                                                </svg>
+                                            </a>
+                                            <a class="footer-social__item" href="https://www.facebook.com/anderson.moscow/">
+                                                <svg class="c-icon icon-fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.25 14.34">
+                                                    <path d="M12.84,1.32C10.61.09,3-.1,1.17,1.35-.13,2.36.41,11.64,1,13.06s4,1.61,6.15,1.61h.43c1.44,0,4.83-.25,5.38-1.62.61-1.53,1.07-11-.18-11.73m-.56,11.44c-.2.51-1.87,1.06-4.66,1.12-3.16.07-5.58-.53-5.85-1.14C1,11.09.94,2.64,1.66,2,3,.9,10.1.74,12.43,2c.62.81.51,9.09-.15,10.76"
+                                                          transform="translate(-0.38 -0.33)"/>
+                                                    <path d="M6.75,2.67A2.69,2.69,0,0,0,5.31,5.29c0,.41,0,.89.06,1.42h0A.79.79,0,0,0,5.41,8.3h.06c.13,1.82.28,3.57.29,3.69a.79.79,0,0,0,.79.72h.07a.79.79,0,0,0,.72-.86S7.18,10,7,8.13L8.36,8A.79.79,0,0,0,8.2,6.42l-1.25.13c0-.48,0-.92-.05-1.29a1.14,1.14,0,0,1,.55-1.17,1,1,0,0,1,.93,0,.79.79,0,0,0,1-1.23,2.53,2.53,0,0,0-2.63-.21"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div><!--END order-auth__body-->
+                        </div>
+                    </div><!--END order-auth__col-->
+                    <div class="order-auth__col">
+                        <div class="order-auth__old-user">
+                            <div class="order-auth__header">
+                                <div class="order-auth__title"><span>я уже зарегистрирован</span></div>
+                            </div>
+
+                            <div class="order-auth__body">
+                                <form action="#" class="popup-form" id="order-auth__old-user">
+                                    <div class="popup-form__item">
+{#                                        <label class="c-label" for="order-auth__old-user__email">Email или телефон<span class="c-obligatory-field">*</span></label>#}
+                                        <input class="c-input" type="text" placeholder="Ваш email или телефон" name="order-auth__old-user__email"
+                                               id="order-auth__old-user__email" required>
+                                    </div>
+                                    <div class="popup-form__item">
+{#                                        <label class="c-label" for="order-auth__old-user__pass">Пароль<span class="c-obligatory-field">*</span></label>#}
+                                        <input class="c-input" type="password" name="order-auth__old-user__pass" placeholder="Введите пароль" id="order-auth__old-user__pass" required>
+                                    </div>
+                                    <div class="popup-form__item">
+                                        <input type="checkbox" name="order-auth__old-user-remember" id="order-auth__old-user-remember" required>
+                                        <label class="c-checkbox" for="order-auth__old-user-remember">Запомнить меня</label>
+                                        <a class="popup-forgot-password" href="#">Забыли пароль?</a>
+                                    </div>
+                                    <div class="popup-form__item">
+                                        <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
+                                    </div>
+                                    <div class="popup-form__item">
+                                        <div class="l-button l-button__left">
+                                            <button class="c-button c-button__default">Продолжить оформление заказа</button>
+                                        </div>
+                                    </div>
+                                    <div class="popup-form__item">
+
+                                        <div class="footer-social">
+                                            <p class="footer-social__title">Войдите, используя аккаунт соцсети:</p>
+                                            <a class="footer-social__item" href="https://vk.com/cafeanderson">
+                                                <svg class="c-icon icon-vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.16 13.76">
+                                                    <path d="M13.41,1C12-.3,3-.06,1.66,1c-2.17,1.73-1,10.2-.09,11.75.47.8,2.59,1.1,4.91,1.1,2.83,0,6-.44,6.87-1,.56-.32.93-1.29,1.11-3,.33-2.89,0-7.91-1-8.91m.26,8.82c-.17,1.54-.5,2.24-.72,2.37-1.58.91-10,1.26-10.7.14A16.84,16.84,0,0,1,1.24,7c-.15-2.75.19-4.73.91-5.31,1.19-.95,9.7-1,10.72,0,.64.6,1.16,5,.79,8.24"
+                                                          transform="translate(-0.42 -0.12)"/>
+                                                    <path d="M9.47,7.25a11.85,11.85,0,0,0,1.36-1.4.79.79,0,1,0-1.23-1A9.83,9.83,0,0,1,8.15,6.28C8.08,5.42,8,4.45,7.84,3.36a.79.79,0,0,0-1.57.2,36.34,36.34,0,0,1,.37,6.16A6.7,6.7,0,0,1,4.57,5.87.79.79,0,1,0,3,6c.22,2.43,2.47,5.53,4,5.53a1,1,0,0,0,.76-.35,4.72,4.72,0,0,0,.49-2.71,3.11,3.11,0,0,1,2.21,2.12.79.79,0,0,0,.75.55.77.77,0,0,0,.24,0,.79.79,0,0,0,.51-1,4.52,4.52,0,0,0-2.5-2.86"/>
+                                                </svg>
+                                            </a>
+                                            <a class="footer-social__item" href="https://www.facebook.com/anderson.moscow/">
+                                                <svg class="c-icon icon-fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.25 14.34">
+                                                    <path d="M12.84,1.32C10.61.09,3-.1,1.17,1.35-.13,2.36.41,11.64,1,13.06s4,1.61,6.15,1.61h.43c1.44,0,4.83-.25,5.38-1.62.61-1.53,1.07-11-.18-11.73m-.56,11.44c-.2.51-1.87,1.06-4.66,1.12-3.16.07-5.58-.53-5.85-1.14C1,11.09.94,2.64,1.66,2,3,.9,10.1.74,12.43,2c.62.81.51,9.09-.15,10.76"
+                                                          transform="translate(-0.38 -0.33)"/>
+                                                    <path d="M6.75,2.67A2.69,2.69,0,0,0,5.31,5.29c0,.41,0,.89.06,1.42h0A.79.79,0,0,0,5.41,8.3h.06c.13,1.82.28,3.57.29,3.69a.79.79,0,0,0,.79.72h.07a.79.79,0,0,0,.72-.86S7.18,10,7,8.13L8.36,8A.79.79,0,0,0,8.2,6.42l-1.25.13c0-.48,0-.92-.05-1.29a1.14,1.14,0,0,1,.55-1.17,1,1,0,0,1,.93,0,.79.79,0,0,0,1-1.23,2.53,2.53,0,0,0-2.63-.21"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div><!--END order-auth__col-->
+                </div><!--END order-auth__grid-->
+
+                <img class="order-auth__bg" src="./assets/img/order/bg-auth.png" alt="">
+{#                <svg class="icon-bird-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.54 88.65">#}
+{#                    <path d="M.65,78.8C5.31,81,11,80.35,16,80a90.75,90.75,0,0,0,20-3.45c17.8-5.21,40-15.07,44.86-34.9,2.09-8.57,1.34-18.47-3.09-26.22C75,10.7,70.31,6.23,64.89,4.76,59,3.16,55.09,6.09,51.17,10.14a39,39,0,0,0-6.86,9.73C40.76,27,36.89,33.92,33,40.87c-4.13,7.28-8.41,14.91-14.14,21.08a86.27,86.27,0,0,1-8.88,7.81c-3,2.46-5.83,5-9.28,6.88A1.23,1.23,0,0,0,.65,78.8Zm3.68-1.37a69.52,69.52,0,0,0,6.15-4.76c3-2.52,6.19-4.9,9-7.67C24.9,59.66,29,52.94,32.83,46.42c4.11-7,8.57-14.07,12-21.4a57,57,0,0,1,6.25-10.62C53,12,55.09,9.73,58,8.53c5.61-2.31,11.72,1.09,15.21,5.17S78.4,23.23,79,28.47c1.24,11.3-2.76,21.32-11.05,29S49,69.81,38.41,73.2a92.31,92.31,0,0,1-19.23,4.09C14.8,77.71,8.94,78.58,4.33,77.43Z" transform="translate(0 -1)"></path>#}
+{#                    <path d="M54.57,89.65a87.73,87.73,0,0,1-3.3-14.19c-.93-5.33-2-11-1.93-16.4,0-1.63,2.72-1.62,2.71,0,0,5.57,1,11.54,2.06,17a82.38,82.38,0,0,0,3.32,13.57Z" transform="translate(0 -1)"></path>#}
+{#                    <path d="M47.2,89.65c-.35-1.06-.67-2.12-1-3.12-2.17-6.82-3.29-13.9-5-20.83-.4-1.62,2.23-2.22,2.62-.66,1.4,5.68,2.4,11.46,3.91,17.11.52,1.94,1.12,4.87,2.08,7.5Z" transform="translate(0 -1)"></path>#}
+{#                    <path d="M5,57.78c3.18,2.75,8.71,3.08,12.72,3.17a33.43,33.43,0,0,0,13.71-2.2A29.31,29.31,0,0,0,47.89,39.69c.43-1.55,3.06-.93,2.61.68a31.75,31.75,0,0,1-19,21.07,38.17,38.17,0,0,1-15.45,2c-4.37-.26-9.56-.9-13-3.85C1.73,58.41,3.75,56.72,5,57.78Z" transform="translate(0 -1)"></path>#}
+{#                    <path d="M60.08,20.27a2.19,2.19,0,1,1,0,4.37A2.19,2.19,0,1,1,60.08,20.27Z" transform="translate(0 -1)"></path>#}
+{#                    <path d="M71.78,9.86c3.54-2.77,6.88-5.79,10.41-8.56.87-.69,2.78-.13,2.26,1.23-1.81,4.8-3.67,9.61-6.73,13.78-.95,1.29-3.34.09-2.34-1.28A41.13,41.13,0,0,0,80,6.4c-2,1.67-4,3.34-6,4.94l-.06.09-.26.29a1.42,1.42,0,0,1-2.13-.26l0-.08A1.21,1.21,0,0,1,71.78,9.86Z" transform="translate(0 -1)"></path>#}
+{#                </svg>#}
+            </div><!--END order-auth-->
+        </div>
+    </div>
+</div>
+
