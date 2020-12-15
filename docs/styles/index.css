@@ -1991,9 +1991,9 @@
       align-items: center;
       width: 100%; }
       .ordering-card-product__img {
-        width: 260px;
-        flex: 1 0 260px;
-        height: 190px;
+        width: 230px;
+        flex: 1 0 230px;
+        height: 150px;
         margin-right: 30px; }
         @media screen and (max-width: 1200px) {
           .ordering-card-product__img {
@@ -2027,7 +2027,7 @@
       padding: 11px 13px;
       width: 40px; }
   .ordering-recommendation {
-    margin-bottom: 40px; }
+    margin-bottom: 20px; }
     .ordering-recommendation__title {
       font-size: 26px;
       line-height: 30px;
@@ -2037,9 +2037,19 @@
       @media screen and (max-width: 800px) {
         .ordering-recommendation__title {
           text-align: center; } }
-    @media screen and (max-width: 1000px) {
-      .ordering-recommendation__layout {
-        overflow-x: scroll; } }
+    .ordering-recommendation__layout .slick-list {
+      height: 100%; }
+    .ordering-recommendation__layout .slick-track {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      height: 100%; }
+    .ordering-recommendation__layout .slick-slide > div {
+      height: 100%; }
+    .ordering-recommendation__layout .slick-arrow {
+      display: block !important;
+      top: 42%; }
     .ordering-recommendation__list {
       display: flex;
       flex-flow: row wrap;
@@ -2047,9 +2057,6 @@
       align-items: stretch;
       margin-left: -12px;
       margin-right: -12px; }
-      @media screen and (max-width: 1000px) {
-        .ordering-recommendation__list {
-          flex-flow: row nowrap; } }
     .ordering-recommendation__item {
       padding: 0 12px;
       margin-bottom: 12px; }
@@ -2057,6 +2064,12 @@
         .ordering-recommendation__item {
           width: 25%;
           min-width: 220px; } }
+      @media screen and (max-width: 700px) {
+        .ordering-recommendation__item {
+          width: 50%; } }
+      @media screen and (max-width: 500px) {
+        .ordering-recommendation__item {
+          width: 100%; } }
     .ordering-recommendation .c-card-catalog-3 {
       width: 200px; }
       .ordering-recommendation .c-card-catalog-3__img {

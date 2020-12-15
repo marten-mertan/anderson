@@ -293,4 +293,5 @@ $(window).on('load', function(){
             }
         }, delay));
     });
+
 });
