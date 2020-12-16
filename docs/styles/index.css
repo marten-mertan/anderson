@@ -1983,7 +1983,7 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: stretch;
-    margin-right: 14%; }
+    margin-right: 15%; }
     @media screen and (max-width: 1600px) {
       .ordering-table__code {
         margin-right: 8%; } }
