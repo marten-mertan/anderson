@@ -1936,6 +1936,48 @@
       font-family: "BebasNeue", sans-serif; }
     .ordering-table-delivery__text {
       font-size: 12px; }
+  .ordering-table-left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 50%; }
+    @media screen and (max-width: 1600px) {
+      .ordering-table-left {
+        width: auto; } }
+    @media screen and (max-width: 800px) {
+      .ordering-table-left {
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center; } }
+    .ordering-table-left__text {
+      font-size: 14px;
+      line-height: 22px;
+      font-family: "PT Serif Caption", serif;
+      color: #191919;
+      margin-right: 50px; }
+      @media screen and (max-width: 1200px) {
+        .ordering-table-left__text {
+          margin-right: 20px; } }
+    .ordering-table-left__subtext {
+      margin-right: 20px; }
+    .ordering-table-left__desc {
+      font-size: 14px;
+      line-height: 22px;
+      font-family: "PT Serif Caption", serif;
+      color: #191919;
+      font-weight: 500;
+      text-transform: uppercase; }
+    .ordering-table-left__sum {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 22px;
+      font-family: "BebasNeue", sans-serif;
+      color: #553023; }
+      .ordering-table-left__sum.mod-pink {
+        color: #cd4c87; }
   .ordering-table__code {
     display: flex;
     flex-flow: row nowrap;

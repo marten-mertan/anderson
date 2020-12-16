@@ -755,6 +755,57 @@
       }
     }
 
+    &-left{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      width: 50%;
+      @media screen and (max-width: 1600px) {
+        width: auto;
+      }
+      @media screen and (max-width: 800px) {
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      &__text{
+        font-size: 14px;
+        line-height: 22px;
+        font-family: "PT Serif Caption", serif;
+        color: #191919;
+        margin-right: 50px;
+        @media screen and (max-width: 1200px) {
+          margin-right: 20px;
+        }
+      }
+      &__subtext{
+        margin-right: 20px;
+        
+      }
+      &__desc{
+        font-size: 14px;
+        line-height: 22px;
+        font-family: "PT Serif Caption", serif;
+        color: #191919;
+        font-weight: 500;
+        text-transform: uppercase;
+
+      }
+      &__sum{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 22px;
+        font-family: "BebasNeue", sans-serif;
+        color: #553023;
+        &.mod-pink{
+          color: #cd4c87;
+        }
+      }
+    }
+
     &__code {
       display: flex;
       flex-flow: row nowrap;
