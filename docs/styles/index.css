@@ -3371,8 +3371,11 @@ main.main {
         display: flex; } }
     .header-2020 .header-mobile-burger {
       position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       flex: 0 0 auto;
-      padding: 22px 22px 15px;
+      padding: 12px 4px 12px;
       background-color: #9acc4e;
       width: 62px;
       height: 62px;
@@ -3384,6 +3387,12 @@ main.main {
         stroke: #fff;
         stroke-miterlimit: 10;
         stroke-width: 9.92px; }
+      .header-2020 .header-mobile-burger__text {
+        font-size: 11px;
+        font-family: "PT Serif Caption", sans-serif;
+        color: #fff;
+        line-height: 1;
+        margin-top: 6px; }
     .header-2020 .header-mobile-logo {
       width: 150px;
       padding-top: 18px;
