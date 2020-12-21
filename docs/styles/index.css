@@ -4403,10 +4403,16 @@ main.v3 {
         border: 1px solid #fff;
         background-color: #fff;
         border-radius: .5rem; }
+        .main-signup-form .datepicker-layout input::-webkit-input-placeholder {
+          opacity: 1;
+          color: #555451; }
         .main-signup-form .datepicker-layout input::-moz-placeholder {
           opacity: 1;
           color: #555451; }
         .main-signup-form .datepicker-layout input:-ms-input-placeholder {
+          opacity: 1;
+          color: #555451; }
+        .main-signup-form .datepicker-layout input::-ms-input-placeholder {
           opacity: 1;
           color: #555451; }
         .main-signup-form .datepicker-layout input::placeholder {
