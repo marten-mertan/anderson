@@ -4990,6 +4990,9 @@ main.v3 {
     .popup-one-click-2020 .popup {
       max-width: 700px;
       width: 700px; } }
+  @media screen and (max-width: 640px) {
+    .popup-one-click-2020 .popup {
+      padding-bottom: 4rem; } }
 
 @media screen and (max-width: 640px) {
   .popup-one-click-2020 .popup-close-2020 {
