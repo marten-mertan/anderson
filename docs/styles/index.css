@@ -4980,6 +4980,411 @@ main.v3 {
           justify-content: flex-start;
           text-align: left; } }
 
+.popup-one-click-2020 .popup {
+  max-width: 1000px;
+  width: 1000px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+  box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1); }
+  @media screen and (max-width: 1060px) {
+    .popup-one-click-2020 .popup {
+      max-width: 700px;
+      width: 700px; } }
+
+@media screen and (max-width: 640px) {
+  .popup-one-click-2020 .popup-close-2020 {
+    width: 14px;
+    height: 14px;
+    top: 15px;
+    right: 15px; } }
+
+.popup-one-click-2020 .popup__title {
+  position: relative;
+  padding: 38px 50px 16px;
+  font-size: 18px;
+  font-family: "PT Serif Caption";
+  color: #191919;
+  text-transform: uppercase;
+  line-height: 22px;
+  text-align: center; }
+  @media screen and (max-width: 640px) {
+    .popup-one-click-2020 .popup__title {
+      font-size: 16px; } }
+  .popup-one-click-2020 .popup__title:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, black 16.66%, rgba(85, 48, 35, 0) 0%);
+    background-position: bottom;
+    background-size: 6px 1px;
+    background-repeat: repeat-x; }
+  .popup-one-click-2020 .popup__title:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -3px;
+    left: 0;
+    background-image: linear-gradient(to right, black 33%, rgba(85, 48, 35, 0) 0%);
+    background-position: bottom;
+    background-size: 3px 1px;
+    background-repeat: repeat-x; }
+
+.popup-one-click-2020 .popup-body {
+  padding: 20px 50px; }
+  @media screen and (max-width: 640px) {
+    .popup-one-click-2020 .popup-body {
+      padding-bottom: 6rem; } }
+
+.popup-one-click-2020-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px; }
+  @media screen and (max-width: 640px) {
+    .popup-one-click-2020-row {
+      flex-direction: column;
+      margin-bottom: 10px; } }
+
+.popup-one-click-2020 .datepicker-layout-v2 {
+  display: block; }
+  @media screen and (max-width: 640px) {
+    .popup-one-click-2020 .datepicker-layout-v2 {
+      margin-left: 0; } }
+  @media screen and (max-width: 640px) {
+    .popup-one-click-2020 .datepicker-layout-v2:before {
+      display: none; } }
+
+.popup-one-click-2020 .SumoSelect > .CaptionCont > span {
+  display: inline;
+  white-space: normal;
+  font-size: 14px; }
+  @media screen and (max-width: 640px) {
+    .popup-one-click-2020 .SumoSelect > .CaptionCont > span {
+      font-size: 13px; } }
+
+.popup-one-click-2020 .datepicker-layout-v2:hover {
+  box-shadow: 0 0 2px #9acc4e;
+  border-color: #9acc4e; }
+
+.popup-one-click-2020 .datepicker-layout-v2:focus {
+  box-shadow: 0 0 2px #9acc4e;
+  border-color: #9acc4e; }
+
+.popup-one-click-2020 .datepicker-text {
+  display: block; }
+
+.popup-one-click-2020 .cake-order__delivery_time {
+  flex: 1 1.2 auto;
+  margin-left: 1rem; }
+
+.popup-one-click-2020 .datepicker-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px; }
+
+.popup-one-click-2020 .datepicker-icon i {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0.8;
+  width: 1.7rem;
+  height: 1.7rem;
+  background: url(../img/icons/icon-calendar-purple.svg) 0 0 no-repeat; }
+
+.popup-one-click-2020 .phone-text {
+  font-size: 14px;
+  color: #b5b5b5;
+  line-height: 1.5; }
+  @media screen and (max-width: 640px) {
+    .popup-one-click-2020 .phone-text {
+      font-size: 13px; } }
+  .popup-one-click-2020 .phone-text .phone-input {
+    width: 14rem !important;
+    font-size: 14px; }
+    @media screen and (max-width: 1060px) {
+      .popup-one-click-2020 .phone-text .phone-input {
+        width: 8rem !important; } }
+    @media screen and (max-width: 640px) {
+      .popup-one-click-2020 .phone-text .phone-input {
+        width: 5.5rem !important;
+        font-size: 13px; } }
+
+.popup-one-click-2020 .datepicker-text {
+  font-size: 14px;
+  color: #b5b5b5; }
+  @media screen and (max-width: 640px) {
+    .popup-one-click-2020 .datepicker-text {
+      font-size: 13px; } }
+
+.popup-one-click-2020 .datepicker-layout-v2 .mod-input-order[type="text"] {
+  font-size: 14px; }
+  @media screen and (max-width: 640px) {
+    .popup-one-click-2020 .datepicker-layout-v2 .mod-input-order[type="text"] {
+      font-size: 13px; } }
+
+.popup-one-click-2020 .c-select-layout-v2 .SelectBox {
+  padding: 1.2rem 3rem 1.2rem 1.8rem !important;
+  border: .1rem solid #dcd9d3;
+  border-radius: .4rem; }
+  .popup-one-click-2020 .c-select-layout-v2 .SelectBox:before {
+    display: inline;
+    content: "Выберите интервал доставки:";
+    font-family: "PT Serif Caption";
+    font-size: 14px;
+    color: #b5b5b5;
+    line-height: 1.5; }
+    @media screen and (max-width: 640px) {
+      .popup-one-click-2020 .c-select-layout-v2 .SelectBox:before {
+        font-size: 13px;
+        content: "Интервал доставки:"; } }
+
+.popup-one-click-2020 .SumoSelect:focus > .CaptionCont, .popup-one-click-2020 .SumoSelect:hover > .CaptionCont, .popup-one-click-2020 .SumoSelect.open > .CaptionCont {
+  border-color: #9acc4e; }
+
+.popup-one-click-2020__list {
+  display: flex;
+  width: 100%; }
+  @media screen and (max-width: 640px) {
+    .popup-one-click-2020__list {
+      flex-direction: column; } }
+  @media screen and (max-width: 640px) {
+    .popup-one-click-2020__list.mod-mobile-x2 {
+      flex-direction: row;
+      flex-wrap: wrap; } }
+  @media screen and (max-width: 640px) {
+    .popup-one-click-2020__list.mod-mobile-x2 .popup-one-click-2020__item {
+      flex: 0 0 auto;
+      width: calc(50% - 5px);
+      margin-right: 0; }
+      .popup-one-click-2020__list.mod-mobile-x2 .popup-one-click-2020__item:nth-child(2n) {
+        margin-left: 10px; }
+      .popup-one-click-2020__list.mod-mobile-x2 .popup-one-click-2020__item:nth-last-child(2) {
+        margin-bottom: 0; } }
+
+.popup-one-click-2020__item {
+  flex: 1 1 auto;
+  width: 100%; }
+  .popup-one-click-2020__item:not(:last-child) {
+    margin-right: 15px; }
+    @media screen and (max-width: 640px) {
+      .popup-one-click-2020__item:not(:last-child) {
+        margin-bottom: 10px; } }
+
+.popup-one-click-2020__subtitle {
+  padding: 12px 0 18px;
+  font-size: 23px;
+  font-family: "PT Serif Caption";
+  color: #191919;
+  line-height: 1.2; }
+  @media screen and (max-width: 640px) {
+    .popup-one-click-2020__subtitle {
+      font-size: 16px; } }
+
+.popup-one-click-2020 .c-input {
+  border-color: #dcd9d3;
+  font-size: 14px; }
+  @media screen and (max-width: 640px) {
+    .popup-one-click-2020 .c-input {
+      font-size: 13px; } }
+  .popup-one-click-2020 .c-input::-webkit-input-placeholder {
+    color: #b5b5b5; }
+  .popup-one-click-2020 .c-input::-moz-placeholder {
+    color: #b5b5b5; }
+  .popup-one-click-2020 .c-input:-ms-input-placeholder {
+    color: #b5b5b5; }
+  .popup-one-click-2020 .c-input::-ms-input-placeholder {
+    color: #b5b5b5; }
+  .popup-one-click-2020 .c-input::placeholder {
+    color: #b5b5b5; }
+  .popup-one-click-2020 .c-input:-moz-placeholder-shown {
+    color: #b5b5b5; }
+  .popup-one-click-2020 .c-input:-ms-input-placeholder {
+    color: #b5b5b5; }
+  .popup-one-click-2020 .c-input:placeholder-shown {
+    color: #b5b5b5; }
+  .popup-one-click-2020 .c-input:focus {
+    border-color: #9acc4e; }
+
+.popup-one-click-2020 .order-radio {
+  color: #191919;
+  font-size: 14px;
+  line-height: 22px; }
+  @media screen and (max-width: 640px) {
+    .popup-one-click-2020 .order-radio {
+      font-size: 13px; } }
+  .popup-one-click-2020 .order-radio:before {
+    background-color: transparent; }
+
+.popup-one-click-2020 input[type="radio"] {
+  display: none; }
+  .popup-one-click-2020 input[type="radio"]:checked + .order-radio::before {
+    content: '';
+    background-color: #7cbd41; }
+
+.popup-one-click-2020-check {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 22px; }
+  @media screen and (max-width: 640px) {
+    .popup-one-click-2020-check {
+      margin-bottom: 12px; } }
+  .popup-one-click-2020-check__item:not(:last-child) {
+    margin-right: 30px; }
+    @media screen and (max-width: 640px) {
+      .popup-one-click-2020-check__item:not(:last-child) {
+        margin-right: 15px; } }
+
+.popup-one-click-2020-select {
+  width: 100%;
+  margin-bottom: 5px; }
+  @media screen and (max-width: 1040px) {
+    .popup-one-click-2020-select {
+      width: 100%; } }
+  .popup-one-click-2020-select__text {
+    font-size: 16px;
+    font-family: "PT Serif Caption", sans-serif;
+    font-weight: normal;
+    color: #191919;
+    line-height: 22px;
+    margin-bottom: 10px; }
+    @media screen and (max-width: 1040px) {
+      .popup-one-click-2020-select__text {
+        font-size: 14px;
+        margin-bottom: 6px; } }
+  .popup-one-click-2020-select .SumoSelect {
+    width: 100%; }
+    .popup-one-click-2020-select .SumoSelect:hover > .CaptionCont {
+      border-color: #d0d3dc;
+      box-shadow: 0 0 10px 0 #9acc4e; }
+  .popup-one-click-2020-select .SumoSelect > .CaptionCont > span {
+    font-family: "PT Serif Caption";
+    font-size: 14px;
+    color: #b5b5b5; }
+  .popup-one-click-2020-select .SumoSelect > .CaptionCont > label > i {
+    width: 1.5rem;
+    height: .8rem;
+    background: url(../asset/img/color-select-arrow.png) 0 0 no-repeat; }
+  .popup-one-click-2020-select .SumoSelect:hover > .CaptionCont {
+    box-shadow: inherit;
+    border-color: #d0d3dc; }
+  .popup-one-click-2020-select .SumoSelect.open > .CaptionCont {
+    border-color: #d0d3dc;
+    box-shadow: 0 0 10px 0 #9acc4e; }
+  .popup-one-click-2020-select .SumoSelect.open:hover > .CaptionCont {
+    border-color: #d0d3dc;
+    box-shadow: 0 0 10px 0 #9acc4e; }
+  .popup-one-click-2020-select select:focus + .CaptionCont {
+    border-color: #d0d3dc;
+    box-shadow: 0 0 10px 0 #9acc4e; }
+  .popup-one-click-2020-select .SumoSelect > .CaptionCont {
+    border: 1px solid #d0d3dc;
+    outline: none;
+    border-radius: .5rem;
+    padding: 1.2rem 1.6rem;
+    font-size: 14px;
+    color: #555451;
+    background-color: transparent;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: none; }
+  .popup-one-click-2020-select .SumoSelect > .CaptionCont > label {
+    width: 60px; }
+
+.popup-one-click-2020-line {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  height: 1px;
+  background: #9b9595;
+  margin-bottom: 20px; }
+
+@media screen and (max-width: 640px) {
+  .popup-one-click-2020 .popup-product-card-item-form__code {
+    margin-bottom: 5px; } }
+
+.popup-one-click-2020-personal-data {
+  padding-top: 12px; }
+  @media screen and (max-width: 640px) {
+    .popup-one-click-2020-personal-data {
+      padding-top: 0; } }
+  .popup-one-click-2020-personal-data .c-checkbox {
+    font-size: 12px;
+    font-family: "PT Serif Caption";
+    color: #191919; }
+    .popup-one-click-2020-personal-data .c-checkbox:before {
+      border-color: #9acc4d; }
+  .popup-one-click-2020-personal-data input[type="checkbox"]:checked + .c-checkbox::after {
+    background: url(../asset/img/check.png) no-repeat 50% 50%; }
+
+.popup-one-click-2020-bottom-top {
+  text-align: center;
+  margin-bottom: 15px; }
+
+.popup-one-click-2020-bottom-delivery {
+  display: inline-block;
+  font-size: 14px;
+  font-family: "PT Serif Caption";
+  color: #191919;
+  margin-right: 25px; }
+  .popup-one-click-2020-bottom-delivery__num {
+    font-size: 20px;
+    color: #553023;
+    font-family: "BebasNeue";
+    font-weight: 500; }
+
+.popup-one-click-2020-bottom-price {
+  display: inline-block;
+  font-size: 14px;
+  font-family: "PT Serif Caption";
+  color: #191919; }
+  .popup-one-click-2020-bottom-price__num {
+    font-size: 26px;
+    color: #cd4c87;
+    font-family: "BebasNeue";
+    font-weight: 500; }
+
+.popup-one-click-2020-bottom-btn__layout {
+  text-align: center;
+  margin-bottom: 15px; }
+
+.popup-one-click-2020-bottom__btn {
+  flex: 0 0 auto;
+  text-decoration: none;
+  padding: 12px 40px;
+  border-radius: 4px;
+  border: 1px solid #7cbd41;
+  background-color: #7cbd41;
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  display: inline-block; }
+  .popup-one-click-2020-bottom__btn:hover {
+    border: 1px solid #7cbd41;
+    background-color: #72b240;
+    color: #fff; }
+
+.popup-one-click-2020-bottom__subtext {
+  font-size: 14px;
+  font-family: "PT Serif Caption", sans-serif;
+  color: #b5b5b5;
+  line-height: 20px;
+  margin-top: 14px;
+  max-width: 650px;
+  text-align: center;
+  margin: 0 auto; }
+
 .popup-product-card .popup, .popup-product-card-cake .popup {
   max-width: 1000px;
   width: 1000px;

@@ -375,7 +375,15 @@ $(document).ready(function(){
                 items:7
             }
         }
-    })
+    });
+
+    
+    $(document).on('click', '#pie-order__one-2020-click', function (e) {
+        e.preventDefault();
+        $(this).parents('.popup-product-card').removeClass('is-visible');
+        $(this).parents('.popup-product-card-cake').removeClass('is-visible');
+        $('.popup-one-click-2020').addClass('is-visible');
+    });
 });
 
 

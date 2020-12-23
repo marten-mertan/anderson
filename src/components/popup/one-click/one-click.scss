@@ -1,0 +1,457 @@
+.popup-one-click-2020{
+    .popup{
+        max-width: 1000px;
+        width: 1000px;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 0;
+        box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+        @media screen and (max-width: 1060px){
+            max-width: 700px;
+            width: 700px;
+        }
+    }
+    .popup-close-2020{
+        @media screen and (max-width: 640px){
+            width: 14px;
+            height: 14px;
+            top: 15px;
+            right: 15px;
+        }
+
+    }
+    .popup__title{
+        position: relative;
+        padding: 38px 50px 16px;
+        font-size: 18px;
+        font-family: "PT Serif Caption";
+        color: #191919;
+        text-transform: uppercase;
+        line-height: 22px;
+        text-align: center;
+        @media screen and (max-width: 640px){
+            font-size: 16px;
+        }
+        &:before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to right, black 16.66%, rgba(#553023,0) 0%);
+            background-position: bottom;
+            background-size: 6px 1px;
+            background-repeat: repeat-x;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: -3px;
+            left: 0;
+            background-image: linear-gradient(to right, black 33%, rgba(#553023,0) 0%);
+            background-position: bottom;
+            background-size: 3px 1px;
+            background-repeat: repeat-x;
+
+        }
+    }
+    .popup-body{
+        padding: 20px 50px;
+        @media screen and (max-width: 640px){
+            padding-bottom: 6rem;
+        }
+    }
+    &-row{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+        @media screen and (max-width: 640px){
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+    }
+    .datepicker-layout-v2 {
+        display: block; 
+        @media screen and (max-width: 640px){
+            margin-left: 0;
+        }
+        &:before{
+            @media screen and (max-width: 640px){
+                display: none;
+            }
+
+        }
+    }
+    .SumoSelect > .CaptionCont > span {
+        display: inline;
+        white-space: normal;
+        font-size: 14px;
+        @media screen and (max-width: 640px){
+            font-size: 13px;
+        }
+
+    }
+    .datepicker-layout-v2:hover {
+        box-shadow: 0 0 2px #9acc4e;
+        border-color: #9acc4e; 
+    }
+    .datepicker-layout-v2:focus {
+        box-shadow: 0 0 2px #9acc4e;
+        border-color: #9acc4e; 
+    }
+    .datepicker-text {
+        display: block; 
+    }
+    .cake-order__delivery_time {
+        flex: 1 1.2 auto;
+        margin-left: 1rem; 
+    }
+    .datepicker-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 40px; 
+    }
+    .datepicker-icon i {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        opacity: 0.8;
+        width: 1.7rem;
+        height: 1.7rem;
+        background: url(../img/icons/icon-calendar-purple.svg) 0 0 no-repeat; 
+    }
+    .phone-text{
+        font-size: 14px;
+        color: #b5b5b5;
+        line-height: 1.5;
+        @media screen and (max-width: 640px){
+            font-size: 13px;
+        }
+        .phone-input {
+            width: 14rem !important;
+            font-size: 14px;
+            @media screen and (max-width: 1060px){
+                width: 8rem !important;
+            }
+            @media screen and (max-width: 640px){
+                width: 5.5rem !important;
+                font-size: 13px;
+            }
+        }
+    }
+    .datepicker-text{
+        font-size: 14px;
+        color: #b5b5b5;
+        @media screen and (max-width: 640px){
+            font-size: 13px;
+        }
+    }
+    .datepicker-layout-v2 .mod-input-order[type="text"]{
+        font-size: 14px;
+        @media screen and (max-width: 640px){
+            font-size: 13px;
+        }
+
+    }
+    .c-select-layout-v2 .SelectBox {
+        padding: 1.2rem 3rem 1.2rem 1.8rem !important; 
+        border: .1rem solid #dcd9d3;
+        border-radius: .4rem;
+        &:before {
+            display: inline;
+            content: "Выберите интервал доставки:";
+            font-family: "PT Serif Caption";
+            font-size: 14px;
+            color: #b5b5b5;
+            line-height: 1.5;
+            @media screen and (max-width: 640px){
+                font-size: 13px;
+                content: "Интервал доставки:";
+            }
+        }
+    }
+    .SumoSelect:focus > .CaptionCont, .SumoSelect:hover > .CaptionCont, .SumoSelect.open > .CaptionCont{
+        border-color: #9acc4e;
+
+    }
+    &__list{
+        display: flex;
+        width: 100%;
+        @media screen and (max-width: 640px){
+            flex-direction: column;
+        }
+        &.mod-mobile-x2{
+            @media screen and (max-width: 640px){
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .popup-one-click-2020__item{
+                @media screen and (max-width: 640px){
+                    flex: 0 0 auto;
+                    width: calc(50% - 5px);
+                    margin-right: 0;
+                    &:nth-child(2n){
+                        margin-left: 10px;
+                    }
+                    &:nth-last-child(2){
+                        margin-bottom: 0;
+                    }
+                }
+
+            }
+        }
+    }
+    &__item{
+        flex: 1 1 auto;
+        width: 100%;
+        &:not(:last-child){
+            margin-right: 15px;
+            @media screen and (max-width: 640px){
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &__subtitle{
+        padding: 12px 0 18px;
+        font-size: 23px;
+        font-family: "PT Serif Caption";
+        color: #191919;
+        line-height: 1.2;
+        @media screen and (max-width: 640px){
+            font-size: 16px;
+        }
+    }
+    .c-input{
+        border-color: #dcd9d3;
+        font-size: 14px;
+        @media screen and (max-width: 640px){
+            font-size: 13px;
+        }
+        &::placeholder{
+            color: #b5b5b5;
+        }
+        &:placeholder-shown{
+            
+            color: #b5b5b5;
+        }
+        &:focus{
+            border-color: #9acc4e;
+        }
+    }
+    .order-radio {
+        color: #191919;
+        font-size: 14px;
+        line-height: 22px;
+        @media screen and (max-width: 640px){
+            font-size: 13px;
+        }
+        &:before {
+            background-color: transparent;
+        }
+    }
+    input[type="radio"] {
+        display: none;
+        &:checked + .order-radio::before {
+            content: '';
+            background-color: #7cbd41;
+        }
+    }
+    &-check{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 22px;
+        @media screen and (max-width: 640px){
+            margin-bottom: 12px;
+        }
+        &__item{
+            &:not(:last-child){
+                margin-right: 30px;
+                @media screen and (max-width: 640px){
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    &-select{
+        
+        width: 100%;
+        margin-bottom: 5px;
+        @media screen and (max-width: 1040px){
+            width: 100%;
+        }
+        &__text{
+            font-size: 16px;
+            font-family: "PT Serif Caption", sans-serif;
+            font-weight: normal;
+            color: #191919;
+            line-height: 22px;
+            margin-bottom: 10px;
+            @media screen and (max-width: 1040px){
+                font-size: 14px;
+                margin-bottom: 6px;
+            }
+        }
+        .SumoSelect{
+            width: 100%;
+            &:hover>.CaptionCont{
+                border-color: #d0d3dc;
+                box-shadow: 0 0 10px 0 #9acc4e;
+            }
+        }
+        .SumoSelect>.CaptionCont>span{
+            font-family: "PT Serif Caption";
+            font-size: 14px;
+            color: #b5b5b5;
+        }
+        .SumoSelect>.CaptionCont>label>i{
+            width: 1.5rem;
+            height: .8rem;
+            background: url(../asset/img/color-select-arrow.png) 0 0 no-repeat;
+        }
+        .SumoSelect:hover>.CaptionCont{
+            box-shadow: inherit;
+            border-color: #d0d3dc;
+        }
+        .SumoSelect.open>.CaptionCont{
+            border-color: #d0d3dc;
+            box-shadow: 0 0 10px 0 #9acc4e;
+        }
+        .SumoSelect.open:hover>.CaptionCont{
+            border-color: #d0d3dc;
+            box-shadow: 0 0 10px 0 #9acc4e;
+        }
+        select{
+            &:focus{
+                & + .CaptionCont{
+                    border-color: #d0d3dc;
+                    box-shadow: 0 0 10px 0 #9acc4e;
+                }
+            }
+        }
+        .SumoSelect>.CaptionCont{
+            border: 1px solid #d0d3dc;
+            outline: none;
+            border-radius: .5rem;
+            padding: 1.2rem 1.6rem;
+            font-size: 14px;
+            color: #555451;
+            background-color: transparent;
+            background-color: #fff;
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: none;
+        }
+        .SumoSelect>.CaptionCont>label{
+            width: 60px;
+        }
+    }
+    &-line{
+        flex: 0 0 auto;
+        width: 100%;
+        display: flex;
+        height: 1px;
+        background: #9b9595;
+        margin-bottom: 20px;
+    }
+    .popup-product-card-item-form__code{
+        @media screen and (max-width: 640px){
+            margin-bottom: 5px;
+        }
+
+    }
+    &-personal-data{
+        padding-top: 12px;
+        @media screen and (max-width: 640px){
+            padding-top: 0;
+        }
+        .c-checkbox{
+            font-size: 12px;
+            font-family: "PT Serif Caption";
+            color: #191919;
+            &:before{
+                border-color: #9acc4d;
+            }
+        }
+        input[type="checkbox"]:checked + .c-checkbox::after{
+            background: url(../asset/img/check.png) no-repeat 50% 50%;
+
+        }
+    }
+    &-bottom{
+        &-top{
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        &-delivery{
+            display: inline-block;
+            font-size: 14px;
+            font-family: "PT Serif Caption";
+            color: #191919;
+            margin-right: 25px;
+
+            &__num{
+                font-size: 20px;
+                color: #553023;
+                font-family: "BebasNeue";
+                font-weight: 500;
+            }
+        }
+        &-price{
+            display: inline-block;
+            font-size: 14px;
+            font-family: "PT Serif Caption";
+            color: #191919;
+            &__num{
+                font-size: 26px;
+                color: #cd4c87;
+                font-family: "BebasNeue";
+                font-weight: 500;
+            }
+
+        }
+        &-btn__layout{
+            text-align: center;
+            margin-bottom: 15px;
+            
+        }
+        &__btn{
+            flex: 0 0 auto;
+            text-decoration: none;
+            padding: 12px 40px;
+            border-radius: 4px;
+            border: 1px solid #7cbd41;
+            background-color: #7cbd41;
+            color: #fff;
+            font-size: 14px;
+            line-height: 22px;
+            display: inline-block;
+            &:hover{
+                
+                border: 1px solid #7cbd41;
+                background-color: #72b240;
+                color: #fff;
+            }
+        }
+        &__subtext{
+            font-size: 14px;
+            font-family: "PT Serif Caption", sans-serif;
+            color: #b5b5b5;
+            line-height: 20px;
+            margin-top: 14px;
+            max-width: 650px;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}

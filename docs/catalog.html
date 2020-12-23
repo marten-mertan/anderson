@@ -6803,7 +6803,7 @@ return rv;
                                                     <a href="#" class="popup-product-card-item__btn">
                                                         В корзину
                                                     </a>
-                                                    <a href="#" class="popup-product-card-item__btn mod-white">
+                                                    <a id="pie-order__one-2020-click" href="#" class="popup-product-card-item__btn  mod-white">
                                                         Купить в 1 клик
                                                     </a>
                                                 </div>
@@ -7212,7 +7212,7 @@ return rv;
                                             <a href="#" class="popup-product-card-item__btn">
                                                 В корзину
                                             </a>
-                                            <a href="#" class="popup-product-card-item__btn mod-white">
+                                            <a id="pie-order__one-2020-click" href="#" class="popup-product-card-item__btn mod-white">
                                                 Купить в 1 клик
                                             </a>
                                         </div>
@@ -7231,6 +7231,185 @@ return rv;
         </div>
     </div>
 </div>
+
+<!--попап купить в один клик-->
+
+<div class="mfp-wrap popup-one-click-2020" tabindex="-1" style="overflow-x: hidden; overflow-y: scroll;">
+	<div class="mfp-container mfp-inline-holder">
+		<div class="mfp-content">
+			<div class="mfp-content-bg"></div>
+			<div class="popup">
+                <div class="popup-close popup-close-2020"></div>
+                <div class="popup__title">Оформление заказа в 1 клик</div>
+                <div class="popup-body popup-one-click-2020-body">
+                    <div class="popup-one-click-2020-row">
+                        <ul class="popup-one-click-2020__list">
+                            <li class="popup-one-click-2020__item">
+                                <div class="phone-layout">
+                                    <label class="phone-text">
+                                    Во сколько вам позвонить?
+                                        <input type="text" class="phone-input" placeholder="">
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="popup-one-click-2020__item">
+                                <div class="c-select-layout-v2">
+                                    <label class="datepicker-text">
+                                        <div class="SumoSelect sumo_order-deliver-date-hour" tabindex="0"><select name="order-deliver-date-hour" class="c-select SumoUnder" tabindex="-1">
+                                            <option value="9.00-12.00">с 9.00 до 12.00</option>
+                                            <option value="12.00-15.00">с 12.00 до 15.00</option>
+                                            <option value="15.00-18.00">с 15.00 до 18.00</option>
+                                        </select>
+                                       
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popup-one-click-2020-row">
+                        <ul class="popup-one-click-2020__list">
+                            <li class="popup-one-click-2020__item">
+                                <div class="datepicker-layout-v2">
+                                    <label class="datepicker-text">Когда нужен торт?
+                                        <input type="text" data="datepicker" class="datepicker-delivery-v2 mod-input-order" placeholder="" readonly="readonly">
+                                        <label class="datepicker-icon"><i></i></label>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popup-one-click-2020__subtitle">
+                        Ваши данные
+                    </div>
+                    <div class="popup-one-click-2020-row">
+                        <ul class="popup-one-click-2020__list">
+                            <li class="popup-one-click-2020__item">
+                                <input class="c-input" type="text" placeholder="Как к вам обращаться?" name="cake-order__name" id="cake-order__name">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popup-one-click-2020-row">
+                        <ul class="popup-one-click-2020__list">
+                            <li class="popup-one-click-2020__item">
+                                <input class="c-input" type="text" placeholder="Ваш телефон" name="cake-order__name" id="cake-order__name">
+                            </li>
+                            <li class="popup-one-click-2020__item">
+                                <input class="c-input" type="text" placeholder="Ваш E-mail" name="cake-order__name" id="cake-order__name">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popup-one-click-2020__subtitle">
+                        Способ получения
+                    </div>
+                    <div class="popup-one-click-2020-check">
+                        <div class="popup-one-click-2020-check__item">
+                            <input class="" type="radio" id="popup-one-click-2020-delivery-self" name="popup-one-click-2020-delivery" checked="">
+                            <label class="order-radio" for="popup-one-click-2020-delivery-self">Самовывоз</label>
+                        </div>
+                        <div class="popup-one-click-2020-check__item">
+                            <input class="" type="radio" id="popup-one-click-2020-delivery" name="popup-one-click-2020-delivery">
+                            <label class="order-radio" for="popup-one-click-2020-delivery">Доставка на дом</label>
+                        </div>
+                    </div>
+                    <div class="popup-one-click-2020__subtitle">
+                        Адрес доставки
+                    </div>
+                    <div class="popup-one-click-2020-row">
+                        <ul class="popup-one-click-2020__list">
+                            <li class="popup-one-click-2020__item">
+                                <input class="c-input" type="text" placeholder="Введите ваш город:" name="cake-order__name" id="cake-order__name">
+                            </li>
+                            <li class="popup-one-click-2020__item">
+                                <input class="c-input" type="text" placeholder="Улица" name="cake-order__name" id="cake-order__name">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popup-one-click-2020-row">
+                        <ul class="popup-one-click-2020__list mod-mobile-x2">
+                            <li class="popup-one-click-2020__item">
+                                <input class="c-input" type="text" placeholder="Дом" name="cake-order__name" id="cake-order__name">
+                            </li>
+                            <li class="popup-one-click-2020__item">
+                                <input class="c-input" type="text" placeholder="Строение" name="cake-order__name" id="cake-order__name">
+                            </li>
+                            <li class="popup-one-click-2020__item">
+                                <input class="c-input" type="text" placeholder="Корпус" name="cake-order__name" id="cake-order__name">
+                            </li>
+                            <li class="popup-one-click-2020__item">
+                                <input class="c-input" type="text" placeholder="Квартира" name="cake-order__name" id="cake-order__name">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popup-one-click-2020-row">
+                        <ul class="popup-one-click-2020__list">
+                            <li class="popup-one-click-2020__item">
+                                <div class="popup-one-click-2020-select">
+                                    <select name="popup-one-click-2020-select" class="c-select SumoUnder" tabindex="-1" placeholder="Любимое кафе (выберите, где приготовить ваш заказ)">
+                                        <option value="Любимое кафе (выберите, где приготовить ваш заказ)">Любимое кафе (выберите, где приготовить ваш заказ)</option>
+                                        <option value="Белый">Белый</option>
+                                        <option value="Красный">Красный</option>
+                                        <option value="Зелёный">Зелёный</option>
+                                    </select>
+                                
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popup-one-click-2020-line"></div>
+                    
+                    <div class="popup-one-click-2020-row">
+                        <ul class="popup-one-click-2020__list">
+                            <li class="popup-one-click-2020__item">
+                                <div class="popup-product-card-item-form__code">
+                                    <input type="text" name="popup-one-click-2020__code" class="c-input" placeholder="Введите промокод:">
+                                    <button class="c-button c-button__medium">Ввести</button>
+                                </div>
+                            </li>
+                            <li class="popup-one-click-2020__item">
+                                <div class="popup-one-click-2020-personal-data">
+                                    <div class="c-personal-data__item">
+                                        <input type="checkbox" name="popup-one-click-2020__regulations" id="popup-one-click-2020__regulations" checked="checked">
+                                        <label class="c-checkbox" for="popup-one-click-2020__regulations">Я ознакомлен с
+                                            <a href="/about/legal-information/" target="_blank">правилами обработки</a>
+                                            моих персональных данных.</label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popup-one-click-2020-bottom">
+                        <div class="popup-one-click-2020-bottom-top">
+                            <div class="popup-one-click-2020-bottom-delivery">
+                                Доставка:
+                                <span class="popup-one-click-2020-bottom-delivery__num">
+                                    1 500
+                                    <span class="c-currency-symbol rub">руб</span>
+                                </span>
+                            </div>
+                            <div class="popup-one-click-2020-bottom-price">
+                                Итого к оплате:
+                                <span class="popup-one-click-2020-bottom-price__num">
+                                    1 938
+                                    <span class="c-currency-symbol rub">руб</span>
+                                </span>
+                            
+                            </div>
+                        
+                        </div>
+                        <div class="popup-one-click-2020-bottom-btn__layout">
+                            <a href="#" class="popup-one-click-2020-bottom__btn">Оформить и оплатить</a>
+                        </div>
+                        <div class="popup-one-click-2020-bottom__subtext">
+                            Самовывоз из кафе Москвы и МО бесплатный. Доставка до двери является платной и осуществляется на расстояние не
+                            дальше 40 км от МКАД.
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 <!--авторизация-->
 <div class="mfp-wrap popup-authorization" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
