@@ -5126,12 +5126,99 @@ main.v3 {
   height: 2rem; }
 
 @media screen and (max-width: 768px) {
-  .pie-2020 .c-layout {
-    padding: 0 1.6rem !important; } }
+  .pie-2020 .pie {
+    padding: 0 1.6rem; } }
+
+@media screen and (max-width: 768px) {
+  .pie-2020 .pie-filling {
+    margin: 0 1.6rem; } }
 
 @media screen and (max-width: 720px) {
   .pie-2020 .c-title__h2 {
     font-size: 14px; } }
+
+.pie-2020 .cake-block__text {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.pie-2020 .pie-form {
+  margin-bottom: 0; }
+
+@media screen and (max-width: 720px) {
+  .pie-2020 .pie-filling {
+    padding: 0; } }
+
+@media screen and (max-width: 720px) {
+  .pie-2020 .pie-filling__title {
+    padding: 0 0 20px;
+    margin: 0;
+    background-color: #7cbd41;
+    padding: 1.2rem 3rem 1rem;
+    border-radius: .4rem; } }
+
+@media screen and (max-width: 720px) {
+  .pie-2020 .pie-filling__show {
+    font-size: 1.4rem;
+    color: #fff; } }
+
+@media screen and (max-width: 720px) {
+  .pie-2020 .pie-filling__show > span {
+    border-bottom: 0; } }
+
+@media screen and (max-width: 720px) {
+  .pie-2020 .pie-filling__show svg {
+    display: none; } }
+
+.pie-2020 .cake-block__layout {
+  position: relative;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  padding: 1.6rem 2.3rem .4rem;
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0; }
+  @media screen and (max-width: 720px) {
+    .pie-2020 .cake-block__layout {
+      margin: 0 1.6rem 2rem;
+      border: 2px solid rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+      padding: 0; } }
+
+@media screen and (max-width: 720px) {
+  .pie-2020 .pie-mix {
+    display: none; } }
+
+.styles-line-item {
+  position: relative;
+  width: 100%;
+  padding-top: 1rem;
+  margin-bottom: 1rem; }
+  .styles-line-item:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, black 16.66%, rgba(85, 48, 35, 0) 0%);
+    background-position: bottom;
+    background-size: 6px 1px;
+    background-repeat: repeat-x; }
+  .styles-line-item:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -3px;
+    left: 0;
+    background-image: linear-gradient(to right, black 33%, rgba(85, 48, 35, 0) 0%);
+    background-position: bottom;
+    background-size: 3px 1px;
+    background-repeat: repeat-x; }
+
+@media screen and (max-width: 720px) {
+  .pie-form__layout {
+    margin: 0 1.6rem; } }
 
 .popup-one-click-2020 .popup {
   max-width: 1000px;
