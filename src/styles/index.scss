@@ -8,7 +8,7 @@
 }
 
 //фикс отображение кнопок +\- добавления в корзину
-.not-flex-margin {
+.c-card-catalog__count.not-flex-margin {
     flex: none!important;
     margin-right: 10px;
     @media screen and (max-width: 769px){

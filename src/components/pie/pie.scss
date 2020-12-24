@@ -293,3 +293,66 @@
 
     }
 }
+
+.c-card-catalog{
+    &__price{
+        @media screen and (max-width: 720px){
+            width: 100%;
+        }
+        &-layout{
+            display: inline-block;
+        }
+        &-old{
+            display: inline-block;
+            font-size: 22px;
+            color: #553023;
+            text-decoration: line-through;
+            @media screen and (max-width: 540px){
+                font-size: 2rem;
+            }
+            @media screen and (max-width: 410px){
+                font-size: 1.6rem;
+            }
+
+        }
+        &-new{
+            display: inline-block;
+            font-size: 39px;
+            color: #c7368a;
+            @media screen and (max-width: 540px){
+                font-size: 2.8rem;
+            }
+            @media screen and (max-width: 410px){
+                font-size: 2.3rem;
+            }
+
+        }
+    }
+}
+
+.c-card-catalog-3{
+    &-tags{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 10px 15px;
+        @media screen and (max-width: 720px){
+            padding: 10px 10px;
+        }
+        &__item{
+            width: 56px;
+            height: 56px;
+            background: none 50% 50% no-repeat;
+            background-size: contain;
+            margin-right: 10px;
+            @media screen and (max-width: 720px){
+                width: 32px;
+                height: 32px;
+                margin-right: 5px;
+            }
+        }
+    }
+}

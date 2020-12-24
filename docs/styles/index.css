@@ -5220,6 +5220,59 @@ main.v3 {
   .pie-form__layout {
     margin: 0 1.6rem; } }
 
+@media screen and (max-width: 720px) {
+  .c-card-catalog__price {
+    width: 100%; } }
+
+.c-card-catalog__price-layout {
+  display: inline-block; }
+
+.c-card-catalog__price-old {
+  display: inline-block;
+  font-size: 22px;
+  color: #553023;
+  text-decoration: line-through; }
+  @media screen and (max-width: 540px) {
+    .c-card-catalog__price-old {
+      font-size: 2rem; } }
+  @media screen and (max-width: 410px) {
+    .c-card-catalog__price-old {
+      font-size: 1.6rem; } }
+
+.c-card-catalog__price-new {
+  display: inline-block;
+  font-size: 39px;
+  color: #c7368a; }
+  @media screen and (max-width: 540px) {
+    .c-card-catalog__price-new {
+      font-size: 2.8rem; } }
+  @media screen and (max-width: 410px) {
+    .c-card-catalog__price-new {
+      font-size: 2.3rem; } }
+
+.c-card-catalog-3-tags {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 10px 15px; }
+  @media screen and (max-width: 720px) {
+    .c-card-catalog-3-tags {
+      padding: 10px 10px; } }
+  .c-card-catalog-3-tags__item {
+    width: 56px;
+    height: 56px;
+    background: none 50% 50% no-repeat;
+    background-size: contain;
+    margin-right: 10px; }
+    @media screen and (max-width: 720px) {
+      .c-card-catalog-3-tags__item {
+        width: 32px;
+        height: 32px;
+        margin-right: 5px; } }
+
 .popup-one-click-2020 .popup {
   max-width: 1000px;
   width: 1000px;
@@ -6760,14 +6813,14 @@ main.v3 {
   .popup-child-holidays__footer {
     padding-bottom: 4rem; } }
 
-.not-flex-margin {
+.c-card-catalog__count.not-flex-margin {
   flex: none !important;
   margin-right: 10px; }
   @media screen and (max-width: 769px) {
-    .not-flex-margin {
+    .c-card-catalog__count.not-flex-margin {
       margin-right: unset; } }
   @media screen and (max-width: 430px) {
-    .not-flex-margin {
+    .c-card-catalog__count.not-flex-margin {
       width: auto !important;
       padding: 0 !important;
       margin-top: 0 !important; } }
