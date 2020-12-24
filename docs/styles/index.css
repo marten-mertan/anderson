@@ -6759,3 +6759,15 @@ main.v3 {
 @media screen and (max-width: 1040px) {
   .popup-child-holidays__footer {
     padding-bottom: 4rem; } }
+
+.not-flex-margin {
+  flex: none !important;
+  margin-right: 10px; }
+  @media screen and (max-width: 769px) {
+    .not-flex-margin {
+      margin-right: unset; } }
+  @media screen and (max-width: 430px) {
+    .not-flex-margin {
+      width: auto !important;
+      padding: 0 !important;
+      margin-top: 0 !important; } }
