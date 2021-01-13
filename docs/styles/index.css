@@ -6024,6 +6024,14 @@ main.v3 {
   @media screen and (max-width: 1040px) {
     .popup-product-card-item-buttons__text, .popup-product-card-cake-item-buttons__text {
       display: none; } }
+  @media screen and (max-width: 1040px) {
+    .popup-product-card-item-buttons.top-buttons .popup-product-card-item__btn, .popup-product-card-cake-item-buttons.top-buttons .popup-product-card-item__btn {
+      text-align: center;
+      padding: .4rem .6rem .5rem;
+      border-radius: .4rem;
+      margin-bottom: 22px;
+      line-height: 18px;
+      width: auto; } }
 
 .popup-product-card-item__btn, .popup-product-card-cake-item__btn {
   flex: 0 0 auto;
@@ -6039,10 +6047,9 @@ main.v3 {
   @media screen and (max-width: 1040px) {
     .popup-product-card-item__btn, .popup-product-card-cake-item__btn {
       text-align: center;
-      padding: .4rem .6rem .5rem;
-      border-radius: .4rem;
-      margin-bottom: 22px;
-      line-height: 18px; } }
+      max-width: 220px;
+      margin-bottom: 10px;
+      width: 100%; } }
   .popup-product-card-item__btn:not(:last-child), .popup-product-card-cake-item__btn:not(:last-child) {
     margin-right: 10px; }
   .popup-product-card-item__btn.mod-white, .popup-product-card-cake-item__btn.mod-white {

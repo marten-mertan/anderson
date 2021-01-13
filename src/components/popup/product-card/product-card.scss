@@ -405,7 +405,18 @@
                 @media screen and (max-width: 1040px){
                     display: none;
                 }
-
+            }
+            &.top-buttons{
+                .popup-product-card-item__btn{
+                    @media screen and (max-width: 1040px){
+                        text-align: center;
+                        padding: .4rem .6rem .5rem;
+                        border-radius: .4rem;
+                        margin-bottom: 22px;
+                        line-height: 18px;
+                        width: auto;
+                    }
+                }
             }
         }
         &__btn{
@@ -421,10 +432,9 @@
             display: inline-block;
             @media screen and (max-width: 1040px){
                 text-align: center;
-                padding: .4rem .6rem .5rem;
-                border-radius: .4rem;
-                margin-bottom: 22px;
-                line-height: 18px;
+                max-width: 220px;
+                margin-bottom: 10px;
+                width: 100%;
             }
             &:not(:last-child){
                 margin-right: 10px;
