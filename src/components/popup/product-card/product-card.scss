@@ -175,7 +175,35 @@
                 }
             }
             &-bottom{
+                @media screen and (max-width: 1040px){
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    flex: 0 0 auto;
+                }
 
+            }
+            .c-card-catalog__basket{
+                border-radius: .6rem;
+                @media screen and (max-width: 1040px){
+                    padding: .4rem .6rem .5rem;
+                    border-radius: .4rem;
+                }
+                @media screen and (max-width: 720px){
+                    margin-left: auto;
+                }
+                .icon-shopping-cart {
+                    @media screen and (max-width: 1040px){
+                        width: 1.7rem;
+                        height: 1.8rem;
+                    }
+                }
+            }
+            .c-card-catalog__count.not-flex-margin{
+                
+                @media screen and (max-width: 769px){
+                    margin-right: 10px;
+                }
             }
         }
         &-color{
@@ -298,6 +326,7 @@
             line-height: 22px;
             margin-bottom: 18px;
             @media screen and (max-width: 1040px){
+                width: 100%;
                 font-size: 14px;
                 line-height: 20px;
                 margin-bottom: 14px;
@@ -356,7 +385,7 @@
             display: flex;
             flex-direction: row;
             @media screen and (max-width: 1040px){
-                flex-wrap: wrap;
+                margin-left: auto;
             }
             &.mod-cakes{
                 @media screen and (max-width: 1040px){
@@ -369,6 +398,12 @@
                         margin-right: 0;
                     }
 
+                }
+
+            }
+            &__text{
+                @media screen and (max-width: 1040px){
+                    display: none;
                 }
 
             }
@@ -385,10 +420,11 @@
             line-height: 22px;
             display: inline-block;
             @media screen and (max-width: 1040px){
-                width: 100%;
-                max-width: 220px;
                 text-align: center;
-                margin-bottom: 10px;
+                padding: .4rem .6rem .5rem;
+                border-radius: .4rem;
+                margin-bottom: 22px;
+                line-height: 18px;
             }
             &:not(:last-child){
                 margin-right: 10px;
@@ -407,6 +443,14 @@
                     border: 1px solid #7cbd41;
                     background-color: #72b240;
                     color: #fff;
+            }
+            .icon-shopping-cart{
+                display: none;
+                @media screen and (max-width: 1040px){
+                    display: inline-block;
+                    width: 1.7rem;
+                    height: 1.8rem;
+                }
             }
         }
         &-form{
