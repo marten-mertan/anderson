@@ -10,6 +10,13 @@
             width: 700px;
         }
     }
+    .mfp-content-bg{
+        position: absolute;
+        height: 100%;
+        width: 100vw;
+        left: calc((100% - 100vw) / 2);
+        right: auto;
+    }
 
     .popup-body{
         padding: 5rem;

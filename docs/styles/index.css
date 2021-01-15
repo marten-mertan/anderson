@@ -5692,6 +5692,13 @@ main.v3 {
       max-width: 700px;
       width: 700px; } }
 
+.popup-product-card .mfp-content-bg, .popup-product-card-cake .mfp-content-bg {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  left: calc((100% - 100vw) / 2);
+  right: auto; }
+
 .popup-product-card .popup-body, .popup-product-card-cake .popup-body {
   padding: 5rem; }
 
