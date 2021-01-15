@@ -13,6 +13,13 @@
             padding-bottom: 4rem;
         }
     }
+    .mfp-content-bg{
+        position: absolute;
+        height: 100%;
+        width: 100vw;
+        left: calc((100% - 100vw) / 2);
+        right: auto;
+    }
     .popup-close-2020{
         @media screen and (max-width: 640px){
             width: 14px;
