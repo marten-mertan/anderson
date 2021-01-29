@@ -4051,8 +4051,10 @@ main.v3 {
         width: 100%; } }
     @media screen and (max-width: 1026px) {
       .main-celebration-wrap {
-        padding: 26px 15px 0;
-        width: 100%; } }
+        padding: 26px 15px 0; } }
+    @media screen and (max-width: 680px) {
+      .main-celebration-wrap {
+        padding: 0 15px 15px; } }
   .main-celebration__title {
     font-size: 26px;
     font-family: "PT Serif Caption";
@@ -4063,6 +4065,9 @@ main.v3 {
     @media screen and (max-width: 1026px) {
       .main-celebration__title {
         margin-bottom: 0; } }
+    @media screen and (max-width: 680px) {
+      .main-celebration__title {
+        display: none; } }
   .main-celebration-icons {
     display: flex;
     flex-wrap: wrap; }
@@ -4077,10 +4082,10 @@ main.v3 {
         .main-celebration-icons-item {
           width: 33.3%;
           padding: 30px 5px; } }
-      @media screen and (max-width: 640px) {
+      @media screen and (max-width: 680px) {
         .main-celebration-icons-item {
           width: 50%;
-          padding: 24px 5px; } }
+          padding: 10px 5px 10px; } }
       .main-celebration-icons-item:hover .main-celebration-icons-item__icon svg {
         fill: #9acc4d; }
       .main-celebration-icons-item:hover .main-celebration-icons-item__text {
@@ -4121,10 +4126,10 @@ main.v3 {
         left: calc(100% - 1600px); } }
     @media screen and (max-width: 1300px) {
       .main-celebration-decor-1 {
-        left: -66px;
-        top: 213px;
-        width: 82px;
-        height: 90px; } }
+        left: -70px;
+        top: 101px;
+        width: 88px;
+        height: 97px; } }
   .main-celebration-decor-2 {
     position: absolute;
     background: url(../assets/img/c-decor-2.png) 50% 50% no-repeat;
@@ -4141,7 +4146,7 @@ main.v3 {
         width: 61px;
         height: 49px;
         left: -28px;
-        top: 151px; } }
+        top: 41px; } }
   .main-celebration-decor-3 {
     position: absolute;
     background: url(../assets/img/c-decor-3.png) 50% 50% no-repeat;
@@ -4157,7 +4162,7 @@ main.v3 {
     @media screen and (max-width: 1300px) {
       .main-celebration-decor-3 {
         left: -79px;
-        bottom: 125px;
+        bottom: 79px;
         width: 103px;
         height: 88px; } }
   .main-celebration-decor-4 {
@@ -4173,10 +4178,10 @@ main.v3 {
         left: calc(100% - 1587px); } }
     @media screen and (max-width: 1300px) {
       .main-celebration-decor-4 {
-        left: -18px;
-        bottom: 204px;
-        width: 40px;
-        height: 39px; } }
+        left: -24px;
+        bottom: 165px;
+        width: 46px;
+        height: 48px; } }
   .main-celebration-decor-5 {
     position: absolute;
     background: url(../assets/img/c-decor-5.png) 50% 50% no-repeat;
@@ -4208,7 +4213,7 @@ main.v3 {
     @media screen and (max-width: 1300px) {
       .main-celebration-decor-6 {
         right: -60px;
-        top: 202px;
+        top: 92px;
         width: 74px;
         height: 85px; } }
   .main-celebration-decor-7 {
@@ -4225,7 +4230,7 @@ main.v3 {
     @media screen and (max-width: 1300px) {
       .main-celebration-decor-7 {
         right: -25px;
-        top: 142px;
+        top: 32px;
         width: 47px;
         height: 42px; } }
   .main-celebration-decor-8 {
@@ -4243,7 +4248,7 @@ main.v3 {
     @media screen and (max-width: 1300px) {
       .main-celebration-decor-8 {
         right: -84px;
-        bottom: 112px;
+        bottom: 84px;
         width: 105px;
         height: 75px; } }
   .main-celebration-decor-9 {
@@ -4260,7 +4265,7 @@ main.v3 {
     @media screen and (max-width: 1300px) {
       .main-celebration-decor-9 {
         right: -44px;
-        bottom: 162px;
+        bottom: 137px;
         width: 68px;
         height: 82px; } }
   .main-celebration-decor-10 {
@@ -4543,6 +4548,137 @@ main.v3 {
   @media screen and (max-width: 520px) {
     .main-table .slick-list {
       min-width: 500px; } }
+
+.main-buttons {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px; }
+  .main-buttons-grid {
+    padding: 10px 15px;
+    display: none; }
+    @media screen and (max-width: 680px) {
+      .main-buttons-grid {
+        display: block;
+        padding: 10px 15px; } }
+  .main-buttons-celebration {
+    position: relative;
+    width: 100%;
+    overflow: hidden; }
+    @media screen and (max-width: 680px) {
+      .main-buttons-celebration {
+        display: none; } }
+    @media screen and (max-width: 680px) {
+      .main-buttons-celebration.opened {
+        display: block; } }
+  .main-buttons-row {
+    display: flex;
+    flex-direction: row; }
+    .main-buttons-row:not(:last-child) {
+      margin-bottom: 10px; }
+  .main-buttons-col {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .main-buttons-col:not(:last-child) {
+      margin-right: 10px; }
+  .main-buttons a:after {
+    display: none; }
+  .main-buttons-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    width: 100%;
+    height: 94px;
+    background-color: #c2488f; }
+    .main-buttons-item:not(:last-child) {
+      margin-bottom: 10px; }
+    .main-buttons-item.mod-menu {
+      flex-direction: row;
+      padding: 22px 92px 22px 40px; }
+      .main-buttons-item.mod-menu .main-buttons-item__icon {
+        margin: 0 16px 0 0; }
+      .main-buttons-item.mod-menu .main-buttons-item__text {
+        text-align: left; }
+    .main-buttons-item.mod-season {
+      padding: 2px 12px 2px; }
+    .main-buttons-item.mod-cake {
+      padding: 2px 12px 8px; }
+      .main-buttons-item.mod-cake .main-buttons-item__icon {
+        margin-bottom: 8px; }
+    .main-buttons-item.mod-party {
+      padding: 12px 12px 28px; }
+      .main-buttons-item.mod-party .main-buttons-item__icon {
+        margin-bottom: 9px; }
+      .main-buttons-item.mod-party .main-buttons-item-decor-pointer {
+        top: 154px;
+        left: calc(50% - 15px); }
+    .main-buttons-item__icon {
+      margin-bottom: 3px; }
+    .main-buttons-item__text {
+      font-size: 13px;
+      font-family: "PT Serif Caption";
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 18px;
+      text-align: center; }
+    .main-buttons-item-decor-fireworks {
+      position: absolute;
+      width: 21px;
+      height: 23px;
+      top: 15px;
+      left: 14px;
+      background: url(../asset/img/fireworks.svg) 0 0 no-repeat;
+      background-size: contain; }
+    .main-buttons-item-decor-star {
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      top: 15px;
+      right: 15px;
+      background: url(../asset/img/star.svg) 0 0 no-repeat;
+      background-size: contain; }
+    .main-buttons-item-decor-arrow {
+      position: absolute;
+      width: 52px;
+      height: 37px;
+      top: 45px;
+      right: 62px;
+      background: url(../asset/img/right-drawn-arrow.svg) 0 0 no-repeat;
+      background-size: contain;
+      transform: rotate(-54deg); }
+    .main-buttons-item-decor-pointer {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 32px;
+      right: 37px;
+      background: url(../asset/img/pointer.svg) 0 0 no-repeat;
+      background-size: contain; }
+
+.icon-button-menu {
+  width: 50px;
+  height: 50px;
+  fill: #fff; }
+
+.icon-button-snow {
+  width: 50px;
+  height: 50px;
+  fill: #fff; }
+
+.icon-button-party {
+  width: 50px;
+  height: 50px;
+  fill: #fff; }
+
+.icon-button-cake {
+  width: 50px;
+  height: 50px;
+  fill: #fff; }
 
 .packages {
   border-style: solid;

@@ -384,6 +384,11 @@ $(document).ready(function(){
         $(this).parents('.popup-product-card-cake').removeClass('is-visible');
         $('.popup-one-click-2020').addClass('is-visible');
     });
+
+    $(document).on('click', '.js-open-celebration', function (e) {
+        e.preventDefault();
+        $('.js-celebration').toggleClass('opened');
+    });
 });
 
 
