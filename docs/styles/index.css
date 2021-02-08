@@ -1,4 +1,13 @@
 @charset "UTF-8";
+.tabs-folder-2021 .tabs-menu__item.current .tabs-menu-inset a {
+  background-color: rgba(154, 204, 78, 0.6);
+  color: #fff; }
+
+.tabs-folder-2021 .tabs-menu-inset a {
+  border-radius: 1.8rem;
+  padding: 2px 30px 4px;
+  transition: all .2s ease; }
+
 .animations-online {
   max-width: 1563px;
   margin: 60px auto;
@@ -5267,7 +5276,7 @@ main.v3 {
 
 @media screen and (max-width: 768px) {
   .pie-2020 .pie-filling {
-    margin: 0 1.6rem; } }
+    margin: 0; } }
 
 @media screen and (max-width: 720px) {
   .pie-2020 .c-title__h2 {
@@ -5408,6 +5417,20 @@ main.v3 {
         width: 32px;
         height: 32px;
         margin-right: 5px; } }
+
+.cake-card-stuffing__control_show.mod-btn {
+  display: inline-block;
+  padding: 8px 30px 8px;
+  background: #7cbd41;
+  font-size: 1.4rem;
+  color: #fff;
+  border-radius: 3px;
+  transition: all .2s ease; }
+  .cake-card-stuffing__control_show.mod-btn:hover {
+    background-color: #6faa3a;
+    color: #fff; }
+  .cake-card-stuffing__control_show.mod-btn:after {
+    display: none; }
 
 .popup-one-click-2020 .popup {
   max-width: 1000px;
