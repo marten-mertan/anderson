@@ -5333,6 +5333,21 @@ main.v3 {
   .pie-2020 .pie-mix {
     display: none; } }
 
+.pie-2020 .cake-card-stuffing__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.pie-2020 .cake-card-stuffing__info {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-height: 15px;
+  min-height: 45px;
+  max-height: 45px; }
+
 .styles-line-item {
   position: relative;
   width: 100%;
